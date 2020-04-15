@@ -6,11 +6,16 @@ At this time "Components" demo page contains full list of re-usable components f
 
 Demo page contains description of components and their usage. Please inspect a component to get all propreties.
 
-["Components" demo page](https://blstgr.github.io/ui/email/lib.html)
-["Components CSS](https://blstgr.github.io/ui/email/lib.html)
+## Compontents
+
+* [Demo page](https://blstgr.github.io/ui/email/lib.html)
+* [Components CSS files](https://blstgr.github.io/ui/email/lib.html)
+* [Complied main CSS files](https://blstgr.github.io/ui/email/email.css)
 
 Custom elements that are used in one place, are not added to "Components" demo page. Example: [Calendar in renewal email](https://blstgr.github.io/ui/email/7-renewal.html)
 
+
+## Emails 
 
 Demo HTML for all emails to date:
 1. [Welcome](https://blstgr.github.io/ui/email/1-welcome.html)
