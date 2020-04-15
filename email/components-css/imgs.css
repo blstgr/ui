@@ -11,12 +11,10 @@ img {
     overflow: hidden;
 }
 
-
 .figure:last-child,
 .figure:only-child {
-    margin-top: 0;
+    margin-bottom: 0;
 }
-
 
 .hero-img {
     margin-top: 8px;
