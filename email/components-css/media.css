@@ -1,0 +1,31 @@
+/*media objects*/
+
+.media {
+    display: table;
+    width: 100%;
+    border-radius: var(--radius);
+    margin-bottom: var(--space-md);
+    background-color: white;
+    text-align: left;
+    background-color: var(--color-brand-light);
+    overflow: hidden;
+}
+
+.media:last-child {
+    margin-bottom: 0;
+}
+
+.media-img-cover {
+    width: 212px;
+    height: 176px;
+}
+
+.media-img {
+    padding: var(--space-md) 0 var(--space-md) var(--space-md);
+}
+
+.media-body {
+    display: table-cell;
+    vertical-align: middle;
+    padding: var(--space-md);
+}

@@ -1,0 +1,40 @@
+/*holders*/
+
+.main {
+    margin: auto;
+    width: 548px;
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-base);
+    color: var(--color-brand-dark);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.section,
+.section-lg {
+    margin-top: 8px;
+    padding: var(--space-lg) var(--space-md);
+    background-color: white;
+}
+
+.section-lg {
+    padding-top: var(--space-xl);
+    padding-bottom: var(--space-xl);
+}
+
+.holder-intext {
+    margin: var(--text-indent) 0;
+}
+
+h2+.holder-intext,
+.h2+.holder-intext {
+    margin: 40px 0;
+}
+
+.holder-intext:last-child,
+.holder-intext:only-child {
+    margin-bottom: 0;
+}
+
+.holder-right {
+    margin-left: var(--space-sm);
+}

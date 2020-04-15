@@ -1,0 +1,42 @@
+/* btns */
+
+.btn,
+.btn-s {
+    display: block;
+    height: var(--height);
+    padding: 0 var(--space-md);
+    margin-bottom: var(--space-md);
+    border-radius: var(--height);
+    border: 2px solid transparent;
+    line-height: var(--height);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: var(--font-size-sm);
+    color: inherit;
+    font-weight: bold;
+    text-align: center;
+    color: inherit;
+}
+
+.btn-s {
+    height: var(--height-sm);
+    line-height: var(--height-sm);
+    padding: 0 var(--space-xs);
+}
+
+.btn:last-child,
+.btn:only-child,
+.btn-s:last-child,
+.btn-s:only-child {
+    margin-bottom: 0;
+}
+
+.btn-primary {
+    background-color: var(--color-accent-dark);
+    color: white;
+}
+
+.btn-secondary {
+    border-color: var(--color-brand-dark);
+    background: white;
+}

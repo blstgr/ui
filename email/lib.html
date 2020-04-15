@@ -15,15 +15,15 @@
 
         <!-- table of contents -->
         <div class="section-lg" id="toc">
-            <h1>Components</h1>
+            <h1>Menu</h1>
             <div class=holder-intext>
                 <div class="list-group">
-                    <li class="list-group-item">
-                        <span>1. <a href="#vars">Variables</a></span>
-                    </li>
+                    <div class="list-group-item">
+                        <span>1. <a href="#vars">Structure</a></span>
+                    </div>
                     <div class="list-group-item">
                         <span>2. <a href="#colors">Colors
-                            </a> </span>
+                            </a></span>
                     </div>
                     <div class="list-group-item">
                         <span>3. <a href="#spaces">Spaces
@@ -41,26 +41,25 @@
                         <span>6. <a href="#btns">Buttons </a></span>
                     </div>
                     <div class="list-group-item">
-                        <span>7. <a href="#hero">Hero</span>
-                        </a>
+                        <span>7. <a href="#hero">Hero</a></span>
+                    </div>
+                    <div class="list-group-item">
+                        <span>8. <a href="#figure">Figure</a></span>
                     </div>
 
                     <div class="list-group-item">
-                        <span>8. <a href="#avatar">Avatar</span>
-                        </a>
+                        <span>9. <a href="#avatar">Avatar
+                            </a></span>
                     </div>
 
                     <div class="list-group-item">
-                        <span>9. <a href="#media">Media</span>
-                        </a>
+                        <span>10. <a href="#media">Media</a></span>
                     </div>
                     <div class="list-group-item">
-                        <span>9. <a href="#list-gr">List group</span>
-                        </a>
+                        <span>11. <a href="#list-gr">List group</a></span>
                     </div>
                     <div class="list-group-item">
-                        <span>9. <a href="#cards">Cards</span>
-                        </a>
+                        <span>12. <a href="#cards">Cards</a></span>
                     </div>
                 </div>
             </div>
@@ -68,12 +67,18 @@
 
 
 
-        <!-- vars -->
+
+        <!-- structure -->
         <div class="section-lg" id="vars">
-            <h1>Variables</h1>
-            <p>The full list of variables can be found under <a target="_blank" href=email.css>:root{} in email.css</a>
+            <h1>Sructure</h1>
+            <p>Each compent demo css is located in <a target="_blank" href="components-css/">component-css folder</a>.
+                Header, footer demo css is in <a href="email.css"> main email.css </a> file, as well as a custom
+                component calendar and some background modificators that will not be needed in email code.</a>
             </p>
-            <p>A few classes with "demo-" prefix are for this demo only</p>
+            <p>var.css&mdash;contains all reusable variables</p>
+            <p>imgs.css&mdash;combines all image-like components: figure, hero and avatar</p>
+            <p>A few classes with "demo-" prefix in email.css are for this demo only</p>
+            <p><a target="_blank" href="https://github.com/blstgr/ui">Demo HTML for all email templates</a></p>
         </div>
 
 
@@ -199,27 +204,31 @@
             </p>
             <ul>
                 <li>
-                    space-xl: 76px
+                    --space-xl: 76px
                 </li>
                 <li>
-                    space-lg: 52px
+                    --space-lg: 52px
                 </li>
                 <li>
-                    space-md: 32px
+                    --space-md: 32px
                 </li>
                 <li>
-                    space-sm: 28px
+                    --space-sm: 28px
                 </li>
-                <li>space-xs: 16px</li>
+                <li>--space-xs: 16px</li>
             </ul>
 
-            <p>All block components have margin-bottom: space-md (32px). if :last-child, :only-child
+            <p>All block components have margin-bottom: </p>
+            <ul>
+                <li>--space-md (32px)</li>
+            </ul>
+            <p>if :last-child, :only-child
                 {margin-bottom:0}
                 to avoid
                 extra
                 space added to
                 padding-bottom
-                of a section. </p>
+                of a section</p>
 
 
 
@@ -254,7 +263,7 @@
                 by text components</p>
             <ul>
                 <li>
-                    text-indent-sm: 36px&mdash;used as margin-bottom for paragraphs and lists. Same as in block
+                    --text-indent-sm: 36px&mdash;used as margin-bottom for paragraphs and lists. Same as in block
                     components, :last-child and :only-child {margin-bottom:0}
                 </li>
             </ul>
@@ -290,7 +299,8 @@
             <ul>
                 <li>
                     text-indent: 44px&mdash;used as margin-top and -bottom for <a
-                        href="#holder-intext">holder-intext</a> that contains block component or
+                        href="#holder-intext">holder-intext</a>
+                    that contains block component or
                     group of block components
                     surrounded by
                     paragraphs.
@@ -366,7 +376,7 @@
             <p><strong>.section</strong>&mdash;breaks down content into blocks with 8px margin between them. Used
                 with
                 medium-sized
-                titles (font-size-md: 26px). </p>
+                titles (--font-size-md: 26px). </p>
             <div class="holder-intext">
                 <div class="section bg-brand-light">
                     <div class="demo-highlight">
@@ -387,15 +397,15 @@
             </div>
             <p> .section propreties:</p>
             <ul>
-                <li>padding-top and -bottom: space-md (52px)</li>
-                <li>padding-left and -right: space-md (32px)</li>
+                <li>padding-top and -bottom: --space-md (52px)</li>
+                <li>padding-left and -right: --space-md (32px)</li>
                 <li>default background: white</li>
             </ul>
 
-            <p><strong>.section-lg</strong>&mdash;used when section contains large titles (font-size-lg: 66px) and
+            <p><strong>.section-lg</strong>&mdash;used when section contains large titles (--font-size-lg: 66px) and
                 banners. Inherits all prepreties from .section, but:</p>
             <ul>
-                <li> padding-top and -bottom: space-xl (76px)</li>
+                <li> padding-top and -bottom: --space-xl (76px)</li>
             </ul>
             <p>Example:</p>
             <div class="holder-intext">
@@ -426,7 +436,7 @@
                 margins between paragraphs. </p>
 
             <ul>
-                <li> margin-top and -bottom: text-indent (44px)</li>
+                <li> margin-top and -bottom: --text-indent (44px)</li>
             </ul>
 
 
@@ -472,8 +482,8 @@
             <p id="holder-intext"><strong>.holder-left, .holder-right</strong>&mdash;used build 2-col layout.</p>
 
             <ul>
-                <li> .holder-left: attached to left end</li>
-                <li> .holder-right: attached to right end, margin-left{space-xs} (16px)</li>
+                <li> .holder-left: attach content to the left</li>
+                <li> .holder-right: attach content to the right, margin-left:--space-xs (16px)</li>
             </ul>
 
             <p>Example:</p>
@@ -492,6 +502,20 @@
                     </div>
                 </div>
             </div>
+
+            <div class="list-group">
+                <div class="list-group-item list-group-header">
+                    <div class="holder-left demo-highlight">
+                        Item
+
+                    </div>
+                    <div class="holder-right  demo-highlight">
+                        <a href="" class="btn-s btn-secondary">
+                            Action
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
 
 
@@ -501,10 +525,10 @@
             <h1>Type</h1>
             Default font values:
             <ul>
-                <li>p, ul, ol {margin-bottom: text-indent-sm} (36px), except :first-child, :only-child</li>
-                <li>font-size-base: 20px</li>
-                <li>line-height-base: 36px</li>
-                <li>font-color: brand-dark</li>
+                <li>p, ul, ol {margin-bottom: --text-indent-sm} (36px), except :first-child, :only-child</li>
+                <li>--font-size-base: 20px</li>
+                <li>--line-height-base: 36px</li>
+                <li>--font-color: brand-dark</li>
                 <li>font-family: Verdana, Geneva, Tahoma, sans-serif</li>
 
             </ul>
@@ -512,21 +536,21 @@
             <p>Apart from base font, there are 2 sizes of titiles and small text</p>
             <h1>Title L </h1>
             <ul>
-                <li>margin-bottom: space-sm (28px)</li>
-                <li>font-size-lg: 66px</li>
-                <li>line-height-lg: 78px</li>
+                <li>margin-bottom: --space-sm (28px)</li>
+                <li>--font-size-lg: 66px</li>
+                <li>--line-height-lg: 78px</li>
             </ul>
             <h2>Title M </h2>
             <ul>
-                <li>margin-bottom: space-sm (28px)</li>
-                <li>font-size-md: 26px</li>
-                <li>line-height-md: 40px</li>
+                <li>margin-bottom: --space-sm (28px)</li>
+                <li>--font-size-md: 26px</li>
+                <li>--line-height-md: 40px</li>
 
             </ul>
 
             <p class="text-small">Small text</p>
             <ul>
-                <li>font-size-sm: 16px</li>
+                <li>--font-size-sm: 16px</li>
 
             </ul>
 
@@ -551,15 +575,15 @@
                 <p>By size</p>
                 <a href="#" class="btn btn-primary">Default</a>
                 <ul>
-                    <li>height: 60px</li>
-                    <li>padding left and right: space-md (32px)</li>
+                    <li>height: --height (60px)</li>
+                    <li>padding left and right: --space-md (32px)</li>
                 </ul>
             </div>
             <div class="holder-intext">
                 <a href="#" class="btn-s btn-secondary">Small</a>
                 <ul>
-                    <li>height-sm: 44px</li>
-                    <li>padding left and right: space-xs (16px)</li>
+                    <li>height: --height-sm: (44px)</li>
+                    <li>padding left and right: --space-xs (16px)</li>
                 </ul>
             </div>
 
@@ -581,6 +605,23 @@
                     </div>
                 </div>
             </div>
+        </div>
+
+
+
+        <!-- buttons -->
+        <div class="section-lg" id="figure">
+            <h1>Figure</h1>
+            <p>Propreties:</p>
+            <ul>
+                <li>485 × 304</li>
+                <li>970 × 608 @2x</li>
+                <li>margin-top and -bottom: --text-indent (44px)</li>
+            </ul>
+            <div class="figure">
+                <img src="./img/demo-figure.png" alt="">
+            </div>
+
         </div>
 
 
