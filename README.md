@@ -9,7 +9,7 @@ Demo page contains description of components and their usage. Please inspect a c
 ## Compontents
 
 * [Demo page](https://blstgr.github.io/ui/email/lib.html)
-* [Components CSS files](https://blstgr.github.io/ui/email/lib.html)
+* [Components CSS files](https://github.com/blstgr/ui/tree/master/email/components-css)
 * [Complied main CSS files](https://blstgr.github.io/ui/email/email.css)
 
 Custom elements that are used in one place, are not added to "Components" demo page. Example: [Calendar in renewal email](https://blstgr.github.io/ui/email/7-renewal.html)
