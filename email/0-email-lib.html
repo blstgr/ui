@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Components</title>
+    <link href="../styles/css/flexboxgrid.css" rel="stylesheet">
+    <link href="email.css" rel="stylesheet">
+
+    <script defer="defer" src="https://use.fontawesome.com/releases/v5.9.0/js/all.js"></script>
+
+</head>
+
+<body>
+    <div class="main lib">
+
+        <!-- table of contents -->
+        <div class="section-lg" id="toc">
+            <h1>Components</h1>
+            <div class=holder-intext>
+                <div class="list-group">
+                    <li class="list-group-item">
+                        <span>1. <a href="#vars">Variables</a></span>
+                    </li>
+                    <div class="list-group-item">
+                        <span>2. <a href="#colors">Colors
+                            </a> </span>
+                    </div>
+                    <div class="list-group-item">
+                        <span>3. <a href="#spaces">Spaces
+                            </a></span>
+                    </div>
+                    <div class="list-group-item">
+                        <span>4. <a href="#holders">Holders
+                            </a></span>
+                    </div>
+                    <div class="list-group-item">
+                        <span>5. <a href="#type">Type
+                            </a></span>
+                    </div>
+                    <div class="list-group-item">
+                        <span>6. <a href="#btns">Buttons </a></span>
+                    </div>
+                    <div class="list-group-item">
+                        <span>7. <a href="#hero">Hero</span>
+                        </a>
+                    </div>
+
+                    <div class="list-group-item">
+                        <span>8. <a href="#avatar">Avatar</span>
+                        </a>
+                    </div>
+
+                    <div class="list-group-item">
+                        <span>9. <a href="#media">Media</span>
+                        </a>
+                    </div>
+                    <div class="list-group-item">
+                        <span>9. <a href="#list-gr">List group</span>
+                        </a>
+                    </div>
+                    <div class="list-group-item">
+                        <span>9. <a href="#cards">Cards</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- vars -->
+        <div class="section-lg" id="vars">
+            <h1>Variables</h1>
+            <p>The full list of variables can be found under <a target="_blank" href=email.css>:root{} in email.css</a>
+            </p>
+            <p>A few classes with "demo-" prefix are for this demo only</p>
+        </div>
+
+
+
+        <!-- colors -->
+        <div class="section-lg" id="colors">
+            <h1>Colors</h1>
+
+            <div class="holder-intext">
+
+                <div class=" demo-flex">
+                    <div class="card">
+                        <div class="card-body bg-brand-dark"></div>
+                        <div class="card-footer">
+                            brand-dark: #393934
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body bg-brand"></div>
+                        <div class="card-footer">
+                            brand: #efead4
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body bg-brand-light"></div>
+                        <div class="card-footer">
+                            brand-light: #faf8ed
+                        </div>
+                    </div>
+                </div>
+
+                <div class="demo-flex">
+                    <div class="card">
+                        <div class="card-body bg-success-dark"></div>
+                        <div class="card-footer">
+                            success-dark: #109860
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body bg-success"></div>
+                        <div class="card-footer">
+                            success: #50e098
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body bg-success-light"></div>
+                        <div class="card-footer">
+                            success-light: #bffbdd
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="demo-flex">
+                    <div class="card">
+                        <div class="card-body bg-accent-dark"></div>
+                        <div class="card-footer">
+                            accent-dark: #ff615b
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body bg-accent"></div>
+                        <div class="card-footer">
+                            accent: #ffc135
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body bg-accent-light"></div>
+                        <div class="card-footer">
+                            accent-light: #ffe89e
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="demo-flex">
+                    <div class="card ">
+                        <div class="card-body bg-info-dark"></div>
+                        <div class="card-footer">
+                            info-dark: #1c5fa0
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body bg-info"></div>
+                        <div class="card-footer">
+                            info: #4b96dc
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body bg-info-light"></div>
+                        <div class="card-footer">
+                            info-light: #c3ecfd
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+
+
+
+        <!-- spaces -->
+        <div class="section-lg" id="spaces">
+            <h1>Spaces</h1>
+
+            <p><strong>Spaces</strong>&mdash;used for margins and paddings in block components. For example: <a
+                    href=" #btns">buttons</a>, <a href="#media">media</a>,
+                <a href="#cards">cards</a>, <a href="#list-gr">list
+                    groups</a>
+            </p>
+            <ul>
+                <li>
+                    space-xl: 76px
+                </li>
+                <li>
+                    space-lg: 52px
+                </li>
+                <li>
+                    space-md: 32px
+                </li>
+                <li>
+                    space-sm: 28px
+                </li>
+                <li>space-xs: 16px</li>
+            </ul>
+
+            <p>All block components have margin-bottom: space-md (32px). if :last-child, :only-child
+                {margin-bottom:0}
+                to avoid
+                extra
+                space added to
+                padding-bottom
+                of a section. </p>
+
+
+
+            <p>Example:</p>
+            <div class="holder-intext section bg-brand-light">
+
+                <div class="media bg-info-light">
+                    <div class="media-img">
+                        <div class="avatar">
+                            <img src="./img/demo-avatar.png" alt="">
+                        </div>
+                    </div>
+                    <div class="media-body">Media lorem ipsum dolor sit amet text</div>
+                </div>
+                <div class="media bg-info-light">
+                    <div class="media-img">
+                        <div class="avatar">
+                            <img src="./img/demo-avatar.png" alt="">
+                        </div>
+                    </div>
+                    <div class="media-body">Some larger lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                        do
+                        eiusmod text</div>
+                </div>
+                <a href="#" class="btn btn-secondary">Action</a>
+                <a href="#" class="btn btn-primary">Main Action</a>
+
+            </div>
+
+            <p><strong>Text indents</strong>&mdash;used for spaces between text components and block components
+                surrounded
+                by text components</p>
+            <ul>
+                <li>
+                    text-indent-sm: 36px&mdash;used as margin-bottom for paragraphs and lists. Same as in block
+                    components, :last-child and :only-child {margin-bottom:0}
+                </li>
+            </ul>
+            <p> Example:</p>
+            <div class="holder-intext section bg-brand-light">
+
+                <p class="demo-highlight">Some lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod
+                    tempor incididunt ut
+                    labore et dolore magna aliqua paragraph</p>
+
+
+                <p class="demo-highlight">Another lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do
+                    eiusmod tempor
+                    incididunt ut
+                    labore et dolore magna aliqua paragraph</p>
+
+                <ul class="demo-highlight">
+                    <li>List item 1</li>
+                    <li>List item 2</li>
+                </ul>
+            </div>
+
+            <ul>
+                <li>
+                    text-indent-lg: 48px&mdash;used as margin-bottom for p in <a href="#banner">banners</a>
+
+                </li>
+            </ul>
+
+
+            <ul>
+                <li>
+                    text-indent: 44px&mdash;used as margin-top and -bottom for <a
+                        href="#holder-intext">holder-intext</a> that contains block component or
+                    group of block components
+                    surrounded by
+                    paragraphs.
+
+                </li>
+            </ul>
+
+            <p> Example:</p>
+            <div class="holder-intext section bg-brand-light">
+
+                <p>Some lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod
+                    tempor incididunt ut
+                    labore et dolore magna aliqua paragraph</p>
+                <div class="holder-intext demo-highlight">
+                    <div class="media bg-info-light">
+                        <div class="media-img">
+                            <div class="avatar">
+                                <img src="./img/demo-avatar.png" alt="">
+                            </div>
+                        </div>
+                        <div class="media-body">
+                            Media lorem ipsum dolor sit amet text
+                        </div>
+                    </div>
+                    <div class="media bg-info-light">
+                        <div class="media-img">
+                            <div class="avatar">
+                                <img src="./img/demo-avatar.png" alt="">
+                            </div>
+                        </div>
+                        <div class="media-body">Media lorem ipsum dolor sit amet text</div>
+                    </div>
+                </div>
+
+                <p> Another lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do
+                    eiusmod tempor
+                    incididunt ut
+                    labore et dolore magna aliqua paragraph</p>
+                <p>Another lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do
+                    eiusmod tempor
+                    incididunt ut
+                    labore et dolore magna aliqua paragraph</p>
+            </div>
+
+
+            <p>
+                Custom spaces
+                not
+                included in vars:
+            </p>
+
+            <ul>
+                <li> 8px indent between sections
+                </li>
+                <li> .h2+.holder-intext {margin-top: 40px}
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- holders  -->
+        <div class="section-lg" id="holders">
+            <h1>Holders</h1>
+            <p><strong>.main</strong>&mdash;defines width of an email:</p>
+            <ul>
+                <li>548px</li>
+            </ul>
+            <p><strong>.section</strong>&mdash;breaks down content into blocks with 8px margin between them. Used
+                with
+                medium-sized
+                titles (font-size-md: 26px). </p>
+            <div class="holder-intext">
+                <div class="section bg-brand-light">
+                    <div class="demo-highlight">
+                        <h2>Title M</h2>
+                        <p>Some lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut
+                            labore et dolore magna aliqua paragraph</p>
+                    </div>
+                </div>
+                <div class="section bg-brand-light">
+                    <div class="demo-highlight">
+                        <h2>Next M</h2>
+                        <p> Another lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut
+                            labore et dolore magna aliqua paragraph</p>
+                    </div>
+                </div>
+            </div>
+            <p> .section propreties:</p>
+            <ul>
+                <li>padding-top and -bottom: space-md (52px)</li>
+                <li>padding-left and -right: space-md (32px)</li>
+                <li>default background: white</li>
+            </ul>
+
+            <p><strong>.section-lg</strong>&mdash;used when section contains large titles (font-size-lg: 66px) and
+                banners. Inherits all prepreties from .section, but:</p>
+            <ul>
+                <li> padding-top and -bottom: space-xl (76px)</li>
+            </ul>
+            <p>Example:</p>
+            <div class="holder-intext">
+                <div class="section-lg bg-brand-light">
+                    <div class="demo-highlight">
+                        <h1>Title L</h1>
+                        <p>Some lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut
+                            labore et dolore magna aliqua paragraph</p>
+                    </div>
+                </div>
+                <div class="section-lg bg-brand-light">
+                    <div class="demo-highlight">
+                        <h1>Next L</h1>
+                        Another lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut
+                        labore et dolore magna aliqua paragraph
+                    </div>
+                </div>
+            </div>
+
+
+            <p id="holder-intext"><strong>.holder-intext</strong>&mdash;used to align top and bottom margins of
+                block
+                components or groups of block
+                components to be visually equal
+                to
+                margins between paragraphs. </p>
+
+            <ul>
+                <li> margin-top and -bottom: text-indent (44px)</li>
+            </ul>
+
+
+            <p> Example: </p>
+
+            <div class="holder-intext section bg-brand-light">
+
+                <p>Some lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut
+                    labore et dolore magna aliqua paragraph</p>
+                <div class="holder-intext demo-highlight">
+                    <div class="media bg-info-light">
+                        <div class="media-img">
+                            <div class="avatar">
+                                <img src="./img/demo-avatar.png" alt="">
+                            </div>
+                        </div>
+                        <div class="media-body">Media lorem ipsum dolor sit amet text</div>
+                    </div>
+                    <div class="media  bg-info-light">
+                        <div class="media-img">
+                            <div class="avatar">
+                                <img src="./img/demo-avatar.png" alt="">
+                            </div>
+                        </div>
+                        <div class="media-body">Media lorem ipsum dolor sit amet text</div>
+                    </div>
+                </div>
+
+
+                <p>Another lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor
+                    incididunt ut
+                    labore et dolore magna aliqua paragraph</p>
+
+                <p> Another lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor
+                    incididunt ut
+                    labore et dolore magna aliqua paragraph</p>
+            </div>
+
+
+            <p id="holder-intext"><strong>.holder-left, .holder-right</strong>&mdash;used build 2-col layout.</p>
+
+            <ul>
+                <li> .holder-left: attached to left end</li>
+                <li> .holder-right: attached to right end, margin-left{space-xs} (16px)</li>
+            </ul>
+
+            <p>Example:</p>
+
+            <div class="list-group">
+                <div class="list-group-item list-group-header">
+                    <div class="holder-left demo-highlight">
+                        Some lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                        ut labore et dolore magna aliqua paragraph
+
+                    </div>
+                    <div class="holder-right  demo-highlight">
+                        <a href="" class="btn-s btn-secondary">
+                            Action
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- type -->
+        <div class="section-lg" id="type">
+            <h1>Type</h1>
+            Default font values:
+            <ul>
+                <li>p, ul, ol {margin-bottom: text-indent-sm} (36px), except :first-child, :only-child</li>
+                <li>font-size-base: 20px</li>
+                <li>line-height-base: 36px</li>
+                <li>font-color: brand-dark</li>
+                <li>font-family: Verdana, Geneva, Tahoma, sans-serif</li>
+
+            </ul>
+            <p><a href="#">Link</a></p>
+            <p>Apart from base font, there are 2 sizes of titiles and small text</p>
+            <h1>Title L </h1>
+            <ul>
+                <li>margin-bottom: space-sm (28px)</li>
+                <li>font-size-lg: 66px</li>
+                <li>line-height-lg: 78px</li>
+            </ul>
+            <h2>Title M </h2>
+            <ul>
+                <li>margin-bottom: space-sm (28px)</li>
+                <li>font-size-md: 26px</li>
+                <li>line-height-md: 40px</li>
+
+            </ul>
+
+            <p class="text-small">Small text</p>
+            <ul>
+                <li>font-size-sm: 16px</li>
+
+            </ul>
+
+
+
+            <p>Coupon:</p>
+
+            <p class="coupon">GETCODE</p>
+
+
+        </div>
+
+
+
+        <!-- buttons -->
+        <div class="section-lg" id="btns">
+            <h1>Buttons</h1>
+            <p>By usage</p>
+            <a href="#" class="btn btn-primary">Primary</a>
+            <a href="#" class="btn btn-secondary">Secondary</a>
+            <div class="holder-intext">
+                <p>By size</p>
+                <a href="#" class="btn btn-primary">Default</a>
+                <ul>
+                    <li>height: 60px</li>
+                    <li>padding left and right: space-md (32px)</li>
+                </ul>
+            </div>
+            <div class="holder-intext">
+                <a href="#" class="btn-s btn-secondary">Small</a>
+                <ul>
+                    <li>height-sm: 44px</li>
+                    <li>padding left and right: space-xs (16px)</li>
+                </ul>
+            </div>
+
+            <p>In 1 col layout buttons are blocks (width 100%). Become inline-block when need to be placed next to
+                text
+                element in 2 col layout. For
+                example:</p>
+
+            <div class="list-group">
+                <div class="list-group-item list-group-header">
+                    <div class="holder-left">
+                        Item
+
+                    </div>
+                    <div class="holder-left">
+                        <a href="" class="btn-s btn-secondary">
+                            Action
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- hero -->
+        <div class="section-lg" id="hero">
+            <h1>Hero</h1>
+            <p><strong>.hero-img</strong>&mdash;used for hero that doesn’t contain html components. Can exist only
+                outside of main
+                container. Background&mdash;is an illustration:
+            </p>
+            <ul>
+                <li>548 × 270</li>
+                <li>1096 × 540 @2x</li>
+            </ul>
+        </div>
+        <div class="hero hero-img demo-banner-bg">
+        </div>
+        <div class="section">
+
+            <p><strong>.hero-banner</strong>&mdash;contains text, btns and other html components. Same as graphic
+                hero, can exist
+                only outside main container.
+            </p>
+            <p>.hero-banner has as a subtle background image to provide readabilty for all
+                components. It's height depends on
+                content of each specific hero, but width = main holder width.</p>
+            <ul>
+                <li>
+                    548px
+                </li>
+                <li>1096 @2x</li>
+            </ul>
+            <p>Paddings inherit from .section-lg, as .hero-banner always contains Title L (h1):</p>
+            <ul>
+                <li> padding-top and -bottom: space-xl (76px)</li>
+            </ul>
+
+        </div>
+        <div class="section-lg hero-banner demo-banner-bg" id="banner">
+            <h1>Title</h1>
+            <p>Main roal of a title&mdash;to drive attention. Below goes a pargaph to expalain the title
+                and give more context about the email.
+                May contain <a href="#">anchor links</a> to other parts of the email.
+            </p>
+            <a href="" class="btn btn-primary">Action</a>
+        </div>
+
+
+        <!-- avatar  -->
+        <div class="section-lg" id="avatar">
+            <h1>Avatar</h1>
+            <p>A circle image with fixed width and height </p>
+            <ul>
+                <li>94 × 94</li>
+                <li>188 × 188 @2x </li>
+            </ul>
+            <div class=holder-intext>
+                <div class="avatar  bg-accent-light">
+                    <img src="./img/demo-avatar.png" alt="">
+                </div>
+            </div>
+
+
+            <div class=holder-intext>
+                <p>Can be used inside other components, for example media</p>
+                <div class="media">
+                    <div class="media-img">
+                        <div class="avatar">
+                            <img src="./img/demo-avatar.png" alt="">
+                        </div>
+                    </div>
+                    <div class="media-body">Media lorem ipsum dolor sit amet text</div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- media -->
+        <div class="section-lg" id="media">
+            <h1>Media</h1>
+
+
+            <p><strong>.media-img-cover</strong>&mdash;image takes all space on the left, no padding. Area on the
+                left
+                has
+                a fixed width
+                and
+                in most cases height. If a use case requires more or less copy in "body" the height of image should
+                be
+                changed accordingly.</p>
+            <ul>
+                <li> padding: space-md (32px)</li>
+                <li> border-radius: radius (16px)</li>
+
+            </ul>
+
+            <p>Default cover image dimentions:</p>
+            <ul>
+                <li>212 × 178, border-radius: 16px </li>
+                <li>424 × 356, border-radius: 32px @2x</li>
+            </ul>
+
+            <div class=holder-intext>
+                <div class="media">
+                    <div class="media-img-cover">
+                        <img src="./img/demo-media-bg.png" alt="">
+                    </div>
+                    <div class="media-body">Media lorem ipsum dolor sit amet text</div>
+                </div>
+
+            </div>
+
+            <p> Can have contrasting backgrounds as above or same background color both on image and on body:</p>
+            <div class="holder-intext">
+                <div class="media ">
+                    <div class="media-img-cover">
+                        <img src="./img/demo-media-bg-transparent.png" alt="">
+                    </div>
+                    <div class="media-body">Media lorem ipsum dolor sit amet text</div>
+                </div>
+
+            </div>
+
+            <div class="holder-intext">
+                <p><strong>.media-img</strong>&mdash;left area has same padding as media body.
+                    Area on the left doesn't have a fixed width. Img can havy any size. </p>
+
+                <div class=holder-intext>
+                    <div class="media">
+                        <div class="media-img">
+                            <div class="avatar">
+                                <img src="./img/demo-avatar.png" alt="">
+                            </div>
+                        </div>
+                        <div class="media-body">Media lorem ipsum dolor sit amet text</div>
+                    </div>
+                </div>
+
+                <p>.media-img/.media-img-cover and .media-body are aligned to top, but text inside .media-body is
+                    aligned
+                    to center</p>
+
+                <p>Example:</p>
+
+                <div class=holder-intext>
+                    <div class="media">
+                        <div class="media-img">
+                            <div class="avatar">
+                                <img src="./img/demo-avatar.png" alt="">
+                            </div>
+                        </div>
+                        <div class="media-body">Media lorem ipsum dolor sit amet text</div>
+                    </div>
+                    <div class="media">
+                        <div class="media-img">
+                            <div class="avatar">
+                                <img src="./img/demo-avatar.png" alt="">
+                            </div>
+                        </div>
+                        <div class="media-body">Larger lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua media text</div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- list-group -->
+        <div class="section-lg" id="list-gr">
+            <h1>List groups</h1>
+
+            <p>1-col layout:</p>
+            <div class="holder-intext">
+                <div class="list-group">
+                    <div class="list-group-item list-group-header">
+
+                        list-group-header
+
+                    </div>
+                    <div class="list-group-item">
+
+                        list-group-item
+
+
+                    </div>
+                    <div class="list-group-item">
+
+                        list-group-item
+
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <p>2-cols layout:</p>
+            <div class="holder-intext">
+                <div class="list-group">
+                    <div class="list-group-item list-group-header">
+                        <div class="holder-left">
+                            list-group-header
+
+                        </div>
+                        <div class="holder-left">
+                            <a href="" class="btn-s btn-secondary">
+                                Action
+                            </a>
+                        </div>
+                    </div>
+                    <div class="list-group-item">
+                        <div class="holder-left">
+                            list-group-item
+                        </div>
+                        <div class="holder-right">
+                            Value
+                        </div>
+                    </div>
+                    <div class="list-group-item">
+                        <div class="holder-left">
+                            list-group-item
+                        </div>
+                        <div class="holder-right">
+                            Value
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <p>Can be used without header:</p>
+            <div class="holder-intext">
+                <div class="list-group">
+                    <div class="list-group-item">
+                        list-group-item
+                    </div>
+                    <div class="list-group-item">
+                        list-group-item
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <ul>
+                <li>padding-top and -bottom: space-xs (16px)</li>
+                <li>padding-left and -right: space-sm (28px)</li>
+            </ul>
+
+        </div>
+
+
+        <!-- cards -->
+        <div class="section-lg" id="cards">
+            <h1>Cards</h1>
+            <div class=holder-intext>
+                <p>Card body only:</p>
+                <ul>
+                    <li>padding-top: space-lg (52px)</li>
+                    <li>other paddings: space-md (32px)</li>
+                </ul>
+                <div class="holder-intext">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2>Title</span>
+                            </h2>
+                            <p>Body lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                paragraph.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <p>Card with footer: </p>
+                <ul>
+                    <li>footer paddings: space-md (32px)</li>
+                </ul>
+
+                <div class="holder-intext">
+
+                    <div class="card">
+                        <div class="card-body">
+                            <h2>Title</span>
+                            </h2>
+
+                            <p>Body lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                paragraph.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            Footer lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            paragraph.
+                        </div>
+                    </div>
+                </div>
+
+
+                <p>Card with action in footer: </p>
+
+                <div class="holder-intext">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2>Title</span>
+                            </h2>
+
+                            <p>Some lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                paragraph.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-secondary">Action</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+</body>
