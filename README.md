@@ -2,15 +2,13 @@
 
 Demo HTML is provided for presentation purposes. 
 
-At this time "Components" demo page contains full list of re-usable components for emails. If new components are needed, they will be also added to demo page. 
-
-Demo page contains description of components and their usage. Please inspect a component to get all propreties.
-it 
+Demo page contains description of UI components and their usage. Please inspect a component to get all propreties or check CSS. If components are added or updated, demo page will be updated accordingly
+ 
 ## Compontents
 
 * [Demo page](https://blstgr.github.io/ui/email/lib.html)
 * [Components CSS](https://github.com/blstgr/ui/tree/master/email/css)
-* [Main CSS](https://blstgr.github.io/ui/email/css/main.css) - contains header and footer css, custom elements (example: [Calendar in renewal email](https://blstgr.github.io/ui/email/7-renewal.html)) and classes need for demo page only
+* [Main CSS](https://blstgr.github.io/ui/email/css/main.css) - contains header and footer css, custom elements (example: [calendar](https://blstgr.github.io/ui/email/7-renewal.html)) and classes needed for demo page only
 
 
 
