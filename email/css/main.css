@@ -111,18 +111,6 @@ body {
     display: flex;
 }
 
-.demo-avatar {
-    font-size: 200%;
-}
-
-.demo-img-placeholder {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 176px;
-    font-size: 300%;
-    border-radius: var(--radius) 0 0 var(--radius);
-}
 
 .demo-highlight {
     border: 2px dashed var(--color-accent-dark);
@@ -130,7 +118,7 @@ body {
 }
 
 .demo-banner-bg {
-    background-image: url("./img/demo-banner-bg.png");
+    background-image: url("../img/demo-banner-bg.png");
     background-color: var(--color-info-light);
     background-size: cover;
 }
