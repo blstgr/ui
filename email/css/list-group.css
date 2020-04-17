@@ -12,7 +12,7 @@
 .list-group-item {
     display: flex;
     justify-content: space-between;
-
+    align-items: center;
     padding: var(--space-xs) var(--space-sm);
     background: var(--color-brand-light);
 }
