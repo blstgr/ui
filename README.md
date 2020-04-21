@@ -16,7 +16,7 @@ Demo HTML for all emails to date:
 1. [Welcome](https://blstgr.github.io/ui/email/1-welcome.html)
 2. [Receipt](https://blstgr.github.io/ui/email/2-receipt.html)
 3. [Password reset](https://blstgr.github.io/ui/email/3-pwd-reset.html)
-4. [Subribe to emails (confirm subsription)](https://blstgr.github.io/ui/email/4-subsription-confirm.html)
+4. [Subribe to emails (needs confirmation)](https://blstgr.github.io/ui/email/4-subsription-confirm.html)
 5. [Subribe to emails (subsription confirmed)](https://blstgr.github.io/ui/email/4-subsription-confirmed.html)
 6. [Newsletter](https://blstgr.github.io/ui/email/5-newsletter.html)
 7. [Back to cart](https://blstgr.github.io/ui/email/6-back-to-cart.html)
