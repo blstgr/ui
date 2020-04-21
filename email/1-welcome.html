@@ -156,7 +156,12 @@
                 We have implemented an <a target="_blank"
                     href="https://www.ssls.com/knowledgebase/okay-so-i-ordered-an-ssl-how-do-i-get-it-to-work-on-my-domain/">automatic
                     way to create the CSR and Private Key</a> in your browser as an alternative to generating them
-                yourself on the server.
+                yourself on the server. But please note, that Windows servers require you to <a target="_blank"
+                    href="https://www.ssls.com/knowledgebase/how-to-install-an-ssl-on-a-windows-server-when-the-csr-was-generated-elsewhere/">convert
+                    your
+                    SSL to PFX</a>, if
+                Private Key is not
+                generated on server.
 
 
             </p>
@@ -177,31 +182,12 @@
                 </div>
 
 
+
                 <p> Automatic CSR and Private Key generation is not available for <a target="_blank"
-                        href="https://www.ssls.com/domain-type/multi-domain-ssl-certificates">Multi-Domain
+                        href="https://www.ssls.com/domain-type/multi-domain-ssl-certificates">multi-domain
                         certificates</a>, so you will have to generate your
                     CSR and Private Key using the method outlined below.
                 </p>
-                <div class="holder-intext">
-                    <div class="media">
-                        <div class="media-img">
-                            <div class="avatar">
-                                <img src="./img/demo-avatar.png" alt="">
-                            </div>
-                        </div>
-                        <div class="media-body">
-                            Windows servers require you to <a target="_blank"
-                                href="https://decoder.link/converter">convert your SSL files</a> into PFX
-                            format, <a target="_blank"
-                                href="https://www.ssls.com/knowledgebase/how-to-install-an-ssl-on-a-windows-server-when-the-csr-was-generated-elsewhere/">if
-                                Private Key is not
-                                generated on server</a>.
-
-
-                        </div>
-                    </div>
-
-                </div>
 
                 <p>
                     The more traditional way to generate a CSR and Private Key is on your hosting server. <a
