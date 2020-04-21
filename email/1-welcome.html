@@ -150,12 +150,13 @@
         <!-- 3 -->
         <div class="section" id="GB">
             <h2>3. Two ways to activate SSL </h2>
+
+
             <p>
                 We have implemented an <a target="_blank"
                     href="https://www.ssls.com/knowledgebase/okay-so-i-ordered-an-ssl-how-do-i-get-it-to-work-on-my-domain/">automatic
-                    way to create the CSR and Private Key</a> in your browser, so you don’t need to
-                worry about
-                creating those files yourself on your hosting server.
+                    way to create the CSR and Private Key</a> in your browser as an alternative to generating them
+                yourself on the server.
 
 
             </p>
@@ -168,25 +169,52 @@
                             </div>
                         </div>
                         <div class="media-body">
-                            The Private Key will be saved to the “Downloads” folder on your computer by default with the
-                            name "site_com_key.zip". <a targer="_blank"
-                                href="https://www.ssls.com/knowledgebase/what-is-an-ssl-reissue-and-when-will-i-need-to-request-it/">Don't
-                                lose it, or you will need to get your SSL reissued.</a>
+                            The Private Key will be saved to the “Downloads” folder on your
+                            computer by default with the
+                            name "site_com_key.zip".</a>
                         </div>
                     </div>
-
                 </div>
+
+
                 <p> Automatic CSR and Private Key generation is not available for <a target="_blank"
                         href="https://www.ssls.com/domain-type/multi-domain-ssl-certificates">Multi-Domain
                         certificates</a>, so you will have to generate your
                     CSR and Private Key using the method outlined below.
                 </p>
+                <div class="holder-intext">
+                    <div class="media">
+                        <div class="media-img">
+                            <div class="avatar">
+                                <img src="./img/demo-avatar.png" alt="">
+                            </div>
+                        </div>
+                        <div class="media-body">
+                            Windows servers require you to <a target="_blank"
+                                href="https://decoder.link/converter">convert your SSL files</a> into PFX
+                            format, <a target="_blank"
+                                href="https://www.ssls.com/knowledgebase/how-to-install-an-ssl-on-a-windows-server-when-the-csr-was-generated-elsewhere/">if
+                                Private Key is not
+                                generated on server</a>.
+
+
+                        </div>
+                    </div>
+
+                </div>
+
                 <p>
                     The more traditional way to generate a CSR and Private Key is on your hosting server. <a
                         href="https://www.ssls.com/knowledgebase/where-can-i-find-instructions-on-how-to-generate-a-csr/">
                         Here you can find
                         the methods</a> of how to do this on the most popular servers and control panels here.
                 </p>
+
+                <p>No matter how you choose to create your Private Key, if it’s lost or stolen, you will need to <a
+                        targer="_blank"
+                        href="https://www.ssls.com/knowledgebase/what-is-an-ssl-reissue-and-when-will-i-need-to-request-it/">
+                        get your SSL reissued</a>.</p>
+            </p>
 
         </div>
 
@@ -310,9 +338,11 @@
 
             <ol>
                 <li><a target="_blank" href="https://decoder.link/matcher">
-                        SSL and private key: is it a match?</a></li>
-                <li><a target="_blank" href="https://decoder.link/">Check
-                        if SSL installed properly
+                        Check if SSL and Private Key are correct pair</a> — comes in handy in case you’ve
+                    created
+                    multiple CSRs and Private Keys before to avoid errors during installation.</li>
+                <li><a target="_blank" href="https://decoder.link/">Confirm
+                        SSL is installed properly
 
                     </a></li>
                 <li>
@@ -322,8 +352,8 @@
                     </a>
                 </li>
                 <li>
-                    <a target="_blank" href="https://decoder.link/converter">Сonvert PK + SSL
-                        + bundle to PKCS12 (for Windows and not only)</a>
+                    <a target="_blank" href="https://decoder.link/converter">Сonvert your SSL files to PFX
+                    </a> (for Windows Servers and some other applications)
                 </li>
             </ol>
 
