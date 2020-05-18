@@ -22,6 +22,10 @@ ol {
     margin: 0 0 var(--text-indent-sm);
 }
 
+p+h2 {
+    margin-top: var(--text-indent-lg);
+}
+
 .hero-banner p {
     margin: 0 0 var(--text-indent-lg);
 }

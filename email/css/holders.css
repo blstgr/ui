@@ -39,4 +39,5 @@ h2+.holder-intext,
 
 .holder-right {
     margin-left: var(--space-sm);
+    text-align: right;
 }
