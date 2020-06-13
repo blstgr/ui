@@ -1,0 +1,29 @@
+.radio {
+    position: relative;
+    display: inline-block;
+    height: var(--height-xs);
+    line-height: var(--height-xs);
+    min-width: var(--height-xs);
+    margin-right: var(--space-minx2);
+    border-color: var(--color-brand-dark);
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 50%;
+    vertical-align: text-bottom;
+    text-align: center;
+}
+
+.radio-filled.radio::after {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: var(--space-xs);
+    width: var(--space-xs);
+    background-color: var(--color-brand-dark);
+    border-radius: 50%;
+    content: "";
+
+}

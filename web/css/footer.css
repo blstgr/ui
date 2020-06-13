@@ -1,0 +1,12 @@
+footer {
+    margin-top: var(--space-minx2);
+    padding: var(--space-lg) var(--space-md);
+    background-color: var(--color-brand);
+    font-size: var(--font-size-xs);
+    font-family: 'Roboto Mono', monospace;
+    opacity: 0.98;
+}
+
+footer .svg-inline--fa {
+    font-size: var(--font-size-base);
+}

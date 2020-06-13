@@ -1,0 +1,89 @@
+/* btns */
+
+.btn,
+.btn-s {
+    height: var(--height);
+    padding: 0 var(--space-md);
+    margin: var(--space-minx2);
+    border-radius: var(--height);
+    border: 2px solid transparent;
+    line-height: var(--height);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: var(--font-size-sm);
+    color: inherit;
+    font-weight: bold;
+    text-align: center;
+    color: inherit;
+    font-family: 'Roboto Mono', monospace;
+    box-shadow: 0 var(--space-min) 0 currentColor;
+    transition: all .2s ease-out;
+}
+
+.btn-secondary:active {
+    background-color: var(--color-success);
+}
+
+
+.btn-s {
+    height: var(--height-sm);
+    line-height: var(--height-sm);
+    padding: 0 var(--space-xs);
+}
+
+.btn-xs {
+    display: inline-block;
+    height: var(--height-xs);
+    line-height: calc(var(--height-xs)-2px);
+    min-width: var(--height-xs);
+    border-radius: var(--radius-sm);
+    font-size: var(--font-size-xs);
+    vertical-align: text-bottom;
+    text-align: center;
+    border-width: 1px;
+}
+
+.btn-xs svg {
+    font-size: 10px;
+}
+
+.btn:hover,
+.btn-s:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+
+.btn:last-child,
+.btn:only-child,
+.btn-s:last-child,
+.btn-s:only-child {
+    margin-bottom: 0;
+}
+
+.btn-primary {
+    background-color: var(--color-accent-dark);
+
+    border-color: var(--color-brand-dark);
+}
+
+.btn-secondary {
+    border-color: var(--color-brand-dark);
+    background: white;
+}
+
+.btn-secondary.active {
+    background: var(--color-success);
+}
+
+
+.btn-ghost {
+    margin: 0;
+    background-color: transparent;
+    border-color: transparent;
+    box-shadow: none;
+}
+
+.btn-ghost+.btn-ghost {
+    margin-left: var(--space-xs);
+}

@@ -1,0 +1,47 @@
+/*holders*/
+
+.main {
+    margin: auto;
+    width: 95vw;
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-base);
+    color: var(--color-brand-dark);
+}
+
+.section,
+.section-lg {
+    margin-top: var(--space-xxs);
+    padding: var(--space-lg) var(--space-md);
+    background-color: white;
+    margin-top: var(--space-minx2);
+}
+
+.section-lg {
+    padding-top: var(--space-xl);
+    padding-bottom: var(--space-xl);
+}
+
+.section-flex {
+    display: flex;
+    justify-content: center;
+}
+
+.holder-intext {
+    margin: var(--text-indent) 0;
+}
+
+.holder-intext:last-child,
+.holder-intext:only-child {
+    margin-bottom: 0;
+}
+
+.holder-right {
+    margin-left: var(--space-xs);
+    text-align: right;
+}
+
+.holder-md {
+    max-width: var(--width-md);
+    margin-left: auto;
+    margin-right: auto;
+}

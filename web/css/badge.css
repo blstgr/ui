@@ -1,0 +1,19 @@
+.badge,
+.badge-succes {
+    display: inline-block;
+    height: var(--height-xs);
+    line-height: var(--height-xs);
+    min-width: var(--height-xs);
+    margin-left: var(--space-minx2);
+    padding: 0 var(--space-minx2);
+    background-color: var(--color-brand-dark);
+    color: white;
+    border-radius: var(--radius);
+    font-size: var(--font-size-xs);
+    vertical-align: text-bottom;
+    text-align: center;
+}
+
+.badge-succes {
+    background-color: var(--color-success);
+}

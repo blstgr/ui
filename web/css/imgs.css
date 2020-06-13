@@ -1,0 +1,60 @@
+/*imgs & hero*/
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.figure,
+.figure-sm {
+    height: 304px;
+    margin: var(--text-indent) 0;
+    background-color: var(--color-brand-light);
+    overflow: hidden;
+}
+
+.figure-sm {
+    height: var(--height-lg);
+    margin: var(--space-xs) 0 var(--text-indent);
+}
+
+/* .figure:last-child,
+.figure:only-child {
+    margin-bottom: 0;
+} */
+
+.hero-img {
+    margin-top: 8px;
+    width: 548px;
+    height: 270px;
+    overflow: hidden;
+}
+
+.hero-banner {
+    text-align: center;
+    margin-top: 8px;
+}
+
+
+/*avatar*/
+
+.avatar,
+.avatar-s {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 94px;
+    width: 94px;
+    min-width: 94px;
+    background-color: white;
+    border-radius: 50%;
+    text-align: center;
+    overflow: hidden;
+}
+
+
+.avatar-s {
+    height: var(--height);
+    width: var(--height);
+    min-width: var(--height);
+}

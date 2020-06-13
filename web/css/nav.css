@@ -1,0 +1,40 @@
+.logo {
+    display: block;
+    height: 48px;
+    width: 147px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-minx3) var(--space-sm);
+    margin-top: 0;
+    background-color: white;
+    font-size: var(--font-size-xs);
+    opacity: 0.98;
+
+}
+
+.navbar-brand {
+    color: var(--color-brand-dark);
+    font-size: var(--font-size-base);
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.nav-item {
+    padding: 0 var(--space-sm);
+}
+
+.nav-link {
+    color: var(--color-brand-dark);
+    text-decoration: none;
+    font-family: 'Roboto Mono', monospace;
+}

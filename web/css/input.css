@@ -1,0 +1,55 @@
+.input-s,
+.input {
+    display: block;
+    width: 100%;
+    height: var(--height);
+    padding: 0 var(--space-xs);
+    border: 2px solid var(--color-brand-dark);
+    border-radius: var(--radius);
+    font-size: var(--font-size-base);
+    font-family: 'Roboto Mono', monospace;
+}
+
+.input+.input {
+    margin-top: var(--space-xs);
+}
+
+.input+button {
+    margin-top: var(--space-xs);
+}
+
+.input-s {
+    height: var(--height-xs);
+    border-width: 1px;
+    padding: 0 var(--space-min);
+}
+
+.input-group {
+    display: flex;
+    padding: 0 var(--space-md);
+    align-items: center;
+    line-height: var(--height);
+
+}
+
+
+.input-group .input-s {
+    position: relative;
+    width: 0;
+    min-width: var(--space-sm);
+    margin-bottom: 0;
+    border-radius: 0;
+
+}
+
+.input-group-pre .btn-xs {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-right: -2px;
+}
+
+.input-group-post .btn-xs {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-left: -2px;
+}
