@@ -5,12 +5,16 @@
     margin: var(--space-sm) var(--space-xs);
     text-align: left;
     min-width: var(--width-sm);
-    max-width: 360px;
+    max-width: var(--width-sm);
     width: 100%;
-
-
-
 }
+
+@media (min-width: 1500px) {
+    .card {
+        max-width: 406px;
+    }
+}
+
 
 .card-block {
     max-width: none;

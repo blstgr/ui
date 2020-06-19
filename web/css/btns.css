@@ -87,3 +87,8 @@
 .btn-ghost+.btn-ghost {
     margin-left: var(--space-xs);
 }
+
+
+.btn-block {
+    width: 100%;
+}

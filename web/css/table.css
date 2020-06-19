@@ -39,7 +39,7 @@ th.cell-focus {
 }
 
 .cell-fixed {
-    width: var(--width-xs);
+    width: var(--width-sm);
 }
 
 .cell-fixed-col-4 {

@@ -17,70 +17,72 @@
     --color-accent: #ffc135;
     --color-accent-light: #ffe89e;
 
-    --color-gray-light: #E3E3E3;
+    --color-gray-light: #e3e3e3;
 
     --font-color: var(--color-brand-dark);
 
-
     /* typography */
 
-    --font-size-lg: calc(66/16*1rem);
-    --line-height-lg: calc(78/66);
+    --font-size-lg: calc(66 / 16 * 1rem);
+    --line-height-lg: calc(78 / 66);
+    /*1.3*/
 
-    --font-size-md: calc(26/16*1rem);
-    --line-height-md: calc(40/26);
+    --font-size-md: calc(26 / 16 * 1rem);
+    --line-height-md: calc(40 / 26);
+    /*1.5*/
 
-    --font-size-base: calc(20/16*1rem);
-    --line-height-base: calc(36/20);
+    --font-size-base: calc(20 / 16 * 1rem);
+    --line-height-base: calc(36 / 20);
+    /*1.8*/
 
-    --font-size-sm: calc(16/16*1rem);
-    --font-size-xs: calc(14/16*1rem);
+    --font-size-sm: calc(16 / 16 * 1rem);
+    --line-height-sm: calc(36 / 16);
 
-
+    --font-size-xs: calc(14 / 16 * 1rem);
+    /*0.875*/
 
     /* paddings & margins */
 
-    --space-xl: calc(76/16*1rem);
-    --space-lg: calc(52/16*1rem);
-    --space-md: calc(32/16*1rem);
-    --space-sm: calc(28/16*1rem);
-    --space-xs: calc(16/16*1rem);
+    --space-xl: calc(76 / 16 * 1rem);
+    --space-lg: calc(52 / 16 * 1rem);
+    --space-md: calc(32 / 16 * 1rem);
+    --space-sm: calc(28 / 16 * 1rem);
+    --space-xs: calc(16 / 16 * 1rem);
 
-    --space-minx3: calc(12/16*1rem);
-    --space-minx2: calc(8/16*1rem);
-    --space-min: calc(4/16*1rem);
-
-
+    --space-minx3: calc(12 / 16 * 1rem);
+    --space-minx2: calc(8 / 16 * 1rem);
+    --space-min: calc(4 / 16 * 1rem);
 
     /* for paragraph margins */
 
-    --text-indent-lg: calc(48/16*1rem);
-    --text-indent: calc(44/16*1rem);
-    --text-indent-sm: calc(36/16*1rem);
-
-
+    --text-indent-lg: calc(48 / 16 * 1rem);
+    --text-indent: calc(44 / 16 * 1rem);
+    --text-indent-sm: calc(36 / 16 * 1rem);
 
     /*border-radius*/
 
-    --radius: calc(16/16*1rem);
-    --radius-sm: calc(4/16*1rem);
-
-
+    --radius: calc(16 / 16 * 1rem);
+    --radius-sm: calc(4 / 16 * 1rem);
 
     /*dimentions*/
 
-    --height-lg: calc(188/16*1rem);
-    --height: calc(60/16*1rem);
-    --height-sm: calc(44/16*1rem);
-    --height-xs: calc(24/16*1rem);
+    --height-lg: calc(188 / 16 * 1rem);
+    --height: calc(60 / 16 * 1rem);
+    --height-sm: calc(44 / 16 * 1rem);
+    --height-xs: calc(24 / 16 * 1rem);
 
-
-    --width-md: calc(690/16*1rem);
-    --width-sm: calc(340/16*1rem);
-    --width-xs: calc(240/16*1rem);
-
+    --width-md: calc(690 / 16 * 1rem);
+    --width-sm: calc(340 / 16 * 1rem);
+    --width-xs: calc(240 / 16 * 1rem);
 
     --tablet: 1024px;
-    --descktop: 1200px;
+    --desktop: 1500px;
+}
 
+
+@media (min-width: 1300px) {
+    :root {
+        --font-size-lg: calc(78 / 16 * 1rem);
+        --font-size-md: calc(28 / 16 * 1rem);
+    }
 }
