@@ -21,3 +21,15 @@ Demo HTML for all emails to date:
 6. [Newsletter](https://blstgr.github.io/ui/email/5-newsletter.html)
 7. [Back to cart](https://blstgr.github.io/ui/email/6-back-to-cart.html)
 8. [Renewal](https://blstgr.github.io/ui/email/7-renewal.html)
+
+
+tdtr
+1. [Welcome](https://blstgr.github.io/ui/email/tdtr/1-welcome.html)
+2. [Receipt](https://blstgr.github.io/ui/email/tdtr/2-receipt.html)
+3. [Password reset](https://blstgr.github.io/ui/email/tdtr/3-pwd-reset.html)
+4. [Subscribe to emails (needs confirmation)](https://blstgr.github.io/ui/email/tdtr/4-subsription-confirm.html)
+5. [Subscribe to emails (subsription confirmed)](https://blstgr.github.io/ui/email/tdtr/4-subsription-confirmed.html)
+6. [Newsletter](https://blstgr.github.io/ui/email/tdtr/5-newsletter.html)
+6. [Newsletter](https://blstgr.github.io/ui/email/tdtr/5-newsletter_no_img.html)
+7. [Back to cart](https://blstgr.github.io/ui/email/tdtr/6-back-to-cart.html)
+8. [Renewal](https://blstgr.github.io/ui/email/tdtr/7-renewal.html)
