@@ -30,6 +30,6 @@ tdtr
 4. [Subscribe to emails (needs confirmation)](https://blstgr.github.io/ui/email/tdtr/4-subsription-confirm.html)
 5. [Subscribe to emails (subsription confirmed)](https://blstgr.github.io/ui/email/tdtr/4-subsription-confirmed.html)
 6. [Newsletter](https://blstgr.github.io/ui/email/tdtr/5-newsletter.html)
-6. [Newsletter](https://blstgr.github.io/ui/email/tdtr/5-newsletter_no_img.html)
+6. [Newsletter, no images](https://blstgr.github.io/ui/email/tdtr/5-newsletter_no_img.html)
 7. [Back to cart](https://blstgr.github.io/ui/email/tdtr/6-back-to-cart.html)
 8. [Renewal](https://blstgr.github.io/ui/email/tdtr/7-renewal.html)
