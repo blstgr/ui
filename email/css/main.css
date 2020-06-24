@@ -116,6 +116,11 @@ body {
     background-size: cover;
 }
 
+.b2c-bg {
+    background-image: url("../img/back2cart/b2c_bg.png");
+    background-size: cover;
+}
+
 /*bgs mods*/
 
 .bg-brand-dark {
@@ -148,6 +153,11 @@ body {
 
 .bg-info {
     background-color: var(--color-info);
+    color: white;
+}
+
+.bg-info .coupon {
+    border-bottom-color: white;
 }
 
 .bg-info-light {
