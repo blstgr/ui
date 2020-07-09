@@ -117,7 +117,12 @@ body {
 }
 
 .b2c-bg {
-    background-image: url("../img/back2cart/b2c_bg.png");
+    background-image: url("../img/system/b2c.png");
+    background-size: cover;
+}
+
+.renewal-bg {
+    background-image: url("../img/system/renewal_bg.png");
     background-size: cover;
 }
 
