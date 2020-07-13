@@ -31,5 +31,5 @@ tdtr
 5. [Subscribe to emails (subsription confirmed)](https://blstgr.github.io/ui/tdtr/subsription-confirmed.html)
 6. [Newsletter](https://blstgr.github.io/ui/tdtr/newsletter.html)
 6. [Newsletter, no images](https://blstgr.github.io/ui/tdtr/newsletter_no_img.html)
-7. [Back to cart](https://blstgr.github.io/ui/tdtr/back-to-cart.html)
+7. [Back to cart](https://blstgr.github.io/ui/tdtr/back_to_cart.html)
 <!-- 8. [Renewal](https://blstgr.github.io/ui/tdtr/renewal.html) -->
