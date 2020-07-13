@@ -117,7 +117,8 @@ body {
 }
 
 .b2c-bg {
-    background-image: url("../img/system/b2c.png");
+    background-image: url("../img/back2cart/b2c-bg.png");
+    background-color: var(--color-info-light);
     background-size: cover;
 }
 
