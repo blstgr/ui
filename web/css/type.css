@@ -66,6 +66,17 @@ h2:last-child,
     margin-bottom: 0;
 }
 
+.title-xs {
+    text-transform: uppercase;
+    font-size: var(--font-size-sm);
+    font-weight: 900;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.text-muted {
+    opacity: 0.5;
+}
+
 .link {
     position: relative;
     color: inherit;

@@ -2,11 +2,16 @@
 
 .card {
     border-radius: var(--radius);
-    margin: var(--space-sm) var(--space-xs);
+    /* margin: var(--space-sm) var(--space-xs); */
     text-align: left;
-    min-width: var(--width-sm);
-    max-width: var(--width-sm);
-    width: 100%;
+    /* min-width: var(--width-sm); */
+    /* max-width: var(--width-sm); */
+    /* width: 100%; */
+    margin-bottom: var(--space-sm);
+}
+
+.card:last-child {
+    margin-bottom: 0;
 }
 
 @media (min-width: 1500px) {
