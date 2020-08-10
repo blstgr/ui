@@ -44,6 +44,11 @@
     margin-right: var(--space-min) !important;
 }
 
+.mr-minx2 {
+    margin-right: var(--space-minx2) !important;
+}
+
+
 .mb-md {
     margin-bottom: var(--space-md) !important;
 }
@@ -139,4 +144,12 @@
 
 .row {
     position: relative;
+}
+
+.muted {
+    opacity: 0.5;
+}
+
+.twitter-tweet.twitter-tweet-rendered {
+    margin-bottom: 0px !important;
 }

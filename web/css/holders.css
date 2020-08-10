@@ -40,6 +40,12 @@
     text-align: right;
 }
 
+.holder-sm {
+    max-width: var(--width-sm);
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .holder-md {
     max-width: var(--width-md);
     margin-left: auto;

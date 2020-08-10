@@ -10,6 +10,13 @@
     font-family: 'Roboto Mono', monospace;
 }
 
+.input:focus,
+.input-s:focus {
+    outline: var(--focus);
+    transition: none;
+}
+
+
 .input+.input {
     margin-top: var(--space-xs);
 }
@@ -26,7 +33,7 @@
 
 .input-group {
     display: flex;
-    padding: 0 var(--space-md);
+    align-items: center;
     align-items: center;
     line-height: var(--height);
 
@@ -52,4 +59,10 @@
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     margin-left: -2px;
+}
+
+.input-group-pre .btn,
+.input-group-post .btn {
+    margin-top: 0;
+    margin-bottom: 0;
 }

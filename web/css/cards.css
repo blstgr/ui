@@ -4,27 +4,31 @@
     border-radius: var(--radius);
     /* margin: var(--space-sm) var(--space-xs); */
     text-align: left;
-    /* min-width: var(--width-sm); */
-    /* max-width: var(--width-sm); */
-    /* width: 100%; */
+    min-width: var(--width-sm);
+    max-width: var(--width-sm);
+    width: 100%;
     margin-bottom: var(--space-sm);
 }
 
-.card:last-child {
-    margin-bottom: 0;
-}
 
 @media (min-width: 1500px) {
     .card {
         max-width: 406px;
+        min-width: auto;
+        width: auto;
     }
+}
+
+
+
+.card:last-child {
+    margin-bottom: 0;
 }
 
 
 .card-block {
     max-width: none;
 }
-
 
 .card:last-child,
 .card:only-child {

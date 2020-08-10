@@ -64,6 +64,8 @@
     --radius: calc(16 / 16 * 1rem);
     --radius-sm: calc(4 / 16 * 1rem);
 
+
+
     /*dimentions*/
 
     --height-lg: calc(188 / 16 * 1rem);
@@ -72,12 +74,21 @@
     --height-xs: calc(24 / 16 * 1rem);
 
     --width-md: calc(690 / 16 * 1rem);
-    --width-sm: calc(340 / 16 * 1rem);
+    --width-sm: calc(345 / 16 * 1rem);
     --width-xs: calc(240 / 16 * 1rem);
 
     --tablet: 1024px;
     --desktop: 1500px;
+
+    /*focus*/
+
+    --focus: 2px dashed var(--color-brand-dark);
+    --focus-offset: var(--space-min);
+
 }
+
+
+
 
 
 @media (min-width: 1300px) {

@@ -11,18 +11,23 @@
     text-decoration: none;
     text-transform: uppercase;
     font-size: var(--font-size-sm);
-    color: inherit;
     font-weight: bold;
     text-align: center;
-    color: inherit;
+    color: var(--color-brand-dark);
     font-family: 'Roboto Mono', monospace;
     box-shadow: 0 var(--space-min) 0 currentColor;
     transition: all .2s ease-out;
 }
 
-.btn-secondary:active {
-    background-color: var(--color-success);
+.btn:focus,
+.btn-s:focus {
+    outline: var(--focus);
+    transition: none;
+
 }
+
+
+
 
 
 .btn-s {
@@ -72,10 +77,10 @@
     background: white;
 }
 
+
 .btn-secondary.active {
     background: var(--color-success);
 }
-
 
 .btn-ghost {
     margin: 0;
@@ -87,6 +92,11 @@
 .btn-ghost+.btn-ghost {
     margin-left: var(--space-xs);
 }
+
+
+
+
+
 
 
 .btn-block {

@@ -41,6 +41,12 @@ a.h2:hover,
     cursor: pointer;
 }
 
+a.h2:focus,
+.link:focus {
+    outline: var(--focus);
+    transition: none;
+}
+
 p,
 ul,
 ol {
@@ -73,9 +79,7 @@ h2:last-child,
     font-family: 'Roboto Mono', monospace;
 }
 
-.text-muted {
-    opacity: 0.5;
-}
+
 
 .link {
     position: relative;

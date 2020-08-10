@@ -7,8 +7,6 @@ let magicGrid = new MagicGrid({
 
 });
 
-
-
 magicGrid.listen();
 
 
@@ -22,8 +20,6 @@ let faqMagicGrid = new MagicGrid({
 
 });
 
-
-
 faqMagicGrid.listen();
 
 
@@ -36,7 +32,5 @@ let revMagicGrid = new MagicGrid({
     center: true
 
 });
-
-
 
 revMagicGrid.listen();
