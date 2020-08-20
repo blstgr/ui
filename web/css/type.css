@@ -130,3 +130,13 @@ ul.list-unstyled {
 .list-unstyled li {
     list-style: none;
 }
+
+
+.icon-xl {
+    font-size: var(--font-size-lg);
+}
+
+.marker {
+    position: absolute;
+    bottom: calc(-1*var(--space-minx2));
+}

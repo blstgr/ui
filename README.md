@@ -26,10 +26,10 @@ Demo HTML for all emails to date:
 tdtr
 1. [Welcome](https://blstgr.github.io/ui/tdtr/welcome.html)
 2. [Receipt](https://blstgr.github.io/ui/tdtr/receipt.html)
-3. [Password reset](https://blstgr.github.io/ui/tdtr/pwd-reset.html)
-4. [Subscribe to emails (needs confirmation)](https://blstgr.github.io/ui/tdtr/subsription-confirm.html)
-5. [Subscribe to emails (subsription confirmed)](https://blstgr.github.io/ui/tdtr/subsription-confirmed.html)
+3. [Password reset](https://blstgr.github.io/ui/tdtr/reset_pwd.html)
+4. [Subscribe to emails (needs confirmation)](https://blstgr.github.io/ui/tdtr/subscr_confirm.html)
+5. [Subscribe to emails (subsription confirmed)](https://blstgr.github.io/ui/tdtr/subscribed.html)
 6. [Newsletter](https://blstgr.github.io/ui/tdtr/newsletter.html)
 6. [Newsletter, no images](https://blstgr.github.io/ui/tdtr/newsletter_no_img.html)
 7. [Back to cart](https://blstgr.github.io/ui/tdtr/back_to_cart.html)
-<!-- 8. [Renewal](https://blstgr.github.io/ui/tdtr/renewal.html) -->
+8. [Renewal](https://blstgr.github.io/ui/tdtr/renewal.html)

@@ -40,6 +40,10 @@
     text-align: right;
 }
 
+.holder-left {
+    text-align: left;
+}
+
 .holder-sm {
     max-width: var(--width-sm);
     margin-left: auto;
@@ -61,4 +65,10 @@
 .holder-cta {
     margin: var(--text-indent) auto 0;
     max-width: var(--width-xs);
+}
+
+.holder-fixed {
+    position: fixed;
+    height: 82vh;
+    z-index: 9;
 }

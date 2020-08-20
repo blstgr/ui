@@ -12,6 +12,8 @@
     font-size: var(--font-size-xs);
     vertical-align: text-bottom;
     text-align: center;
+    vertical-align: baseline;
+    font-style: normal;
 }
 
 .badge-succes {

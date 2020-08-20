@@ -17,7 +17,13 @@
 }
 
 
-.input+.input {
+.input+.input,
+.input+.row,
+.row+.input {
+    margin-top: var(--space-xs);
+}
+
+.form-group .row+.row {
     margin-top: var(--space-xs);
 }
 
@@ -28,31 +34,49 @@
 .input-s {
     height: var(--height-xs);
     border-width: 1px;
-    padding: 0 var(--space-min);
+    padding: var(--space-min);
+    border-radius: var(--space-min);
+    font-size: var(--font-size-xs);
 }
 
 .input-group {
     display: flex;
-    align-items: center;
-    align-items: center;
-    line-height: var(--height);
-
 }
 
 
 .input-group .input-s {
     position: relative;
-    width: 0;
-    min-width: var(--space-sm);
     margin-bottom: 0;
-    border-radius: 0;
 
+}
+
+.input-s.fixed {
+    width: var(--space-md);
+}
+
+.input.fixed {
+    width: calc(2*var(--space-xl));
 }
 
 .input-group-pre .btn-xs {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
     margin-right: -2px;
+}
+
+.input-group-pre+.input-s {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.input-group .input-s {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.input-group .input-s:last-child {
+    border-top-right-radius: var(--space-min);
+    border-bottom-right-radius: var(--space-min);
 }
 
 .input-group-post .btn-xs {
@@ -65,4 +89,9 @@
 .input-group-post .btn {
     margin-top: 0;
     margin-bottom: 0;
+}
+
+
+.input-group-label {
+    margin-bottom: var(--space-minx2);
 }

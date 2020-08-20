@@ -11,6 +11,8 @@
 .tab-active {
     position: relative;
     top: 2px;
+    display: flex;
+    align-items: center;
     height: var(--height);
     line-height: var(--height);
     padding: 0 var(--space-xs);
@@ -33,6 +35,10 @@
 
 .tab {
     z-index: 1;
+}
+
+.tab img {
+    width: 20px;
 }
 
 .tab:hover {
