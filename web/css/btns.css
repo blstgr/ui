@@ -28,7 +28,6 @@
 }
 
 
-
 .btn-s {
     height: var(--height-sm);
     line-height: var(--height-sm);
@@ -82,7 +81,6 @@
 }
 
 .btn-ghost {
-    margin: 0;
     border-radius: 0;
     background-color: transparent;
     border-color: transparent;
