@@ -33,3 +33,4 @@ tdtr
 7. [Newsletter, no images](https://blstgr.github.io/ui/tdtr/newsletter_no_img.html)
 8. [Back to cart](https://blstgr.github.io/ui/tdtr/back_to_cart.html)
 9. [Renewal](https://blstgr.github.io/ui/tdtr/renewal.html)
+10. [Renewal](https://blstgr.github.io/ui/tdtr/reactivate.html)
