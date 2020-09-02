@@ -9,11 +9,16 @@
 }
 
 .section,
-.section-lg {
+.section-lg,
+.section-sm {
     margin-top: var(--space-xxs);
     padding: var(--space-lg) var(--space-md);
     background-color: white;
     margin-top: var(--space-minx2);
+}
+
+.section-sm {
+    padding: var(--space-md);
 }
 
 .section-lg {
@@ -40,6 +45,11 @@
     text-align: right;
 }
 
+.holder-center {
+    margin-left: var(--space-xs);
+
+}
+
 .holder-left {
     text-align: left;
 }
@@ -51,7 +61,7 @@
 }
 
 .holder-md {
-    max-width: var(--width-md);
+    max-width: var(--width-lg);
     margin-left: auto;
     margin-right: auto;
 }
@@ -62,10 +72,34 @@
     margin-right: auto;
 }
 
-.holder-cta {
-    margin: var(--text-indent) auto 0;
+.holder-cta,
+.holder-cta-v {
+    display: flex;
+    margin-top: var(--text-indent);
+    max-width: var(--width-md);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.holder-cta-v {
+    flex-direction: column;
     max-width: var(--width-xs);
 }
+
+.holder-cta button,
+.holder-cta-v button {
+    margin: 0;
+    flex-grow: 1;
+}
+
+.holder-cta button+button {
+    margin-left: var(--space-sm);
+}
+
+.holder-cta-v button+button {
+    margin-top: var(--space-minx3);
+}
+
 
 .holder-fixed {
     position: fixed;

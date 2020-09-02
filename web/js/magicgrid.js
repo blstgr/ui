@@ -1,7 +1,7 @@
 let magicGrid = new MagicGrid({
     container: '.m-grid',
     animate: false,
-    gutter: 28,
+    gutter: 32,
     static: true,
     center: true
 
@@ -14,7 +14,7 @@ magicGrid.listen();
 let faqMagicGrid = new MagicGrid({
     container: '.m-grid-faq',
     animate: false,
-    gutter: 28,
+    gutter: 32,
     static: true,
     center: true
 
@@ -27,7 +27,7 @@ faqMagicGrid.listen();
 let revMagicGrid = new MagicGrid({
     container: '.m-grid-rev',
     animate: false,
-    gutter: 28,
+    gutter: 32,
     static: true,
     center: true
 

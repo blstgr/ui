@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Step3</title>
+    <title>KB home</title>
     <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap-grid.css" rel="stylesheet">
@@ -34,8 +34,8 @@
                 <li class="nav-item">
                     <a href="#" class="nav-link">Blog</a>
                 </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Help</a>
+                <li class="nav-item active">
+                    <a href="#" class="nav-link ">Help</a>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">About</a>
@@ -51,8 +51,8 @@
                     <a href="#" class="nav-link"><i class="far fa-heart mr-minx2"></i> My SSL</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
-                        <i class="badge mr-minx2">J</i>jsp <i class="fas fa-caret-down ml-min"></i></a>
+                    <a href="#" class="nav-link"><i class="far fa-user-circle mr-minx2"></i> jsp <i
+                            class="fas fa-caret-down ml-min"></i></a>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">
@@ -61,69 +61,82 @@
                 </li>
             </ul>
         </header>
-        <div class="hellobar">
-            jsp:~ positivessl@jacksparrow.com$ activating ssl... step 3 of 4
-        </div>
 
-        <div class="section-lg mh-vh">
-            <div class="row negative-mlr-md">
-                <div class="col-md-8 text-c plr-md">
-                    <h1>Company contact
-                    </h1>
-
-                    <div class="holder-intext holder-md">
-                        <form action="" class="form-group">
-                            <input type="text" class="input" placeholder="Company name">
-                            <input type="text" class="input" placeholder="Address">
-                            <input type="text" class="input" placeholder="Phone">
-                            <input type="text" class="input" placeholder="Company rep">
-                            <input type="text" class="input" placeholder="Company rep email">
-                            <div class="holder-cta-v">
-                                <button class="btn btn-secondary">Onwards</button>
-                            </div>
-                        </form>
-
+        <!-- banner -->
+        <div class="section-sm bg-brand-light">
+            <div class="holder-lg">
+                <div class="row jc-sbtwn align-items-center">
+                    <div class="col-4">
+                        <h2>Help</h2>
                     </div>
-                </div>
-                <div class="col-md-4 plr-md">
-                    <div class="card">
-                        <div class="card-body section-flex jc-sbtwn">
-
-                            <div class="holder-left">
-                                <h2> EV validation guide</h2>
-                            </div>
-                            <div class="holder-right">
-                                <i class="fas fa-caret-right"></i>
-                            </div>
-                        </div>
+                    <div class="col-3">
+                        <button class="btn-s btn-secondary">Submit ticket </button>
                     </div>
-                    <div class="card">
-                        <div class="card-body section-flex jc-sbtwn">
-
-                            <div class="holder-left">
-                                <h2>Who is company rep?</h2>
-                            </div>
-                            <div class="holder-right">
-                                <i class="fas fa-caret-right"></i>
-                            </div>
-                        </div>
+                    <div class="col-5">
+                        <input type="text" class="input" placeholder="Search">
                     </div>
 
-                    <div class="card">
-                        <div class="card-body section-flex jc-sbtwn">
-
-                            <div class="holder-left">
-                                <h2>How to get EV issued fast?</h2>
-                            </div>
-                            <div class="holder-right">
-                                <i class="fas fa-caret-right"></i>
-                            </div>
-                        </div>
-                    </div>
 
                 </div>
             </div>
+        </div>
+        <div class="section">
+            <div class="holder-lg">
+                <div class="row negative-mlr-md">
+                    <div class="col-md-4 plr-md">
+                        <p class="text-mono">Get started:</p>
+                        <a href="" class="link title-xs">How 3&ndash;5 year SSL work</a><br>
+                        <a href="" class="link title-xs">Where do I enter my domain?</a><br>
+                        <a href="" class="link title-xs">What is reissue?</a><br>
+                        <a href="" class="link title-xs">What if my Private Key is compromised</a><br>
+                        <a href="" class="link title-xs">General questions</a>
 
+
+                        <div class="holder-intext">
+                            <p class="text-mono">Installation instructions:</p>
+                            <a href="" class="link title-xs">cPanel</a><br>
+                            <a href="" class="link title-xs">WHM</a><br>
+                            <a href="" class="link title-xs">Direct Admin</a><br>
+                            <a href="" class="link title-xs">Vesta cPanel</a><br>
+                            <a href="" class="link title-xs">Webmin</a><br>
+                            <a href="" class="link title-xs">Unix based servers</a><br>
+                            <a href="" class="link title-xs">Windows servers</a><br>
+                            <a href="" class="link title-xs">Java servers</a>
+                        </div>
+
+
+                    </div>
+                    <div class="col-md-4 plr-md">
+                        <p class="text-mono">Troubleshooting errors:</p>
+                        <a href="" class="link title-xs">Create CSR and Private key in-browser</a><br>
+                        <a href="" class="link title-xs">Use CSR created on server</a><br>
+
+                        <div class="holder-intext">
+                            <p class="text-mono">Billing & renewal:</p>
+                            <a href="" class="link title-xs">How can I receive refund</a><br>
+                            <a href="" class="link title-xs">How to renew an SSL certificate</a><br>
+
+                        </div>
+
+
+                    </div>
+                    <div class="col-md-4 plr-md">
+                        <p class="text-mono">CSR generation instructions:</p>
+                        <a href="" class="link title-xs">Create CSR and Private key in-browser</a><br>
+                        <a href="" class="link title-xs">Use CSR created on server</a><br>
+
+                        <div class="holder-intext">
+                            <p class="text-mono">Site seals:</p>
+                            <a href="" class="link title-xs">What it is</a><br>
+                            <a href="" class="link title-xs">How to install</a><br>
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
         </div>
 
 

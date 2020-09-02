@@ -1,0 +1,13 @@
+.alert,
+.alert-info {
+    padding: var(--space-xs);
+    margin-bottom: var(--space-sm);
+    border-radius: var(--radius);
+    background-color: var(--color-brand);
+
+
+}
+
+.alert-info {
+    background-color: var(--color-info);
+}

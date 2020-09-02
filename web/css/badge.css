@@ -1,5 +1,7 @@
 .badge,
-.badge-succes {
+.badge-success,
+.badge-alert,
+.badge-info {
     display: inline-block;
     height: var(--height-xs);
     line-height: var(--height-xs);
@@ -14,8 +16,17 @@
     text-align: center;
     vertical-align: baseline;
     font-style: normal;
+    font-family: 'Roboto Mono', monospace;
 }
 
-.badge-succes {
+.badge-success {
     background-color: var(--color-success);
+}
+
+.badge-alert {
+    background-color: var(--color-accent);
+}
+
+.badge-info {
+    background-color: var(--color-info);
 }

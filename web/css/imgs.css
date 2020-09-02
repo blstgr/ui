@@ -3,10 +3,12 @@
 img {
     width: 100%;
     display: block;
+    contain: content;
 }
 
 .figure,
-.figure-sm {
+.figure-sm,
+.figure-lg {
     height: calc(var(--width-sm) * 1);
     margin: var(--text-indent) 0;
     background-color: var(--color-brand-light);
@@ -18,6 +20,10 @@ img {
     margin: var(--space-xs) 0 var(--text-indent);
 }
 
+.figure-lg {
+    width: var(--width-lg);
+    height: var(--width-md);
+}
 
 
 .hero-img {
@@ -54,4 +60,8 @@ img {
     height: var(--height);
     width: var(--height);
     min-width: var(--height);
+}
+
+.img-inverted {
+    filter: brightness(0) invert(1);
 }

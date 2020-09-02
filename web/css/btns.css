@@ -7,7 +7,7 @@
     margin: var(--space-minx2);
     border-radius: var(--height);
     border: 2px solid transparent;
-    line-height: var(--height);
+    line-height: var(--height)-2;
     text-decoration: none;
     text-transform: uppercase;
     font-size: var(--font-size-sm);
@@ -30,7 +30,7 @@
 
 .btn-s {
     height: var(--height-sm);
-    line-height: var(--height-sm);
+    line-height: var(--height-sm)-2;
     padding: 0 var(--space-xs);
 }
 
@@ -40,10 +40,11 @@
     line-height: calc(var(--height-xs)-2px);
     min-width: var(--height-xs);
     border-radius: var(--radius-sm);
-    font-size: var(--font-size-xs);
+    font-size: var(--font-size-sm);
     vertical-align: text-bottom;
     text-align: center;
     border-width: 1px;
+    font-family: 'Roboto Mono', monospace;
 }
 
 .btn-xs svg {
@@ -100,4 +101,12 @@
 
 .btn-close {
     margin-right: calc(-1*var(--space-sm));
+}
+
+.btn img {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    top: -3px;
 }

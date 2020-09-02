@@ -42,6 +42,10 @@
 
 }
 
+.nav-item.active {
+    border-bottom: 2px solid currentColor;
+}
+
 .nav-item a:focus {
     outline: var(--focus);
     transition: none;

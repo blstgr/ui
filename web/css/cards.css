@@ -2,22 +2,30 @@
 
 .card {
     width: 100%;
-    min-width: var(--width-sm);
-    max-width: var(--width-sm);
     margin-bottom: var(--space-sm);
-    border-radius: var(--radius);
     text-align: left;
-
 }
 
+[class^="m-grid"] .card {
+    min-width: var(--width-sm);
+    max-width: var(--width-sm);
+}
+
+.m-grid-rev .card {
+    min-width: var(--width-sm);
+    max-width: var(--width-sm);
+}
 
 @media (min-width: 1500px) {
-    .card {
+
+    .m-grid-rev .card,
+    [class^="m-grid"] .card {
         width: auto;
         max-width: 406px;
         min-width: auto;
     }
 }
+
 
 
 
@@ -42,6 +50,7 @@
     background-color: var(--color-brand);
     border-bottom: 1px solid var(--color-brand);
     line-height: var(--line-height-base);
+    overflow: hidden;
 }
 
 .card-body:only-child {
@@ -51,9 +60,14 @@
 
 .card-footer {
     padding: var(--space-sm);
+    background-color: var(--color-brand-light);
     border-bottom-left-radius: var(--radius);
     border-bottom-right-radius: var(--radius);
-    background-color: var(--color-brand-light);
+}
+
+.card-footer::last-child {
+    border-bottom-left-radius: var(--radius);
+    border-bottom-right-radius: var(--radius);
 }
 
 .card-footer .btn {

@@ -19,7 +19,11 @@
 
 .input+.input,
 .input+.row,
-.row+.input {
+.row+.input,
+.row+.input-group,
+.input-group+.row,
+.input+.input-group,
+.input-group+.input {
     margin-top: var(--space-xs);
 }
 
@@ -36,11 +40,12 @@
     border-width: 1px;
     padding: var(--space-min);
     border-radius: var(--space-min);
-    font-size: var(--font-size-xs);
+    font-size: var(--font-size-sm);
 }
 
 .input-group {
     display: flex;
+    line-height: 1;
 }
 
 
@@ -64,28 +69,41 @@
     margin-right: -2px;
 }
 
-.input-group-pre+.input-s {
+.input-group-pre+.input-s,
+.input-group-pre+.input {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
 }
 
-.input-group .input-s {
+.input-group .input-s,
+.input-group .input {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
 }
 
-.input-group .input-s:last-child {
+.input-group .input-s:last-child,
+.input-group .input:last-child {
     border-top-right-radius: var(--space-min);
     border-bottom-right-radius: var(--space-min);
 }
 
-.input-group-post .btn-xs {
+.input-group-post .btn-xs,
+.input-group-post .btn {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     margin-left: -2px;
+    margin-right: 0;
+    box-shadow: none;
 }
 
-.input-group-pre .btn,
+.input-group-post .btn {
+    border-top-right-radius: var(--radius);
+    border-bottom-right-radius: var(--radius);
+    margin-left: -2px;
+}
+
+
+.input-group-pre .btn-xs,
 .input-group-post .btn {
     margin-top: 0;
     margin-bottom: 0;
@@ -94,4 +112,5 @@
 
 .input-group-label {
     margin-bottom: var(--space-minx2);
+    line-height: 1;
 }

@@ -1,9 +1,7 @@
 .cart-open {
     position: fixed;
-
     width: 100%;
     height: 100vh;
-
     z-index: 1;
 
 }
@@ -14,15 +12,21 @@
     flex-direction: column;
     justify-content: space-between;
     right: 0;
-    width: 812px;
+    max-width: 70vw;
     height: 100vh;
     justify-content: space-between;
     box-shadow: var(--shadow);
     backdrop-filter: blur(10px);
     background-color: rgb(255 255 255 / 0.76);
     box-shadow: var(--shadow-raised);
-    line-height: var(--line-height-base);
 
+}
+
+
+@media (min-width: 1500px) {
+    .cart {
+        max-width: 48vw;
+    }
 }
 
 

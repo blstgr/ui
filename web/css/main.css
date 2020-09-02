@@ -17,6 +17,8 @@
 @import url("radio.css");
 @import url("tabs.css");
 @import url("cart.css");
+@import url("alerts.css");
+@import url("tooltip.css");
 
 * {
     box-sizing: border-box;
@@ -26,6 +28,7 @@ body {
     background-color: var(--color-brand-light);
     margin: 0;
     font-family: "Lato", sans-serif;
+    line-height: var(--line-height-base);
 }
 
 /*header&footer*/
@@ -101,18 +104,19 @@ body {
 
 .video {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
     height: var(--width-sm);
-    width: var(--width-md);
-    background-color: var(--color-brand-light);
+
+
 }
 
 @media (min-width: 1200px) {
     .video {
         height: calc(var(--width-xs) * 2);
-        width: 880px;
+
     }
 }
 
@@ -122,6 +126,7 @@ body {
     justify-content: center;
     height: var(--height);
     width: var(--height);
+    margin: 0 auto;
     background-color: var(--color-brand-dark);
     border-radius: 50%;
     color: white;

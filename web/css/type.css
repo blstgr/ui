@@ -53,6 +53,11 @@ ol {
     margin: 0 0 var(--text-indent-sm);
 }
 
+ul,
+ol {
+    padding: 0;
+}
+
 p+h2 {
     margin-top: var(--text-indent-lg);
 }
