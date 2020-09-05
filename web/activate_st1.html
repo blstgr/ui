@@ -5,7 +5,7 @@
     <title>Step1</title>
     <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap-grid.css" rel="stylesheet">
+    <link href="./css/grid.css" rel="stylesheet">
     <link href="./css/main.css" rel="stylesheet">
     <script defer="defer" src="https://use.fontawesome.com/releases/v5.9.0/js/all.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">
@@ -70,25 +70,35 @@
         <div class="section-lg mh-vh text-c">
 
 
-            <h1>Enter your domain
-            </h1>
+            <div class="holder-lg">
+                <h1>Enter your domain
+                </h1>
 
-            <p class="holder-md">
-                If you need to secure unlimited subdomais of a domain, enter your sire
-                with asterisk: *.site.com. Multiple-domains, www and non-www option is charged.
-            </p>
+                <p class="holder-md">
+                    If you need to secure unlimited subdomais of a domain, enter your sire
+                    with asterisk: *.site.com. Multiple-domains, www and non-www option is charged.
+                </p>
 
-            <div class="holder-intext holder-md">
+                <div class="holder-intext holder-md">
 
-                <form action="" class="form-group">
+                    <form action="" class="form-group">
 
-                    <input type="text" class="input" placeholder="site.com">
-                    <div class="holder-cta-v">
-                        <button class="btn btn-secondary">Onwards</button>
-                    </div>
-                </form>
+                        <div class="input section-flex  ai-c jc-sbtwn">
+                            <div class="holder-left ">
+                                <div class="badge">site.com ✕</div>
+                                <div class="badge">www.site.com ✕</div>
+                            </div>
+                            <div class="holder-right">
+                                <p class="title-xs muted">1 of 1</p>
+                            </div>
+                        </div>
+                        <div class="holder-cta-v">
+                            <button class="btn btn-secondary">Onwards</button>
+                        </div>
+                    </form>
+                </div>
+
             </div>
-
         </div>
 
 

@@ -27,7 +27,7 @@
 }
 
 .section-flex {
-    display: flex;
+    display: flex !important;
     justify-content: center;
 }
 
@@ -101,8 +101,18 @@
 }
 
 
-.holder-fixed {
+.holder-fixed-v {
     position: fixed;
-    height: 82vh;
-    z-index: 9;
+    height: 88vh;
+    z-index: 1;
+
+}
+
+
+.holder-fixed-tr {
+    position: fixed;
+    top: var(--space-sm);
+    right: var(--space-sm);
+    z-index: 2;
+
 }

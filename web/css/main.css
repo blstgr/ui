@@ -145,3 +145,13 @@ body {
 .twitter-tweet.twitter-tweet-rendered {
     margin-bottom: 0px !important;
 }
+
+.marker {
+    position: absolute;
+    bottom: calc(-1*var(--space-minx2));
+    left: var(--space-sm);
+}
+
+.cc-img {
+    width: var(--height-xs)
+}

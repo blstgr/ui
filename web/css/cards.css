@@ -22,7 +22,6 @@
     [class^="m-grid"] .card {
         width: auto;
         max-width: 406px;
-        min-width: auto;
     }
 }
 
@@ -48,14 +47,20 @@
     border-top-left-radius: var(--radius);
     border-top-right-radius: var(--radius);
     background-color: var(--color-brand);
-    border-bottom: 1px solid var(--color-brand);
     line-height: var(--line-height-base);
     overflow: hidden;
 }
 
+.card-plain {
+    background-color: transparent;
+    border: 1px solid rgba(57, 57, 52, 0.24);
+    line-height: var(--line-height-xs);
+
+}
+
 .card-body:only-child {
     border-radius: var(--radius);
-    border-bottom: none;
+
 }
 
 .card-footer {

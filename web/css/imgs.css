@@ -1,9 +1,8 @@
 /*imgs & hero*/
 
 img {
-    width: 100%;
     display: block;
-    contain: content;
+    width: 100%;
 }
 
 .figure,
@@ -21,7 +20,6 @@ img {
 }
 
 .figure-lg {
-    width: var(--width-lg);
     height: var(--width-md);
 }
 

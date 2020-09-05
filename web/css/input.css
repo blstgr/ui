@@ -3,11 +3,15 @@
     display: block;
     width: 100%;
     height: var(--height);
+    line-height: var(--height)-2;
     padding: 0 var(--space-xs);
     border: 2px solid var(--color-brand-dark);
     border-radius: var(--radius);
     font-size: var(--font-size-base);
     font-family: 'Roboto Mono', monospace;
+    text-align: left;
+    background-color: white;
+
 }
 
 .input:focus,
@@ -46,6 +50,7 @@
 .input-group {
     display: flex;
     line-height: 1;
+
 }
 
 

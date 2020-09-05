@@ -5,7 +5,7 @@
     <title>Home</title>
     <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap-grid.css" rel="stylesheet">
+    <link href="./css/grid.css" rel="stylesheet">
     <link href="./css/main.css" rel="stylesheet">
     <script defer="defer" src="https://use.fontawesome.com/releases/v5.9.0/js/all.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">
@@ -18,6 +18,7 @@
 </head>
 
 <body>
+
     <div class="main">
 
         <header class="navbar">
@@ -596,17 +597,19 @@
                 <div class="video">
                     <h1>Create CSR in a snap</h1>
 
-                    <p class="holder-md mb-0">CSR stands for Certificate Signing Request. It’s a code you need to
-                        submit SSL activation
-                        request. You get one
-                        from your host or create right in browser. </p>
-
                     <div class="holder-intext">
-                        <div class="video-play">
-                            <i class="fas fa-play"></i>
+                        <p class="holder-md mb-0">CSR stands for Certificate Signing Request. It’s a code you need to
+                            submit SSL activation
+                            request. You get one
+                            from your host or create right in browser. </p>
+
+                        <div class="holder-intext">
+                            <div class="video-play">
+                                <i class="fas fa-play"></i>
+                            </div>
                         </div>
+                        <p class="holder-md title-xs">Watch video </p>
                     </div>
-                    <p class="holder-md title-xs">Watch video </p>
                 </div>
             </div>
         </div>
@@ -616,11 +619,11 @@
             <div class="holder-lg">
                 <h1 class=" text-c">How SSL works</h1>
                 <div class="holder-intext">
-                    <div class="row negative-mlr-md ai-c">
-                        <div class="col-md-6 plr-md">
+                    <div class="row ai-c">
+                        <div class="col-md-6 pr-md">
                             <div class="figure"></div>
                         </div>
-                        <div class="col-md-6 plr-md">
+                        <div class="col-md-6">
                             <h2>Handshake</h2>
                             <p>Whenever an application (for example, a browser) contacts a web service over the
                                 SSL/TLS
@@ -634,8 +637,8 @@
                             </p>
                         </div>
                     </div>
-                    <div class="row negative-mlr-md ai-c">
-                        <div class="col-md-6 plr-md">
+                    <div class="row ai-c">
+                        <div class="col-md-6 pr-md">
                             <h2>Certificate chain</h2>
                             <p>In order to verify the latter, the application attempts to link the provided
                                 certificates to
@@ -648,15 +651,15 @@
                                 secure protocol. </p>
 
                         </div>
-                        <div class="col-md-6 plr-md">
+                        <div class="col-md-6">
                             <div class="figure"></div>
                         </div>
                     </div>
-                    <div class="row negative-mlr-md ai-c">
-                        <div class="col-md-6 p-md   ">
+                    <div class="row ai-c">
+                        <div class="col-md-6 pr-md ">
                             <div class="figure"></div>
                         </div>
-                        <div class="col-md-6 plr-md">
+                        <div class="col-md-6">
                             <h2>Private key and public key</h2>
                             <p>Apart from that, the expiration of the Root certificate did not put data transmitted
                                 over
@@ -667,7 +670,7 @@
                                 some were unprepared for the change. </p>
                         </div>
                     </div>
-                    <div class="row negative-mlr-md ai-c">
+                    <div class="row ai-c">
                         <div class="col-md-6 plr-md">
                             <h2>Validation</h2>
                             <p>Thanks to the new cross-signed Root certificates, all modern browsers have both the
@@ -678,7 +681,7 @@
                                 browsers did not experience any issues due to the expiration. </p>
 
                         </div>
-                        <div class="col-md-6 plr-md">
+                        <div class="col-md-6">
                             <div class="figure"></div>
                         </div>
                     </div>
@@ -691,8 +694,8 @@
             <div class="holder-lg">
                 <h1 class=" text-c">Compare SSL types</h1>
                 <div class="holder-intext">
-                    <div class="row negative-mlr-md">
-                        <div class="col-md-4 plr-md">
+                    <div class="row">
+                        <div class="col-md-4">
                             <a href="#" class="h2">
                                 Domain<br> validation SSL <i class="fas fa-caret-right"></i>
                             </a>
@@ -705,7 +708,7 @@
                                 you need to confirm is that you have control over domain via email or file upload.
                             </p>
                         </div>
-                        <div class="col-md-4 plr-md">
+                        <div class="col-md-4">
                             <a href="#" class="h2">
                                 Organisation<br> validation SSL <i class="fas fa-caret-right"></i>
                             </a>
@@ -718,7 +721,7 @@
                                 done via automatic phone call.</p>
 
                         </div>
-                        <div class="col-md-4 plr-md">
+                        <div class="col-md-4">
                             <a href="#" class="h2">
                                 Extended<br> validation SSL <i class="fas fa-caret-right"></i>
                             </a>
@@ -735,7 +738,6 @@
             </div>
 
         </div>
-
 
         <!-- faq -->
         <div class="section-lg ">
@@ -861,7 +863,6 @@
             </div>
         </div>
 
-
         <!-- reviews -->
         <div class="section-lg p-xl bg-success">
             <div class="holder-lg ">
@@ -874,13 +875,11 @@
         </div>
 
         <!-- reviews -->
-        <div class="section-lg  text-c">
+        <div class="section-lg text-c">
             <div class="holder-lg">
                 <h1>We are rated 4.8 of 5</h1>
-                <p class="holder-md">Based on 83,182 reviews at <a href="#" class="link">shopperapproved.com</a>. It’s
-                    fair to say that people
-                    actually
-                    really like us (…mostly). We welcome
+                <p class="holder-md">Based on 83,182 reviews at <a href="#" class="link">shopperapproved.com</a>. We
+                    welcome
                     negative
                     feedback, too. It ensures we’re constantly improving things for our users. </p>
 
@@ -925,7 +924,7 @@
 
 
                     <div class="card">
-                        <div class="card-body">
+                        <div class="card-body card-plain p-xs">
                             <div class="media-s">
                                 <div class="media-img">
                                     <div class="avatar-s">
@@ -950,7 +949,7 @@
                     </div>
 
                     <div class="card">
-                        <div class="card-body">
+                        <div class="card-body card-plain p-xs">
                             <div class="media-s">
                                 <div class="media-img">
                                     <div class="avatar-s">
@@ -995,7 +994,7 @@
 
 
                     <div class="card">
-                        <div class="card-body">
+                        <div class="card-body card-plain p-xs">
                             <div class="media-s">
                                 <div class="media-img">
                                     <div class="avatar-s"></div>
@@ -1014,7 +1013,7 @@
                     </div>
 
                     <div class="card">
-                        <div class="card-body">
+                        <div class="card-body card-plain p-xs">
                             <div class="media-s">
                                 <div class="media-img">
                                     <div class="avatar-s">
@@ -1080,18 +1079,17 @@
         </div>
 
 
-
         <!-- subsribe -->
         <div class="section-lg bg-brand-light bg-info">
             <div class="holder-lg">
 
-                <div class="row negative-mlr-md ai-c">
-                    <div class="col-md-6 plr-md">
+                <div class="row  ai-c">
+                    <div class="col-md-6 pr-md">
                         <img src="img/nl-subs.gif" alt="">
                     </div>
-                    <div class="col-md-6 plr-md ">
+                    <div class="col-md-6">
                         <h1>Stay savvy</h1>
-                        <div class="holder-md">
+                        <div class="holder-md mlr-0">
                             <p class="">Discounts and tech news sent to your inbox once a month.
                                 Unsubscribe at
                                 any
@@ -1110,69 +1108,70 @@
 
             </div>
         </div>
+    </div>
+    <!-- footer -->
+    <footer>
+        <div class="holder-lg">
+            <div class="row">
+                <div class="col-md-4">
 
-        <!-- footer -->
-        <footer>
-            <div class="holder-lg">
-                <div class="row">
-                    <div class="col-md-4">
-
-                        <ul class="list-inline">
-                            <li><a class="link" href="">site:~ types$ DV SSL</a></li>
-                            <li><a class="link" href="">OV SSL</a></li>
-                            <li><a class="link" href="">EV SSL</a></li>
-                            <li><a class="link" href="">Single domain</a></li>
-                            <li><a class="link" href="">Multi-domain</a></li>
-                            <li><a class="link" href="">Wildcard</a></li>
-                            <li><a class="link" href="">Comodo</a></li>
-                            <li><a class="link" href="">Sectigo</a></li>
-
-
-                        </ul>
-                    </div>
-                    <div class="col-md-4">
-
-                        <ul class="list-inline">
-                            <li><a class="link" href="">site:~ legal$ Privacy policy</a></li>
-                            <li><a class="link" href="">Terms of service</a></li>
-                            <li><a class="link" href="">Cookie policy</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-4">
-
-                        <ul class="list-inline">
-                            <li><a class="link" href="">site:~ us$ About</a></li>
-                            <li><a class="link" href="">Blog</a></li>
-                            <li><a class="link" href="">News</a></li>
-                            <li><a class="link" href="">Sitemap</a></li>
-                            <li><a class="link" href="">Email@us</a></li>
+                    <ul class="list-inline">
+                        <li><a class="link" href="">site:~ types$ DV SSL</a></li>
+                        <li><a class="link" href="">OV SSL</a></li>
+                        <li><a class="link" href="">EV SSL</a></li>
+                        <li><a class="link" href="">Single domain</a></li>
+                        <li><a class="link" href="">Multi-domain</a></li>
+                        <li><a class="link" href="">Wildcard</a></li>
+                        <li><a class="link" href="">Comodo</a></li>
+                        <li><a class="link" href="">Sectigo</a></li>
 
 
-                        </ul>
-                    </div>
+                    </ul>
                 </div>
-                <div class="holder-intext section-flex jc-sbtwn">
-                    <div class="holder-left">
-                        <a href="#" class="link"> <i class="fab fa-facebook-square"></i></a>
+                <div class="col-md-4">
 
-                        <a href="#" class="link"> <i class="fab fa-twitter"></i></a>
-                        <p> © 2009–2020 SSLs.com® Phoenix, AZ 85034,
-                            USA/ Let’s make online a safer place.</p>
+                    <ul class="list-inline">
+                        <li><a class="link" href="">site:~ legal$ Privacy policy</a></li>
+                        <li><a class="link" href="">Terms of service</a></li>
+                        <li><a class="link" href="">Cookie policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
 
-                    </div>
-                    <div class="holder-right ai-end">
-                        <div class="dmca">
-                            <a href="//www.dmca.com/Protection/Status.aspx?ID=ed9bbbd1-6352-4f27-975d-eb0b51d13d19"
-                                title="DMCA.com Protection Status" class="dmca-badge"> <img
-                                    src="https://images.dmca.com/Badges/dmca-badge-w100-5x1-01.png?ID=ed9bbbd1-6352-4f27-975d-eb0b51d13d19"
-                                    alt="DMCA.com Protection Status" /></a>
-                            <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>
-                        </div>
-                    </div>
+                    <ul class="list-inline">
+                        <li><a class="link" href="">site:~ us$ About</a></li>
+                        <li><a class="link" href="">Blog</a></li>
+                        <li><a class="link" href="">News</a></li>
+                        <li><a class="link" href="">Sitemap</a></li>
+                        <li><a class="link" href="">Email@us</a></li>
 
+
+                    </ul>
                 </div>
             </div>
-        </footer>
+            <div class="holder-intext section-flex jc-sbtwn">
+                <div class="holder-left">
+                    <a href="#" class="link"> <i class="fab fa-facebook-square"></i></a>
+
+                    <a href="#" class="link"> <i class="fab fa-twitter"></i></a>
+                    <p> © 2009–2020 SSLs.com® Phoenix, AZ 85034,
+                        USA/ Let’s make online a safer place.</p>
+
+                </div>
+                <div class="holder-right ai-end">
+                    <div class="dmca">
+                        <a href="//www.dmca.com/Protection/Status.aspx?ID=ed9bbbd1-6352-4f27-975d-eb0b51d13d19"
+                            title="DMCA.com Protection Status" class="dmca-badge"> <img
+                                src="https://images.dmca.com/Badges/dmca-badge-w100-5x1-01.png?ID=ed9bbbd1-6352-4f27-975d-eb0b51d13d19"
+                                alt="DMCA.com Protection Status" /></a>
+                        <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
 
 </body>
 

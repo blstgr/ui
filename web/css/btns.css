@@ -86,13 +86,16 @@
     background-color: transparent;
     border-color: transparent;
     box-shadow: none;
+    line-height: var(--height);
+}
+
+.btn-s.btn-ghost {
+    line-height: var(--height-sm);
 }
 
 .btn-ghost+.btn-ghost {
     margin-left: var(--space-xs);
 }
-
-
 
 
 .btn-block {

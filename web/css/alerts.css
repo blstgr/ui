@@ -1,13 +1,19 @@
-.alert,
-.alert-info {
+.alert {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: var(--width-sm);
     padding: var(--space-xs);
     margin-bottom: var(--space-sm);
     border-radius: var(--radius);
-    background-color: var(--color-brand);
-
+    background-color: var(--color-brand-dark);
+    color: white;
+    box-shadow: var(--shadow-raised);
+    font-size: var(--font-size-sm);
+    max-width: 406px;
 
 }
 
-.alert-info {
-    background-color: var(--color-info);
+.alert button {
+    color: white;
 }

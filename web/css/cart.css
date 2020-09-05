@@ -20,12 +20,13 @@
     background-color: rgb(255 255 255 / 0.76);
     box-shadow: var(--shadow-raised);
 
+
 }
 
 
 @media (min-width: 1500px) {
     .cart {
-        max-width: 48vw;
+        max-width: 52vw;
     }
 }
 
