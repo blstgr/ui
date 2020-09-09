@@ -56,6 +56,10 @@ a.h2:focus,
     color: inherit;
 }
 
+.link-plain {
+    text-decoration: none;
+}
+
 .link+.link {
     margin-left: var(--space-minx2);
 }
