@@ -12,7 +12,7 @@
     flex-direction: column;
     justify-content: space-between;
     right: 0;
-    max-width: 70vw;
+    max-width: 956px;
     height: 100vh;
     justify-content: space-between;
     box-shadow: var(--shadow);
@@ -26,7 +26,7 @@
 
 @media (min-width: 1500px) {
     .cart {
-        max-width: 52vw;
+        max-width: var(--width-xl);
     }
 }
 

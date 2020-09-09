@@ -74,6 +74,7 @@
     --height-sm: calc(44 / 16 * 1rem);
     --height-xs: calc(28 / 16 * 1rem);
 
+    --width-xl: calc(984 / 16 * 1rem);
     --width-lg: calc(690 / 16 * 1rem);
     --width-md: calc(432 / 16 * 1rem);
     --width-sm: calc(345 / 16 * 1rem);

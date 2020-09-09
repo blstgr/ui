@@ -30,8 +30,11 @@ a.h2,
 .link {
     display: inline-block;
     transition: all .2s ease-out;
-    text-decoration: none;
     color: inherit;
+}
+
+a.h2 {
+    text-decoration: none;
 }
 
 a.h2:hover,
@@ -46,6 +49,17 @@ a.h2:focus,
     outline: var(--focus);
     transition: none;
 }
+
+
+.link {
+    position: relative;
+    color: inherit;
+}
+
+.link+.link {
+    margin-left: var(--space-minx2);
+}
+
 
 p,
 ul,
@@ -86,16 +100,6 @@ h2:last-child,
 
 
 
-.link {
-    position: relative;
-    color: inherit;
-    text-decoration: none;
-}
-
-
-.link+.link {
-    margin-left: var(--space-minx2);
-}
 
 
 .text-small {

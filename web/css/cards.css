@@ -51,12 +51,11 @@
     overflow: hidden;
 }
 
-.card-plain {
+/* .card-plain {
     background-color: transparent;
     border: 1px solid rgba(57, 57, 52, 0.24);
     line-height: var(--line-height-xs);
-
-}
+} */
 
 .card-body:only-child {
     border-radius: var(--radius);
