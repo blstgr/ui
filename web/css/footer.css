@@ -5,7 +5,7 @@ footer {
     font-size: var(--font-size-xs);
     font-family: 'Roboto Mono', monospace;
     line-height: var(--line-height-sm);
-    opacity: 0.98;
+    backdrop-filter: blur(10px);
 }
 
 footer .svg-inline--fa {

@@ -11,6 +11,8 @@
     border-radius: 50%;
     vertical-align: text-bottom;
     text-align: center;
+    background-color: white;
+    box-shadow: 0 2px currentColor;
 }
 
 .radio-filled.radio::after {

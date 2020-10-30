@@ -1,7 +1,8 @@
 table {
     width: 100%;
-    margin: 0 auto var(--space-md);
+    /* margin: 0 auto var(--space-sm); */
     border-collapse: collapse;
+    /* border-bottom: 2px solid var(--color-brand-light) */
 }
 
 table:last-child,
@@ -14,29 +15,30 @@ th {
     padding: var(--space-xs) var(--space-sm);
     border: 0;
     font-weight: normal;
+    vertical-align: top
+}
+
+th {
+    font-family: 'Roboto Mono', monospace;
+    border-bottom: 2px solid var(--color-brand-dark);
 }
 
 tr {
-    background-color: var(--color-brand-light);
+    background-color: var(--color-brand);
 }
 
 tr:nth-child(even) {
     background-color: white;
 }
 
-thead tr {
+th {
     background-color: white;
-    font-weight: 700;
-    font-family: 'Roboto Mono', monospace;
 }
 
 .cell-focus {
     border-right: 2px solid var(--color-accent-dark);
 }
 
-th.cell-focus {
-    border-bottom: 2px solid white;
-}
 
 .cell-fixed {
     width: var(--width-sm);

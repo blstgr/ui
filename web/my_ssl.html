@@ -11,8 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@400;900&display=swap" rel="stylesheet">
-
-
+    <script src="./js/animations.js"></script>
 
 
 </head>
@@ -22,24 +21,28 @@
         <header class="navbar">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="navbar-brand" href="ssls.com">
+                    <a class="navbar-brand" href="#">
                         <i class="fas fa-door-closed"></i>
                     </a>
                 </li>
             </ul>
 
             <ul class="navbar-nav mr-md-auto">
-                <li class="nav-item">
+                <li class="nav-item" id="test">
                     <a href="#" class="nav-link">Certs</a>
+                    <span class="nav-indicator"></span>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">Blog</a>
+                    <span class="nav-indicator"></span>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">Help</a>
+                    <span class="nav-indicator"></span>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">About</a>
+                    <span class="nav-indicator"></span>
                 </li>
             </ul>
             <ul class="navbar-nav">
@@ -47,27 +50,29 @@
                     <a href="#" class="nav-link">
                         <i class="fas fa-shopping-bag mr-minx2"></i> 1
                     </a>
+                    <span class="nav-indicator"></span>
                 </li>
                 <li class="nav-item active">
                     <a href="#" class="nav-link"><i class="far fa-heart mr-minx2"></i> My SSL</a>
+                    <span class="nav-indicator"></span>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">
                         <i class="badge mr-minx2">J</i> jsp <i class="fas fa-caret-down ml-min"></i></a>
+                    <span class="nav-indicator"></span>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">
                         <i class="fas fa-search"></i>
                     </a>
+                    <span class="nav-indicator"></span>
                 </li>
             </ul>
         </header>
 
 
-
-
         <!-- List-->
-        <div class="section-sm bg-brand-light">
+        <div class="section-sm bg-transparent">
             <div class="holder-lg">
 
                 <div class="row jc-sbtwn align-items-center">
@@ -95,10 +100,14 @@
                             <div class="col-sm-7">
                                 <div class="row align-items-center">
                                     <div class="col-3">
-                                        <p class="title-xs">ID: 123213</p>
+                                        <button class="link-plain link-copy title-xs">ID: 123213</button>
                                     </div>
                                     <div class="col-6">
-                                        <p class="title-xs">PositiveSSL</p>
+                                        <ul class="list-unstyled">
+                                            <li class="title-xs">PositiveSSL <span class="text-info">
+                                                    Trial</span></li>
+
+                                        </ul>
                                         <div class="stepper">
                                             <div class="progress"></div>
                                             <div class="progress"></div>
@@ -112,37 +121,39 @@
                                     </div>
                                 </div>
                             </div>
-
                             <div class="col-sm-5">
-                                <div class="row justify-content-end align-items-center">
-                                    <div class="col-4">
 
-                                    </div>
-                                    <div class="col-9">
-                                        <div class="row justify-content-end">
-                                            <button class="btn btn-ghost m-0"><i class="fas fa-play"></i>
-                                                Activate</button>
+                                <div class="section-flex justify-content-end">
 
-                                            <button class="btn btn-ghost m-0"><i class="far fa-plus-square"></i>
-                                                Details</button>
-                                        </div>
-                                    </div>
+                                    <button class="btn btn-ghost m-0">
+                                        <i class="fas fa-shopping-bag mr-minx2"></i>Buy</button>
+                                    <button class="btn btn-ghost m-0"><i class="fas fa-play"></i>
+                                        Activate</button>
+
+                                    <button class="btn btn-ghost m-0"><i class="far fa-plus-square"></i>
+                                        Details</button>
+
                                 </div>
-
                             </div>
+
                         </div>
                     </div>
                 </div>
+
                 <div class="card">
                     <div class="card-body">
                         <div class="row align-items-center">
                             <div class="col-sm-7">
                                 <div class="row align-items-center">
                                     <div class="col-3">
-                                        <p class="title-xs">ID: 123213</p>
+                                        <button class="link-plain link-copy title-xs">ID: 123213</button>
                                     </div>
                                     <div class="col-6">
-                                        <p class="title-xs">PremiumSSL<br> jacksparrow.com</p>
+                                        <ul class="list-unstyled">
+                                            <li class="title-xs">PositiveSSL <span class="text-info">
+                                                    Trial</span></li>
+                                            <li> jacksparrow.com</li>
+                                        </ul>
                                         <div class="stepper">
                                             <div class="progress"></div>
                                             <div class="progress"></div>
@@ -158,31 +169,31 @@
                                 </div>
                             </div>
                             <div class="col-sm-5">
-                                <div class="row justify-content-end align-items-center">
-
-
+                                <div class="section-flex justify-content-end">
+                                    <button class="btn btn-ghost m-0">
+                                        <i class="fas fa-shopping-bag mr-minx2"></i>Buy</button>
+                                    <!-- <button class="btn btn-ghost m-0">
+                                        <i class="fas fa-retweet mr-minx2"></i>DCV email</button> -->
 
                                     <button class="btn btn-ghost m-0 h2">
-                                        <i class="fas fa-retweet mr-minx2"></i>Resend email</button>
-
-                                    <!-- <button class="btn btn-ghost m-0 h2">
-                                        <i class="fas fa-arrow-down mr-minx2"></i>TXT file</button> -->
+                                        <i class="fas fa-arrow-down mr-minx2"></i>DCV file</button>
 
                                     <button class="btn btn-ghost m-0"><i
                                             class="far fa-minus-square mr-minx2"></i>Details</button>
 
                                 </div>
 
+
                             </div>
                         </div>
                     </div>
-                    <div class="hellobar m-0">
+                    <div class="hellobar m-0 hide">
                         jsp:~ pending$ <span class="text-info"> Info</span> You will receive an email at
                         admin@burbears.com shortly to confirm you have access to the secured domain. Then wait for the
                         callback email and follow its instructions to complete the process. Use “status checker” if your
                         SSL is stuck in “Pending” status or if you prefer the DNS validation method.
                     </div>
-                    <div class="card-footer">
+                    <div class="card-footer hide">
 
                         <div class="card">
                             <div class="card-body">
@@ -250,16 +261,20 @@
 
                     </div>
                 </div>
-                <div class="card">
+
+                <div class="card bg-success-light">
                     <div class="card-body">
                         <div class="row align-items-center">
                             <div class="col-sm-7">
                                 <div class="row align-items-center">
                                     <div class="col-3">
-                                        <p class="title-xs">ID: 123213</p>
+                                        <button class="link-plain link-copy title-xs">ID: 123213</button>
                                     </div>
                                     <div class="col-6">
-                                        <p class="title-xs">PositiveSSL<br> jacksparrow.com</p>
+                                        <ul class="list-unstyled">
+                                            <li class="title-xs">PositiveSSL</li>
+                                            <li> jacksparrow.com</li>
+                                        </ul>
                                         <div class="stepper">
                                             <div class="progress"></div>
                                             <div class="progress p90"></div>
@@ -275,9 +290,11 @@
                                 </div>
                             </div>
                             <div class="col-sm-5">
-                                <div class="row justify-content-end align-items-center">
+                                <div class="section-flex justify-content-end">
+                                    <button class="btn btn-ghost m-0">
+                                        <i class="fas fa-shopping-bag mr-minx2"></i>Install</button>
                                     <button class="btn btn-ghost m-0"><i class="fas fa-arrow-down"></i>
-                                        Download</button>
+                                        SSL files</button>
                                     <button class="btn btn-ghost m-0"><i class="far fa-plus-square"></i>
                                         Details</button>
 
@@ -288,16 +305,20 @@
 
                     </div>
                 </div>
+
                 <div class="card">
                     <div class="card-body">
                         <div class="row align-items-center">
                             <div class="col-sm-7">
                                 <div class="row align-items-center">
                                     <div class="col-3">
-                                        <p class="title-xs">ID: 123213</p>
+                                        <button class="link-plain link-copy title-xs">ID: 123213</button>
                                     </div>
                                     <div class="col-6">
-                                        <p class="title-xs">PositiveSSL<br> jacksparrow.com</p>
+                                        <ul class="list-unstyled">
+                                            <li class="title-xs">PositiveSSL</li>
+                                            <li> jacksparrow.com</li>
+                                        </ul>
                                         <div class="stepper">
                                             <div class="progress"></div>
                                             <div class="progress"></div>
@@ -316,7 +337,7 @@
                                 </div>
                             </div>
                             <div class="col-sm-5">
-                                <div class="row justify-content-end align-items-center">
+                                <div class="section-flex justify-content-end">
 
                                     <button class="btn btn-ghost m-0">
                                         <i class="fas fa-play"></i>
@@ -328,23 +349,23 @@
 
                             </div>
                         </div>
-
-
-
                     </div>
                 </div>
+
                 <div class="card">
                     <div class="card-body">
                         <div class="row align-items-center">
                             <div class="col-sm-7">
                                 <div class="row align-items-center">
                                     <div class="col-3">
-                                        <p class="title-xs">ID: 123213</p>
+                                        <button class="link-plain link-copy title-xs">ID: 123213</button>
                                     </div>
                                     <div class="col-6">
-                                        <p class="title-xs">PositiveSSL Multi-domain<br> jacksparrow.com and 5 more<br>
-                                            6 seats
-                                        </p>
+                                        <ul class="list-unstyled">
+                                            <li class="title-xs">PositiveSSL Multi-domain <span class="text-info">
+                                                    Trial</span></li>
+                                            <li> jacksparrow.com and 6 more SANs</li>
+                                        </ul>
                                         <div class="stepper">
                                             <div class="progress"></div>
                                             <div class="progress"></div>
@@ -363,11 +384,10 @@
                                 </div>
                             </div>
                             <div class="col-sm-5">
-                                <div class="row justify-content-end align-items-center">
-
+                                <div class="section-flex justify-content-end">
                                     <button class="btn btn-ghost m-0">
-                                        <i class="fas fa-play"></i>
-                                        reactivate</button>
+                                        <i class="fas fa-shopping-bag mr-minx2"></i>Buy</button>
+
                                     <button class="btn btn-ghost m-0">
                                         <i class="far fa-minus-square"></i>
                                         Details</button>
@@ -377,11 +397,8 @@
 
                             </div>
                         </div>
-
-
-
                     </div>
-                    <div class="hellobar m-0">
+                    <div class="hellobar m-0 hide">
                         jsp:~ paused$ <span class="text-info"> Info</span> To comply with <a href="" class="link">SSL
                             lifetime limit</a>,
                         your
@@ -391,7 +408,7 @@
                         </a> annually. Reactivate
                         SSL and reinstall it on your server to restore the secure connection.
                     </div>
-                    <div class="card-footer">
+                    <div class="card-footer hide">
 
                         <div class="card">
                             <div class="card-body">
@@ -399,7 +416,8 @@
                                 <div class="row">
                                     <div class="col">Purchased for: 4 years</div>
                                     <div class="col">Remaining: 1300 days</div>
-                                    <div class="col">Paused on: Aug 30, 2020</div>
+                                    <div class="col">Paused on: Aug 30, 2020 <br>
+                                        <a href="#" class="link">Add to calendar</a></div>
                                 </div>
                             </div>
                         </div>
@@ -475,74 +493,368 @@
 
                     </div>
                 </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row align-items-center">
+                            <div class="col-sm-7">
+                                <div class="row align-items-center">
+                                    <div class="col-3">
+                                        <button class="link-plain link-copy title-xs">ID: 123213</button>
+                                    </div>
+                                    <div class="col-6">
+                                        <ul class="list-unstyled">
+                                            <li class="title-xs">PositiveSSL <span class="text-info"> Trial</span></li>
+                                            <li> jacksparrow.com</li>
+                                        </ul>
+                                        <div class="stepper">
+                                            <div class="progress"></div>
+                                            <div class="progress"></div>
+                                            <div class="progress"></div>
+                                            <div class="progress p75"></div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="col-3 ">
+                                        <span class="badge-success">
+                                            <i class="fas fa-satellite-dish mr-minx2"></i>Active
+                                        </span>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-5">
+                                <div class="section-flex justify-content-end">
+
+                                    <button class="btn btn-ghost m-0">
+                                        <i class="fas fa-shopping-bag mr-minx2"></i>Buy</button>
+                                    <button class="btn btn-ghost m-0"><i class="fas fa-arrow-down"></i>
+                                        SSL files</button>
+                                    <button class="btn btn-ghost m-0">
+                                        <i class="far fa-minus-square"></i>
+                                        Details</button>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hellobar m-0 hide">
+                        jsp:~ active trial$ <span class="text-info"> Info</span> Download and install your SSL. To
+                        comply with <a href="" class="link">SSL lifetime limit</a>
+                        your
+                        SSL
+                        was issued for 365 days with 30 days trial period. If you pay within 30 days you will be able to
+                        use full year. To use
+                        the remaining time of your SSL, you need to <a href="" class="link">reactivate your SSL
+                        </a> annually. If you pay as trial expires, you will need to reactivate and reinstall your SSL
+                        after 30 days.
+                    </div>
+                    <div class="card-footer hide">
+
+                        <div class="card">
+                            <div class="card-body">
+
+                                <div class="row">
+                                    <div class="col">
+                                        <ul class="list-unstyled">
+                                            <li>Full period: 4 years</li>
+                                            <li>Trial: 30 days</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col">
+                                        <ul class="list-unstyled">
+                                            <li>Remaining: 1300 days</li>
+                                            <li>Remaining trial peiod: 15 days</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col">
+
+                                        <ul class="list-unstyled mb-xs">
+                                            <li> Trial over: Aug 30, 2020
+                                            </li>
+
+                                        </ul>
+
+                                        <div class="holder-cta mt-0 mb-md">
+                                            <button class="btn-s btn-secondary flg-0">
+                                                <i class="fas fa-bell mr-minx2"></i>Add to calendar</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col">
+                                        <ul class="list-unstyled mb-xs">
+                                            <li>Issued for:</li>
+                                            <li> ksenia.burykh@namecheap.com,
+                                                kitbears.co.uk,
+                                                www.kitbears.co.uk</li>
+                                        </ul>
+
+                                        <div class="holder-cta mt-0 mb-md">
+                                            <button class="btn-s btn-secondary flg-0"><i
+                                                    class="fas fa-retweet mr-minx2"></i>Reissue</button>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="col">
+                                        <ul class="list-unstyled mb-xs">
+                                            <li> <a class="link link-copy
+                                                ">CA ID: 23123</a> <span class="tooltip">Copy</span>
+                                            </li>
+                                            <li> <a class="link link-copy">Order ID: 123123</a></li>
+                                        </ul>
+
+                                        <div class="holder-cta mt-0 mb-md">
+                                            <button class="btn-s btn-secondary flg-0">
+                                                <i class="fas fa-info-circle mr-minx2"></i>Details</button>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="col">
+                                        SSL files sent at:
+                                        ksenia.burykh@namecheap.com
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col">Seats: 6
+                                        <div class="holder-cta mt-minx2 mb-md">
+                                            <button class="btn-s btn-secondary flg-0"><i
+                                                    class="fas fa-shopping-bag mr-minx2"></i>Buy more</button>
+                                        </div>
+                                    </div>
+                                    <div class="col">Used: 6
+                                        <div class="holder-cta mt-minx2 mb-md">
+                                            <button class="btn-s btn-secondary flg-0">
+                                                <i class="fas fa-screwdriver mr-minx2"></i>Edit</button>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        jacksparrow.com<br>
+                                        wwww.jacksparrow.com<br>
+                                        capt.com<br>
+
+                                        <a href="" class="link"><i class="far fa-plus-square mr-minx2"></i>Full list</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="card  bg-info-light">
+                    <div class="card-body">
+                        <div class="row align-items-center">
+                            <div class="col-sm-7">
+                                <div class="row align-items-center">
+                                    <div class="col-3">
+                                        <button class="link-plain link-copy title-xs">ID: 123213</button>
+                                    </div>
+                                    <div class="col-6">
+                                        <ul class="list-unstyled">
+                                            <li class="title-xs">PositiveSSL</li>
+                                            <li> jacksparrow.com</li>
+                                        </ul>
+                                        <div class="stepper">
+                                            <div class="progress p0"></div>
+                                            <div class="progress p0"></div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="col-3 ">
+                                        <span class="badge">
+                                            <i class="fas fa-dizzy mr-minx2"></i>Expired
+                                        </span>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-5">
+                                <div class="section-flex justify-content-end">
+
+                                    <button class="btn btn-ghost m-0">
+                                        <i class="fas fa-shopping-bag mr-minx2"></i>Buy</button>
+
+                                    <button class="btn btn-ghost m-0">
+                                        <i class="far fa-minus-square"></i>
+                                        Details</button>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-footer">
+
+                        <div class="card">
+                            <div class="card-body">
+
+                                <div class="row">
+                                    <div class="col">
+                                        <ul class="list-unstyled">
+                                            <li>Full period: 4 years</li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="col">
+                                        <ul class="list-unstyled">
+                                            <li>Remaining: 0 days</li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="col">
+                                        <ul class="list-unstyled mb-xs">
+                                            <li> Expired: Aug 30, 2020
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="card bg-info-light">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col">
+                                        <ul class="list-unstyled mb-xs">
+                                            <li>Issued for:</li>
+                                            <li> ksenia.burykh@namecheap.com,
+                                                kitbears.co.uk,
+                                                www.kitbears.co.uk</li>
+                                        </ul>
+
+                                        <div class="holder-cta mt-0 mb-md">
+                                            <button class="btn-s btn-secondary flg-0"><i
+                                                    class="fas fa-retweet mr-minx2"></i>Reissue</button>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="col">
+                                        <ul class="list-unstyled mb-xs">
+                                            <li> <a class="link link-copy
+                                                ">CA ID: 23123</a> <span class="tooltip">Copy</span>
+                                            </li>
+                                            <li> <a class="link link-copy">Order ID: 123123</a></li>
+                                        </ul>
+
+                                        <div class="holder-cta mt-0 mb-md">
+                                            <button class="btn-s btn-secondary flg-0">
+                                                <i class="fas fa-info-circle mr-minx2"></i>Details</button>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="col">
+                                        SSL files sent at:
+                                        ksenia.burykh@namecheap.com
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <button class="btn btn-ghost btn-block">
+
+                            <span class="text-accent-dark"><i class="fas fa-trash-alt mr-minx2"></i>Delete from
+                                account</span>
+                        </button>
+                    </div>
+                </div>
+
+                <button class="btn btn-ghost btn-block m-0">
+                    <i class="fas fa-truck-loading mr-minx2"></i>Load more</button>
             </div>
         </div>
 
 
-
-
-
         <!-- footer -->
         <footer>
-            <div class="holder-lg">
-                <div class="row">
-                    <div class="col-md-4">
 
-                        <ul class="list-inline">
-                            <li><a class="link" href="">site:~ types$ DV SSL</a></li>
-                            <li><a class="link" href="">OV SSL</a></li>
-                            <li><a class="link" href="">EV SSL</a></li>
-                            <li><a class="link" href="">Single domain</a></li>
-                            <li><a class="link" href="">Multi-domain</a></li>
-                            <li><a class="link" href="">Wildcard</a></li>
-                            <li><a class="link" href="">Comodo</a></li>
-                            <li><a class="link" href="">Sectigo</a></li>
+            <div class="row">
+                <div class="col-md-4">
 
-
-                        </ul>
-                    </div>
-                    <div class="col-md-4">
-
-                        <ul class="list-inline">
-                            <li><a class="link" href="">site:~ legal$ Privacy policy</a></li>
-                            <li><a class="link" href="">Terms of service</a></li>
-                            <li><a class="link" href="">Cookie policy</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-4">
-
-                        <ul class="list-inline">
-                            <li><a class="link" href="">site:~ us$ About</a></li>
-                            <li><a class="link" href="">Blog</a></li>
-                            <li><a class="link" href="">News</a></li>
-                            <li><a class="link" href="">Sitemap</a></li>
-                            <li><a class="link" href="">Email@us</a></li>
+                    <ul class="list-inline">
+                        <li><a class="link" href="">site:~ types$ DV SSL</a></li>
+                        <li><a class="link" href="">OV SSL</a></li>
+                        <li><a class="link" href="">EV SSL</a></li>
+                        <li><a class="link" href="">Single domain</a></li>
+                        <li><a class="link" href="">Multi-domain</a></li>
+                        <li><a class="link" href="">Wildcard</a></li>
+                        <li><a class="link" href="">Comodo</a></li>
+                        <li><a class="link" href="">Sectigo</a></li>
 
 
-                        </ul>
-                    </div>
+                    </ul>
                 </div>
-                <div class="holder-intext section-flex jc-sbtwn">
-                    <div class="holder-left">
-                        <a href="#" class="link"> <i class="fab fa-facebook-square"></i></a>
+                <div class="col-md-4">
 
-                        <a href="#" class="link"> <i class="fab fa-twitter"></i></a>
-                        <p> © 2009–2020 SSLs.com® Phoenix, AZ 85034,
-                            USA/ Let’s make online a safer place.</p>
+                    <ul class="list-inline">
+                        <li><a class="link" href="">site:~ legal$ Privacy policy</a></li>
+                        <li><a class="link" href="">Terms of service</a></li>
+                        <li><a class="link" href="">Cookie policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
 
-                    </div>
-                    <div class="holder-right ai-end">
-                        <div class="dmca">
-                            <a href="//www.dmca.com/Protection/Status.aspx?ID=ed9bbbd1-6352-4f27-975d-eb0b51d13d19"
-                                title="DMCA.com Protection Status" class="dmca-badge"> <img
-                                    src="https://images.dmca.com/Badges/dmca-badge-w100-5x1-01.png?ID=ed9bbbd1-6352-4f27-975d-eb0b51d13d19"
-                                    alt="DMCA.com Protection Status" /></a>
-                            <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>
-                        </div>
-                    </div>
+                    <ul class="list-inline">
+                        <li><a class="link" href="">site:~ us$ About</a></li>
+                        <li><a class="link" href="">Blog</a></li>
+                        <li><a class="link" href="">News</a></li>
+                        <li><a class="link" href="">Sitemap</a></li>
+                        <li><a class="link" href="">Email@us</a></li>
 
+
+                    </ul>
                 </div>
             </div>
+            <div class="holder-intext section-flex jc-sbtwn">
+                <div class="holder-left">
+                    <a href="#" class="link"> <i class="fab fa-facebook-square"></i></a>
+
+                    <a href="#" class="link"> <i class="fab fa-twitter"></i></a>
+                    <p> © 2009–2020 SSLs.com® Phoenix, AZ 85034,
+                        USA/ Let’s make online a safer place.</p>
+
+                </div>
+                <div class="holder-right ai-end">
+                    <div class="dmca">
+                        <a href="//www.dmca.com/Protection/Status.aspx?ID=ed9bbbd1-6352-4f27-975d-eb0b51d13d19"
+                            title="DMCA.com Protection Status" class="dmca-badge"> <img
+                                src="https://images.dmca.com/Badges/dmca-badge-w100-5x1-01.png?ID=ed9bbbd1-6352-4f27-975d-eb0b51d13d19"
+                                alt="DMCA.com Protection Status" /></a>
+                        <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>
+                    </div>
+                </div>
+
+            </div>
+
         </footer>
 
 </body>

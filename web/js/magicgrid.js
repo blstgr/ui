@@ -23,7 +23,6 @@ let faqMagicGrid = new MagicGrid({
 faqMagicGrid.listen();
 
 
-
 let revMagicGrid = new MagicGrid({
     container: '.m-grid-rev',
     animate: false,

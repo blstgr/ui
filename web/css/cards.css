@@ -4,39 +4,64 @@
     width: 100%;
     margin-bottom: var(--space-sm);
     text-align: left;
+    background-color: var(--color-brand);
+    border-radius: var(--radius);
 }
 
-[class^="m-grid"] {
-    margin-left: -16px;
-    margin-right: -16px;
+.card-body,
+.card-footer {
+    padding: var(--space-sm);
+    /* border-top-left-radius: var(--radius);
+    border-top-right-radius: var(--radius); */
+    line-height: var(--line-height-base);
+    /* overflow: hidden; */
+
 }
 
-[class^="m-grid"] .card {
+.card-footer {
+    position: relative;
+    border-top: 2px solid currentColor;
+}
+
+.card-footer .card-body {
+    background: white;
+}
+
+/*   padding: var(--space-sm); */
+/* background-color: var(--color-brand-light); */
+/* border-bottom-left-radius: var(--radius);
+    border-bottom-right-radius: var(--radius); */
+/* border: 2px solid rgb(57 57 52 / 0.3); */
+/* border-top: 0; */
+
+/* } */
+
+
+
+[class^="m-grid"] .card,
+.m-grid-rev .card,
+.mw.card {
     min-width: 362px;
     max-width: 362px;
 }
 
-
-
+[class^="m-grid"],
 .m-grid-rev {
     margin-left: -16px;
     margin-right: -16px;
 }
 
-.m-grid-rev .card {
-    min-width: 360px;
-    max-width: 360px;
-}
+
 
 @media (min-width: 1500px) {
-
     .m-grid-rev .card,
-    [class^="m-grid"] .card {
+    [class^="m-grid"] .card,
+    .mw.card {
         width: auto;
         max-width: 406px;
+        min-width: 406px;
     }
 }
-
 
 
 
@@ -54,15 +79,7 @@
     margin-bottom: 0;
 }
 
-.card-body {
-    padding: var(--space-sm);
-    border-top-left-radius: var(--radius);
-    border-top-right-radius: var(--radius);
-    background-color: var(--color-brand);
-    line-height: var(--line-height-base);
-    overflow: hidden;
 
-}
 
 .card-plain .card-body {
     background-color: transparent;
@@ -80,16 +97,8 @@
 
 }
 
-.card-footer {
-    padding: var(--space-sm);
-    background-color: var(--color-brand-light);
-    border-bottom-left-radius: var(--radius);
-    border-bottom-right-radius: var(--radius);
 
-
-}
-
-.card-footer::last-child {
+.card-footer:last-child {
     border-bottom-left-radius: var(--radius);
     border-bottom-right-radius: var(--radius);
 }
@@ -98,14 +107,10 @@
     margin: 0;
 }
 
-.card .h2,
-.card h2 {
-    transition: all .2s ease-out;
+.card-selected{
+    /* border: 2px solid currentColor; */
 }
 
-.card .h2:hover,
-.card h2:hover {
-    text-decoration: underline;
-    transform: scale(1.02);
-    cursor: pointer;
+.m-grid .card-body .holder-left {
+    width: 100%;
 }

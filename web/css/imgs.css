@@ -10,7 +10,7 @@ img {
 .figure-lg {
     height: calc(var(--width-sm) * 1);
     margin: var(--text-indent) 0;
-    background-color: var(--color-brand-light);
+    background-color: var(--color-brand);
     overflow: hidden;
 }
 

@@ -3,7 +3,7 @@
 .main {
     margin: auto;
     width: 95vw;
-    font-size: var(--font-size-base);
+
     line-height: var(--line-height-base);
     color: var(--color-brand-dark);
 }
@@ -11,10 +11,11 @@
 .section,
 .section-lg,
 .section-sm {
-    margin-top: var(--space-xxs);
+    margin-top: var(--space-minx2);
     padding: var(--space-lg) var(--space-md);
     background-color: white;
-    margin-top: var(--space-minx2);
+    backdrop-filter: blur(10px);
+    background-color: rgb(255 255 255 / 0.9);
 }
 
 .section-sm {
@@ -28,7 +29,7 @@
 
 .section-flex {
     display: flex !important;
-    justify-content: center;
+  
 }
 
 .holder-intext {
@@ -41,17 +42,20 @@
 }
 
 .holder-right {
-    margin-left: var(--space-xs);
+   margin-left: var(--space-xs); 
     text-align: right;
 }
 
 .holder-center {
     margin-left: var(--space-xs);
-
 }
 
 .holder-left {
     text-align: left;
+}
+
+.holder-block{
+    width: 100%;
 }
 
 .holder-sm {
@@ -65,6 +69,12 @@
     margin-left: auto;
     margin-right: auto;
 }
+.holder-xmd {
+    max-width: var(--width-xl);
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 .holder-lg {
     max-width: 1500px;
@@ -92,27 +102,23 @@
     flex-grow: 1;
 }
 
-.holder-cta button+button {
+.holder-cta button + button {
     margin-left: var(--space-sm);
 }
 
-.holder-cta-v button+button {
+.holder-cta-v button + button {
     margin-top: var(--space-minx3);
 }
-
 
 .holder-fixed-v {
     position: fixed;
     height: 88vh;
     z-index: 1;
-
 }
-
 
 .holder-fixed-tr {
     position: fixed;
     top: var(--space-sm);
     right: var(--space-sm);
     z-index: 2;
-
 }

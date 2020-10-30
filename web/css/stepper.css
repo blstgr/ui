@@ -4,10 +4,12 @@
 
 .progress {
     width: var(--space-lg);
-    background-color: var(--color-brand-light);
+    background-color: white;
     border: 0;
     overflow: hidden
 }
+
+
 
 .progress:first-child {
     border-top-left-radius: var(--radius);

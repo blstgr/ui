@@ -28,7 +28,7 @@
 }
 
 .tab-active {
-    background-color: var(--color-success);
+    background-color: var(--color-accent);
     margin-right: -2px;
     z-index: 2;
 }

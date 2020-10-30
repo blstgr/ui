@@ -1,3 +1,5 @@
+
+
 @import url("vars.css");
 @import url("holders.css");
 @import url("type.css");
@@ -7,7 +9,7 @@
 @import url("list-group.css");
 @import url("cards.css");
 @import url("nav.css");
-@import url("helpers.css");
+
 @import url("hellobar.css");
 @import url("badge.css");
 @import url("input.css");
@@ -19,16 +21,34 @@
 @import url("cart.css");
 @import url("alerts.css");
 @import url("tooltip.css");
+@import url("toggle.css");
+@import url("dropdown.css");
+
+@import url("helpers.css");
+
 
 * {
     box-sizing: border-box;
 }
 
 body {
-    background-color: var(--color-brand-light);
+    background-color: var(--color-brand);
+    background-image: url("https://www.indiegamewebsite.com/wp-content/uploads/2018/08/Super-Meat-Boy.png");
+    
+    background-image: url("https://www.dots.co/assets/images/twodots/wallpapers/Arcade1-Desktop.png");
+
+    background-image: url("https://www.dots.co/assets/images/twodots/wallpapers/Monkeys4-Desktop.png");
+
+    /* background-image: url("https://www.dots.co/assets/images/twodots/wallpapers/Japan3-Desktop.png");
+
+    background-image: url("https://www.dots.co/assets/images/twodots/wallpapers/Space2-Desktop.jpg"); */
+    
+   background-size: 120%;
     margin: 0;
     font-family: "Lato", sans-serif;
+    font-size: var(--font-size-base);
     line-height: var(--line-height-base);
+   
 }
 
 /*header&footer*/
@@ -154,4 +174,22 @@ body {
 
 .cc-img {
     width: var(--height-xs)
+}
+
+.browser-ov-dropdown{
+    position: absolute;
+    top: 20px;
+    right:28px;
+    left: 300px;
+}
+
+.browser-ov-dropdown.dropdown::before{
+    top: 154px;
+    left: -12px;
+    border-width: 12px 12px 12px 0;
+    border-color: transparent #ffffff transparent transparent
+}
+
+.browser{
+    border-top: 32px solid currentColor;
 }

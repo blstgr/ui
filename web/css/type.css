@@ -26,45 +26,6 @@ h2,
 
 
 
-a.h2,
-.link {
-    display: inline-block;
-    transition: all .2s ease-out;
-    color: inherit;
-}
-
-a.h2 {
-    text-decoration: none;
-}
-
-a.h2:hover,
-.link:hover {
-    text-decoration: underline;
-    transform: scale(1.02);
-    cursor: pointer;
-}
-
-a.h2:focus,
-.link:focus {
-    outline: var(--focus);
-    transition: none;
-}
-
-
-.link {
-    position: relative;
-    color: inherit;
-}
-
-.link-plain {
-    text-decoration: none;
-}
-
-.link+.link {
-    margin-left: var(--space-minx2);
-}
-
-
 p,
 ul,
 ol {
@@ -126,8 +87,7 @@ h2:last-child,
     border-bottom: 2px dashed var(--color-brand-dark);
 }
 
-ul.list-inline,
-ul.list-unstyled {
+ul.list-inline {
     margin: 0;
     padding: 0;
 }
