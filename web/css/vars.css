@@ -1,13 +1,10 @@
 :root {
     /* colors */
 
-    --color-brand-dark: #352222; /*#393934*/;
+    --color-brand-dark: #302c2c/*#352222; /*#393934*/;
     --color-brand: #e3e6cf; /*#f5f1dc*/
     --color-brand-light: #faf8ed;    /*#faf8ed*/
  
-   
-
-
     --color-success-dark: #109860;
     --color-success: #2eef80; /*#50e098*/
     --color-success-light: #b6f7c8; /*#bffbdd*/
@@ -102,3 +99,5 @@
         --font-size-md: calc(28 / 16 * 1rem);
     }
 }
+
+

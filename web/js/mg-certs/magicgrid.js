@@ -1,4 +1,5 @@
-let magicGrid = new MagicGrid({
+// certs page
+let cardMagicGrid = new MagicGrid({
     container: '.m-grid',
     animate: false,
     gutter: 32,
@@ -6,10 +7,7 @@ let magicGrid = new MagicGrid({
     center: true
 
 });
-
-magicGrid.listen();
-
-
+cardMagicGrid.listen();
 
 let faqMagicGrid = new MagicGrid({
     container: '.m-grid-faq',
@@ -19,9 +17,7 @@ let faqMagicGrid = new MagicGrid({
     center: true
 
 });
-
 faqMagicGrid.listen();
-
 
 let revMagicGrid = new MagicGrid({
     container: '.m-grid-rev',
@@ -31,5 +27,4 @@ let revMagicGrid = new MagicGrid({
     center: true
 
 });
-
 revMagicGrid.listen();

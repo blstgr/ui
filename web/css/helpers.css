@@ -178,6 +178,10 @@
     margin-bottom: var(--space-md) !important;
 }
 
+.mb-lg {
+    margin-bottom: var(--space-lg) !important;
+}
+
 .mlr-auto {
     margin-left: auto !important;
     margin-right: auto !important;
@@ -285,6 +289,10 @@
 
 .flg-0 {
     flex-grow: 0 !important;
+}
+
+.flg-1 {
+    flex-grow: 1 !important;
 }
 
 .ai-end {

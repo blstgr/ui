@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link href="./css/grid.css" rel="stylesheet">
     <link href="./css/main.css" rel="stylesheet">
-    <script defer="defer" src="https://use.fontawesome.com/releases/v5.9.0/js/all.js"></script>
+    <script defer="defer" src="https://use.fontawesome.com/releases/v5.15.0/js/all.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@400;900&display=swap" rel="stylesheet">
@@ -79,12 +79,22 @@
                     <div class="col-2">
                         <h2>My SSL</h2>
                     </div>
-                    <div class="col-5">
-                        <button class="btn-s btn-secondary">Activate </button>
-                        <button class="btn-s btn-secondary">Renew</button>
-                        <button class="btn-s btn-secondary">Reactivate</button>
+                    <div class="col-4">
+
+                    
+                        <div class="tab-group m-0">
+                            <div class="tab-active">All</div>
+                            <div class="tab">Reactivate</div>
+                            <div class="tab">Renew</div>
+                        </div>
+                     
+                      
+                   
                     </div>
-                    <div class="col-5">
+                    <div class="col-2">
+                        <button class="btn-s btn-secondary"><i class="fab fa-octopus-deploy mr-minx2"></i>Install </button>
+                    </div>
+                    <div class="col-4">
                         <input type="text" class="input" placeholder="Search">
                     </div>
 
@@ -291,8 +301,7 @@
                             </div>
                             <div class="col-sm-5">
                                 <div class="section-flex justify-content-end">
-                                    <button class="btn btn-ghost m-0">
-                                        <i class="fas fa-shopping-bag mr-minx2"></i>Install</button>
+                                    
                                     <button class="btn btn-ghost m-0"><i class="fas fa-arrow-down"></i>
                                         SSL files</button>
                                     <button class="btn btn-ghost m-0"><i class="far fa-plus-square"></i>
@@ -376,9 +385,10 @@
 
                                     </div>
                                     <div class="col-3 ">
-                                        <span class="badge-alert">
-                                            <i class="fas fa-pause mr-minx2"></i>Paused
+                                        <span class="badge-success">
+                                            <i class="fas fa-satellite-dish mr-minx2"></i>Active
                                         </span>
+
 
                                     </div>
                                 </div>

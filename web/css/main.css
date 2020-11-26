@@ -1,4 +1,5 @@
 
+@import url("theme.css");
 
 @import url("vars.css");
 @import url("holders.css");
@@ -43,7 +44,7 @@ body {
 
     background-image: url("https://www.dots.co/assets/images/twodots/wallpapers/Space2-Desktop.jpg"); */
     
-   background-size: 120%;
+    background-size: 120%;
     margin: 0;
     font-family: "Lato", sans-serif;
     font-size: var(--font-size-base);
@@ -184,7 +185,7 @@ body {
 }
 
 .browser-ov-dropdown.dropdown::before{
-    top: 154px;
+    top: 180px;
     left: -12px;
     border-width: 12px 12px 12px 0;
     border-color: transparent #ffffff transparent transparent

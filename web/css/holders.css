@@ -3,9 +3,8 @@
 .main {
     margin: auto;
     width: 95vw;
+line-height: var(--line-height-base);
 
-    line-height: var(--line-height-base);
-    color: var(--color-brand-dark);
 }
 
 .section,
@@ -91,6 +90,12 @@
     margin-right: auto;
 }
 
+.holder-cta{
+    max-width: var(--width-sm);
+}
+    
+
+
 .holder-cta-v {
     flex-direction: column;
     max-width: var(--width-xs);
@@ -107,7 +112,7 @@
 }
 
 .holder-cta-v button + button {
-    margin-top: var(--space-minx3);
+    margin-top: var(--space-xs);
 }
 
 .holder-fixed-v {

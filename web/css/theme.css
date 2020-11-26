@@ -1,0 +1,29 @@
+.dm {
+    background-image: none;
+    background-color: var(--color-brand-dark);
+    color: var(--color-brand-light);
+   
+}
+
+.dm .section,
+.dm .section-lg,
+.dm .navbar{
+    background-color: rgb(255 255 255 / 0.1);
+}
+
+.dm .bg-transparent{
+    background-color: transparent;
+}
+
+
+.dm .navbar{
+    background-color: rgb(255 255 255 / 0.1);
+}
+
+.dm .nav-item a{
+    color: var(--color-brand-light);
+}
+
+.dm .card{
+    background-color: var(--color-brand-dark);
+}
