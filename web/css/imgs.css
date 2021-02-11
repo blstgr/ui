@@ -16,7 +16,7 @@ img {
 
 .figure-sm {
     height: var(--height-lg);
-    margin: var(--space-xs) 0 var(--text-indent);
+    margin: var(--space-xs) 0 var(--space-md);
 }
 
 .figure-lg {
