@@ -1,180 +1,165 @@
 /* btns */
-
 .btn,
 .btn-s {
-    height: var(--height);
-    padding: 0 var(--space-sm);
-    margin: var(--space-minx2);
-    border-radius: var(--height);
-    border: 2px solid transparent;
-    line-height: var(--height)-2;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: var(--font-size-sm);
-    font-weight: bold;
-    text-align: center;
-    color: var(--color-brand-dark);
-    font-family: 'Roboto Mono', monospace;
-    box-shadow: 0 var(--space-min) 0 currentColor;
-    transition: all .2s ease-out;
+  height: var(--height);
+  padding: 0 var(--space-sm);
+  margin: var(--space-minx2);
+  border-radius: var(--height);
+  border: 2px solid transparent;
+  line-height: var(--height)-2;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: var(--font-size-sm);
+  font-weight: bold;
+  text-align: center;
+  color: var(--color-brand-dark);
+  font-family: 'Roboto Mono', monospace;
+  box-shadow: 0 var(--space-min) 0 currentColor;
+  transition: all .2s ease-out;
 }
 
 .btn:focus,
 .btn-s:focus,
 .btn-xs:focus {
-    outline: var(--focus);
-    transition: none;
-
+  outline: var(--focus);
+  transition: none;
 }
 
 .btn:hover,
 .btn-s:hover,
 .btn-xs:hover {
-    transform: scale(1.05);
-    cursor: pointer;
-
+  transform: scale(1.05);
+  cursor: pointer;
 }
-
 
 .btn:active,
 .btn-s:active,
 .btn-xs:active {
-    box-shadow: 0 2px 0 currentColor;
-    outline: none;
-
+  box-shadow: 0 2px 0 currentColor;
+  outline: none;
 }
 
 .btn-s {
-    height: var(--height-sm);
-    line-height: var(--height-sm)-2;
-    padding: 0 var(--space-xs);
+  height: var(--height-sm);
+  line-height: var(--height-sm)-2;
+  padding: 0 var(--space-xs);
 }
 
 .btn-xs {
-    display: inline-block;
-    height: var(--height-xs);
-    line-height: calc(var(--height-xs)-2px);
-    min-width: var(--height-xs);
-    border-radius: var(--radius-sm);
-    font-size: var(--font-size-sm);
-    vertical-align: text-bottom;
-    text-align: center;
-    border-width: 1px;
-    font-family: 'Roboto Mono', monospace;
+  display: inline-block;
+  height: var(--height-xs);
+  line-height: calc(var(--height-xs)-2px);
+  min-width: var(--height-xs);
+  border-radius: var(--radius-sm);
+  font-size: var(--font-size-sm);
+  vertical-align: text-bottom;
+  text-align: center;
+  border-width: 1px;
+  font-family: 'Roboto Mono', monospace;
 }
 
 .btn-xs svg {
-    font-size: 10px;
+  font-size: 10px;
 }
-
-
 
 .btn:last-child,
 .btn:only-child,
 .btn-s:last-child,
 .btn-s:only-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .btn-primary {
-    background-color: var(--color-success);
-    border-color: var(--color-brand-dark);
+  background-color: var(--color-success);
+  border-color: var(--color-brand-dark);
 }
 
 .btn-secondary {
-    border-color: var(--color-brand-dark);
-    background: white;
+  border-color: var(--color-brand-dark);
+  background: white;
 }
 
-
 .btn-secondary.active {
-    background: var(--color-accent);
+  background: var(--color-accent);
 }
 
 .btn-ghost {
-    border-radius: 0;
-    background-color: transparent;
-    border-color: transparent;
-    box-shadow: none;
-    line-height: var(--height);
+  border-radius: 0;
+  background-color: transparent;
+  border-color: transparent;
+  box-shadow: none;
+  line-height: var(--height);
 }
 
 .btn-s.btn-ghost {
-    line-height: calc(var(--height-sm)-2px);
+  line-height: calc(var(--height-sm)-2px);
 }
 
 .btn-ghost+.btn-ghost {
-    margin-left: var(--space-xs);
+  margin-left: var(--space-xs);
 }
 
-
 .btn-block {
-    width: 100%;
+  width: 100%;
 }
 
 .btn-close {
-    margin-right: calc(-1*var(--space-sm));
+  margin-right: calc(-1*var(--space-sm));
 }
 
 .btn img {
-    position: relative;
-    display: inline-block;
-    vertical-align: middle;
-    width: 20px;
-    top: -3px;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  top: -3px;
 }
-
-
 
 .link,
 .link-plain {
-    display: inline-block;
-    color: inherit;
-    transition: all .2s ease-out;
-
+  display: inline-block;
+  color: inherit;
+  transition: all .2s ease-out;
 }
 
 button.link,
 button.link-plain {
-    background: transparent;
-    border: none;
-    font-size: inherit;
-    padding: 0;
+  background: transparent;
+  border: none;
+  font-size: inherit;
+  padding: 0;
 }
 
 button.title-xs {
-    font-size: var(--font-size-sm);
+  font-size: var(--font-size-sm);
 }
 
 .link-plain {
-    text-decoration: none;
+  text-decoration: none;
 }
-
 
 .link:hover,
 .link-plain:hover {
-    text-decoration: underline;
-    transform: scale(1.05);
-    cursor: pointer;
+  text-decoration: underline;
+  transform: scale(1.05);
+  cursor: pointer;
 }
 
 .link:focus,
 .link-plain:focus {
-    outline: var(--focus);
-    transition: none;
+  outline: var(--focus);
+  transition: none;
 }
 
 .link-copy:hover {
-    text-decoration: none;
-
+  text-decoration: none;
 }
 
 .link+.link {
-    margin-left: var(--space-minx2);
+  margin-left: var(--space-minx2);
 }
 
-a{
-    color: inherit;
-    text-decoration: none;
+a {
+  color: inherit;
+  text-decoration: none;
 }
-

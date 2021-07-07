@@ -3,36 +3,35 @@
 .badge-success,
 .badge-alert,
 .badge-info {
-    display: inline-block;    
-    line-height: 1;
-    min-width: var(--height-xs);
-    padding: 7px var(--space-minx2);
-    /* margin: var(--space-min); */
-    background-color: var(--color-brand-dark);
-    color: white;
-    border-radius: var(--height-xs);
-    font-size: var(--font-size-xs);
-    text-align: center;
-    font-style: normal;
-    font-family: 'Roboto Mono', monospace;
-   
+  display: inline-block;
+  line-height: 1;
+  min-width: var(--height-xs);
+  padding: 7px var(--space-minx2);
+  /* margin: var(--space-min); */
+  background-color: var(--color-brand-dark);
+  color: white;
+  border-radius: var(--height-xs);
+  font-size: var(--font-size-xs);
+  text-align: center;
+  font-style: normal;
+  font-family: 'Roboto Mono', monospace;
 }
-.badge-square{
-    height: var(--height-xs);
-    line-height: var(--height-xs);
-    width: var(--height-xs);
-    padding: 0;
+
+.badge-square {
+  height: var(--height-xs);
+  line-height: var(--height-xs);
+  width: var(--height-xs);
+  padding: 0;
 }
 
 .badge-success {
-    background-color: var(--color-success);
+  background-color: var(--color-success);
 }
 
 .badge-alert {
-    background-color: var(--color-accent);
-    
+  background-color: var(--color-accent);
 }
 
 .badge-info {
-    background-color: var(--color-info);
+  background-color: var(--color-info);
 }

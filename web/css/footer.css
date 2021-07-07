@@ -1,19 +1,18 @@
 footer {
-    margin-top: var(--space-minx2);
-    padding: var(--space-lg) var(--space-md);
-    background-color: var(--color-brand);
-    font-size: var(--font-size-xs);
-    font-family: 'Roboto Mono', monospace;
-    line-height: var(--line-height-sm);
-    backdrop-filter: blur(10px);
+  margin-top: var(--space-minx2);
+  padding: var(--space-lg) var(--space-md);
+  background-color: var(--color-brand);
+  font-size: var(--font-size-xs);
+  font-family: 'Roboto Mono', monospace;
+  line-height: var(--line-height-sm);
+  backdrop-filter: blur(10px);
 }
 
 footer .svg-inline--fa {
-    font-size: var(--font-size-base);
+  font-size: var(--font-size-base);
 }
 
-
 footer a {
-    color: inherit;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }

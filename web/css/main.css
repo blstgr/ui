@@ -1,6 +1,4 @@
-
 @import url("theme.css");
-
 @import url("vars.css");
 @import url("holders.css");
 @import url("type.css");
@@ -10,7 +8,6 @@
 @import url("list-group.css");
 @import url("cards.css");
 @import url("nav.css");
-
 @import url("hellobar.css");
 @import url("badge.css");
 @import url("input.css");
@@ -24,173 +21,158 @@
 @import url("tooltip.css");
 @import url("toggle.css");
 @import url("dropdown.css");
-
 @import url("helpers.css");
 
-
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: var(--color-brand);
-    background-image: url("https://www.indiegamewebsite.com/wp-content/uploads/2018/08/Super-Meat-Boy.png");
-    
-    background-image: url("https://www.dots.co/assets/images/twodots/wallpapers/Arcade1-Desktop.png");
-
-    background-image: url("https://www.dots.co/assets/images/twodots/wallpapers/Monkeys4-Desktop.png");
-
-    /* background-image: url("https://www.dots.co/assets/images/twodots/wallpapers/Japan3-Desktop.png");
+  background-color: var(--color-brand);
+  background-image: url("https://www.indiegamewebsite.com/wp-content/uploads/2018/08/Super-Meat-Boy.png");
+  background-image: url("https://www.dots.co/assets/images/twodots/wallpapers/Arcade1-Desktop.png");
+  background-image: url("https://www.dots.co/assets/images/twodots/wallpapers/Monkeys4-Desktop.png");
+  /* background-image: url("https://www.dots.co/assets/images/twodots/wallpapers/Japan3-Desktop.png");
 
     background-image: url("https://www.dots.co/assets/images/twodots/wallpapers/Space2-Desktop.jpg"); */
-    
-    background-size: 120%;
-    margin: 0;
-    font-family: "Lato", sans-serif;
-    font-size: var(--font-size-base);
-    line-height: var(--line-height-base);
-   
+  background-size: 120%;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
 }
 
 /*header&footer*/
-
 /*calendar*/
-
 .calendar {
-    max-width: 332px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    text-align: center;
+  max-width: 332px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  text-align: center;
 }
 
 .calendar-header {
-    position: relative;
-    padding: var(--space-xs) var(--space-md);
-    text-transform: uppercase;
-    font-weight: bold;
-    color: white;
-    background: var(--color-info);
-    border-bottom: var(--space-xxs) solid var(--color-info-dark);
-    border-top-left-radius: var(--radius);
-    border-top-right-radius: var(--radius);
+  position: relative;
+  padding: var(--space-xs) var(--space-md);
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  background: var(--color-info);
+  border-bottom: var(--space-xxs) solid var(--color-info-dark);
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
 }
 
 .calendar-header::before,
 .calendar-header::after {
-    position: absolute;
-    height: 50px;
-    width: 20px;
-    background: #393934;
-    content: "";
-    border-radius: 20px;
-    top: -24px;
-    left: 60px;
-    border-bottom: 4px solid white;
+  position: absolute;
+  height: 50px;
+  width: 20px;
+  background: #393934;
+  content: "";
+  border-radius: 20px;
+  top: -24px;
+  left: 60px;
+  border-bottom: 4px solid white;
 }
 
 .calendar-header::after {
-    left: auto;
-    right: 60px;
+  left: auto;
+  right: 60px;
 }
 
 .calendar-body {
-    padding: var(--space-xl) var(--space-md);
-    font-size: var(--font-size-lg);
-    font-weight: bold;
-    border-bottom: 4px solid var(--color-brand);
-    background-color: var(--color-brand-light);
-    border-bottom-left-radius: var(--radius);
-    border-bottom-right-radius: var(--radius);
+  padding: var(--space-xl) var(--space-md);
+  font-size: var(--font-size-lg);
+  font-weight: bold;
+  border-bottom: 4px solid var(--color-brand);
+  background-color: var(--color-brand-light);
+  border-bottom-left-radius: var(--radius);
+  border-bottom-right-radius: var(--radius);
 }
 
 /*lib demo only*/
-
 .demo-flex {
-    display: flex;
+  display: flex;
 }
 
 .demo-highlight {
-    border: 2px dashed var(--color-accent-dark);
-    background-color: #ff615b0d;
+  border: 2px dashed var(--color-accent-dark);
+  background-color: #ff615b0d;
 }
 
 .demo-banner-bg {
-    background-image: url("../img/demo-banner-bg.png");
-    background-color: var(--color-info-light);
-    background-size: cover;
+  background-image: url("../img/demo-banner-bg.png");
+  background-color: var(--color-info-light);
+  background-size: cover;
 }
 
-
-
 .video {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    height: var(--width-sm);
-
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  height: var(--width-sm);
 }
 
 @media (min-width: 1200px) {
-    .video {
-        height: calc(var(--width-xs) * 2);
-
-    }
+  .video {
+    height: calc(var(--width-xs) * 2);
+  }
 }
 
 .video-play {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: var(--height);
-    width: var(--height);
-    margin: 0 auto;
-    background-color: var(--color-brand-dark);
-    border-radius: 50%;
-    color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--height);
+  width: var(--height);
+  margin: 0 auto;
+  background-color: var(--color-brand-dark);
+  border-radius: 50%;
+  color: white;
 }
 
 .video-play .fa-play {
-    position: relative;
-    left: 2px;
+  position: relative;
+  left: 2px;
 }
 
 .dmca {
-    position: relative;
-    bottom: var(--space-minx2);
+  position: relative;
+  bottom: var(--space-minx2);
 }
 
 .twitter-tweet.twitter-tweet-rendered {
-    margin-bottom: 0px !important;
+  margin-bottom: 0px !important;
 }
 
 .marker {
-    position: absolute;
-    bottom: var(--space-md);
-    left: var(--space-sm);
+  position: absolute;
+  bottom: var(--space-md);
+  left: var(--space-sm);
 }
 
 .cc-img {
-    width: var(--height-xs)
+  width: var(--height-xs)
 }
 
-.browser-ov-dropdown{
-    position: absolute;
-    top: 20px;
-    right:28px;
-    left: 300px;
+.browser-ov-dropdown {
+  position: absolute;
+  top: 20px;
+  right: 28px;
+  left: 300px;
 }
 
-.browser-ov-dropdown.dropdown::before{
-    top: 180px;
-    left: -12px;
-    border-width: 12px 12px 12px 0;
-    border-color: transparent #ffffff transparent transparent
+.browser-ov-dropdown.dropdown::before {
+  top: 180px;
+  left: -12px;
+  border-width: 12px 12px 12px 0;
+  border-color: transparent #ffffff transparent transparent
 }
 
-.browser{
-    border-top: 32px solid currentColor;
+.browser {
+  border-top: 32px solid currentColor;
 }

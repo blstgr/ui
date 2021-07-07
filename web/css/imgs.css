@@ -1,65 +1,60 @@
 /*imgs & hero*/
-
 img {
-    display: block;
-    width: 100%;
+  display: block;
+  width: 100%;
 }
 
 .figure,
 .figure-sm,
 .figure-lg {
-    height: calc(var(--width-sm) * 1);
-    margin: var(--text-indent) 0;
-    background-color: var(--color-brand);
-    overflow: hidden;
+  height: calc(var(--width-sm) * 1);
+  margin: var(--text-indent) 0;
+  background-color: var(--color-brand);
+  overflow: hidden;
 }
 
 .figure-sm {
-    height: var(--height-lg);
-    margin: var(--space-xs) 0 var(--space-md);
+  height: var(--height-lg);
+  margin: var(--space-xs) 0 var(--space-md);
 }
 
 .figure-lg {
-    height: var(--width-md);
+  height: var(--width-md);
 }
 
-
 .hero-img {
-    margin-top: 8px;
-    width: 548px;
-    height: 270px;
-    overflow: hidden;
+  margin-top: 8px;
+  width: 548px;
+  height: 270px;
+  overflow: hidden;
 }
 
 .hero-banner {
-    text-align: center;
-    margin-top: 8px;
+  text-align: center;
+  margin-top: 8px;
 }
-
 
 /*avatar*/
-
 .avatar,
 .avatar-s {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 94px;
-    width: 94px;
-    min-width: 94px;
-    background-color: white;
-    border-radius: 50%;
-    text-align: center;
-    overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 94px;
+  width: 94px;
+  min-width: 94px;
+  background-color: white;
+  border-radius: 50%;
+  text-align: center;
+  overflow: hidden;
 }
 
-
 .avatar-s {
-    height: var(--height);
-    width: var(--height);
-    min-width: var(--height);
+  height: var(--height);
+  width: var(--height);
+  min-width: var(--height);
 }
 
 .img-inverted {
-    filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1);
 }
