@@ -2,361 +2,183 @@
 <html lang="en">
 
 <head>
-    <title>Welcome</title>
-    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <link href="../styles/css/flexboxgrid.css" rel="stylesheet">
-    <link href="./css/main.css" rel="stylesheet">
-    <script defer="defer" src="https://use.fontawesome.com/releases/v5.9.0/js/all.js"></script>
-
+  <title>Welcome</title>
+  <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link href="../styles/css/flexboxgrid.css" rel="stylesheet">
+  <link href="./css/main.css" rel="stylesheet">
+  <script defer="defer" src="https://use.fontawesome.com/releases/v5.9.0/js/all.js"></script>
 </head>
 
 <body>
-    <div class="main">
-
-        <div class="section header">
-            <div class="holder-left">
-                <img class="logo" src="./img/logo.png">
-            </div>
-            <div class="holder-right">
-                <a>View in browser</a>
-            </div>
-        </div>
-
-        <div class="hero-img demo-banner-bg">
-            <img src="./img/system/welcome.png" alt="">
-        </div>
-
-
-        <!-- Introduction -->
-        <div class="section">
-
-            <h2>Nice to meet you</h2>
-            <p>Hey Jack, thanks for joining SSLs.com. Read the overview below to get started. We’ll make your journey
-                through the intricate world of SSL a speedy and straightforward ride. Buckle up — let’s go.
-
-            </p>
-
-
-
-        </div>
-
-        <!-- table of contents -->
-        <div class="section" id="toc">
-            <h2>Table of contents</h2>
-            <div class=holder-intext>
-                <div class="list-group">
-                    <li class="list-group-item">
-                        <span>1. <a href="#wfh">Your SSL dashboard</a></span>
-                    </li>
-                    <div class="list-group-item">
-                        <span>2. <a href="#PK">Get started in three steps
-                            </a>
-                    </div>
-                    <div class="list-group-item">
-                        <span>3. <a href="#GB">The two ways to activate SSL
-
-
-                            </a></span>
-                    </div>
-                    <div class="list-group-item">
-                        <span>4. <a href="#seal">The 100 million ways to install SSL
-
-                            </a></span>
-                    </div>
-                    <div class="list-group-item">
-                        <span>5. <a href="#SAN">SSL renewal: time to start over
-
-                            </a></span>
-                    </div>
-                    <div class="list-group-item">
-                        <span>6. <a href="#PCI"> What about auto-renewals?
-                            </a></span>
-                    </div>
-                    <div class="list-group-item">
-                        <span>7. <a href="#deal">Tools you may find useful
-                        </span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <!-- 1 -->
-        <div class="section" id="wfh">
-
-            <h2>1. Your SSL dashboard</h2>
-            <p>First things first: <a target="_blank" href="https://www.ssls.com/user/bundles"> this is where the magic
-                    happens</a> — the
-                SSL dashboard. Whether you want to activate an SSL, download it, view them all, find one, sort them,
-                renew one — everything happens here.
-
-
-            </p>
-
-        </div>
-
-
-        <!-- 2 -->
-        <div class="section" id="PK">
-            <h2>2. Get started in three steps</h2>
-            <p>To use an SSL you first need to activate it and then install it on
-                your server. Activation consists of
-                two steps for a basic SSL and three steps for an SSL that requires organization validation: </p>
-            <ol>
-                <li>
-                    <a target="_blank"
-                        href="https://www.ssls.com/knowledgebase/okay-so-i-ordered-an-ssl-how-do-i-get-it-to-work-on-my-domain/">
-                        Submit your data to the CA</a>. CA is short for Certificate Authority — these are the guys who
-                    issue
-                    SSL certificates.
-                </li>
-                <li>
-                    <a target="_blank"
-                        href="
-                            https://www.ssls.com/knowledgebase/how-can-i-complete-the-domain-control-validation-for-my-ssl-certificate/">Confirm
-                        that you control the domain you wish to secure </a> </li>
-                <li>
-                    Pass company checks: <a target="_blank"
-                        href=" https://www.ssls.com/knowledgebase/ov-ssl-certificate-validation-check-list/">organization
-                        validation for an OV SSL </a> or <a target="_blank"
-                        href=" https://www.ssls.com/knowledgebase/okay-i-ordered-an-ev-ssl-whats-next/">extended
-                        validation for an EV SSL</a>.
-
-                </li>
-            </ol>
-
-
-
-
-            </p>
-
-
-            <p>Some jargon you need to know:</p>
-
-            <ul>
-                <li>Your activation request is submitted to the CA <a target="_blank"
-                        href="https://www.ssls.com/knowledgebase/what-is-csr/">
-                        in the form of a CSR code</a>.</li>
-                <li> During the activation process, a <a target="_blank"
-                        href=" https://www.ssls.com/blog/how-to-find-your-private-key/#more-1366">Private Key</a>
-                    is created at the same time as the CSR. Guard it with your life!! (Or just save it somewhere you’ll
-                    remember — you’ll need it later to install your SSL).</li>
-            </ul>
-
-        </div>
-
-
-        <!-- 3 -->
-        <div class="section" id="GB">
-            <h2>3. Two ways to activate SSL </h2>
-
-
-            <p>
-                We have implemented an <a target="_blank"
-                    href="https://www.ssls.com/knowledgebase/okay-so-i-ordered-an-ssl-how-do-i-get-it-to-work-on-my-domain/">automatic
-                    way to create the CSR and Private Key</a> in your browser as an alternative to generating them
-                yourself on the server.
-
-                Please note that Windows servers require you to <a target="_blank"
-                    href="https://www.ssls.com/knowledgebase/how-to-install-an-ssl-on-a-windows-server-when-the-csr-was-generated-elsewhere/">convert
-                    your
-                    SSL to PFX</a> if the Private Key is not
-                generated on the server.
-            </p>
-            <p>
-                <div class=holder-intext>
-                    <div class="media">
-                        <div class="media-img">
-                            <div class="avatar">
-                                <img src="./img/system/avatar_important.png" alt="">
-                            </div>
-                        </div>
-                        <div class="media-body">
-                            The Private Key will be saved to the “Downloads” folder on your
-                            computer by default with the
-                            name "site_com_key.zip".</a>
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <p> Automatic CSR and Private Key generation is not available for <a target="_blank"
-                        href="https://www.ssls.com/domain-type/multi-domain-ssl-certificates">multi-domain
-                        certificates</a>, so you will have to generate your
-                    CSR and Private Key using the method outlined below.
-                </p>
-
-                <p>
-                    The more traditional way to generate a CSR and Private Key is on your hosting server. <a
-                        href="https://www.ssls.com/knowledgebase/where-can-i-find-instructions-on-how-to-generate-a-csr/">
-                        Here you can find out how to do this</a> on the most popular servers and control panels.
-                </p>
-
-                <p>No matter how you choose to create your Private Key, if it’s lost or stolen, you will need to <a
-                        targer="_blank"
-                        href="https://www.ssls.com/knowledgebase/what-is-an-ssl-reissue-and-when-will-i-need-to-request-it/">
-                        get your SSL reissued</a>.</p>
-            </p>
-
-        </div>
-
-
-        <!-- 4 -->
-        <div class="section" id="seal">
-            <div class="section-copy">
-                <h2>4. The 100 million ways to install SSL
-                </h2>
-                <p>Once the CA issues your SSL, you’ll get an email from them with the SSL file and <a target="_blank"
-                        href="https://www.ssls.com/knowledgebase/where-do-i-get-a-ca-bundle-file/ ">CA bundle</a>.
-                    Alternatively, you can download
-                    all the files <a target="_blank"
-                        href="https://www.ssls.com/knowledgebase/can-i-download-certificate-somewhere-on-your-site/">from
-                        your SSL dashboard</a>.
-
-                </p>
-
-                <p>In case you chose to create the CSR and Private Key automatically in-browser, take the
-                    SSL file, CA bundle and the Private Key file you saved to your “Downloads” folder earlier and upload
-                    them to your server. </p>
-                <p>If you generated your own CSR on the server, just upload the SSL File and CA
-                    bundle — your Private Key is already there.</p>
-
-
-                <p>There are a lot of ways (basically millions) to upload the files depending on what kind of server
-                    your site is hosted on. <a target="_blank"
-                        href="https://www.ssls.com/knowledgebase/where-can-i-find-instructions-on-how-to-install-my-ssl-certificate/">
-                        Here is a list of the most commonly-used server types</a> and how to install
-                    your SSL on them.</p>
-
-
-            </div>
-
-
-        </div>
-
-
-        <!-- 5 -->
-        <div class="section" id="PCI">
-            <h2>5. SSL renewal: time to start over
-            </h2>
-
-            <p>When it’s time to renew, you’ll need to go through the whole process again, ugh. It might seem like a
-                pain, but it’s for your benefit. Honest.
-                To minimize the chance of someone impersonating your site or stealing your private key, as well as
-                ensuring that a company that received an SSL still exists, the lifespan of an SSL is limited.
-            </p>
-            <p>
-                So, when your SSL dies, your CA gives you a new one for the same domain. Before this happens, you will
-                get an email from us alerting you that the time to renew is coming soon.
-            </p>
-            <p>You can also purchase a brand new cert from the SSLs.com store and activate it for the same domain, but
-                the
-                benefit of buying from the renewal email is that the remaining days of your current SSL will be
-                transferred to your new one. The earliest time to renew is 30 days before expiration. </p>
-
-            <p>What does the renewal process look like, anyway? Familiar, probably… Count to 10, rinse and repeat:</p>
-            <ol>
-                <li><a target="_blank"
-                        href="   https://www.ssls.com/knowledgebase/okay-so-i-ordered-an-ssl-how-do-i-get-it-to-work-on-my-domain/">
-                        Submit your data to the CA</a></li>
-                <li><a target="_blank"
-                        href="https://www.ssls.com/knowledgebase/how-can-i-complete-the-domain-control-validation-for-my-ssl-certificate/">Confirm
-                        that you control the domain you wish to secure.
-
-
-                    </a></li>
-                <li>
-                    Pass company checks: <a target="_blank"
-                        href=" https://www.ssls.com/knowledgebase/ov-ssl-certificate-validation-check-list/">
-                        organization validation for an OV SSL</a> or <a target="_blank"
-                        href=" https://www.ssls.com/knowledgebase/okay-i-ordered-an-ev-ssl-whats-next/">extended
-                        validation for an EV SSL</a>
-                </li>
-            </ol>
-
-
-
-
-        </div>
-
-
-        <!-- 6 -->
-        <div class="section" id="SAN">
-            <h2>6. How about auto-renewals?
-            </h2>
-
-            <p>Sorry, we don’t do that yet. BUT, we offer three-year and four-year SSL certificates as a way to pay for
-                several years in advance. Our long-term options give you the benefit of having a better price per year
-                and one less step during the renewal process. No need to go through the shopping cart — just <a
-                    target="_blank"
-                    href="https://www.ssls.com/knowledgebase/how-does-ssl-reactivation-work/">re-activate
-                    the SSL </a>
-                in your SSL dashboard and re-install it on your server after a two-year period for free.
-
-
-            </p>
-
-            <div class=holder-intext>
-                <div class="media">
-                    <div class="media-img">
-                        <div class="avatar">
-                            <img src="./img/system/avatar_important.png" alt="">
-                        </div>
-                    </div>
-                    <div class="media-body">
-                        To give you the lowest price we can, we'll ask you to reactivate PositiveSSL and EssentialSSL
-                        annually.
-                    </div>
-                </div>
-            </div>
-            <p>Whatever automatic renewal you are promised, it's always semi-automatic, if there is no access to your
-                server. With every renewal you get a new SSL that needs to be newly installed.</p>
-
-        </div>
-
-
-        <!-- 7 -->
-        <div class="section" id="#deal">
-            <h2>7. Tools you may find useful</h2>
-
-            <ol>
-                <li><a target="_blank" href="https://decoder.link/matcher">
-                        Check if an SSL and Private Key are a pair </a> — this will help you to avoid errors during
-                    installation if you've created multiple CSRs and Private Keys before.</li>
-                <li><a target="_blank" href="https://decoder.link/">Confirm that your SSL is installed properly
-
-                    </a></li>
-                <li>
-                    <a target="_blank" href="https://decoder.link/result/dfb4ea8bfdae8dfabcb4861c2a0ada17ac37e846">Make
-                        sure there are no CSR errors
-                    </a>
-                </li>
-                <li>
-                    <a target="_blank" href="https://decoder.link/converter">Сonvert your SSL files to PFX
-                    </a> (for Windows Servers and some other applications)
-                </li>
-            </ol>
-
-        </div>
-
-
-
-        <!-- footer -->
-        <div class="section footer">
-
-            <p>You got this email because you <s>have an account with us</s> rock. We respect your privacy.
-                Stay savvy. © SSLs.com, AZ 85034, USA
-
-                <p><a target="_blank" href="https://support.ssls.com/">Helpdesk</a> | <a target="_blank"
-                        href="https://www.ssls.com/privacy-policy">Privacy policy</a> | <a target="_blank"
-                        href="https://www.ssls.com/terms-of-service#">Terms</a></p>
-
-        </div>
-
-
+  <div class="main">
+    <div class="section header">
+      <div class="holder-left">
+        <img class="logo" src="./img/logo.png">
+      </div>
+      <div class="holder-right">
+        <a>View in browser</a>
+      </div>
     </div>
-
+    <div class="hero-img demo-banner-bg">
+      <img src="./img/system/welcome.png" alt="">
+    </div>
+    <!-- Introduction -->
+    <div class="section">
+      <h2>Nice to meet you</h2>
+      <p>Hey Jack, thanks for joining SSLs.com. Read the overview below to get started. We’ll make your journey through the intricate world of SSL a speedy and straightforward ride. Buckle up — let’s go. </p>
+    </div>
+    <!-- table of contents -->
+    <div class="section" id="toc">
+      <h2>Table of contents</h2>
+      <div class=holder-intext>
+        <div class="list-group">
+          <li class="list-group-item">
+            <span>1. <a href="#wfh">Your SSL dashboard</a></span>
+          </li>
+          <div class="list-group-item">
+            <span>2. <a href="#PK">Get started in three steps </a>
+          </div>
+          <div class="list-group-item">
+            <span>3. <a href="#GB">The two ways to activate SSL </a></span>
+          </div>
+          <div class="list-group-item">
+            <span>4. <a href="#seal">The 100 million ways to install SSL </a></span>
+          </div>
+          <div class="list-group-item">
+            <span>5. <a href="#SAN">SSL renewal: time to start over </a></span>
+          </div>
+          <div class="list-group-item">
+            <span>6. <a href="#PCI"> What about auto-renewals? </a></span>
+          </div>
+          <div class="list-group-item">
+            <span>7. <a href="#deal">Tools you may find useful </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 1 -->
+    <div class="section" id="wfh">
+      <h2>1. Your SSL dashboard</h2>
+      <p>First things first: <a target="_blank" href="https://www.ssls.com/user/bundles"> this is where the magic happens</a> — the SSL dashboard. Whether you want to activate an SSL, download it, view them all, find one, sort them, renew one —
+        everything happens here. </p>
+    </div>
+    <!-- 2 -->
+    <div class="section" id="PK">
+      <h2>2. Get started in three steps</h2>
+      <p>To use an SSL you first need to activate it and then install it on your server. Activation consists of two steps for a basic SSL and three steps for an SSL that requires organization validation: </p>
+      <ol>
+        <li>
+          <a target="_blank" href="https://www.ssls.com/knowledgebase/okay-so-i-ordered-an-ssl-how-do-i-get-it-to-work-on-my-domain/"> Submit your data to the CA</a>. CA is short for Certificate Authority — these are the guys who issue SSL
+          certificates.
+        </li>
+        <li>
+          <a target="_blank" href="
+                            https://www.ssls.com/knowledgebase/how-can-i-complete-the-domain-control-validation-for-my-ssl-certificate/">Confirm that you control the domain you wish to secure </a>
+        </li>
+        <li> Pass company checks: <a target="_blank" href=" https://www.ssls.com/knowledgebase/ov-ssl-certificate-validation-check-list/">organization validation for an OV SSL </a> or <a target="_blank"
+            href=" https://www.ssls.com/knowledgebase/okay-i-ordered-an-ev-ssl-whats-next/">extended validation for an EV SSL</a>. </li>
+      </ol>
+      </p>
+      <p>Some jargon you need to know:</p>
+      <ul>
+        <li>Your activation request is submitted to the CA <a target="_blank" href="https://www.ssls.com/knowledgebase/what-is-csr/"> in the form of a CSR code</a>.</li>
+        <li> During the activation process, a <a target="_blank" href=" https://www.ssls.com/blog/how-to-find-your-private-key/#more-1366">Private Key</a> is created at the same time as the CSR. Guard it with your life!! (Or just save it somewhere
+          you’ll remember — you’ll need it later to install your SSL).</li>
+      </ul>
+    </div>
+    <!-- 3 -->
+    <div class="section" id="GB">
+      <h2>3. Two ways to activate SSL </h2>
+      <p> We have implemented an <a target="_blank" href="https://www.ssls.com/knowledgebase/okay-so-i-ordered-an-ssl-how-do-i-get-it-to-work-on-my-domain/">automatic way to create the CSR and Private Key</a> in your browser as an alternative to
+        generating them yourself on the server. Please note that Windows servers require you to <a target="_blank" href="https://www.ssls.com/knowledgebase/how-to-install-an-ssl-on-a-windows-server-when-the-csr-was-generated-elsewhere/">convert your
+          SSL to PFX</a> if the Private Key is not generated on the server. </p>
+      <p>
+      <div class=holder-intext>
+        <div class="media">
+          <div class="media-img">
+            <div class="avatar">
+              <img src="./img/system/avatar_important.png" alt="">
+            </div>
+          </div>
+          <div class="media-body"> The Private Key will be saved to the “Downloads” folder on your computer by default with the name "site_com_key.zip".</a>
+          </div>
+        </div>
+      </div>
+      <p> Automatic CSR and Private Key generation is not available for <a target="_blank" href="https://www.ssls.com/domain-type/multi-domain-ssl-certificates">multi-domain certificates</a>, so you will have to generate your CSR and Private Key
+        using the method outlined below. </p>
+      <p> The more traditional way to generate a CSR and Private Key is on your hosting server. <a href="https://www.ssls.com/knowledgebase/where-can-i-find-instructions-on-how-to-generate-a-csr/"> Here you can find out how to do this</a> on the most
+        popular servers and control panels. </p>
+      <p>No matter how you choose to create your Private Key, if it’s lost or stolen, you will need to <a targer="_blank" href="https://www.ssls.com/knowledgebase/what-is-an-ssl-reissue-and-when-will-i-need-to-request-it/"> get your SSL reissued</a>.
+      </p>
+      </p>
+    </div>
+    <!-- 4 -->
+    <div class="section" id="seal">
+      <div class="section-copy">
+        <h2>4. The 100 million ways to install SSL </h2>
+        <p>Once the CA issues your SSL, you’ll get an email from them with the SSL file and <a target="_blank" href="https://www.ssls.com/knowledgebase/where-do-i-get-a-ca-bundle-file/ ">CA bundle</a>. Alternatively, you can download all the files <a
+            target="_blank" href="https://www.ssls.com/knowledgebase/can-i-download-certificate-somewhere-on-your-site/">from your SSL dashboard</a>. </p>
+        <p>In case you chose to create the CSR and Private Key automatically in-browser, take the SSL file, CA bundle and the Private Key file you saved to your “Downloads” folder earlier and upload them to your server. </p>
+        <p>If you generated your own CSR on the server, just upload the SSL File and CA bundle — your Private Key is already there.</p>
+        <p>There are a lot of ways (basically millions) to upload the files depending on what kind of server your site is hosted on. <a target="_blank"
+            href="https://www.ssls.com/knowledgebase/where-can-i-find-instructions-on-how-to-install-my-ssl-certificate/"> Here is a list of the most commonly-used server types</a> and how to install your SSL on them.</p>
+      </div>
+    </div>
+    <!-- 5 -->
+    <div class="section" id="PCI">
+      <h2>5. SSL renewal: time to start over </h2>
+      <p>When it’s time to renew, you’ll need to go through the whole process again, ugh. It might seem like a pain, but it’s for your benefit. Honest. To minimize the chance of someone impersonating your site or stealing your private key, as well as
+        ensuring that a company that received an SSL still exists, the lifespan of an SSL is limited. </p>
+      <p> So, when your SSL dies, your CA gives you a new one for the same domain. Before this happens, you will get an email from us alerting you that the time to renew is coming soon. </p>
+      <p>You can also purchase a brand new cert from the SSLs.com store and activate it for the same domain, but the benefit of buying from the renewal email is that the remaining days of your current SSL will be transferred to your new one. The
+        earliest time to renew is 30 days before expiration. </p>
+      <p>What does the renewal process look like, anyway? Familiar, probably… Count to 10, rinse and repeat:</p>
+      <ol>
+        <li><a target="_blank" href="   https://www.ssls.com/knowledgebase/okay-so-i-ordered-an-ssl-how-do-i-get-it-to-work-on-my-domain/"> Submit your data to the CA</a></li>
+        <li><a target="_blank" href="https://www.ssls.com/knowledgebase/how-can-i-complete-the-domain-control-validation-for-my-ssl-certificate/">Confirm that you control the domain you wish to secure. </a></li>
+        <li> Pass company checks: <a target="_blank" href=" https://www.ssls.com/knowledgebase/ov-ssl-certificate-validation-check-list/"> organization validation for an OV SSL</a> or <a target="_blank"
+            href=" https://www.ssls.com/knowledgebase/okay-i-ordered-an-ev-ssl-whats-next/">extended validation for an EV SSL</a>
+        </li>
+      </ol>
+    </div>
+    <!-- 6 -->
+    <div class="section" id="SAN">
+      <h2>6. How about auto-renewals? </h2>
+      <p>Sorry, we don’t do that yet. BUT, we offer three-year and four-year SSL certificates as a way to pay for several years in advance. Our long-term options give you the benefit of having a better price per year and one less step during the
+        renewal process. No need to go through the shopping cart — just <a target="_blank" href="https://www.ssls.com/knowledgebase/how-does-ssl-reactivation-work/">re-activate the SSL </a> in your SSL dashboard and re-install it on your server after
+        a two-year period for free. </p>
+      <div class=holder-intext>
+        <div class="media">
+          <div class="media-img">
+            <div class="avatar">
+              <img src="./img/system/avatar_important.png" alt="">
+            </div>
+          </div>
+          <div class="media-body"> To give you the lowest price we can, we'll ask you to reactivate PositiveSSL and EssentialSSL annually. </div>
+        </div>
+      </div>
+      <p>Whatever automatic renewal you are promised, it's always semi-automatic, if there is no access to your server. With every renewal you get a new SSL that needs to be newly installed.</p>
+    </div>
+    <!-- 7 -->
+    <div class="section" id="#deal">
+      <h2>7. Tools you may find useful</h2>
+      <ol>
+        <li><a target="_blank" href="https://decoder.link/matcher"> Check if an SSL and Private Key are a pair </a> — this will help you to avoid errors during installation if you've created multiple CSRs and Private Keys before.</li>
+        <li><a target="_blank" href="https://decoder.link/">Confirm that your SSL is installed properly </a></li>
+        <li>
+          <a target="_blank" href="https://decoder.link/result">Make sure there are no CSR errors </a>
+        </li>
+        <li>
+          <a target="_blank" href="https://decoder.link/converter">Сonvert your SSL files to PFX </a> (for Windows Servers and some other applications)
+        </li>
+      </ol>
+    </div>
+    <!-- footer -->
+    <div class="section footer">
+      <p>You got this email because you <s>have an account with us</s> rock. We respect your privacy. Stay savvy. © SSLs.com, AZ 85034, USA
+      <p><a target="_blank" href="https://support.ssls.com/">Helpdesk</a> | <a target="_blank" href="https://www.ssls.com/privacy-policy">Privacy policy</a> | <a target="_blank" href="https://www.ssls.com/terms-of-service#">Terms</a></p>
+    </div>
+  </div>
 </body>
