@@ -5,21 +5,35 @@
     border-radius: var(--radius);
     border: var(--border) solid var(--color-brand-dark);
     background: var(--color-brand-light);
-  
-    
+    width: 100%;  /*always 100% on small screens*/
+
 }
 
-.panel-fixed-sm{
-   min-width: 360px;
+@media screen and (min-width: 48em) {
+    .panel{
+        width: auto;
+    }
+
+  /*may have fixed widht e.g. products*/     
+    .panel-fixed-sm {
+        min-width: 340px;
+        width: auto;
+    }    
+
+    /*margin when more thab 1 panel in a row in flex block*/
+    .grid-container .panel {
+        margin: var(--space-sm);
+    }
+
 }
 
-.panel-header{ 
-  padding: var(--space);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-weight: 600;
- 
+.panel-header {
+    padding: var(--space);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+
 }
 
 /*if panel doesn't have header*/
@@ -30,11 +44,9 @@
 }
 
 /*reduces extra top padding in body if contains header*/
-.panel-header + .panel-body{
+.panel-header+.panel-body {
     padding-top: 0;
 }
-
-
 
 .panel-footer {
     background: var(--color-brand-dark);
@@ -50,17 +62,6 @@
 }
 
 
-.grid-container .panel+.panel{
-    margin-top: auto;
-    margin: var(--space-sm);
-}
-
-
-.grid-container .panel{
-    margin: var(--space-sm);
-}
-
-
 .panel-alert {
     border-color: var(--color-alert-dark);
     color: var(--color-alert-dark);
@@ -71,7 +72,7 @@
     background: var(--color-alert-lighter);
 }
 
-.panel-alert .content-scrolled{
+.panel-alert .content-scrolled {
     background: var(--color-alert-lighter);
 }
 
@@ -91,12 +92,12 @@
 .panel h2,
 .panel .h2,
 .panel h3,
-.panel .h3{
+.panel .h3 {
     margin: 0;
 }
 
 
-.label-responsive .icon{
+.label-responsive .icon {
     margin-right: 0;
 }
 

@@ -38,6 +38,9 @@
   
   
   
+
+
+
 /* For demo: class for parent to show tooltip on hover */
 .has-tooltip{
     position: relative;
@@ -45,11 +48,10 @@
 }
 
 .has-tooltip:hover{
-color: var(--color-info-dark);
+    color: var(--color-info-dark);
     border-radius: var(--radius);
     opacity: 0.9;
     cursor: pointer;
-    
 }
 
 .has-tooltip .tooltip{
@@ -58,7 +60,6 @@ color: var(--color-info-dark);
 
 .has-tooltip:hover .tooltip{
     display: initial;
-    top: 150%;
 }
 
 .tooltip-container {
@@ -71,11 +72,10 @@ color: var(--color-info-dark);
     z-index: 999;
 }
 
-
-.tooltip-container-down{
-    bottom: -2em;
+.tooltip-container .tooltip-down {
+    bottom: -0.5rem;
 }
 
-.tooltip-container-up{
-    top: -2em;
+.tooltip-container .tooltip-up {
+    bottom: 4.3rem
 }

@@ -11,8 +11,6 @@
     text-align: center;
     line-height: normal;
     color: white;
-
-    
 }
 
 .badge-inverted{
@@ -25,12 +23,13 @@
 }
 
 .badge-alert{
-    background: var(--color-alert-dark  );
-    
+    background: var(--color-alert-dark  );    
 }
 
-.btn .badge{
-    margin-left: var(--space);
+
+
+.btn .badge{  /* e.g. counter inside btn */
+    margin-left: var(--space); 
 }
 
 .badge .icon,
@@ -38,7 +37,7 @@
     margin-right: var(--space-sm);
 }
 
-.badge-responsive .icon,
+.badge-responsive .icon, /* *-responsive hides text and leaves only icon */
 .badge-responsive img{
     margin-right: 0;
 }
@@ -47,17 +46,14 @@
     display: none;
 }
 
-
 @media screen and (min-width: 64em) {
     .badge-responsive span{
         display: initial;
     }
-
    
     .badge-responsive img,
     .badge-responsive .icon{
         margin-right:var(--space-sm);
-    }
-  
+    }  
        
 }

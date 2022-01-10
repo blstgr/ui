@@ -41,7 +41,7 @@
   
   .control-container input:checked ~ .checkmark,
   .control-container input:checked ~ .radiomark {
-    background-color: var(--color-success-darker);
+    background-color: var(--color-success);
   }
   
   /* checkbox indicator */
@@ -138,11 +138,8 @@ input:focus + .slider {
 }
 
 input:checked + .slider:before {
-  transform: translateX(1.25em);
+  transform: translateX(1.25rem);
 }
-
-
-
 
   /*control label*/
   .input-label-right{

@@ -14,6 +14,9 @@
     font-weight: 500;  
   }
 
+
+  /* 100% width container, defines overall padding  */
+
   .page-container {
     background: var(--color-brand-light);
     padding: var(--spacex2) var(--space);
@@ -35,15 +38,53 @@
   }
 
 
-/* to limit content width for large screens */
-  section{
-      max-width: 1200px;
-      margin-left: auto;
-      margin-right: auto;
-  }
+  
+/* to limit content width for large screens. tag when we have H, class when we need same container but don't have h, eg. ssl list */
 
-  .twitter-tweet{
-      margin: var(--space-sm)!important;
-      width: auto!important;
-      min-width: 360px!important;
-  }
+section,
+.section{
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+/* default container for any type of cotent, defines spacing bewtween blocks*/
+
+.content-spaced,
+.content-scrolled+.content-spaced{
+    margin-top: 1.75em /*28px*/;
+    margin-bottom: var(--space-xs); /*to make bottom padding visually the same as top and right/left in elements like cards and panels*/
+}
+
+
+/* txt blocks add extra space with line height */
+
+p+.content-spaced,
+.p+.content-spaced,
+ul+.content-spaced{
+    margin-top: var(--space-md);
+   
+}
+
+.content-spaced+.content-spaced{
+  margin-top: var(--spacex3);
+}
+
+/* if we need same spacing between content but limit max width, eg. for form  */
+
+.content-spaced-fixed-md{
+    max-width: 30rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* container for embeded tweets */
+
+.twitter-tweet{
+    margin: var(--space-sm)!important;
+    width: auto!important;
+    min-width: 360px!important;
+}

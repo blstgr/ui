@@ -1,9 +1,8 @@
-# ui
 
-Demo HTML is provided for presentation purposes. 
- 
 
-## Website component 
+# Website 
+
+## Components 
 
 * [Demo page](https://blstgr.github.io/ui/web_current/html/lib.html)
 * [CSS files](https://github.com/blstgr/ui/tree/master/web_current/css)
@@ -17,7 +16,9 @@ Demo HTML is provided for presentation purposes.
 
 
 
-## Email components 
+# Emails 
+
+## Components 
 
 * [Demo page](https://blstgr.github.io/ui/email/lib.html) &mdash; contains description of UI components and their usage. If components are added or updated, demo page will be updated accordingly
 * [CSS files](https://github.com/blstgr/ui/tree/master/email/css) &mdash; dedicated css file for each component and main.css
@@ -25,7 +26,7 @@ Demo HTML is provided for presentation purposes.
 
 
 
-## Email templates 
+## Templates 
 
 Demo HTML for all emails to date:
 1. [Welcome](https://blstgr.github.io/ui/email/1-welcome.html)
