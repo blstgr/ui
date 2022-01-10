@@ -1,9 +1,0 @@
-.progress{
-    display: flex;
-
-}
-
-.progress li{
-    width: var(--spacex2);
-    background: var(--color-brand);
-}

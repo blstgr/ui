@@ -1,8 +1,0 @@
-.badge{
-    display: inline-flex;
-    padding: 0.06em var(--space-sm) /*1px*/;
-    font-size: var(--font-size-sm);
-    background: var(--color-);
-    border-radius: var(--radius);
-    font-weight: 600;
-}
