@@ -1,0 +1,112 @@
+@import url(./var.css);
+
+
+/* for dcv */
+.stepper-step{
+    position: relative;
+}
+
+.stepper-step-inactive{
+    opacity: 0.4;
+}
+
+.stepper-step+.stepper-step{
+    margin-top: var(--space-sm);
+}
+
+.stepper-badge{
+    position: absolute;
+    top: 2.25rem /*36px*/;
+    left: -0.7rem /*10px*/;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1.5em /*24px*/;
+    width: 1.5rem /*24px*/;
+    border: 0.1875rem solid var(--color-brand-dark) /*3px*/;
+    border-radius: var(--radius);
+    background: white;
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    z-index: 999;
+}
+
+.stepper-step-completed .stepper-badge,
+.stepper-step-inactive .stepper-badge{
+    top: 1.06rem /*17px*/;
+}
+
+.stepper-badge-success{
+    /* background: var(--color-success-light); */
+    border-color: var(--color-success);
+    color: var(--color-success-dark);
+}
+
+.stepper-badge-error{
+    /* background: var(--color-alert-light); */
+    border-color: var(--color-alert);
+    color: var(--color-alert-dark);
+}
+
+.btn-link-responsive span{
+    display: none;
+}
+.btn-link-responsive .icon{
+    margin-right: 0;
+}
+
+.btn-flat-responsive span{
+    display: none;
+}
+.btn-flat-responsive .icon{
+    margin-right: 0;
+}
+
+.label-responsive span{
+    display: none;
+}
+
+.label-responsive .icon{
+    margin-right: 0;
+}
+
+
+
+@media screen and (min-width: 576px) {
+    .btn-link-responsive span{
+        display: initial;
+    }
+
+    .btn-link-responsive .icon{
+        margin-right: var(--space-xs);
+    }
+
+    .btn-flat-responsive span{
+        display: initial;
+    }
+
+    .btn-flat-responsive .icon{
+        margin-right: var(--space-xs);
+    }
+    
+    
+    .label-responsive span{
+        display: initial;
+    }
+
+    .label-responsive .icon{
+        margin-right: var(--space-xs);
+    }
+    
+    
+}
+
+
+.panel+.stepper{
+ margin-top: var(--space);
+
+}
+
+.stepper+table{
+    margin-top: var(--space)
+}

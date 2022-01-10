@@ -1,0 +1,12 @@
+@import url(./var.css);
+
+
+/* for dcv */
+.stepper .panel{
+    position: relative;
+}
+
+.stepper .badge{
+    border: var(--space-xxs); solid var(--color-gray-dark);
+    background: var(--color-brand-light);
+}

@@ -1,0 +1,9 @@
+@import url(./var.css);
+
+
+/* for dcv */
+.stepper
+.stepper .badge{
+    border: var(--space-xxs); solid var(--color-gray-dark);
+    background: var(--color-brand-light);
+}

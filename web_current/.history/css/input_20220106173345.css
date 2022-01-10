@@ -1,0 +1,51 @@
+.input,
+.input-s{
+    display: block;
+    width: 100%;
+    margin:0;
+    padding: var(--space);
+    border-radius: var(--radius);
+    border: var(--border) solid var(--color-brand-darker);
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    box-sizing: border-box;
+}
+
+.input-s{
+    padding: var(--space-sm);
+    border-radius: var(--radius-sm);
+
+}
+
+.input-inverted{
+
+}
+
+.input:focus,
+.input-s:focus{
+    border-color: var(--color-success);
+    outline: none;
+}
+
+.input::placeholder,
+.input-s::placeholder {
+    color: var(--color-brand-darker);
+  
+  }
+
+.form-group+.form-group{
+    margin-top: var(--space);
+}
+
+.visually-hidden{
+    position: absolute!important;
+    width: 1px!important;
+    height: 1px!important;
+    padding: 0!important;
+    margin: -1px!important;
+    overflow: hidden!important;
+    clip: rect(0,0,0,0)!important;
+    white-space: nowrap!important;
+    border: 0!important;
+}

@@ -1,0 +1,18 @@
+.tooltip{
+    padding: var(--space-sm);
+    background: var(--color-brand-dark);
+    border-radius: var(--radius);
+    font-size: var(--font-size-sm);
+    color:white;
+    font-weight: 500;
+}
+
+.tooltip:before{
+    width: 0; 
+  height: 0; 
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  
+  border-bottom: 5px solid black;
+
+}

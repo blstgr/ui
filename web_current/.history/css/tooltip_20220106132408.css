@@ -1,0 +1,5 @@
+.tooltip{
+    padding: var(--space-sm);
+    font-size: var(--font-size-sm);
+    
+}

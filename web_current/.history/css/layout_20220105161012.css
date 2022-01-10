@@ -1,0 +1,27 @@
+@import url(./var.css);
+
+  body {
+    font-family: montserrat;
+    font-size: var(--font-size);
+    color: var(--color-brand-dark);
+    box-sizing: border-box;
+    background: var(--color-brand);
+    padding: var(--space-md);
+  }
+
+  section {
+    background: var(--color-brand-light);
+    padding: var(--spacex3);
+  }
+  
+  section + section {
+    margin-top: var(--space-sm);
+  }
+
+
+/* to limit content width for large screens */
+  .page-container{
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+  }

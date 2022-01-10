@@ -21,7 +21,7 @@
   --color-accent: #ffd000;
   --color-accent-light: #fff3bb;
   --color-gray-light: #e3e3e3;
-  --font-color: var(--color-brand-dark);
+  --font-color: var(--color-brand-dark)
 
   /* typography */
   --font-size-lg: calc(66 / 16 * 1rem);

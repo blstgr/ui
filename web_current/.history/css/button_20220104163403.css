@@ -1,0 +1,55 @@
+.btn {
+    padding: var(--space);
+    border: none;
+    border-radius: var(--spacex2);
+    box-shadow: var(--shadow);
+    font-family: montserrat;
+    font-size: var(--font-size-sm);
+    text-transform: uppercase;
+  
+    font-weight: 500;
+    color: var(--color-gray-dark);
+}
+
+.btn-secondary{
+    background: white;
+}
+
+.btn-flat {
+    background: transparent;
+    box-shadow: none;
+}
+
+.btn-link {
+    padding: 0;
+    background: transparent;
+    box-shadow: none;
+    font-weight: inherit;
+    color: inherit;
+}
+
+.btn-checked {
+    background: var(--color-success);
+    color: white;
+}
+
+
+button+button,
+span+button {
+    margin-left: var(--space-sm);
+}
+
+i {
+    display: inline-flex;
+    font-size: var(--font-size) !important;
+    font-style: normal;
+}
+
+button i,
+.heading-compound i {
+    margin-right: var(--space-sm);
+}
+
+button i:only-child {
+    margin-left: 0;
+}

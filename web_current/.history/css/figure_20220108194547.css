@@ -1,0 +1,5 @@
+.figure-sm{
+    display: block;
+    height: 10em;
+    background: var(--color-brand);
+}

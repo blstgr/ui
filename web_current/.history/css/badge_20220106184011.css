@@ -1,0 +1,38 @@
+.badge{
+    display: inline-flex;
+    align-items: center;
+    padding: var(--space-xs) var(--space-sm) /*1px*/;
+    font-size: var(--font-size-sm);
+    background: var(--color-brand-dark);
+    border-radius: var(--radius);
+    min-width:  1.5rem;
+    font-weight: 600;
+    text-align: center;
+    line-height: normal;
+    color: white;
+
+    
+}
+
+.badge-inverted{
+    background: var(--color-brand);
+    color: var(--color-brand-dark);
+}
+
+.badge-success{
+    background: var(--color-success);
+}
+
+.badge-alert{
+    background: var(--color-alert);
+    
+}
+
+.btn .badge{
+    margin-left: var(--space);
+}
+
+.badge. icon,
+.badge img{
+    margin-right: var(--space-sm);
+}

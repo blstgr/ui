@@ -1,0 +1,17 @@
+.input{
+    padding: var(--space);
+    border-radius: var(--radius);
+    border: var(--border) solid var(--color-brand);
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+.input:focus{
+    border-color: var(--color-success);
+    outline: none;
+}
+
+.form-group+.form-group{
+    margin-top: var(--space);
+}

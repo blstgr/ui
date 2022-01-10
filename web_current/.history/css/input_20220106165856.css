@@ -1,0 +1,9 @@
+.input{
+    padding: var(--space);
+    border-radius: var(--radius);
+    border: var(--border) solid var(--color-brand);
+}
+
+.form-group+.form-group{
+    margin-top: ;
+}

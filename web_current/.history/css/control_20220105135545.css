@@ -1,0 +1,70 @@
+@import url(./var.css);
+
+/* checkbox */
+.checkbox-container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    margin-top: var(--space);
+    cursor: pointer;
+    font-size: var(--font-size);
+    user-select: none;
+  }
+  
+  p+.
+  /* hide default checkbox */
+  .checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* custom checkbox */
+  .checkmark {
+    position: relative;
+    top: 0;
+    left: 0;
+    height:  var(--space-md);
+    width:  var(--space-md);
+    background-color:  var(--color-brand);
+    border-radius: var(--space-xs);
+  }
+  
+  .checkbox-container input:checked ~ .checkmark {
+    background-color: var(--color-success-darker);
+  }
+  
+  /* checkbox indicator */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* show indicator when checked */
+  .checkbox-container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* checkbox indicator style */
+  .checkbox-container .checkmark:after {
+    left: 0;
+    top: 0;
+    right:0;
+    left: 0;
+    margin: auto;
+    width: 6px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+  
+  /*checkbox label*/
+  .input-label{
+    margin-left: var(--space-sm);
+  }

@@ -1,0 +1,6 @@
+.tooltip{
+    padding: var(--space-sm);
+    background: var(--color-bran-dark);
+    font-size: var(--font-size-sm);
+
+}

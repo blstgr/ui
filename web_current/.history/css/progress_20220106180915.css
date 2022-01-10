@@ -1,0 +1,15 @@
+.progress{
+    display: flex;
+
+}
+
+.progress li{
+    list-style: none;
+    height: var(--spacex2);
+    width: var(--spacex2);
+    background: var(--color-brand);
+}
+
+.progress li+li{
+    margin-left: var(--space-sm);
+}

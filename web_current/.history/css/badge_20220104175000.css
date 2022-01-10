@@ -1,0 +1,6 @@
+.badge{
+    display: inli;
+    padding: var(--space-xs);
+    font-size: var(--font-sm);
+    background: var(--color-alert);
+}

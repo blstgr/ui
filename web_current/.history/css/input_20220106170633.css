@@ -1,0 +1,22 @@
+.input{
+    width: 100%;
+    padding: var(--space);
+    border-radius: var(--radius);
+    border: var(--border) solid var(--color-brand-darker);
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+.input:focus{
+    border-color: var(--color-success);
+    outline: none;
+}
+
+.form-group+.form-group{
+    margin-top: var(--space);
+}
+
+.visually-hidden{
+    
+}

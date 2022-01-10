@@ -1,0 +1,6 @@
+.badge{
+    display: inline-flex;
+    padding: var(--space-xs);
+    font-size: var(--font-sm);
+    background: var(--color-alert);
+}

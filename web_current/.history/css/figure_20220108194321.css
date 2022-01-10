@@ -1,0 +1,5 @@
+.figure-sm{
+    display: block;
+    max-height: var(--spacex3);
+    background: var(--color-brand);
+}

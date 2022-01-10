@@ -1,0 +1,116 @@
+@import url(./var.css);
+
+.btn,
+.btn-s {
+    padding: var(--space-md);
+    border: none;
+    border-radius: var(--spacex2);
+    box-shadow: var(--shadow);
+    font-family: montserrat;
+    font-size: var(--font-size-sm);
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.btn-s {
+    padding: var(--space-xs);
+
+}
+
+.btn-primary{
+    background: var(--color-alert);
+    color: white;
+
+}
+
+.btn-secondary{
+    background: white;
+    color: var(--color-gray-dark);
+
+}
+
+/* transparent bg, has padding */
+.btn-flat {
+    background: transparent;
+    box-shadow: none;
+    color: var(--color-gray-dark);
+
+}
+
+/* no padding, same color as the rest of the text */
+/*lable example: "done" in stepper*/
+.btn-link,
+.label {
+    padding: 0;
+    background: transparent;
+    box-shadow: none;
+    font-weight: inherit;
+    color: inherit;
+}
+
+/* used for secondary only */
+.btn-checked {
+    background: var(--color-success);
+    color: white;
+}
+
+
+
+/* default container for buttons in all components or forms*/
+.holder-cta{
+    margin-top: 1.5em /*24px*/;
+}
+
+/* txt blocks add extra space with line height */
+p+.holder-cta,
+ul+.holder-cta{
+    margin-top: var(--space);
+    margin-bottom: var(--space-xs); /*to make bottom padding visually the same as top and right/left in elements like cards and panels*/
+}
+
+/* default behavior*/
+.holder-cta button{
+    width: 100%;
+}
+
+.holder-cta button+button
+@media screen and (min-width: 576px) {
+    .holder-cta button{
+        width: auto;
+    }
+}
+
+
+.btn-secondary+.btn-secondary,
+.btn-primary+.btn-primary,
+.btn-secondary+.btn-primary,
+.btn-primary+.btn-secondary,
+.btn-secondary+.btn-flat{
+    margin-top: var(--space);
+}
+
+
+@media screen and (min-width: 576px) {
+    .btn-secondary+.btn-secondary,
+    .btn-primary+.btn-primary,
+    .btn-secondary+.btn-primary,
+    .btn-primary+.btn-secondary,
+    .btn-secondary+.btn-flat{
+        margin-left: var(--space-sm);
+    }
+}
+
+
+/* done+undo */
+.label+.btn-link{
+    margin-left: var(--space-sm);
+}
+
+.btn .icon,
+.label i {
+    margin-right: var(--space-sm);
+}
+
+.btn i:only-child {
+    margin-left: 0;
+}

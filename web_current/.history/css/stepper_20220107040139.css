@@ -1,0 +1,41 @@
+@import url(./var.css);
+
+
+.stepper .panel-body{
+    padding: 2em;
+}
+.stepper-step{
+    position: relative;
+}
+
+.stepper-step-inactive{
+    opacity: 0.4;
+}
+
+.stepper+.stepper,
+.stepper-step+.stepper-step{
+    margin-top: var(--space-sm);
+}
+
+.stepper .badge{
+    position: absolute;
+    top: 2.25rem /*36px*/;
+    left: -0.625rem /*10px*/;
+    z-index: 999;
+}
+
+.stepper-step-completed .badge,
+.stepper-step-inactive .badge{
+    top: 1.125rem /*18px*/;
+}
+
+
+.panel+.stepper,
+.stepper+.panel{
+ margin-top: var(--space);
+
+}
+
+.stepper+table{
+    margin-top: var(--space)
+}

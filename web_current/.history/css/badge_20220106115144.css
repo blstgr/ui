@@ -1,0 +1,16 @@
+.badge, 
+.badge-inverted,
+.badge-success,
+.badge-alert{
+    display: in,line-flex;
+    padding: 0.06em var(--space-sm) /*1px*/;
+    font-size: var(--font-size-sm);
+    background: var(--color-brand);
+    border-radius: var(--radius);
+    font-weight: 600;
+    line-height: normal;
+}
+
+.badge-inverted{
+    background: var(--color-brand);
+}

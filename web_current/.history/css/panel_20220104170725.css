@@ -1,0 +1,47 @@
+@import url(./var.css);
+
+.panel {
+    position: relative;
+    border-radius: var(--radius);
+    border: var(--space-xxs); solid var(--color-gray-dark);
+    overflow: hidden;
+}
+.panel-header{ 
+  padding: var(--space);
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+}
+
+.panel-body {
+    padding: var(--space);
+}
+
+.panel-cta {
+    margin-top: var(--space-md);
+}
+
+.panel-footer {
+    background: var(--color-gray-dark);
+    padding: var(--space);
+    font-family: courier;
+    color: white;
+}
+
+.panel+.panel {
+    margin-top: var(--space-sm);
+}
+
+.panel-error {
+    border-color: var(--color-alert);
+}
+
+.panel-error .txt-highlighted {
+    background: rgba(243, 178, 177, 0.45);
+}
+
+.panel-success {
+    border-color: var(--color-success);
+    color: var(--color-success-dark);
+    background: var(--color-success-light);
+}

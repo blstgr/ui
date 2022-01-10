@@ -1,0 +1,59 @@
+:root {
+    --color-alert-light: #fff6f6;
+    --color-alert-lighter: #ffdfdf;
+    --color-alert: #ff725f;
+    --color-alert-darker: #ff8674;
+    --color-alert-dark: #83140a;
+  
+    --color-warning: #fac510;
+  
+    --color-info-light: #f2f9ff;
+    --color-info-lighter: #a3c9ed;
+    --color-info: #6daeeb;
+    --color-info-darker: #398dde;
+    --color-info-dark: #0055a7;
+    --color-info-xdark: #0c2c4b;
+    
+    --color-success-light: #e8fff4;
+    --color-success: #63c3a3;
+    --color-success-darker: #2db185;
+    --color-success-dark: #08815a;
+    
+    --color-brand-dark: #4e4e48;
+    --color-brand-darker: #c3beac;
+    --color-brand: #eae7db;
+    --color-brand-light: #f9f8f4;
+  
+
+    --space-md: 1.25rem /*20px*/;
+    --space: 1rem /*16px*/;
+    --space-sm: 0.5rem /*8px*/;
+    --space-xs: 0.25rem /*4px*/;
+    --space-xxs: 0.125rem /*2px*/;
+
+    --spacex2: 2rem /*32*/;
+    --spacex3: 3rem /*48*/;
+    --spacex4: 4rem /*48*/;
+  
+  
+    --radius: 1em /*16px*/;
+    --radius-sm: 0.75em /*12px*/;
+
+
+    --border: 0.1875em /*3px*/;
+  
+    --line-height: 1.8;
+    --line-height-sm: 1.5;
+    --line-height-font-lg: 1.2;
+  
+    --font-size-sm: 0.75rem /*12px*/;
+    --font-size: 1.125rem;
+    --font-size-md: 1.25rem /*20px*/;
+    --font-size-lg: 3.625rem /*58px*/;
+  
+  
+    --shadow-raised: 0 18px 20px rgba(0, 0, 0, 0.25);
+    --shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+
+
+  }

@@ -1,0 +1,6 @@
+
+.icon {
+    display: inline-flex;
+    font-size: var(--font-size) !important;
+    font-style: normal;
+}

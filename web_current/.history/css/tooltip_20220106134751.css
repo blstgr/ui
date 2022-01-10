@@ -1,0 +1,26 @@
+.tooltip{
+    position: relative;
+    padding: var(--space-sm);
+    background: var(--color-brand-dark);
+    border-radius: var(--radius);
+    font-size: var(--font-size-sm);
+    color:white;
+    font-weight: 500;
+}
+
+.tooltip:before{
+  position: absolute;
+  top: -0.375em /*6px*/;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  height: 0.375em;
+  width: 1.125em /*18px*/;
+  background-image: url(../img/triangle-up.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  content: "";
+}
+
+

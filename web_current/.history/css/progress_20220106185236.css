@@ -1,0 +1,34 @@
+.progress{
+    display: flex;
+
+}
+
+.progress li{
+    position: relative;
+    list-style: none;
+    height: var(--space-sm);
+    width: var(--spacex2);
+    background: var(--color-brand-darker);
+    overflow: hidden;
+    
+}
+
+.progress li.done:after{
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    background: var(--color-success);
+    content: "";
+}
+
+.progress li+li{
+    margin-left: var(--space-xs);
+}
+
+.progress li:first-child{
+    border-radius: var(--radius-sm) 0 0 var(--radius-sm);
+}
+
+.progress li:last-child{
+    border-radius:  0 var(--radius-sm)  var(--radius-sm) 0;
+}
