@@ -5,14 +5,14 @@ Demo HTML is provided for presentation purposes.
 
 ## Website component 
 
-* [Demo page](https://blstgr.github.io/ui/web-current/html/lib.html)
-* [CSS files](https://github.com/blstgr/ui/tree/master/web-current/css)
+* [Demo page](https://blstgr.github.io/ui/web_current/html/lib.html)
+* [CSS files](https://github.com/blstgr/ui/tree/master/web_current/css)
 
 ## Pages
-* [DCV steper blocks](https://github.com/blstgr/ui/tree/master/web-current/html/dcv.html)
-* [Details](https://github.com/blstgr/ui/tree/master/web-current/html/acc_details.html)
-* [SSL list](https://github.com/blstgr/ui/tree/master/web-current/acc_list.html)
-* [Home](https://github.com/blstgr/ui/tree/master/web-current/home.html)
+* [DCV steper blocks](https://github.com/blstgr/ui/tree/master/web_current/html/dcv.html)
+* [Details](https://github.com/blstgr/ui/tree/master/web_current/html/acc_details.html)
+* [SSL list](https://github.com/blstgr/ui/tree/master/web_current/acc_list.html)
+* [Home](https://github.com/blstgr/ui/tree/master/web_current/home.html)
 
 
 
