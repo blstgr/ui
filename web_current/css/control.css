@@ -136,6 +136,9 @@
 input:checked + .slider {
   background-color: var(--color-success);
 }
+input:checked + .slider-secondary {
+  background-color: var(--color-brand-darker);
+}
 
 input:focus + .slider {
   box-shadow: 0 0 1px var(--color-success);

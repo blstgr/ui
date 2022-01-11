@@ -9,15 +9,19 @@
 
 }
 
+.panel+.panel {
+    margin-top: var(--space);
+}
+
 @media screen and (min-width: 48em) {
     .panel{
         width: auto;
     }
 
-  /*may have fixed widht e.g. products*/     
+    /*may have fixed widht e.g. products*/     
     .panel-fixed-sm {
-        min-width: 340px;
-        width: auto;
+            min-width: 340px;
+            width: auto;
     }    
 
     /*margin when more thab 1 panel in a row in flex block*/
@@ -25,6 +29,7 @@
         margin: var(--space-sm);
     }
 
+    
     .grid-container .panel+.panel{
         margin-top: var(--space-sm);
     }
@@ -61,11 +66,6 @@
     line-height: var(--line-height);
 }
 
-.panel+.panel {
-    margin-top: var(--space);
-}
-
-
 .panel-alert {
     border-color: var(--color-alert-dark);
     color: var(--color-alert-dark);
@@ -79,7 +79,6 @@
 .panel-alert .content-scrolled {
     background: var(--color-alert-lighter);
 }
-
 
 .panel-success {
     border-color: var(--color-success-dark);
@@ -99,7 +98,6 @@
 .panel .h3 {
     margin: 0;
 }
-
 
 .label-responsive .icon {
     margin-right: 0;

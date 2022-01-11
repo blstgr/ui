@@ -1,0 +1,35 @@
+.tab {
+    position: relative;
+    padding: var(--space);
+    border-radius: var(--radius);
+    border: var(--border) solid var(--color-brand-dark);
+    background: var(--color-brand-light);
+    width: 100%;  /*always 100% on small screens*/
+}
+
+.tab-active{
+    background: var(--color-success);
+    color: white;
+}
+
+.tab-content{
+    padding: var(--space);
+    margin-top: var(--space-md);
+}
+
+@media screen and (min-width: 48em) {
+    .tab{
+        width: auto;
+    }   
+
+    /*margin when more thab 1 panel in a row in flex block*/
+    .grid-container .tab {
+        margin: var(--space-sm);
+    }
+    
+    .grid-container .tab+.tab{
+        margin-top: var(--space-sm);
+    }
+
+}
+
