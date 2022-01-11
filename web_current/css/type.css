@@ -12,7 +12,7 @@ h1,
     line-height: var(--line-height-font-lg);
     font-size: var(--font-size-lg);
     font-family: Montserrat;
-    font-weight: 800;
+    font-weight: 700;
 
 }
 
@@ -26,6 +26,8 @@ h2,
     font-family: Montserrat;
     font-weight: 700;
 }
+
+
 
 h3,
 .h3{
@@ -205,13 +207,10 @@ p+ul
 
 ul+h3,
 p+h3,
-.content-scrolled+h3 {
-    margin-top: var(--spacex2);
-}
-
+.content-scrolled+h3,
 ul+h2,
 p+h2 {
-    margin-top: var(--space);
+    margin-top: var(--spacex2);
 }
 
 a {
