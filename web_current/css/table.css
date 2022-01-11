@@ -113,6 +113,8 @@ th {
 .table-spaced {
   border-collapse: separate;
   border-spacing: 0 var(--space);
+  margin-top: -1rem;
+  margin-bottom: -1rem;
 }
 
 .table-spaced td,
@@ -227,6 +229,9 @@ th {
     padding: var(--space);
   }
 
+  td:empty{
+    display: none;
+  }
 
   tr+tr {
     margin-top: var(--space);
@@ -279,6 +284,9 @@ th {
     padding-left: 0;
     padding-right: 0;
   }
+
+
+ 
 
   .table-spaced {
     margin-top: var(--space);

@@ -95,6 +95,7 @@
 
 .flex-container {
   display: flex;
+  width: 100%;
 }
 
 
@@ -147,4 +148,16 @@
 
 .w-auto {
   width: auto;
+}
+
+.w-100{
+  width:100%;
+}
+
+.mh-90{
+  min-height: 90vh;
+}
+
+.hide{
+  display: none;
 }

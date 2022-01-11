@@ -20,7 +20,10 @@
   .page-container {
     background: var(--color-brand-light);
     padding: var(--spacex2) var(--space);
+   
   }
+
+ 
   
   @media screen and (min-width: 64em) {
 
@@ -44,6 +47,7 @@
 section,
 .section{
   max-width: 1200px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }

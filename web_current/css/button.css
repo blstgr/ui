@@ -139,7 +139,7 @@
 .btn-container,
 .btn-container+.btn-container,
 .content-scrolled+.btn-container{
-    margin-top: 1.5em /*24px*/;
+    margin-top: 1.75rem /*28px*/;
     margin-bottom: var(--space-sm); /*to make bottom padding visually the same as top and right/left in elements like cards and panels*/
 }
 
@@ -149,7 +149,7 @@
 p+.btn-container,
 .p+.btn-container,
 ul+.btn-container{
-    margin-top: var(--space);
+    margin-top: var(--space-md);
    
 }
 
@@ -184,5 +184,15 @@ ul+.btn-container{
 
 .content-spaced.grid-container .btn:not(.btn-block)+.btn:not(.btn-block){
     margin-left: var(--space-sm);
+}
+
+.btn-label-trancated{
+        max-width: 100px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: inline-block;
+        vertical-align: bottom;
+   
 }
 

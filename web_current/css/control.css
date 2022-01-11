@@ -7,14 +7,23 @@
     flex-direction: row-reverse;
     align-items: center;
     justify-content: flex-end;
-    margin-top: var(--space-md);
     cursor: pointer;
     font-size: var(--font-size);
     user-select: none;
+    
+  }
+
+  .control-container+.control-container{
+    margin-top: var(--space-md);
   }
 
   p+.control-container{
     margin-top: var(--space);
+  }
+
+  .control-container-vertical +.control-container-vertical{
+    margin-top: 0;
+    margin-left: var(--space-md);
   }
  
   /* hide default checkbox */
@@ -96,7 +105,7 @@
 .switch {
   position: relative;
   display: inline-block;
-  width: 2.5rem;
+  width: var(--spacex2);
   height: var(--space-md);
 }
 
@@ -113,7 +122,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  width: 2.5rem;
+  width: var(--spacex2);
   background-color: rgb(195 190 172 / 80%) /*var(--color-brand-darker)*/;
   border-radius: var(--space-md);
   -webkit-transition: .4s;
@@ -143,7 +152,7 @@ input:checked + .slider-secondary {
 
 
 input:checked + .slider:before {
-  transform: translateX(1.25rem);
+  transform: translateX(0.75rem);
 }
 
   /*control label*/

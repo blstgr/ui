@@ -23,7 +23,7 @@
 
 .stepper-step-completed .badge,
 .stepper-step-inactive .badge{
-    top: 1.25rem /*20px*/;
+    top: 1.125rem /*18px*/;
 }
 
 
@@ -36,4 +36,11 @@
 
 .stepper+table{
     margin-top: var(--space)
+}
+
+.stepper-ghost .panel{
+   border-top: 0; 
+   border-bottom: 0;
+   border-right: 0;
+   border-radius: 0;
 }

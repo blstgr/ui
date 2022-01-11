@@ -10,6 +10,7 @@
     font-size: inherit;
     font-weight: inherit;
     box-sizing: border-box;
+    background-color: white;
 }
 
 .input-s{
@@ -39,6 +40,10 @@ color: white;
     margin-top: var(--space);
 }
 
+p+.input-group{
+    margin-top: var(--space-md);
+}
+
 .visually-hidden{
     position: absolute!important;
     width: 1px!important;
@@ -49,4 +54,35 @@ color: white;
     clip: rect(0,0,0,0)!important;
     white-space: nowrap!important;
     border: 0!important;
+}
+
+
+.input-group {
+    display: flex;
+    line-height: 1;
+}
+
+.input-group .input:first-child {
+    border-radius: var(--radius) 0  0 var(--radius);
+}
+
+
+.input-group .input {
+    border-radius: 0
+}
+
+
+.input-group-post .btn {
+    border-radius: 0 var(--radius) var(--radius) 0;
+    border: var(--border) solid transparent;
+    padding-top: var(--space);
+    padding-bottom: var(--space);
+    margin-left: -3px;
+}
+
+
+.input-group .btn-flat {
+    border-color: var(--color-brand-darker);
+    background: white;
+    
 }

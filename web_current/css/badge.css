@@ -9,9 +9,11 @@
     font-size: var(--font-size-sm);
     font-weight: 600;
     text-align: center;
-    line-height: normal;
     color: white;
+    font-family: courier;
+    font-size: 0.875rem; /*14px*/
 }
+
 
 .badge-inverted{
     background: var(--color-brand);
@@ -26,7 +28,34 @@
     background: var(--color-alert-dark  );    
 }
 
+.badge-closable {
+        position: relative;
+        padding-right: 1.75rem;
+    
+}
+.badge-closable:before,
+.badge-closable:after {
+  position: absolute;
+  top: 1px;
+  bottom: 0; 
+  right: 0.75rem;
+  margin: auto;
+  content: "";
+  display: block;
+  width: 0.125rem /*2px*/; 
+  height: 0.75rem ;
+  background: white;
 
+}
+
+.badge-closable:before {
+    transform: rotate(45deg);
+}
+   
+.badge-closable:after {
+    transform: rotate(-45deg);
+}
+   
 
 .btn .badge{  /* e.g. counter inside btn */
     margin-left: var(--space); 

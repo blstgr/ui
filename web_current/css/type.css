@@ -64,7 +64,7 @@ h3,
     display: inline-flex;
     align-items: center;
     font-size: var(--font-size);
-    font-weight: 600;
+    font-weight: 700;
 }
 
 
@@ -77,12 +77,15 @@ h3,
 
 .label-responsive .icon{
     margin-right: 0;
+    font-size: var(--font-size-md);
 }
-
+.label-responsive span{
+    display: none;
+}
 
 @media screen and (min-width: 64em) {
     .label-responsive span{
-        display: initial;
+        /* display: initial; */
     }
 
     .label-responsive .icon{
@@ -150,6 +153,8 @@ p+.content-scrolled,
     display: inline-block;
     vertical-align: bottom;
 }
+
+
 
 @media screen and (min-width: 48em) {
     .txt-trancate{
