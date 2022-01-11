@@ -20,7 +20,7 @@ h2,
 .h2,
 .price {
     margin-top: 0;
-    margin-bottom: 0.5em;
+    margin-bottom: var(--space);
     line-height: var(--line-height-sm);
     font-size: 1.5rem;
     font-family: Montserrat;
