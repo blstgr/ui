@@ -37,9 +37,6 @@ th {
 
 }
 
-
-
-
 /* normal table, odd row has a different color   */
 
 .table-striped tbody tr:nth-child(odd) {
@@ -83,7 +80,14 @@ th {
 
 .table-bordered tr:last-child td:last-child {
   border-radius: 0 0 var(--radius) 0;
+}
 
+.table-bordered tr:first-child td:only-child {
+  border-radius: var(--radius) var(--radius) 0 0;
+}
+
+.table-bordered tr:last-child td:only-child {
+  border-radius: 0 0 var(--radius) var(--radius);
 }
 
 .table-bordered thead+tbody tr:first-child td:first-child {
@@ -135,6 +139,11 @@ th {
 .table-spaced th:last-child {
   border-right-width: var(--border);
   border-radius: 0 var(--radius) var(--radius) 0;
+}
+
+.table-spaced td:only-child{
+  border-right-width: var(--border);
+  border-radius:var(--radius);
 }
 
 

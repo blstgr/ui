@@ -1,13 +1,6 @@
 @import url(./var.css);
 
-.stepper .panel-header{
-    padding: 1.125em;
-}
 
-
-.stepper .panel-body{
-    padding: 0 1.125em 1.125em;
-}
 .stepper-step{
     position: relative;
 }
@@ -23,14 +16,14 @@
 
 .stepper .badge{
     position: absolute;
-    top: 2.75rem /*44px*/;
-    left: -0.625rem /*10px*/;
+    top: 2.625rem /*42px*/;
+    left: -0.6875rem /*11px*/;
     z-index: 999;
 }
 
 .stepper-step-completed .badge,
 .stepper-step-inactive .badge{
-    top: 1.4375rem /*23px*/;
+    top: 1.25rem /*20px*/;
 }
 
 

@@ -141,6 +141,9 @@ p+.content-scrolled,
     border-radius: var(--radius);
 }
 
+.txt-muted{
+    color: var(--color-brand-darker);
+}
 
 .txt-trancate{
     max-width: 100px;

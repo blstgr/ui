@@ -6,7 +6,7 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: var(--space) var(--space-md);
+    padding: 0.75rem var(--space-md) /*0.75=var(--space)-(lh-sm)*/; 
     border: none;
     border-radius: var(--spacex2);
     box-shadow: var(--shadow);
@@ -14,7 +14,7 @@
     color: var(--color-brand-dark);
     font-family: Montserrat;
     font-weight: 600;
-    line-height: normal;
+    line-height: var(--line-height-sm);
 
 }
 
@@ -127,19 +127,42 @@
 
 
 /* default behavior: 2 btn in a row for larger screens, 2 btn in 1 col on screen xs*/
-.content-spaced .btn:not(.btn-block){
+.btn-container .btn:not(.btn-block){
     width: 100%;
 }
 
-.content-spaced .btn+.btn{
+.btn-container .btn+.btn{
     margin-top: var(--space);
 }
 
+/* default btn container, defines spacing bewtween blocks*/
+
+.btn-container,
+.btn-container+.btn-container,
+.content-scrolled+.btn-container{
+    margin-top: 1.5em /*24px*/;
+    margin-bottom: var(--space-sm); /*to make bottom padding visually the same as top and right/left in elements like cards and panels*/
+}
+
+
+/* txt blocks add extra space with line height */
+
+p+.btn-container,
+.p+.btn-container,
+ul+.btn-container{
+    margin-top: var(--space);
+   
+}
+
+
+
+
 @media screen and (min-width: 48em) {
-    .content-spaced .btn:not(.btn-block){
+    .btn-container .btn:not(.btn-block){
         width: auto;
     }
-    .content-spaced .btn:not(.btn-block)+.btn:not(.btn-block){
+    .btn-container .btn:not(.btn-block)+.btn:not(.btn-block){
+       margin-top: 0;
        margin-left: var(--space);
     }
 }

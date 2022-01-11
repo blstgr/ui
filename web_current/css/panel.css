@@ -29,7 +29,7 @@
         margin: var(--space-sm);
     }
 
-    
+
     .grid-container .panel+.panel{
         margin-top: var(--space-sm);
     }

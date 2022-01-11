@@ -2,6 +2,6 @@
     display: block;
     height: 10em;
     width: 9em;
-    margin: 0  auto var(--space-md);
+    margin: 0  auto var(--spacex2);
     background: var(--color-brand);
 }

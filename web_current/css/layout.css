@@ -52,25 +52,10 @@ section,
 
 /* default container for any type of cotent, defines spacing bewtween blocks*/
 
-.content-spaced,
-.content-scrolled+.content-spaced{
-    margin-top: 1.75em /*28px*/;
-    margin-bottom: var(--space-xs); /*to make bottom padding visually the same as top and right/left in elements like cards and panels*/
+.content-spaced{
+  margin-top: var(--spacex2);
 }
 
-
-/* txt blocks add extra space with line height */
-
-p+.content-spaced,
-.p+.content-spaced,
-ul+.content-spaced{
-    margin-top: var(--space-md);
-   
-}
-
-.content-spaced+.content-spaced{
-  margin-top: var(--spacex3);
-}
 
 /* if we need same spacing between content but limit max width, eg. for form  */
 
