@@ -1,8 +1,5 @@
 @import url(./var.css);
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;800&display=swap');
-
-
 
 
 h1,
@@ -67,7 +64,7 @@ h3,
     display: inline-flex;
     align-items: center;
     font-size: var(--font-size);
-    font-weight: 700;
+    font-weight: 600;
 }
 
 
