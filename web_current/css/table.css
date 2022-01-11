@@ -174,6 +174,9 @@ th {
 }
 
 
+
+
+
 /* undo tables for small screens */
 @media screen and (max-width: 48em) {
   table {
@@ -235,22 +238,16 @@ th {
   }
 
 
-  .table-striped tbody tr:nth-child(odd) {
-    background: transparent;
-  }
-
 
   /*reset *-responsive elements in tables on small screen - both icon and text is visible*/
 
   table .badge-responsive span,
-  table .btn-responsive span,
   table .label-responsive span {
     display: initial;
   }
 
  table .badge .icon,
  table .badge img,
- table .btn-responsive .icon,
  table .label-responsive .icon {
     margin-right: var(--space-sm);
   }
@@ -260,11 +257,13 @@ th {
   th[data-title]:before,
   td[data-title]:before {
     content: attr(data-title) ":\00A0";
-    font-weight: 700;
+    font-weight: 800;
+   
+
   }
 
   th:not([data-title]) {
-    font-weight: bold;
+    font-weight: 800;
   }
 
   table .btn-flat {
@@ -298,8 +297,24 @@ th {
 
   .cell-focus {
     border-right: 0;
+    border-bottom: var(--border) solid var(--color-alert)
   }
 
+ 
+
+}
 
 
+ /* same table as on screen sm but on all screens*/
+
+ .table-labeled th[data-title]:before,
+ .table-labeled td[data-title]:before {
+  content: attr(data-title) ":\00A0";
+  font-weight: 800;
+ 
+
+}
+
+.table-labled th:not([data-title]) {
+  font-weight: 800;
 }

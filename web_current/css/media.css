@@ -20,11 +20,7 @@
   line-height: var(--line-height);
 }
 
-.media-body h1,
-.media-body h2,
-.media-body h3{
-  margin:0;
-}
+
 
 
 .media-reverse .media-body {

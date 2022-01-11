@@ -78,19 +78,15 @@
 
 /* *-responsive hides text and leaves only icon*/
 
-.btn-responsive span{
-    display: none;
-}
-.btn-responsive .icon{
-    margin-right: 0;
+@media screen and (min-width: 48em) {
+    .btn-responsive span{
+        display: none;
+    }
+    .btn-responsive .icon{
+        margin-right: 0;
+    }
 }
 
-.btn-responsive span{
-    display: none;
-}
-.btn-responsive .icon{
-    margin-right: 0;
-}
 
 .label-responsive span{
     display: none;
@@ -151,9 +147,20 @@
 
 /* flex container with buttons, each button has margin, e.g. filters on home page */
 
-.grid-container .btn:not(.btn-block),
-.content-spaced .grid-container .btn:not(.btn-block){
+.grid-container .btn:not(.btn-block){
     margin: var(--space-sm);
     width: auto;
+    flex-grow: 1;
+}
+
+@media screen and (min-width: 48em) {
+    .grid-container .btn:not(.btn-block){
+        flex-grow: 0;
+    }
+    
+}
+
+.content-spaced.grid-container .btn:not(.btn-block)+.btn:not(.btn-block){
+    margin-left: var(--space-sm);
 }
 
