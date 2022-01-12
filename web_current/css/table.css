@@ -113,8 +113,7 @@ th {
 .table-spaced {
   border-collapse: separate;
   border-spacing: 0 var(--space);
-  margin-top: -1rem;
-  margin-bottom: -1rem;
+
 }
 
 .table-spaced td,
