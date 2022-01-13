@@ -13,7 +13,8 @@
     
   }
 
-  .control-container+.control-container{
+  .control-container+.control-container,
+  .content-scrolled+.control-container{
     margin-top: var(--space-md);
   }
 
@@ -43,6 +44,7 @@
     left: 0;
     height:  1.5rem;
     width:  1.5rem;
+    min-width:  1.5rem;
     background-color:  var(--color-brand);
     border-radius: var(--space-xs);
   }
@@ -80,6 +82,7 @@
     left: 0;
     margin: auto;
     width: 0.375em /*6px*/;
+    min-width: 0.375em /*6px*/;
     height: 0.75em /*12px*/;
     border: solid white;
     border-width: 0 0.125em 0.125em 0 /*2px*/;

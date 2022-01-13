@@ -55,13 +55,12 @@
     padding: 0;
     background: transparent;
     box-shadow: none;
-    font-weight: 600;
     color: inherit;
 }
 
 
 /* label+btn example: done+undo */
-
+.btn-link+.label,
 .label+.btn-link,
 .btn-link+.btn-link{
     margin-left: var(--space);
@@ -77,19 +76,16 @@
 
 /* *-responsive hides text and leaves only icon*/
 
-@media screen and (min-width: 48em) {
-    .btn-responsive span{
-        display: none;
-    }
-    .btn-responsive .icon{
-        margin-right: 0;
-    }
-}
 
-
-.label-responsive span{
+.btn-responsive span{
     display: none;
 }
+
+.btn-responsive .icon{
+    margin-right: 0;
+}
+
+
 
 @media screen and (min-width: 64em) {
     .btn-responsive span{
@@ -153,6 +149,12 @@ ul+.btn-container{
    
 }
 
+  
+.btn .badge{  /* e.g. counter inside btn */
+    margin-left: var(--space); 
+    margin-top: 0;
+    margin-bottom: 0;
+}
 
 
 

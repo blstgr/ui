@@ -69,8 +69,8 @@ p+.panel {
 
 .panel-alert {
     border-color: var(--color-alert-dark);
-    color: var(--color-alert-dark);
     background: var(--color-alert-light);
+    color: var(--color-alert-dark);
 }
 
 .panel-alert .txt-highlighted {
@@ -80,6 +80,16 @@ p+.panel {
 .panel-alert .content-scrolled {
     background: var(--color-alert-lighter);
 }
+
+.panel-alert .table-striped tbody tr:nth-child(odd) {
+    background: var(--color-alert-light);
+}
+  
+.panel-alert .table-striped tbody tr:only-child {
+    background: transparent;
+  }
+
+ 
 
 .panel-success {
     border-color: var(--color-success-dark);

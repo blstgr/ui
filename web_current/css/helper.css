@@ -1,24 +1,24 @@
 @import url(./var.css);
 
 .mt {
-  margin-top: var(--space);
+  margin-top: var(--space)!important;
 }
 
 .mtx2 {
-  margin-top: var(--spacex2);
+  margin-top: var(--spacex2)!important;
 }
 
 .mtx3 {
-  margin-top: var(--spacex3);
+  margin-top: var(--spacex3)!important;
 }
 
 
   .mt-xs {
-    margin-top: var(--space);
+    margin-top: var(--space)!important;
   }
 
   .mt-xs-x2 {
-    margin-top: var(--spacex2);
+    margin-top: var(--spacex2)!important;
 }
 
 
@@ -33,11 +33,11 @@
 
 @media screen and (min-width: 48em) {
   .mt-sm{
-    margin-top: var(--space);
+    margin-top: var(--space)!important;
   }
 
   .mt-sm-x2 {
-    margin-top: var(--spacex2);
+    margin-top: var(--spacex2)!important;
   }
 
 }
@@ -46,14 +46,14 @@
 
   .mt-sm,
   .mt-sm-x2 {
-    margin-top: 0;
+    margin-top: 0!important;
   }
 
 }
 
 
 .mb {
-  margin-bottom: var(--space);
+  margin-bottom: var(--space)!important;
 }
 
 .p-0 {
@@ -136,6 +136,14 @@
   bottom: 0;
   left: 0;
 
+}
+
+.fixed-bottom{
+  position: fixed;
+  margin: auto;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 .txt-right {

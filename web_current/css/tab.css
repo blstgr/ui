@@ -29,7 +29,7 @@
     color: var(--color-brand-dark);
     font-family: Montserrat;
     font-weight: 700;
-    line-height: normal;
+    line-height: var(--line-height-sm);
 }
 
 

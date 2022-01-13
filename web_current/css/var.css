@@ -1,21 +1,22 @@
 :root {
     --color-alert-light: #fff6f6;
-    --color-alert-lighter: #ffdfdf;
-    --color-alert: #ff725f;
+    --color-alert-lighter: #ffe9e9;
+    --color-alert: #ff5740;
     --color-alert-darker: #ff8674;
     --color-alert-dark: #a50e00;
   
     --color-warning: #fac510;
   
     --color-info-light: #f2f9ff;
-    --color-info-lighter: #a3c9ed;
+    --color-info-lighter: #c4e2ff;
     --color-info: #6daeeb;
     --color-info-darker: #398dde;
     --color-info-dark: #0055a7;
-    --color-info-xdark: #0c2c4b;
+    --color-info-xdark: #0e477e;
     
     --color-success-light: #e8fff4;
-    --color-success: #63c3a3;
+    --color-success-lighter: #b8fbdb;
+    --color-success: #11bf85;
     --color-success-darker: #2db185;
     --color-success-dark: #08815a;
     
@@ -52,8 +53,8 @@
     --font-size-lg: 3.875rem /*58px*/;
   
   
-    --shadow-raised: 0 18px 20px rgba(0, 0, 0, 0.25);
-    --shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+    --shadow-raised: 0 4px 10px rgba(0, 0, 0, 0.25);
+    --shadow: 0 2px 1px rgba(0, 0, 0, 0.25)
 
 
   }

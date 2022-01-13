@@ -73,11 +73,14 @@ h3,
     margin-right: 0.375em /*6px*/;
 }
 
+.label-icon .icon {
+    margin-right: 0;
+}
 
 
 .label-responsive .icon{
     margin-right: 0;
-    font-size: var(--font-size-md);
+  
 }
 .label-responsive span{
     display: none;
@@ -85,7 +88,7 @@ h3,
 
 @media screen and (min-width: 64em) {
     .label-responsive span{
-        /* display: initial; */
+        display: initial;
     }
 
     .label-responsive .icon{

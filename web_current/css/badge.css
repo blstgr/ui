@@ -2,8 +2,10 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    min-height:  1.5rem;
     min-width:  1.5rem;
-    padding: var(--space-xs) var(--space-sm) /*1px*/;
+    margin: var(--space-xs);
+    padding: 0.0625em var(--space-sm) /*1px*/;
     background: var(--color-brand-dark);
     border-radius: var(--radius);
     font-size: var(--font-size-sm);
@@ -12,11 +14,28 @@
     color: white;
     font-family: courier;
     font-size: 0.875rem; /*14px*/
+    line-height: var(--line-height-sm);
+}
+
+.badge .icon,
+.badge img{
+    margin-right: var(--space-sm);
 }
 
 
+
+.badge-icon{
+    width:  1.5rem;
+    height:  1.5rem;
+}
+
+.badge-icon .icon{
+    margin-right:0;
+ }
+ 
+
 .badge-inverted{
-    background: var(--color-brand);
+    background: white;
     color: var(--color-brand-dark);
 }
 
@@ -33,6 +52,7 @@
         padding-right: 1.75rem;
     
 }
+
 .badge-closable:before,
 .badge-closable:after {
   position: absolute;
@@ -55,16 +75,8 @@
 .badge-closable:after {
     transform: rotate(-45deg);
 }
-   
+ 
 
-.btn .badge{  /* e.g. counter inside btn */
-    margin-left: var(--space); 
-}
-
-.badge .icon,
-.badge img{
-    margin-right: var(--space-sm);
-}
 
 .badge-responsive .icon, /* *-responsive hides text and leaves only icon */
 .badge-responsive img{

@@ -5,18 +5,20 @@ i{
 }
 
 /* .icon - general class - icon or icon+txt combination inside btns or labes*/
-.icon,
-.icon-lg {
+.icon {
     position: relative;
     display: inline-flex;
-    font-size: 1rem;
+    font-size: var(--font-size);
     font-style: normal;
     font-weight: normal;
 }
 
+
+
 .icon-lg{
-  font-size: 2rem;
+  font-size: 1.125rem;
 }
+
 .icon-smaller{
   font-size: 0.875rem;
 }
@@ -40,7 +42,7 @@ i{
     display: block;
     width: 0.125rem /*2px*/; /*em breaks the icon*/
     height:  1rem /*16px*/;
-    background: var(--color-brand-dark);
+    background: white;
   }
   
   .close:before {

@@ -2,28 +2,29 @@
 # Web 
 Demo HTML
 
-Components
+## Components
 * [Demo page](https://blstgr.github.io/ui/web_current/html/lib.html)
 * [CSS files](https://github.com/blstgr/ui/tree/master/web_current/css)
 
-Emails
-* [DCV steper blocks](https://github.com/blstgr/ui/tree/master/web_current/html/dcv.html)
-* [Details](https://github.com/blstgr/ui/tree/master/web_current/html/acc_details.html)
-* [SSL list](https://github.com/blstgr/ui/tree/master/web_current/acc_list.html)
-* [Home](https://github.com/blstgr/ui/tree/master/web_current/home.html)
+## Pages
+* [Activation](https://blstgr.github.io/ui/web_current/html/acc_issue.html)
+* [Details](https://blstgr.github.io/ui/web_current/html/acc_details.html)
+* [SSL list](https://blstgr.github.io/ui/web_current/html/acc_list.html)
+* [Home](https://blstgr.github.io/ui/web_current/html/home.html)
+* [DCV errors](https://blstgr.github.io/ui/web_current/html/dcv.html)
 
 
 
 
 # Emails 
 
-Components
+## HTML Components
 
 * [Demo page](https://blstgr.github.io/ui/email/lib.html) &mdash; contains description of UI components and their usage. If components are added or updated, demo page will be updated accordingly
 * [CSS files](https://github.com/blstgr/ui/tree/master/email/css) &mdash; dedicated css file for each component and main.css
 * [main.css](https://github.com/blstgr/ui/blob/master/email/css/main.css) &mdash; contains header and footer css, custom elements (example: [calendar](https://blstgr.github.io/ui/email/7-renewal.html)) and classes needed for demo page only
 
-Templates 
+## Templates 
 
 1. [Welcome](https://blstgr.github.io/ui/tdtr/welcome.html)
 2. [Receipt](https://blstgr.github.io/ui/tdtr/receipt.html)

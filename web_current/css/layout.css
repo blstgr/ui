@@ -18,6 +18,7 @@
   /* 100% width container, defines overall padding  */
 
   .page-container {
+    position: relative;
     background: var(--color-brand-light);
     padding: var(--spacex2) var(--space);
    

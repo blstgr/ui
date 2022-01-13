@@ -40,11 +40,12 @@ th {
 /* normal table, odd row has a different color   */
 
 .table-striped tbody tr:nth-child(odd) {
-  background: rgb(234 231 219 / 50%)
-    /*var(--color-brand)*/
-  ;
+  background: var(--color-brand);
 }
 
+
+
+/* rgb(255 134 116 / 20%) */
 
 /* normal table with rounded corners and a border */
 
@@ -107,12 +108,12 @@ th {
 }
 
 
-
 /* each tr is borderdered and sepated from the next */
 
 .table-spaced {
   border-collapse: separate;
   border-spacing: 0 var(--space);
+  margin: -1rem 0;
 
 }
 
@@ -223,6 +224,7 @@ th {
     white-space: normal;
   }
 
+
   /* give each row a little space */
   td {
     padding: var(--space);
@@ -271,8 +273,6 @@ th {
   td[data-title]:before {
     content: attr(data-title) ":\00A0";
     font-weight: 800;
-   
-
   }
 
   th:not([data-title]) {
@@ -285,8 +285,6 @@ th {
   }
 
 
- 
-
   .table-spaced {
     margin-top: var(--space);
   }
@@ -298,8 +296,6 @@ th {
     border-left-width: 0;
     border-radius: 0;
   }
-
-
 
   .table-spaced td,
   .table-spaced th {
@@ -314,10 +310,16 @@ th {
   .cell-focus {
     border-right: 0;
     border-bottom: var(--border) solid var(--color-alert)
+  } 
+
+  /* text is always alignt left or center in the whole table, no need to align center for specific cells */
+  .cell-center {
+    text-align: left;
   }
 
- 
-
+  .cell-right {
+    text-align: left;
+  }
 }
 
 

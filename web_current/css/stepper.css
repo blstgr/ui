@@ -16,14 +16,14 @@
 
 .stepper .badge{
     position: absolute;
-    top: 2.625rem /*42px*/;
-    left: -0.6875rem /*11px*/;
+    top: 38px;
+    left: -15px;
     z-index: 999;
 }
 
 .stepper-step-completed .badge,
 .stepper-step-inactive .badge{
-    top: 1.125rem /*18px*/;
+    top: 16px;
 }
 
 
@@ -35,7 +35,7 @@
 }
 
 .stepper+table{
-    margin-top: var(--space)
+    margin-top: var(--space);
 }
 
 .stepper-ghost .panel{
@@ -43,4 +43,8 @@
    border-bottom: 0;
    border-right: 0;
    border-radius: 0;
+}
+
+.stepper .label{
+    margin-left: var(--space);
 }
