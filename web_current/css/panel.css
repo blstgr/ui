@@ -9,10 +9,15 @@
 
 }
 
-.panel+.panel,
-p+.panel {
+.panel+.panel {
     margin-top: var(--space);
 }
+
+
+p+.panel {
+    margin-top: var(--space-md);
+}
+
 
 @media screen and (min-width: 48em) {
     .panel{

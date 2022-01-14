@@ -11,6 +11,7 @@
     font-weight: inherit;
     box-sizing: border-box;
     background-color: white;
+    line-height: var(--line-height-sm);
 }
 
 .input-s{

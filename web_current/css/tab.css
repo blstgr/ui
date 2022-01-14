@@ -5,21 +5,25 @@
 }
 
 .tab-content{
-    padding: var(--space);
+    padding: var(--space) 0;
     margin-top: var(--space-md); 
+    border-top: var(--border) solid var(--color-brand-dark);
+    border-bottom: var(--border) solid var(--color-brand-dark);
+
 }
 
 .tab-switch{
     display: flex;
     flex-wrap: wrap;
     text-align: center;
+    margin: -0.8rem;
     padding-left:var(--space-sm);
     padding-right:var(--space-sm);
 }
 
 .tab {
     position: relative;
-    padding: var(--space);
+    padding:  0.75rem var(--space-md) /*0.75=var(--space)-(lh-sm)*/;
     margin: var(--space-sm);
     flex-grow: 1;
     border-radius: var(--radius);
@@ -46,8 +50,8 @@
 
 
 .tab-active{
-    background: var(--color-success);
-    color: white;
+    background: var(--color-warning);
+    /* color: white; */
 }
 
 

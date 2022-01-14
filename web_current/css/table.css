@@ -117,6 +117,10 @@ th {
 
 }
 
+.panel+.table-spaced{
+  margin-top: 0;
+}
+
 .table-spaced td,
 .table-spaced th {
   padding: var(--space);
