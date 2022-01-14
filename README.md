@@ -1,7 +1,7 @@
 
 Demo HTML
 
-## Components
+# Components
 * [Demo page](https://blstgr.github.io/ui/web_current/html/lib.html)
 * [CSS files](https://github.com/blstgr/ui/tree/master/web_current/css)
 
