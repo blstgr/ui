@@ -6,11 +6,11 @@ Demo HTML
 * [CSS files](https://github.com/blstgr/ui/tree/master/web_current/css)
 
 ## Pages
-* [Activation](https://blstgr.github.io/ui/web_current/html/acc_issue.html)
+* [DCV errors](https://blstgr.github.io/ui/web_current/html/dcv.html)
 * [Details](https://blstgr.github.io/ui/web_current/html/acc_details.html)
 * [SSL list](https://blstgr.github.io/ui/web_current/html/acc_list.html)
 * [Home](https://blstgr.github.io/ui/web_current/html/home.html)
-* [DCV errors](https://blstgr.github.io/ui/web_current/html/dcv.html)
+* [Activation](https://blstgr.github.io/ui/web_current/html/acc_issue.html)
 
 
 
