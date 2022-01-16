@@ -36,16 +36,12 @@
 
   .alert-action{
     display: flex;
-    flex-direction: column;
-    margin-left: var(--space);  
-    padding-left: var(--space);  
-    text-align: center;
-    border-left: var(--border) solid white;
-     
+    margin-left: var(--space-md);  
+    text-align: center;     
   }
 
   .alert-action .btn+.btn{
-    margin-top: var(--space-sm);  
+    margin-left: var(--space-sm);  
   }
 
   .alert .btn-flat,
@@ -62,8 +58,6 @@
     color: var(--color-alert-dark);  
   }
    
- 
-
 
   /* blue */
 
