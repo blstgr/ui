@@ -8,7 +8,7 @@ Demo HTML
 
 ## Pages
 
-* [DCV errors](https://blstgr.github.io/ui/web_current/html/dcv.html)
+* [DCV](https://blstgr.github.io/ui/web_current/html/dcv.html)
 * [Details](https://blstgr.github.io/ui/web_current/html/acc_details.html)
 * [SSL list](https://blstgr.github.io/ui/web_current/html/acc_list.html)
 * [Home](https://blstgr.github.io/ui/web_current/html/home.html)
