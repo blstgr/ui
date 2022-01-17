@@ -22,7 +22,7 @@
 <body>
 
     <div class="alert-holder fixed-bottom animate__animated animate__bounceInUp ">
-     
+     <!-- too long -->
         <div class="alert alert-info">
             <div class="alert-body">
                 <span class="badge badge-icon badge-inverted"><i class="fas fa-info"></i></span>
@@ -32,12 +32,33 @@
                 </div>
             </div>
       
-            <div class="alert-action">
+            <div class="alert-action alert-close">
       
-                <button class="btn btn-s btn-secondary">Okay</button>
+                <button class="btn btn-s btn-link"><i class="close"></i></button>
             </div>
         </div>
+
+    <!-- caa -->
+  <div class="alert">
+    <div class="alert-body">
+        <span class="badge badge-icon badge-inverted"><i class="icon fas fa-fire-alt"></i></span>
+
+        <div class="alert-content">
+            <p>Our provider has no right to issue SSL for you. To grant this right, add CAA record to <span class="txt-mono">jacksparrow.com</span> at your DNS provider: </p>
+            <p class="content-scrolled"><span class="label">Type</span>: CAA; <span class="label">Tag</span>: Issuewild; <span class="label">CA povider</span>: sectigo.com. <span class="label">TTL</span>: 60 or min possible value. </p>
+            
+        </div>
+    </div>
+
+    <div class="alert-action">
+
+        <button class="btn btn-s btn-secondary">Done</button>
+    </div>
 </div>
+
+</div>
+
+<!-- default -->
 
     <div class="page-container ">
  
@@ -263,6 +284,7 @@
                 </div>
     </div>
 
+    <!-- w/ dcv error -->
 
     <div class="page-container ">
 
@@ -497,7 +519,7 @@
                 </div>
     </div>
 
-
+    
 </body>
 
 </html>

@@ -1,8 +1,4 @@
-.tab-container{
-    margin-top: -0.5rem;
-    margin-left: -0.5rem;
-    margin-right: -0.5rem;
-}
+
 
 .tab-content{
     padding: var(--space) 0;
@@ -16,9 +12,7 @@
     display: flex;
     flex-wrap: wrap;
     text-align: center;
-    margin: -0.8rem;
-    padding-left:var(--space-sm);
-    padding-right:var(--space-sm);
+    margin: -0.5rem;
 }
 
 .tab {
@@ -50,7 +44,7 @@
 
 
 .tab-active{
-    background: var(--color-warning);
+    background: var(--color-brand);
     /* color: white; */
 }
 

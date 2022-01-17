@@ -4,7 +4,8 @@
     --color-alert: #ff5740;
     --color-alert-darker: #e3432d;
     --color-alert-dark: #a50e00;
-  
+    --color-alert-xdark: #760b01;
+
     --color-warning: #fac510;
   
     --color-info-light: #f2f9ff;
@@ -25,6 +26,7 @@
     --color-brand: #eae7db;
     --color-brand-light: #f9f8f4;
   
+    --color-a-visited: #7354bb;
 
     --space-md: 1.25rem /*20px*/;
     --space: 1rem /*16px*/;

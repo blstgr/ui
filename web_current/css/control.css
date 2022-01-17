@@ -126,7 +126,7 @@
   right: 0;
   bottom: 0;
   width: var(--spacex2);
-  background-color: rgb(195 190 172 / 80%) /*var(--color-brand-darker)*/;
+  background-color: var(--color-brand-darker);
   border-radius: var(--space-md);
   -webkit-transition: .4s;
   transition: .4s;

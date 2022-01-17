@@ -18,11 +18,46 @@
 </head>
 
 <body>
-    <!-- all message -->
+
+    <div class="alert-holder fixed-bottom animate__animated animate__bounceInUp ">
+        <!-- too long -->
+           <div class="alert alert-info">
+               <div class="alert-body">
+                   <span class="badge badge-icon badge-inverted"><i class="fas fa-info"></i></span>
+         
+                   <div class="alert-content">
+                       <p>Our provider needs more time, try again in 15m.</p>
+                   </div>
+               </div>
+         
+               <div class="alert-action alert-close">
+         
+                   <button class="btn btn-s btn-link"><i class="close"></i></button>
+               </div>
+           </div>
+           <div class="alert alert-info">
+            <div class="alert-body">
+                <span class="badge badge-icon badge-inverted"><i class="fas fa-info"></i></span>
+      
+                <div class="alert-content">
+                    <p>Our provider's under maintenance, come back in 15m.</p>
+                </div>
+            </div>
+      
+            <div class="alert-action alert-close">
+      
+                <button class="btn btn-s btn-link"><i class="close"></i></button>
+            </div>
+        </div>
+  
+   </div>
+   
+    
+    <!-- stepper errors -->
 
     <div class="page-container">
         <section>
-    <h3>All messages</h3>
+    <h3>All errors</h3>
     
 
 
@@ -102,7 +137,7 @@
                             <div class="btn-container">
 
                                 <button class="btn btn-secondary"><i class="icon fas fa-arrow-up"></i>Confirm file upload</button>
-                                <button class="btn btn-flat"><i class="icon fas fa-video"></i>Video tutorial</button>
+                                <button class="btn btn-flat"><i class="icon fas fa-arrow-right"></i>Ignore</button>
                             </div>
 
 
@@ -185,7 +220,7 @@
 
 
                 </div>
-        </div>
+             </div>
      
                  <!-- CNAME -->
             <div class="stepper">
@@ -195,7 +230,7 @@
                     <div class="badge badge-alert badge-icon"><i class="icon fas fa-fire-alt"></i></div>
                     <div class="panel panel-alert">
                         <div class="panel-header">
-                            <h3>DNS record is missing</h3>
+                            <h3>Missing DNS record</h3>
                         </div>
                         <div class="panel-body">
                             <p>Your domains’ DNS zone does not contain the validation CNAME record or “Name” is
@@ -208,6 +243,7 @@
                                         <th>Name</th>
                                         <th class="cell-center">Type</th>
                                         <th>Point to</th>
+                                        <th>TTL</th>
                                      
                                     </thead>
                                     <tbody>
@@ -219,7 +255,7 @@
                                                     class="txt-mono">FB39026EEDA073E7725A8DEFA11EE952.55E9005351AC859CAF48A3DBC14E272D.60e862c0d9a09.comodoca.com</span>
                                             </td>
                                             <td data-title="TTL"><span
-                                                class="txt-mono">60 or min possible value at your DNS provider</span>
+                                                class="txt-mono">60 or min possible value</span>
                                         </td>
                                         </tr>
 
@@ -231,7 +267,7 @@
                                                     class="txt-mono">FB39026EEDA073E7725A8DEFA11EE952.55E9005351AC859CAF48A3DBC14E272D.60e862c0d9a09.comodoca.com</span>
                                             </td>
                                             <td data-title="TTL"><span
-                                                class="txt-mono">60 or min possible value at your DNS provider</span>
+                                                class="txt-mono">60 or min possible value</span>
                                         </td>
                                         </tr>
                                     </tbody>
@@ -256,7 +292,7 @@
                     <div class="badge badge-alert badge-icon"><i class="icon fas fa-fire-alt"></i></div>
                     <div class="panel panel-alert">
                         <div class="panel-header">
-                            <h3>DNS record is incorrect
+                            <h3>Incorrect DNS record
                             </h3>
                         </div>
                         <div class="panel-body">
@@ -310,7 +346,7 @@
 
                                 <div class="btn-container">
 
-                                    <button class="btn btn-secondary"><i class="icon fas fa-plus"></i>Confirm DNS added
+                                    <button class="btn btn-secondary"><i class="icon fas fa-plus"></i>Confirm DNS added</button>
                                   <button class="btn btn-flat"><i class="icon fas fa-video"></i>Video tutorial</button>
                                 </div>
 
@@ -319,61 +355,88 @@
                     </div>
                 </div>
 
-                <!-- step2: error: CAA-->
-                <div class="stepper-step">
-                    <div class="badge badge-alert badge-icon"><i class="icon fas fa-fire-alt"></i></div>    
-                    <div class="panel panel-alert">
-                        <div class="panel-header">
-                            <h3>CAA required
-                            </h3>
-                        </div>
-                        <div class="panel-body">
+               
+            </div>
+
+            <!-- CAA -->
+            <div class="stepper">
+                       
+       <!-- get ssl - CAA -->
+           
+       <div class="stepper-step">
+        <div class="badge badge-alert badge-icon"><i class="icon fas fa-fire-alt"></i></div>    
+        <div class="panel panel-alert">
+            <div class="panel-header">
+                <h3>CAA record required to get SSL
+                </h3>
+            </div>
+            <div class="panel-body">
 
 
-                            <p>Your SSL can’t be issued until you add a CAA record at your DNS provider:
-                                <div class="content-scrolled">
-                                    <table class="table-plain table-striped table-fixed lh-sm">
+                <p>Our provider has no right to issue SSL for you. To grant this right, add CAA record at your DNS provider:
+                    <div class="content-scrolled">
+                        <table class="table-plain table-striped table-fixed lh-sm">
 
-                                        <thead>
-                                            <th>Name</th>
-                                            <th class="cell-center">Type</th>
-                                            <th class="cell-center">Tag</th>
-                                            <th class="cell-right">CA provider</th>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td data-title="Name"><span class="txt-mono">jacksparrow.com</span></td>
-                                                <td data-title="Type" class="cell-center"><span class="txt-mono">CAA</span></td>
-                                                <td data-title="Tag" class="cell-center"><span class="txt-mono">issuewild</span></td>
-                                                <td data-title="CA provider" class="cell-right"><span class="txt-mono">sectigo.com</span></td>
-                                            </tr>
+                            <thead>
+                                <th >Domain</th>
+                                 
+                                <th  class="cell-center">Name</th>
+                                <th class="cell-center"> Type</th>
+                                <th class="cell-center">Tag</th>
+                                <th>CA provider</th>
+                                <th>TTL</th>
+                            </thead>
+                            <tbody>
+                              
+                                <tr> 
+                                    <td data-title="Domain">
+                                    <span class="txt-mono">mail.jacksparrow.com</span></td>
 
-                                        </tbody>
-                                    </table>
-                                </div>
+                                    <td data-title="Name" class="cell-center"><span class="txt-mono">mail</span></td>
+                                    <td data-title="Type"class="cell-center"><span class="txt-mono">CAA</span></td>
+                                    <td data-title="Tag"class="cell-center"><span class="txt-mono">issuewild</span></td>
+                                    <td data-title="CA provider" ><span class="txt-mono">sectigo.com</span></td>
+                                    <td data-title="TTL" ><span class="txt-mono">60 or min possible value</span></td>
+                                </tr>
 
+                                <tr> 
+                                    <td data-title="Domain">
+                                    <span class="txt-mono">jacksparrow.com</span></td>
 
-                                <p>If you’ve already fixed this, please click “Confirm“ again in a few minutes—DNS
-                                    changes may take some time to apply.</p>
-
-                                
-                            <div class="btn-container">
-
-                                <button class="btn btn-secondary"><i class="icon fas fa-plus"></i>Confirm DNS added
-                                </div>
-
-
-                        </div>
+                                    <td data-title="Name" class="cell-center"><span class="txt-mono">@</span></td>
+                                    <td data-title="Type"class="cell-center"><span class="txt-mono">CAA</span></td>
+                                    <td data-title="Tag"class="cell-center"><span class="txt-mono">issuewild</span></td>
+                                    <td data-title="CA provider" ><span class="txt-mono">sectigo.com</span></td>
+                                    <td data-title="TTL" ><span class="txt-mono">60 or min possible value</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
-                </div>
+
+
+                    <p>If you’ve already fixed this, please click “Confirm“ again in a few minutes—DNS
+                        changes may take some time to apply.</p>
+
+                    
+                <div class="btn-container">
+
+                    <button class="btn btn-secondary"><i class="icon fas fa-plus"></i>Confirm DNS added
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+
             </div>
        
 </section>
 </div>
 
+ 
 
 
- <!--all blocks-->
+ <!-- stepper blocks-->
     <div class="page-container">
         <section>
 
@@ -400,8 +463,34 @@
         </div>
 
         <div class="stepper">
+               <!--activate-->
+               <div class="stepper-step">
+                <div class="badge badge-icon"><i class="icon  far fa-circle"></i></div>
+                <div class="panel">
+                    <div class="panel-header">
+                        <h3>SSL activation request
+                        </h3>
+                
+                    </div>
+                    <div class="panel-body">
+                   <p>To get your SSL issued and your site secured, you need to submit your website information to the certificate authority. Once the they validate your details, you’ll be able to download your SSL and install it on your server.
 
-              <!-- step1 done -->
+                </p>    
+                   <div class="btn-container">
+                    <button class="btn btn-secondary">
+                        <i class="icon icon-smaller fas fa-play"></i>Activate</button>
+                    
+                </div>
+                     
+                    </div>
+                  
+                   
+            
+                </div>
+            </div>
+
+
+              <!-- activation done -->
               <div class="stepper-step stepper-step-completed">
                 <div class="badge badge-icon badge-success"><i class="fas fa-check"></i></div>
 
@@ -413,7 +502,8 @@
                     </div>
                 </div>
             </div>
-            <!-- step2.1: downalod -->
+
+            <!-- http: downalod done -->
             <div class="stepper-step stepper-step-completed">
                 <div class="badge badge-icon badge-success"><i class="fas fa-check"></i></div>
                 <div class="panel panel-success">
@@ -429,7 +519,7 @@
             </div>
 
 
-            <!-- step2.1: downalod -->
+            <!-- http: downalod  -->
             <div class="stepper-step ">
                 <div class="badge badge-icon"><i class="icon  far fa-circle"></i></div>
 
@@ -459,13 +549,14 @@
 
                         <div class="btn-container">
                             <button class="btn btn-secondary"><i class="icon fas fa-arrow-down"></i>Download .txt</button>
+                            <button class="btn btn-flat"><i class="icon fas fa-video"></i>Video tutorial</button>
                         </div>
                     </div>
                 </div>
             </div>
 
         
-              <!-- step2.2: confirm http -->
+              <!-- http: confirm  -->
               <div class="stepper-step">
                 <div class="badge badge-icon"><i class="icon  far fa-circle"></i></div>
 
@@ -490,19 +581,17 @@
 
                         </ul>
                         <div class="btn-container">
-                            <button class="btn btn-secondary btn-checked"><i class="icon fas fa-arrow-up"></i>Confirm file
+                            <button class="btn btn-secondary"><i class="icon fas fa-arrow-up"></i>Confirm file
                                 upload</button>
-                          <button class="btn btn-flat"><i class="icon fas fa-video"></i>Video tutorial</button>
+                      
                         </div>
                     </div>
 
-                    <div class="panel-footer">
-                        Awaiting response from Certificate Authority: 60s..
-                    </div>
+                
                 </div>
             </div>
 
-          <!-- step2: confirm dns -->
+          <!-- dns: confirm -->
           <div class="stepper-step">
             <div class="badge badge-icon"><i class="icon  far fa-circle"></i></div>
             <div class="panel">
@@ -521,6 +610,7 @@
                                 <th>Name</th>
                                 <th class="cell-center">Type</th>
                                 <th>Point to</th>
+                                <th>TTL</th>
                             </thead>
                             <tbody>
                                 <tr>
@@ -531,6 +621,9 @@
                                         <span
                                             class="txt-mono">FB39026EEDA073E7725A8DEFA11EE952.55E9005351AC859CAF48A3DBC14E272D.60e862c0d9a09.comodoca.com</>
                                     </td>
+                                    <td data-title="TTL"><span
+                                        class="txt-mono">60 or min possible value</span>
+                                </td>
                                 </tr>
 
 
@@ -539,18 +632,213 @@
                     </div>
 
                     <div class="btn-container">
-                        <button class="btn btn-secondary btn-checked"><i class="icon">o</i>Confirm DNS
-                            added</button>
+                    
+                        <button class="btn btn-secondary"><i class="icon fas fa-plus"></i>Confirm DNS added</button>
                       <button class="btn btn-flat"><i class="icon fas fa-video"></i>Video tutorial</button>
                     </div>
                 </div>
 
-                <div class="panel-footer">
-                    Awaiting response from Certificate Authority: 60s..
-                </div>
+              
             </div>
         </div>
 
+          <!-- email: confirm -->
+          <div class="stepper-step">
+            <div class="badge badge-icon"><i class="icon  far fa-circle"></i></div>
+            <div class="panel">
+                <div class="panel-header">
+                    <h3>Domain validation: Email-based <a class="link-decorated" href="#">Change</a></h3>
+            
+                </div>
+                <div class="panel-body">
+
+                    <p>Please check <span class="txt-mono txt-highlighted">admin@kitbears.co.uk</span> for a validation email with a validation code from @trust-provider.com.
+
+                        Open the link inside that email, and paste the validation code to the linked page to complete the validation process.</p>
+                   <p>If you don’t see the email in your inbox, please check your spam folder or resend the email.
+
+                </p>
+
+                    <div class="btn-container">
+                        <button class="btn btn-secondary btn-checked"><i class="loader"></i>Confirm code pasted</button>
+                        <button class="btn btn-flat"><i class="icon fas fa-paper-plane"></i>Resend email</button>
+                        <button class="btn btn-flat"><i class="icon fas fa-video"></i>Video tutorial</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+             <!--dv: get ssl - timer-->
+             <div class="stepper-step">
+                <div class="badge badge-icon"><i class="icon  far fa-circle"></i></div>
+                <div class="panel">
+                    <div class="panel-header">
+                        <h3>Get SSL</h3>
+                
+                    </div>
+                    <div class="panel-body">
+                   <p>We have succesfully verified that your website meets our provider's requirements. Now certificate authority needs to perform the final check and get SSL issued.  You will be able to download your SSL as soon as it's ready. Validation may take 5&ndash;20m. </p>    
+    
+                     
+                    </div>
+    
+                   
+                <div class="panel-footer">
+                    Awaiting domain control validation: 60s..
+                </div>
+                </div>
+            </div>
+
+               <!--ov/ev: get ssl - timer-->
+               <div class="stepper-step">
+                <div class="badge badge-icon"><i class="icon  far fa-circle"></i></div>
+                <div class="panel">
+                    <div class="panel-header">
+                        <h3>Get SSL</h3>
+                
+                    </div>
+                    <div class="panel-body">
+                   <p>We have succesfully verified that your website meets our provider's requirements. Now certificate authority needs to perform the final check and get SSL issued.  You will be able to download your SSL as soon as it's ready. Business validation may take several days </p>    
+                   <p>Shortly you will receive an email at <span class="txt-mono txt-highlighted"> ceo@jacksparrow.com </span>  from @sectigo.com with the list of the required documents and an email to <a href="" class="link-decorated">schedule a call</a> for business phone number verification. <a href="" class="link-decorated">Tips to make it easier</a>.
+
+
+                   
+
+                   </p>
+   
+                       <div class="btn-container">
+                           <button class="btn btn-secondary"><i class="icon fas fa-arrow-down"></i>See progress</button>
+                           <button class="btn btn-flat"><i class="icon fas fa-video"></i>Video tutorial</button>
+                       </div>
+                     
+                    </div>
+    
+                   
+                <div class="panel-footer">
+                    Awaiting domain control and business validation.. 
+                </div>
+                </div>
+            </div>
+
+                 <!--get ssl - try again-->
+             <div class="stepper-step">
+                <div class="badge badge-icon"><i class="icon  far fa-circle"></i></div>
+                <div class="panel">
+                    <div class="panel-header">
+                        <h3>Get SSL</h3>
+                
+                    </div>
+                    <div class="panel-body">
+                   <p>We have succesfully verified that your website meets our provider's requirements. Now certificate authority needs to perform the final check and get SSL issued. You will be able to download your SSL as soon as it's ready. Validation may take 5–20m.</p>    
+                   <div class="btn-container">
+                    <button class="btn btn-secondary">
+                        <i class="icon fas fa-redo"></i>Try again in 15m</button>
+                    
+                </div>
+                     
+                    </div>
+                  
+                   
+            
+                </div>
+            </div>
+
+                     <!--get ssl - download ssl-->
+                     <div class="stepper-step">
+                        <div class="badge badge-icon"><i class="icon  far fa-circle"></i></div>
+                        <div class="panel">
+                            <div class="panel-header">
+                                <h3>Get SSL</h3>
+                        
+                            </div>
+                            <div class="panel-body">
+                           <p>We have succesfully verified that your website meets our provider's requirements. Now certificate authority needs to perform the final check and get SSL issued. You will be able to download your SSL as soon as it's ready. Validation may take 5–20m.</p>    
+                           <div class="btn-container">
+                            <button class="btn btn-secondary">
+                                <i class="icon fas fa-arrow-down"></i>Download SSL</button>
+                            
+                        </div>
+                             
+                            </div>
+                          
+                           
+                    
+                        </div>
+                    </div>
+        
+                    
+
+             <!--install ssl -->
+             <div class="stepper-step">
+                <div class="badge badge-icon"><i class="icon  far fa-circle"></i></div>
+                <div class="panel">
+                    <div class="panel-header">
+                        <h3>Install SSL</h3>
+                
+                    </div>
+                    <div class="panel-body">
+                        
+                        <div class="tab-container">
+                            <div class="tab-switch">
+                                <button class="tab  tab-active">
+                                    Install yourself
+                                </button>
+                                <button class="tab">
+                                   We install for you ($28.88/yr)
+                                </button>
+    
+                            </div>
+                            <div class="tab-content">
+                                <p>To get your site secured, you need to upload  <span class="txt-mono txt-highlighted">jacksparrowcom_cert.zip</span>  and <span class="txt-mono txt-highlighted">jacksparrowcom_key.zip</span> to your server. </p>
+                                <p>If you created CSR and private key in browser during SSL activation, you will find key.zip in your downalods folder. For CSR created directly on your hostig server, private key is already on your server, you will need to upload only cert.zip.</p>
+                                <p class="mt"><a href="" class="link-decorated">Here is a list </a> of the most common server types and how to install SSL on them.</p>
+    
+                            </div>
+    
+                        </div>
+    
+
+
+    
+                        <div class="btn-container">
+                            <button class="btn btn-secondary"><i class="icon fas fa-check"></i>Confirm installation</button>
+                            <button class="btn btn-flat"><i class="icon fas fa-video"></i>Video tutorial</button>
+                        </div>
+                    </div>
+    
+                   
+                </div>
+            </div>
+
+
+             <!--install ssl -->
+             <div class="stepper-step">
+                <div class="badge badge-icon"><i class="icon  far fa-circle"></i></div>
+                <div class="panel">
+                    <div class="panel-header">
+                        <h3>Pay for SSL</h3>
+                
+                    </div>
+                    <div class="panel-body">
+                        
+
+                        <p>You have 28 trial days left. Pay before Jun 20, 2021 and keep using SSL. Pay after this date and you will need go through the whole process from scratch. </p>
+    
+                        <div class="btn-container">
+                            <button class="btn btn-secondary"><i class="icon fas fa-shopping-bag"></i>Buy</button>
+                       
+                        </div>
+                    </div>
+    
+                   
+                </div>
+            </div>
+    
+    
+        <!-- inactive step -->
         <div class="stepper-step stepper-step-inactive">
             <div class="badge badge-icon"><i class="icon  far fa-circle"></i></div>
             <div class="panel">
@@ -563,7 +851,10 @@
         </div>
 
     </div>
-   
+</div>
+
+ 
+
 </body>
 
 </html>
