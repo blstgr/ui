@@ -26,7 +26,7 @@ p+.panel {
 
     /*may have fixed widht e.g. products*/     
     .panel-fixed-sm {
-            min-width: 340px;
+            min-width: 22.5rem /*360*/;
             width: auto;
     }    
 

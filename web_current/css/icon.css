@@ -40,8 +40,8 @@ i{
     margin: auto;
     content: "";
     display: block;
-    width: 0.125rem /*2px*/; /*em breaks the icon*/
-    height:  1rem /*16px*/;
+    width: 0.125rem /*2*/; /*em breaks the icon*/
+    height:  1rem /*16*/;
     background: white;
   }
   

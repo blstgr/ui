@@ -47,7 +47,7 @@
 
 section,
 .section{
-  max-width: 1200px;
+  max-width: 75rem /*1200*/;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -76,5 +76,5 @@ section,
 .twitter-tweet{
     margin: var(--space-sm)!important;
     width: auto!important;
-    min-width: 360px!important;
+    min-width: 22.5rem!important /*360*/;
 }

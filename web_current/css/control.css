@@ -81,22 +81,22 @@
     bottom:0;
     left: 0;
     margin: auto;
-    width: 0.375em /*6px*/;
-    min-width: 0.375em /*6px*/;
-    height: 0.75em /*12px*/;
+    width: 0.375em /*6*/;
+    min-width: 0.375em /*6*/;
+    height: 0.75em /*12*/;
     border: solid white;
-    border-width: 0 0.125em 0.125em 0 /*2px*/;
+    border-width: 0 0.125em 0.125em 0 /*2*/;
     transform: rotate(45deg);
   }
 
   .checkmark:after{
-    top: -0.25em /*4px*/;
+    top: -0.25em /*4*/;
   }
   
   .radiomark:after{
     border-radius: var(--radius);
     border: none;
-    width: 0.75em /*12px*/;
+    width: 0.75em /*12*/;
     background: white;
   }
 

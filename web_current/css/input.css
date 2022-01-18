@@ -79,7 +79,7 @@ p+.input-group{
     border: var(--border) solid transparent;
     padding-top: var(--space);
     padding-bottom: var(--space);
-    margin-left: -3px;
+    margin-left: -0.125rem;
 }
 
 

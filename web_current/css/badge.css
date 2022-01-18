@@ -5,7 +5,7 @@
     min-height:  1.5rem;
     min-width:  1.5rem;
     margin: var(--space-xs);
-    padding: 0.0625em var(--space-sm) /*1px*/;
+    padding: 0.0625em var(--space-sm) /*1*/;
     background: var(--color-brand-dark);
     border-radius: var(--radius);
     font-size: var(--font-size-sm);
@@ -13,7 +13,7 @@
     text-align: center;
     color: white;
     font-family: courier;
-    font-size: 0.875rem; /*14px*/
+    font-size: 0.875rem; /*14*/
     line-height: var(--line-height-sm);
 }
 
@@ -56,13 +56,13 @@
 .badge-closable:before,
 .badge-closable:after {
   position: absolute;
-  top: 1px;
+  top: 0.0625rem /*1*/;
   bottom: 0; 
   right: 0.75rem;
   margin: auto;
   content: "";
   display: block;
-  width: 0.125rem /*2px*/; 
+  width: 0.125rem /*2*/; 
   height: 0.75rem ;
   background: white;
 

@@ -16,8 +16,8 @@
 
 .stepper .badge{
     position: absolute;
-    top: 2.375rem /*38px*/;
-    left: -0.9375rem /*-15px*/;
+    top: 2.375rem /*38*/;
+    left: -0.9375rem /*-15*/;
     z-index: 999;
 }
 

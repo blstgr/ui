@@ -47,7 +47,7 @@ h3,
 .price-old:after {
     display: block;
     height: 0;
-    margin-top: -0.7em /*8px*/;
+    margin-top: -0.7em /*8*/;
     border-bottom: var(--space-xs) solid  var(--color-alert); 
     content: "";
 }
@@ -70,7 +70,7 @@ h3,
 
 
 .label .icon {
-    margin-right: 0.375em /*6px*/;
+    margin-right: 0.375em /*6*/;
 }
 
 .label-icon .icon {
@@ -92,18 +92,18 @@ h3,
     }
 
     .label-responsive .icon{
-        margin-right: 0.375em /*6px*/;
+        margin-right: 0.375em /*6*/;
     }      
 }
 
 
 /* scrollable text - can be applied to p or list or div with table. can contatn copy action iside, user should be able to write in it*/
 .content-scrolled {
-    max-height: 10rem /*160px*/;
+    max-height: 10rem /*160*/;
     padding-top: var(--space);
     padding-bottom: var(--space);
-    border-top: 1px solid var(--color-alert-dark);
-    border-bottom: 1px solid var(--color-alert-dark);
+    border-top: 0.0625rem /*1*/ solid var(--color-alert-dark);
+    border-bottom: 0.0625rem /*1*/ solid var(--color-alert-dark);
     background: rgb(234 231 219 / 50%) /*var(--color-brand), 50%*/;
     overflow-y: scroll;
 }
@@ -149,7 +149,7 @@ p+.content-scrolled,
 }
 
 .txt-trancate{
-    max-width: 100px;
+    max-width: 6rem;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -158,17 +158,19 @@ p+.content-scrolled,
 }
 
 
-
 @media screen and (min-width: 48em) {
     .txt-trancate{
-        max-width: 220px;
+        max-width: 12rem;
     }
 }
-@media screen and (min-width: 64em) {
+    
+
+@media screen and (min-width: 75em) {
     .txt-trancate{
-        max-width: 300px;
+        max-width: 20rem;
     }
 }
+
 
 ul {
     margin-top: var(--space-sm);
@@ -244,7 +246,7 @@ a:hover {
     font-weight: 400;
     white-space: nowrap;
     content: "→";
-    margin: 0px;
+    margin: 0;
     transition: all 0.5s cubic-bezier(0.2, 1, 0.3, 1) 0s;
 
 }
@@ -266,7 +268,7 @@ a:hover {
 .link-decorated-sm:after {
     display: block;
     height: 0;
-    margin-top: -0.5em /*8px*/;
+    margin-top: -0.5em /*8*/;
     border-bottom: var(--space-sm) solid  rgba(250, 197, 16, 0.5); /*var(--color-warning)*/;
     content: "";
 }

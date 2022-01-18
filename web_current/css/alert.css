@@ -30,7 +30,7 @@
   .alert-body{
     display: flex;
     align-items: center;
-    max-width: 40rem/*500px*/;
+    max-width: 40rem/*500*/;
   }
 
   .alert-action{
@@ -42,7 +42,7 @@
 
   .alert-close{
     align-self: flex-start;
-    margin-top: 0.375rem /*6px*/;
+    margin-top: 0.375rem /*6*/;
   }
 
   .alert-action .btn+.btn{
