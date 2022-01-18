@@ -38,23 +38,6 @@
             </div>
         </div>
 
-    <!-- caa -->
-  <div class="alert">
-    <div class="alert-body">
-        <span class="badge badge-icon badge-inverted"><i class="icon fas fa-fire-alt"></i></span>
-
-        <div class="alert-content">
-            <p>Our provider has no right to issue SSL for you. To grant this right, add CAA record to <span class="txt-mono">jacksparrow.com</span> at your DNS provider: </p>
-            <p class="content-scrolled"><span class="label">Type</span>: CAA; <span class="label">Tag</span>: Issuewild; <span class="label">CA povider</span>: sectigo.com. <span class="label">TTL</span>: 60 or min possible value. </p>
-            
-        </div>
-    </div>
-
-    <div class="alert-action">
-
-        <button class="btn btn-s btn-secondary">Done</button>
-    </div>
-</div>
 
 </div>
 
@@ -183,23 +166,17 @@
                         <thead>
                             <th>Product ID</th>
                             <th>Status</th>
-                            <th>Expires</th>
+                            <th>Valid till</th>
                         </thead>
                         <tbody>
                             <td data-title="Product ID"> <span class="label fw-500">ID:</span> qwe12</td>
                             <td data-title="Status"> <span class="badge">
-                                    <img src="../img/alive.svg" alt=""><span>Issued</span>
+                                    <img src="../img/alive.svg" alt=""><span>Pending</span>
                                 </span>
                             </td>
                             <td data-title="Expies">
-                                <p>Jan 20, 2022</p>
-                                <div class="btn-container">
-                                    <button class="btn btn-s btn-secondary ">
-
-                                        <i class="icon far fa-calendar"></i>
-                                        Cal
-                                    </button>
-                                </div>
+                                <p>Awaits issuance..</p>
+                       
                             </td>
                         </tbody>
                     </table>
@@ -218,10 +195,10 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td data-title="Prepaid"> <span class="label">2 years</td>
+                                <td data-title="Prepaid">2 years</td>
 
-                                <td data-title="Used"> 1 of 2 years (<a href="" class="link-decorated">lifetime
-                                        limit</a>)</td>
+                                <td data-title="Used"> 1 of 2 years due to <a href="" class="link-decorated">lifetime
+                                        limit</a></td>
 
                                 <td data-title="Issued for">
                                     <ul class="ul-unstyled content-scrolled">
@@ -264,7 +241,14 @@
                             <th>Email to get .cert file</th>
                         </thead>
                         <tbody>
-                            <td data-title="CA order ID"> 625166</td>
+                            <td data-title="CA order ID"> <p>Awaiting ID..</p>
+                                <div class="btn-container">
+                                    <a href="./acc_details.html" class="btn btn-s btn-secondary ">
+                                        <i class="icon fas fa-sync"></i>
+                                        Refresh
+                                    </a>
+                                </div>
+                            </td>
                             <td data-title="Order ID">
                                 <p>76155</p>
                                 <div class="btn-container">
@@ -418,7 +402,7 @@
                         <thead>
                             <th>Product ID</th>
                             <th>Status</th>
-                            <th>Expires</th>
+                            <th>Valid till</th>
                         </thead>
                         <tbody>
                             <td data-title="Product ID"> <span class="label fw-500">ID:</span> qwe12</td>
@@ -453,10 +437,10 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td data-title="Prepaid"> <span class="label">2 years</td>
+                                <td data-title="Prepaid">2 years</td>
 
-                                <td data-title="Used"> 1 of 2 years (<a href="" class="link-decorated">lifetime
-                                        limit</a>)</td>
+                                <td data-title="Used"> 1 of 2 years due to <a href="" class="link-decorated">lifetime
+                                        limit</a></td>
 
                                 <td data-title="Issued for">
                                     <ul class="ul-unstyled content-scrolled">
