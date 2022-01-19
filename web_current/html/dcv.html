@@ -68,7 +68,7 @@
                     <div class="badge badge-alert badge-icon"><i class="icon fas fa-fire-alt"></i></div>
                     <div class="panel panel-alert">
                         <div class="panel-header">
-                            <h3>Missing or corrupted file
+                            <h3>Domain validation: file-based <a href="" class="link-decorated">Change</a>
                             </h3>
                             
                         </div>
@@ -93,6 +93,20 @@
                                 browser through the links above and click “Confirm“ again.
                             </p>
 
+                            <p>We couldn’t confirm domain control validation setup, your server configuration didn’t
+                                allow us to connect to:</p>
+                            <ul class="ul-unstyled content-scrolled">
+
+                                <li><a class="link-plain txt-mono"
+                                        href="">http://www.jacksparrow.com/.well-known/pki-validation/6teyqtrtyq65123614qewrtqe.txt</a>
+                                </li>
+
+
+                            </ul>
+                            <p>Please check file <span class="txt-mono txt-highlighted">(0644)</span> and folder <span
+                                    class="txt-mono txt-highlighted">(0755)</span> permissions and click “Confirm”
+                                again. Contact us for help at any time.</p>
+
                             <div class="btn-container">
 
                                 <button class="btn btn-secondary"><i class="icon fas fa-arrow-up"></i>Confirm file upload</button>
@@ -109,7 +123,7 @@
                     <div class="badge badge-alert badge-icon"><i class="icon fas fa-fire-alt"></i></div>
                     <div class="panel panel-alert">
                         <div class="panel-header">
-                            <h3>Missing or corrupted file
+                            <h3>Domain validation: file-based <a href="" class="link-decorated">Change</a>
                             </h3>
                             
                         </div>
@@ -150,7 +164,7 @@
                     <div class="badge badge-alert badge-icon"><i class="icon fas fa-fire-alt"></i></div>
                     <div class="panel panel-alert">
                         <div class="panel-header">
-                            <h3>File access denied
+                            <h3>Domain validation: file-based <a href="" class="link-decorated">Change</a>
                             </h3>
                          
                         </div>
@@ -188,8 +202,7 @@
                     <div class="badge badge-alert badge-icon"><i class="icon fas fa-fire-alt"></i></div>
                     <div class="panel panel-alert">
                         <div class="panel-header">
-                            <h3>Your server didn’t respond
-
+                            <h3>Domain validation: file-based <a href="" class="link-decorated">Change</a>
                             </h3>
                           
                         </div>
@@ -230,7 +243,8 @@
                     <div class="badge badge-alert badge-icon"><i class="icon fas fa-fire-alt"></i></div>
                     <div class="panel panel-alert">
                         <div class="panel-header">
-                            <h3>Missing DNS record</h3>
+                            <h3>Domain validation: DNS-based <a href="" class="link-decorated">Change</a>
+                            </h3>
                         </div>
                         <div class="panel-body">
                             <p>Your domains’ DNS zone does not contain the validation CNAME record or “Name” is
@@ -292,7 +306,7 @@
                     <div class="badge badge-alert badge-icon"><i class="icon fas fa-fire-alt"></i></div>
                     <div class="panel panel-alert">
                         <div class="panel-header">
-                            <h3>Incorrect DNS record
+                            <h3>Domain validation: DNS-based <a href="" class="link-decorated">Change</a>
                             </h3>
                         </div>
                         <div class="panel-body">
@@ -367,7 +381,7 @@
         <div class="badge badge-alert badge-icon"><i class="icon fas fa-fire-alt"></i></div>    
         <div class="panel panel-alert">
             <div class="panel-header">
-                <h3>CAA record required to get SSL
+                <h3>Get SSL
                 </h3>
             </div>
             <div class="panel-body">
@@ -529,7 +543,7 @@
                 </div>
                     <div class="panel-body">
 
-                        <p>Upload <span class="txt-mono txt-highlighted">ys72aahnx028261oajq.txt</span> to 
+                        <p>Upload <span class="txt-mono txt-highlighted">ys72aahnx028261oajq.txt</span> to the 
                             <span class="txt-mono txt-highlighted">/.well-known/pki-validation/ </span> folder at your SSL domains:
                         </p>
                         <ul class="ul-unstyled content-scrolled">
@@ -543,9 +557,9 @@
                             </li>
                         </ul>
                         <p> If it’s your first time getting SSL through file-based validation, you should create
-                            <span class="txt-mono txt-highlighted">/.well-known/pki-validation/</span>. Don’t rename
-                            the file
-                            or change it’s content.</p>
+                            <span class="txt-mono txt-highlighted">/.well-known/pki-validation/</span> on your server. Don’t rename
+                            the .txt file
+                            or change its content.</p>
 
                         <div class="btn-container">
                             <button class="btn btn-secondary"><i class="icon fas fa-arrow-down"></i>Download .txt</button>
@@ -567,7 +581,7 @@
                     <div class="panel-body">
 
                         <p>Check if you can see <span class="txt-mono txt-highlighted">6teyqtrtyq65123614qewrtqe.txt</span> in your
-                            browser visiting *all*
+                            browser visiting *all* of the following
                             links:</p>
                         <ul class="ul-unstyled content-scrolled">
                             <li><a class="link-plain txt-mono" href="">http://jacksparrow.com/.well-known/pki-validation/6teyqtrtyq65123614qewrtqe.txt</a>
@@ -601,7 +615,7 @@
                 </div>
                 <div class="panel-body">
 
-                    <p>Create the CNAME record for jacksparrow.com and jacksparrow.io at your DNS provider:</p>
+                    <p>Create a CNAME record for jacksparrow.com and jacksparrow.io at your DNS provider:</p>
                     <div class="mt mb content-scrolled">
 
                         <table class="table-plain table-fixed lh-sm">
@@ -652,7 +666,7 @@
                 </div>
                 <div class="panel-body">
 
-                    <p>Please check  email addresses below for a validation email from @trust-provider.com that contains a validation code. 
+                    <p>Please check the email addresses below for an email with a validation code from @trust-provider.com. 
                         <p class="content-scrolled">
                             admin@jack.com, admin@jack.io, admin@jack.net, mail.admin@jack.com 
                         </p>
@@ -683,14 +697,14 @@
                 
                     </div>
                     <div class="panel-body">
-                   <p>We have succesfully verified that your website meets our provider's requirements. Now certificate authority needs to perform the final check and get SSL issued.  You will be able to download your SSL as soon as it's ready. Validation may take 5&ndash;20m. </p>    
+                   <p>We have successfully verified that your website meets our provider's requirements. Now the Certificate Authority needs to perform the final check before issuing the SSL. You will be able to download your SSL as soon as it's ready. Validation may take 2&ndash;20 minutes. </p>    
     
                      
                     </div>
     
                    
                 <div class="panel-footer">
-                    Awaiting domain control validation: 60s..
+                    Awaiting domain control validation: 120s..
                 </div>
                 </div>
             </div>
@@ -704,8 +718,9 @@
                 
                     </div>
                     <div class="panel-body">
-                   <p>We have succesfully verified that your website meets our provider's requirements. Now certificate authority needs to perform the final check and get SSL issued.  You will be able to download your SSL as soon as it's ready. Business validation may take several days </p>    
-                   <p>Shortly you will receive an email at <span class="txt-mono txt-highlighted"> ceo@jacksparrow.com </span>  from @sectigo.com with the list of the required documents and an email to <a href="" class="link-decorated">schedule a call</a> for business phone number verification. <a href="" class="link-decorated">Tips to make it easier</a>.
+                   <p>We have successfully verified that your website meets our provider's requirements. Now the Certificate Authority needs to perform the final check before issuing the SSL. You will be able to download your SSL as soon as it's ready. 
+                    <p>Business validation may take several days as it requires a great deal of manual verification.</p>
+                   <p>Shortly you will receive an email at <span class="txt-mono txt-highlighted"> ceo@jacksparrow.com</span> with a list of the required validation documents and an email to <a href="" class="link-decorated">schedule a call</a> for business phone number verification. Tips to <a href="" class="link-decorated">make it easier</a>.
 
 
                    
@@ -735,10 +750,10 @@
                 
                     </div>
                     <div class="panel-body">
-                   <p>We have succesfully verified that your website meets our provider's requirements. Now certificate authority needs to perform the final check and get SSL issued. You will be able to download your SSL as soon as it's ready. Validation may take 5–20m.</p>    
+                   <p>We have successfully verified that your website meets our provider's requirements. Now the Certificate Authority needs to perform the final check before issuing the SSL. You will be able to download your SSL as soon as it's ready. Validation may take 2–20 minutes.</p>    
                    <div class="btn-container">
                     <button class="btn btn-secondary">
-                        <i class="icon fas fa-redo"></i>Try again in 14:58</button>
+                        <i class="icon fas fa-redo"></i>Try again in 3:43</button>
                     
                 </div>
                      
@@ -758,7 +773,7 @@
                         
                             </div>
                             <div class="panel-body">
-                           <p>We have succesfully verified that your website meets our provider's requirements. Now certificate authority needs to perform the final check and get SSL issued. You will be able to download your SSL as soon as it's ready. Validation may take 5–20m.</p>    
+                           <p>We have successfully verified that your website meets our provider's requirements. Now the Certificate Authority needs to perform the final check before issuing the SSL. You will be able to download your SSL as soon as it's ready. Validation may take 2–20 minutes.</p>    
                            <div class="btn-container">
                             <button class="btn btn-secondary">
                                 <i class="icon fas fa-arrow-down"></i>Download SSL</button>
@@ -795,9 +810,10 @@
     
                             </div>
                             <div class="tab-content">
-                                <p>To get your site secured, you need to upload  <span class="txt-mono txt-highlighted">jacksparrowcom_cert.zip</span>  and <span class="txt-mono txt-highlighted">jacksparrowcom_key.zip</span> to your server. </p>
-                                <p>If you created CSR and private key in browser during SSL activation, you will find key.zip in your downalods folder. For CSR created directly on your hostig server, private key is already on your server, you will need to upload only cert.zip.</p>
-                                <p class="mt"><a href="" class="link-decorated">Here is a list </a> of the most common server types and how to install SSL on them.</p>
+                                <p>To secure your site, extract <span class="txt-mono txt-highlighted">jacksparrowcom_cert.zip</span>  and <span class="txt-mono txt-highlighted">jacksparrowcom_key.zip</span> on your computer and upload files from those zips to your server. <a href="" class="link-decorated">Here is a list </a> of the most common server types and how to install SSL on them.</p>
+                                <p>If you created a CSR and private key in-browser during SSL activation, you will find key.zip in your downloads  folder.</p>
+                                <p> For a CSR that was created directly on your hosting server, the private key is already on your server, so you only need to upload cert.zip</p>
+                        
     
                             </div>
     
