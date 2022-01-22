@@ -79,7 +79,7 @@ p+.panel {
 }
 
 .panel-alert .txt-highlighted {
-    background: var(--color-alert-lighter);
+    background:  var(--color-alert-lighter);
 }
 
 .panel-alert .content-scrolled {

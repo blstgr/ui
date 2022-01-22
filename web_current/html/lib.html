@@ -103,7 +103,7 @@
 <h3>icon label</h3>
 <ul class="ul-unstyled">
 
-  <li><span class="label label-icon"><i class="icon fas fa-fire-alt"></i></li>
+    <li><span class="label label-icon"><i class="icon fas fa-fire-alt"></i></span></li>
 
 
 </ul>
@@ -111,7 +111,7 @@
 <h3>responsive label</h3>
 <ul class="ul-unstyled">
 
-  <li><span class="label label-responsive"><i class="icon fas fa-fire-alt"></i><span>Done</span></li>
+  <li><span class="label label-responsive"><i class="icon fas fa-fire-alt"></i><span>Done</span></span></li>
 
 </ul>
         </div>
@@ -132,7 +132,7 @@
                 href="">http://www.suuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuperlongsub.jacksparrow.com/.well-known/pki-validation/6teyqtrtyq65123614qewrtqe.txt</a>
             </li>
           </ul>
-          </ul>
+
 
 
           <h3>unordered list</h3>
@@ -388,8 +388,10 @@
           <h3>table plain</h3>
           <table class="table-plain"> 
             <thead>
-              <th>Col</th>
-              <th>Col</th>
+            <tr>
+                <th>Col</th>
+                <th>Col</th>
+            </tr>
             </thead>
            <tbody>
             <tr>
@@ -408,8 +410,10 @@
            
                 <table class="table-spaced">
                   <thead>
-                    <th>Col</th>
-                    <th>Col</th>
+                    <tr>
+                        <th>Col</th>
+                        <th>Col</th>
+                    </tr>
                   </thead>
                  <tbody>
                   <tr>
@@ -434,8 +438,10 @@
  
             <table class="table-striped">
               <thead>
-                <th>Col</th>
-                <th>Col</th>
+               <tr>
+                   <th>Col</th>
+                   <th>Col</th>
+               </tr>
               </thead>
              <tbody>
               <tr>
@@ -454,8 +460,10 @@
         <h3>table bordered</h3>
         <table class="table-bordered">
           <thead>
-            <th>Col</th>
-            <th>Col</th>
+            <tr>
+                <th>Col</th>
+                <th>Col</th>
+            </tr>
           </thead>
          <tbody>
           <tr>
@@ -495,11 +503,11 @@
           </div>
 
           <div class="mtx2">
-            <span class="txt-mono has-tooltip">/.well-known/pki-validation/
+            <div class="txt-mono has-tooltip">/.well-known/pki-validation/
               <div class="tooltip-container tooltip-container-down">
                 <span class="tooltip tooltip-down">Copy</span>
               </div>
-            </span>
+            </div>
 
           </div>
 
@@ -533,12 +541,10 @@
               <div class="panel-body">
                 <table class="table-plain">
                   <thead>
-                    <th>
-                      Value
-                    </th>
-                    <th>
-                      Another value
-                    </th>
+                   <tr>
+                       <th>Value</th>
+                       <th>Another value</th>
+                   </tr>
 
                   </thead>
                   <tbody>
@@ -702,12 +708,12 @@
         </div>
         <div class="col-xs-12 col-md-offset-2 col-md-5 mt-xs">
           <div class="form-group">
-            <label for="Search" class="visually-hidden">Search</label>
-            <input class="input-s" type="text" id="Search" placeholder="Search">
+            <label for="Search1" class="visually-hidden">Search</label>
+            <input class="input-s" type="text" id="Search1" placeholder="Search">
           </div>
           <div class="form-group">
-            <label for="Search" class="visually-hidden">Search</label>
-            <input class="input-s" type="text" id="Search" placeholder="Search">
+            <label for="Search2" class="visually-hidden">Search</label>
+            <input class="input-s" type="text" id="Search2" placeholder="Search">
           </div>
 
         </div>
@@ -845,7 +851,7 @@
 
         <div class="alert-content">
             <p>Our provider has no right to issue SSL for you. To grant it, add CAA record to <span class="txt-mono">jacksparrow.com</span>, <span class="txt-mono">jacksparrow.com</span>, <span class="txt-mono">jacksparrow.io</span>, <span class="txt-mono">jacksparrow.net</span>, <span class="txt-mono">jacksparrow.mail</span>, <span class="txt-mono">mail.jacksparrow.xyz</span>: </p>
-            <p class="content-scrolled"><span class="label">Type</span>: CAA; <span class="label">Tag</span>: Issuewild; <span class="label">CA povider</span>: sectigo.com. <span class="label">TTL</span>: 60 or min possible value. </p>
+            <p class="content-scrolled"><span class="label">Type</span>: CAA; <span class="label">Tag</span>: Issuewild; <span class="label">CA provider</span>: sectigo.com. <span class="label">TTL</span>: 60 or min possible value. </p>
         </div>
     </div>
 
