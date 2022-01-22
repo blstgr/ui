@@ -45,8 +45,9 @@
     height:  1.5rem;
     width:  1.5rem;
     min-width:  1.5rem;
-    background-color:  var(--color-brand);
+    background-color:  white;
     border-radius: var(--space-xs);
+    border: var(--border) solid var(--color-brand-dark);
   }
 
   .radiomark{
@@ -55,7 +56,7 @@
   
   .control-container input:checked ~ .checkmark,
   .control-container input:checked ~ .radiomark {
-    background-color: var(--color-success);
+    background-color: white;
   }
   
   /* checkbox indicator */
@@ -84,7 +85,7 @@
     width: 0.375em /*6*/;
     min-width: 0.375em /*6*/;
     height: 0.75em /*12*/;
-    border: solid white;
+    border: solid var(--color-brand-dark);
     border-width: 0 0.125em 0.125em 0 /*2*/;
     transform: rotate(45deg);
   }
@@ -97,7 +98,7 @@
     border-radius: var(--radius);
     border: none;
     width: 0.75em /*12*/;
-    background: white;
+    background: var(--color-brand-dark);
   }
 
 

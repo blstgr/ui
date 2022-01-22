@@ -4,8 +4,9 @@
     position: relative;
     border-radius: var(--radius);
     border: var(--border) solid var(--color-brand-dark);
-    background: var(--color-brand-light);
+    background: var(--color-brand);
     width: 100%;  /*always 100% on small screens*/
+    box-shadow: 4px 4px 0 var(--color-brand-dark);
 
 }
 
@@ -26,7 +27,7 @@ p+.panel {
 
     /*may have fixed widht e.g. products*/     
     .panel-fixed-sm {
-            min-width: 22.5rem /*360*/;
+            min-width: 21.5rem /*360*/;
             width: auto;
     }    
 
@@ -66,7 +67,7 @@ p+.panel {
 .panel-footer {
     background: var(--color-brand-dark);
     padding: var(--space);
-    border-radius: 0 0 var(--space-sm) var(--space-sm);
+    border-radius: 0 0 var(--space) var(--space);
     font-family: courier;
     color: white;
     line-height: var(--line-height);
@@ -76,6 +77,8 @@ p+.panel {
     border-color: var(--color-alert-dark);
     background: var(--color-alert-light);
     color: var(--color-alert-dark);
+    box-shadow: 4px 4px 0 var(--color-alert-dark);
+
 }
 
 .panel-alert .txt-highlighted {
@@ -100,12 +103,16 @@ p+.panel {
     border-color: var(--color-success-dark);
     color: var(--color-success-dark);
     background: var(--color-success-light);
+    box-shadow: 4px 4px 0 var(--color-success-dark);
+
 }
 
 .panel-info {
     border-color: var(--color-info-dark);
     color: var(--color-info-dark);
     background: var(--color-info-light);
+    box-shadow: 4px 4px 0 var(--color-info-dark);
+
 }
 
 .panel h2,

@@ -21,7 +21,7 @@
     --color-success-darker: #2db185;
     --color-success-dark: #08815a;
     
-    --color-brand-dark: #4e4e48;
+    --color-brand-dark: #3e3e38;
     --color-brand-darker: #c3beac;
     --color-brand: #eae7db;
     --color-brand-light: #f9f8f4;
@@ -52,11 +52,11 @@
     --font-size-sm: 0.75rem /*12*/;
     --font-size: 1rem;
     --font-size-md: 1.25rem /*20*/;
-    --font-size-lg: 3.875rem /*58*/;
+    --font-size-lg: 4.125rem /*66*/;
   
   
     --shadow-raised: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.25);
-    --shadow: 0 0.125rem 0.0625rem rgba(0, 0, 0, 0.25)
+    --shadow: 4px 4px 0 var(--color-brand-dark);
 
 
   }
