@@ -25,13 +25,13 @@ p+.panel {
         width: auto;
     }
 
-    /*may have fixed widht e.g. products*/     
+    /*may have fixed width e.g. products*/
     .panel-fixed-sm {
             min-width: 21.5rem /*360*/;
             width: auto;
     }    
 
-    /*margin when more thab 1 panel in a row in flex block*/
+    /*margin when more than 1 panel in a row in flex block*/
     .grid-container .panel {
         margin: var(--space-sm);
     }
@@ -68,7 +68,7 @@ p+.panel {
     background: var(--color-brand-dark);
     padding: var(--space);
     border-radius: 0 0 var(--space) var(--space);
-    font-family: courier;
+    font-family: courier, monospace;
     color: white;
     line-height: var(--line-height);
 }
