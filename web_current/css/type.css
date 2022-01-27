@@ -46,7 +46,7 @@ h3,
 }
 
 .price-lg{
-    font-size: 3.25rem /*52*/;
+    font-size: 3rem /*52*/;
     line-height: var(--line-height-font-lg);
 }
 
@@ -75,6 +75,7 @@ h3,
     font-size: 0.8em;
 }
 hr {
+    display: none;
     border:none;
     border-bottom:2px dotted var(--color-brand-dark);
     color:#fff;
