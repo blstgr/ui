@@ -21,7 +21,7 @@
 
 <body>
 
-    <div class="alert-holder fixed-bottom animate__animated animate__bounceInUp ">
+    <div class="alert-holder fixed-bottom animate__animated animate__bounceInUp">
      <!-- too long -->
         <div class="alert alert-info">
             <div class="alert-body">
@@ -30,11 +30,7 @@
                 <div class="alert-content">
                     <p>Our provider needs more time, come back in 15m.</p>
                 </div>
-            </div>
-      
-            <div class="alert-action alert-close">
-      
-                <button class="btn btn-s btn-link"><i class="close"></i></button>
+                <button class="btn btn-s btn-link btn-close"><i class="close"></i></button>
             </div>
         </div>
 
@@ -164,20 +160,24 @@
            
                     <table class="table-fixed table-bordered table-striped">
                         <thead>
-                            <th>Product ID</th>
-                            <th>Status</th>
-                            <th>Valid till</th>
+                          <tr>
+                              <th>Product ID</th>
+                              <th>Status</th>
+                              <th>Valid till</th>
+                          </tr>
                         </thead>
                         <tbody>
-                            <td data-title="Product ID"> <span class="label fw-500">ID:</span> qwe12</td>
-                            <td data-title="Status"> <span class="badge">
+                           <tr>
+                               <td data-title="Product ID"> <span class="label fw-500">ID:</span> qwe12</td>
+                               <td data-title="Status"> <span class="badge">
                                     <img src="../img/alive.svg" alt=""><span>Pending</span>
                                 </span>
-                            </td>
-                            <td data-title="Expies">
-                                <p>Awaits issuance..</p>
-                       
-                            </td>
+                               </td>
+                               <td data-title="Expies">
+                                   <p>Awaits issuance..</p>
+
+                               </td>
+                           </tr>
                         </tbody>
                     </table>
          
@@ -236,31 +236,35 @@
            
                     <table class="table-fixed table-bordered table-striped">
                         <thead>
-                            <th>CA order ID</th>
-                            <th>Order ID</th>
-                            <th>Email to get .cert file</th>
+                          <tr>
+                              <th>CA order ID</th>
+                              <th>Order ID</th>
+                              <th>Email to get .cert file</th>
+                          </tr>
                         </thead>
                         <tbody>
-                            <td data-title="CA order ID"> <p>Awaiting ID..</p>
-                                <div class="btn-container">
-                                    <a href="./acc_details.html" class="btn btn-s btn-secondary ">
-                                        <i class="icon fas fa-sync"></i>
-                                        Refresh
-                                    </a>
-                                </div>
-                            </td>
-                            <td data-title="Order ID">
-                                <p>76155</p>
-                                <div class="btn-container">
-                                    <a href="./acc_details.html" class="btn btn-s btn-secondary ">
-                                        <i class="icon far fa-folder"></i>
-                                        Details
-                                    </a>
-                                </div>
-                            </td>
-                            <td data-title="Email to get .cert file">
-                                admin@jack.com
-                            </td>
+                       <tr>
+                           <td data-title="CA order ID"> <p>Awaiting ID..</p>
+                               <div class="btn-container">
+                                   <a href="./acc_details.html" class="btn btn-s btn-secondary ">
+                                       <i class="icon fas fa-sync"></i>
+                                       Refresh
+                                   </a>
+                               </div>
+                           </td>
+                           <td data-title="Order ID">
+                               <p>76155</p>
+                               <div class="btn-container">
+                                   <a href="./acc_details.html" class="btn btn-s btn-secondary ">
+                                       <i class="icon far fa-folder"></i>
+                                       Details
+                                   </a>
+                               </div>
+                           </td>
+                           <td data-title="Email to get .cert file">
+                               admin@jack.com
+                           </td>
+                       </tr>
                         </tbody>
                     </table>
          
@@ -400,26 +404,30 @@
            
                     <table class="table-fixed table-bordered table-striped">
                         <thead>
+                        <tr>
                             <th>Product ID</th>
                             <th>Status</th>
                             <th>Valid till</th>
+                        </tr>
                         </thead>
                         <tbody>
-                            <td data-title="Product ID"> <span class="label fw-500">ID:</span> qwe12</td>
-                            <td data-title="Status"> <span class="badge">
+                           <tr>
+                               <td data-title="Product ID"> <span class="label fw-500">ID:</span> qwe12</td>
+                               <td data-title="Status"> <span class="badge">
                                     <img src="../img/alive.svg" alt=""><span>Issued</span>
                                 </span>
-                            </td>
-                            <td data-title="Expies">
-                                <p>Jan 20, 2022</p>
-                                <div class="btn-container">
-                                    <button class="btn btn-s btn-secondary ">
+                               </td>
+                               <td data-title="Expies">
+                                   <p>Jan 20, 2022</p>
+                                   <div class="btn-container">
+                                       <button class="btn btn-s btn-secondary ">
 
-                                        <i class="icon far fa-calendar"></i>
-                                        Cal
-                                    </button>
-                                </div>
-                            </td>
+                                           <i class="icon far fa-calendar"></i>
+                                           Cal
+                                       </button>
+                                   </div>
+                               </td>
+                           </tr>
                         </tbody>
                     </table>
          
@@ -478,24 +486,28 @@
            
                     <table class="table-fixed table-bordered table-striped">
                         <thead>
-                            <th>CA order ID</th>
-                            <th>Order ID</th>
-                            <th>Email to get .cert file</th>
+                            <tr>
+                                <th>CA order ID</th>
+                                <th>Order ID</th>
+                                <th>Email to get .cert file</th>
+                            </tr>
                         </thead>
                         <tbody>
-                            <td data-title="CA order ID"> 625166</td>
-                            <td data-title="Order ID">
-                                <p>76155</p>
-                                <div class="btn-container">
-                                    <a href="./acc_details.html" class="btn btn-s btn-secondary ">
-                                        <i class="icon far fa-folder"></i>
-                                        Details
-                                    </a>
-                                </div>
-                            </td>
-                            <td data-title="Email to get .cert file">
-                                admin@jack.com
-                            </td>
+                          <tr>
+                              <td data-title="CA order ID"> 625166</td>
+                              <td data-title="Order ID">
+                                  <p>76155</p>
+                                  <div class="btn-container">
+                                      <a href="./acc_details.html" class="btn btn-s btn-secondary ">
+                                          <i class="icon far fa-folder"></i>
+                                          Details
+                                      </a>
+                                  </div>
+                              </td>
+                              <td data-title="Email to get .cert file">
+                                  admin@jack.com
+                              </td>
+                          </tr>
                         </tbody>
                     </table>
          

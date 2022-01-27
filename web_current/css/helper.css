@@ -13,11 +13,17 @@
 }
 
 
-  .mt-xs {
+.ml-xs{
+  margin-left: var(--space-xs)!important;
+
+}
+
+.mt-xs {
     margin-top: var(--space)!important;
   }
 
-  .mt-xs-x2 {
+
+.mt-xs-x2 {
     margin-top: var(--spacex2)!important;
 }
 
@@ -72,6 +78,9 @@
   margin: 0;
 }
 
+.mb-0 {
+  margin-bottom: 0;
+}
 .mt-0 {
   margin-top: 0;
 }
@@ -84,11 +93,18 @@
   padding-left: 0 !important;
 }
 
+.pt{
+  padding-top: var(--space) !important;
+}
 
 .fw-500 {
   font-weight: 500 !important;
 }
 
+
+.fg-4{
+  flex-grow:3 !important;
+}
 .hide {
   display: none;
 }
@@ -107,6 +123,7 @@
 
 .bgcolor-brand-dark {
   background: var(--color-brand-dark) !important;
+  box-shadow: 4px 4px 0 #202019 !important;
   color: white;
 }
 

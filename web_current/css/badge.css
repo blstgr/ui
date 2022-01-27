@@ -8,11 +8,10 @@
     padding: 0.0625em var(--space-sm) /*1*/;
     background: var(--color-brand-dark);
     border-radius: var(--radius);
-    font-size: var(--font-size-sm);
     font-weight: 600;
     text-align: center;
     color: white;
-    font-family: courier;
+    font-family: courier, monospace;
     font-size: 0.875rem; /*14*/
     line-height: var(--line-height-sm);
 }

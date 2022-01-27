@@ -13,6 +13,8 @@ Demo HTML
 * [SSL list](https://blstgr.github.io/ui/web_current/html/acc_list.html)
 * [Home](https://blstgr.github.io/ui/web_current/html/home.html)
 * [Activation](https://blstgr.github.io/ui/web_current/html/acc_issue.html)
+* [Cart](https://blstgr.github.io/ui/web_current/html/cart.html)
+
 
 
 

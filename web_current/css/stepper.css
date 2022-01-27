@@ -3,6 +3,7 @@
 
 .stepper-step{
     position: relative;
+    flex-grow: 1;
 }
 
 .stepper-step-inactive{
@@ -11,12 +12,12 @@
 
 .stepper+.stepper,
 .stepper-step+.stepper-step{
-    margin-top: var(--space-sm);
+    margin-top: var(--space);
 }
 
 .stepper .badge{
     position: absolute;
-    top: 2.375rem /*38*/;
+    top: 3rem /*48*/;
     left: -0.9375rem /*-15*/;
     z-index: 999;
 }
@@ -38,12 +39,43 @@
     margin-top: var(--space);
 }
 
+/*stepper w/ 1 border*/
+
+
+
 .stepper-ghost .panel{
-   border-top: 0; 
-   border-bottom: 0;
-   border-right: 0;
+   border-top-width:0;
+   border-right-width: 0;
+   border-bottom-width: 0;
    border-radius: 0;
    background: transparent;
-    box-shadow: none;
+   box-shadow: none;
 }
 
+
+
+
+@media screen and  (max-width: 48em) {
+    .stepper-ghost {
+        display: flex;
+        margin-top: var(--space-sm);
+    }
+
+    .stepper-ghost .panel{
+        border-top-width: var(--border);
+        border-left-width: 0;
+    }
+
+    .stepper-ghost .stepper-step+.stepper-step {
+        margin-top: 0;
+    }
+
+    .stepper-ghost h3{
+        display: none;
+    }
+
+    .stepper-ghost .stepper-step-completed .badge, .stepper-step-inactive .badge {
+        top: -1rem;
+        left: var(--space-sm);
+    }
+}

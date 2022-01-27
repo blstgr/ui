@@ -23,11 +23,17 @@
     border-radius: var(--radius);
     border: var(--border) solid var(--color-brand-dark);
     background: var(--color-brand-light);
+    box-shadow: var(--shadow);
     font-size: var(--font-size);
     color: var(--color-brand-dark);
-    font-family: Montserrat;
+    font-family: Montserrat, Verdana, sans-serif;
     font-weight: 700;
     line-height: var(--line-height-sm);
+}
+
+.tab-active{
+    background: var(--color-brand);
+    box-shadow: var(--shadow-inset);
 }
 
 
@@ -39,13 +45,6 @@
         flex-grow: 1;
     }
     
-}
-
-
-
-.tab-active{
-    background: var(--color-brand);
-    /* color: white; */
 }
 
 

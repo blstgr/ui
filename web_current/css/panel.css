@@ -4,10 +4,9 @@
     position: relative;
     border-radius: var(--radius);
     border: var(--border) solid var(--color-brand-dark);
-    background: var(--color-brand);
     width: 100%;  /*always 100% on small screens*/
     box-shadow: 4px 4px 0 var(--color-brand-dark);
-
+    overflow: hidden;
 }
 
 .panel+.panel {
@@ -48,26 +47,23 @@ p+.panel {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: var(--border) solid var(--color-brand-dark);
     font-weight: 600;
-
 }
 
-/*if panel doesn't have header*/
+.panel-header:only-child{
+    border-bottom: 0;
+}
 .panel-body {
     position: relative;
     padding: var(--space);
-
 }
 
-/*reduces extra top padding in body if contains header*/
-.panel-header+.panel-body {
-    padding-top: 0;
-}
 
 .panel-footer {
     background: var(--color-brand-dark);
     padding: var(--space);
-    border-radius: 0 0 var(--space) var(--space);
+    border-radius: 0 0 0.75rem 0.75rem /*12px*/;
     font-family: courier, monospace;
     color: white;
     line-height: var(--line-height);
@@ -78,6 +74,11 @@ p+.panel {
     background: var(--color-alert-light);
     color: var(--color-alert-dark);
     box-shadow: 4px 4px 0 var(--color-alert-dark);
+
+}
+
+.panel-alert .panel-header {
+    border-bottom-color: var(--color-alert-dark);
 
 }
 

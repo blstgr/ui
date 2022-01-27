@@ -1,12 +1,13 @@
-@import url(./var.css);
-
-
 table {
   width: 100%;
   border-collapse: collapse;
   text-align: left;
   color: inherit;
   line-height: var(--line-height);
+}
+
+.table-fixed {
+  table-layout: fixed;
 }
 
 
@@ -32,10 +33,38 @@ th {
 }
 
 
-.table-fixed {
-  table-layout: fixed;
+table .btn-responsive span {
+  display: initial;
+}
+
+table .btn-responsive .icon {
+  margin-right: var(--space-sm);
+}
+
+@media screen and (min-width: 48em) {
+  table .btn-responsive span {
+    display: none;
+  }
+
+  table .btn-responsive .icon {
+    margin-right: 0;
+  }
 
 }
+
+
+@media screen and (min-width: 64em) {
+  table .btn-responsive span {
+    display: initial;
+  }
+
+  table .btn-responsive .icon {
+    margin-right: var(--space-sm);
+  }
+
+}
+
+
 
 /* normal table, odd row has a different color   */
 
@@ -43,9 +72,6 @@ th {
   background: var(--color-brand);
 }
 
-
-
-/* rgb(255 134 116 / 20%) */
 
 /* normal table with rounded corners and a border */
 
@@ -114,12 +140,13 @@ th {
   border-collapse: separate;
   border-spacing: 0 var(--space);
   margin: -1rem 0;
-
 }
 
 .panel+.table-spaced{
-  margin-top: 0;
+  margin-top: var(--space-xs);
 }
+
+
 
 .table-spaced td,
 .table-spaced th {
@@ -127,8 +154,6 @@ th {
   border-width: var(--border) 0;
   border-color: var(--color-brand-dark);
   border-style: solid;
-  background: var(--color-brand-lighter);
-
 }
 
 .table-spaced th {
@@ -213,9 +238,9 @@ th {
   }
 
   /*
-         * make everything display block so it 
-         * aligns vertically
-         */
+   * make everything display block so it
+   * aligns vertically
+ */
 
   tbody,
   tr,
@@ -289,8 +314,8 @@ th {
   }
 
 
-  .table-spaced {
-    margin-top: var(--space);
+  .panel+.table-spaced {
+    margin-top: 1.25rem;
   }
 
   .table-spaced td:first-child,

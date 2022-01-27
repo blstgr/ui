@@ -37,14 +37,14 @@ color: white;
   
   }
 
-.form-group+.form-group{
-    margin-top: var(--space);
+.form-group label{
+    line-height: var(--line-height);
+    font-size: var(--font-size);
+    font-weight: 700;
 }
 
-p+.input-group{
-    margin-top: var(--space-md);
-}
 
+/*hidden input label*/
 .visually-hidden{
     position: absolute!important;
     width: 1px!important;
@@ -55,6 +55,17 @@ p+.input-group{
     clip: rect(0,0,0,0)!important;
     white-space: nowrap!important;
     border: 0!important;
+}
+
+
+
+
+.form-group+.form-group{
+    margin-top: var(--space);
+}
+
+p+.input-group{
+    margin-top: var(--space-md);
 }
 
 
@@ -69,7 +80,10 @@ p+.input-group{
 
 
 .input-group .input {
-    border-radius: 0
+    position: relative;
+    border-radius: 0;
+    z-index: 9999;
+
 }
 
 

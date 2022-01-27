@@ -10,25 +10,34 @@
     cursor: pointer;
     font-size: var(--font-size);
     user-select: none;
-    
   }
 
-  .control-container+.control-container,
-  .content-scrolled+.control-container{
-    margin-top: var(--space-md);
-  }
+.control-container+.control-container{
+  margin-top: var(--space);
 
-  p+.control-container{
+}
+
+
+p+.control-container{
     margin-top: var(--space);
+  }
+
+
+
+@media screen and (min-width: 48em){
+  .control-container-vertical{
+    display: inline-flex;
   }
 
   .control-container-vertical +.control-container-vertical{
     margin-top: 0;
     margin-left: var(--space-md);
   }
- 
+
+}
+
   /* hide default checkbox */
-  .control-container input {
+.control-container input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
@@ -108,9 +117,10 @@
 
 .switch {
   position: relative;
-  display: inline-block;
-  width: var(--spacex2);
-  height: var(--space-md);
+  display: inline-flex;
+  height: 1.5rem;
+  width: 2.75rem;
+  margin: var(--space-xs);
 }
 
 .switch input { 
@@ -126,10 +136,19 @@
   left: 0;
   right: 0;
   bottom: 0;
-  width: var(--spacex2);
+  display: inline-flex;
+  align-items: center;
+  justify-content: right;
+  height: 1.5rem;
+  width: 2.75rem;
+  padding: var(--space-sm);
   background-color: var(--color-brand-darker);
   border-radius: var(--space-md);
-  -webkit-transition: .4s;
+  font-weight: 600;
+  color: white;
+  font-family: courier, monospace;
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-sm);
   transition: .4s;
 }
 
@@ -138,8 +157,7 @@
   content: "";
   height: var(--space);
   width: var(--space);
-  left: var(--space-xxs);
-  bottom: var(--space-xxs);
+  left: var(--space-xs);
   border-radius: 50%;
   background-color: white;
   -webkit-transition: .4s;
@@ -147,16 +165,14 @@
 }
 
 input:checked + .slider {
-  background-color: var(--color-success);
-}
-
-input:checked + .slider-secondary {
   background-color: var(--color-brand-dark);
 }
 
 
+
+
 input:checked + .slider:before {
-  transform: translateX(0.75rem);
+  transform: translateX(1.25rem);
 }
 
   /*control label*/

@@ -13,13 +13,14 @@
     <script defer="defer" src="https://use.fontawesome.com/releases/v5.15.0/js/all.js"></script>
    <script defer="defer" src="https://use.fontawesome.com/8b1fb7d588.js"></script>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
 
 
 </head>
 
 <body>
 
-    <div class="alert-holder fixed-bottom animate__animated animate__bounceInUp ">
+    <div class="alert-holder fixed-bottom animate__animated animate__bounceInUp">
         <!-- too long -->
            <div class="alert alert-info">
                <div class="alert-body">
@@ -57,9 +58,7 @@
 
     <div class="page-container">
         <section>
-    <h3>All errors</h3>
-    
-
+            <h3>All errors</h3>
 
             <!-- HTTP -->
             <div class="stepper">
@@ -253,11 +252,12 @@
                                 <table class="table-plain table-striped table-fixed lh-sm">
 
                                     <thead>
-                                
-                                        <th>Name</th>
-                                        <th class="cell-center">Type</th>
-                                        <th>Point to</th>
-                                        <th>TTL</th>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th class="cell-center">Type</th>
+                                            <th>Point to</th>
+                                            <th>TTL</th>
+                                        </tr>
                                      
                                     </thead>
                                     <tbody>
@@ -281,7 +281,7 @@
 
                             <div class="btn-container">
 
-                                <button class="btn btn-secondary"><i class="icon fas fa-plus"></i>Confirm DNS added
+                                <button class="btn btn-secondary"><i class="icon fas fa-plus"></i>Confirm DNS added</button>
                               <button class="btn btn-flat"><i class="icon fas fa-video"></i>Video tutorial</button>
                             </div>
 
@@ -307,9 +307,11 @@
                                 <table class="table-plain table-fixed table-striped lh-sm">
 
                                     <thead>
+                                    <tr>
                                         <th>Website</th>
                                         <th>Name pointed to</th>
-                                     
+
+                                    </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
@@ -361,76 +363,78 @@
             <!-- CAA -->
             <div class="stepper">
                        
-       <!-- get ssl - CAA -->
+              <!-- get ssl - CAA -->
            
-       <div class="stepper-step">
-        <div class="badge badge-alert badge-icon"><i class="icon fas fa-fire-alt"></i></div>    
-        <div class="panel panel-alert">
-            <div class="panel-header">
-                <h3>Get SSL</h3>
-            </div>
-            <div class="panel-body">
-
-
-                <p><span class="label">Error: CAA required</span> Our provider has no right to issue SSL to you. To grant this right, create a CAA record at your DNS provider:
-                    <div class="content-scrolled">
-                        <table class="table-plain table-striped table-fixed lh-sm">
-
-                            <thead>
-                                <th >Website</th>
-                                 
-                                <th  class="cell-center">Name</th>
-                                <th class="cell-center"> Type</th>
-                                <th class="cell-center">Tag</th>
-                                <th>CA provider</th>
-                                <th>TTL</th>
-                            </thead>
-                            <tbody>
-                              
-                                <tr> 
-                                    <td data-title="Webiste">
-                                    <span class="txt-mono">mail.jacksparrow.com</span></td>
-
-                                    <td data-title="Name" class="cell-center"><span class="txt-mono">mail</span></td>
-                                    <td data-title="Type"class="cell-center"><span class="txt-mono">CAA</span></td>
-                                    <td data-title="Tag"class="cell-center"><span class="txt-mono">issuewild</span></td>
-                                    <td data-title="CA provider" ><span class="txt-mono">sectigo.com</span></td>
-                                    <td data-title="TTL" ><span class="txt-mono">60 or min possible value</span></td>
-                                </tr>
-
-                                <tr> 
-                                    <td data-title="Domain">
-                                    <span class="txt-mono">jacksparrow.com</span></td>
-
-                                    <td data-title="Name" class="cell-center"><span class="txt-mono">@</span></td>
-                                    <td data-title="Type"class="cell-center"><span class="txt-mono">CAA</span></td>
-                                    <td data-title="Tag"class="cell-center"><span class="txt-mono">issuewild</span></td>
-                                    <td data-title="CA provider" ><span class="txt-mono">sectigo.com</span></td>
-                                    <td data-title="TTL" ><span class="txt-mono">60 or min possible value</span></td>
-                                </tr>
-                            </tbody>
-                        </table>
+              <div class="stepper-step">
+                <div class="badge badge-alert badge-icon"><i class="icon fas fa-fire-alt"></i></div>
+                <div class="panel panel-alert">
+                    <div class="panel-header">
+                        <h3>Get SSL</h3>
                     </div>
+                    <div class="panel-body">
 
 
-                    <p>If you’ve already fixed this, please click “Confirm“ again in a few minutes—DNS
-                        changes may take some time to apply.</p>
+                        <p><span class="label">Error: CAA required</span> Our provider has no right to issue SSL to you. To grant this right, create a CAA record at your DNS provider:
+                            <div class="content-scrolled">
+                                <table class="table-plain table-striped table-fixed lh-sm">
 
-                    
-                <div class="btn-container">
+                                    <thead>
+                                        <tr>
+                                            <th >Website</th>
 
-                    <button class="btn btn-secondary"><i class="icon fas fa-plus"></i>Confirm DNS added
+                                            <th  class="cell-center">Name</th>
+                                            <th class="cell-center"> Type</th>
+                                            <th class="cell-center">Tag</th>
+                                            <th>CA provider</th>
+                                            <th>TTL</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+
+                                        <tr>
+                                            <td data-title="Webiste">
+                                            <span class="txt-mono">mail.jacksparrow.com</span></td>
+
+                                            <td data-title="Name" class="cell-center"><span class="txt-mono">mail</span></td>
+                                            <td data-title="Type" class="cell-center"><span class="txt-mono">CAA</span></td>
+                                            <td data-title="Tag" class="cell-center"><span class="txt-mono">issuewild</span></td>
+                                            <td data-title="CA provider" ><span class="txt-mono">sectigo.com</span></td>
+                                            <td data-title="TTL" ><span class="txt-mono">60 or min possible value</span></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td data-title="Domain">
+                                            <span class="txt-mono">jacksparrow.com</span></td>
+
+                                            <td data-title="Name" class="cell-center"><span class="txt-mono">@</span></td>
+                                            <td data-title="Type" class="cell-center"><span class="txt-mono">CAA</span></td>
+                                            <td data-title="Tag" class="cell-center"><span class="txt-mono">issuewild</span></td>
+                                            <td data-title="CA provider" ><span class="txt-mono">sectigo.com</span></td>
+                                            <td data-title="TTL" ><span class="txt-mono">60 or min possible value</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+
+                            <p>If you’ve already fixed this, please click “Confirm“ again in a few minutes—DNS
+                                changes may take some time to apply.</p>
+
+
+                        <div class="btn-container">
+
+                            <button class="btn btn-secondary"><i class="icon fas fa-plus"></i>Confirm DNS added</button>
+                            </div>
+
+
                     </div>
-
-
-            </div>
-        </div>
-    </div>
+                </div>
+             </div>
 
             </div>
        
-</section>
-</div>
+        </section>
+    </div>
 
  
 
@@ -439,423 +443,426 @@
     <div class="page-container">
         <section>
 
-        <h3>All blocks</h3>
+            <h3>All blocks</h3>
 
-        <div class="panel bgcolor-brand-dark">
-          <div class="panel-body">  
-            <div class="row middle-xs">
-    
-                <div class="col-xs-12 center-xs col-sm-8 col-md-offset-1 col-md-6"> 
-                    <p class="h2">PositiveSSL <span class="txt-trancate">@jasksparrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrow.com</span> <span class="label label-responsive">Trial</span></p>
-                </div>
-                <div class="col-xs start-xs first-sm  pl-0">
-                    <button class="btn btn-flat btn-responsive"><i class="icon fas fa-arrow-left"></i> <span>My SSL</span></button>
-                </div>
-                <div class="col-xs col-sm-2 end-xs col-md-3 pr-0">
-                    <button class="btn btn-flat btn-responsive"><i class="icon fas fa-arrow-down"></i><span>Download</span></button> 
-                    <button class="btn btn-flat btn-responsive">
-                        <i class="icon fas fa-shopping-bag"></i><span>Buy</span></button>
-                </div>
-            
-            </div>
-        </div>
-        </div>
+            <div class="panel bgcolor-brand-dark">
+              <div class="panel-body">
+                <div class="row middle-xs">
 
-        <div class="stepper">
-               <!--activate-->
-               <div class="stepper-step">
-                <div class="badge badge-icon"><i class="icon  far fa-circle"></i></div>
-                <div class="panel">
-                    <div class="panel-header">
-                        <h3>SSL activation request
-                        </h3>
-                
+                    <div class="col-xs-12 center-xs col-sm-8 col-md-offset-1 col-md-6">
+                        <p class="h2">PositiveSSL <span class="txt-trancate">@jasksparrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrow.com</span> <span class="label label-responsive">Trial</span></p>
                     </div>
-                    <div class="panel-body">
-                   <p>To get your SSL issued and your site secured, you need to submit your website information to the certificate authority. Once the they validate your details, you’ll be able to download your SSL and install it on your server.
-
-                </p>    
-                   <div class="btn-container">
-                    <button class="btn btn-secondary">
-                        <i class="icon icon-smaller fas fa-play"></i>Activate</button>
-                    
-                </div>
-                     
+                    <div class="col-xs start-xs first-sm  pl-0">
+                        <button class="btn btn-flat btn-responsive"><i class="icon fas fa-arrow-left"></i> <span>My SSL</span></button>
                     </div>
-                  
-                   
-            
+                    <div class="col-xs col-sm-2 end-xs col-md-3 pr-0">
+                        <button class="btn btn-flat btn-responsive"><i class="icon fas fa-arrow-down"></i><span>Download</span></button>
+                        <button class="btn btn-flat btn-responsive">
+                            <i class="icon fas fa-shopping-bag"></i><span>Buy</span></button>
+                    </div>
+
                 </div>
             </div>
-
-
-              <!-- activation done -->
-              <div class="stepper-step stepper-step-completed">
-                <div class="badge badge-icon badge-success"><i class="fas fa-check"></i></div>
-
-                <div class="panel panel-success">
-
-                    <div class="panel-header">
-                        <h3>Send activation request</h3>
-                       
-                    </div>
-                </div>
             </div>
 
-            <!-- http: downalod done -->
-            <div class="stepper-step stepper-step-completed">
-                <div class="badge badge-icon badge-success"><i class="fas fa-check"></i></div>
-                <div class="panel panel-success">
-                    <div class="panel-header">
-                        <h3>Domain validation: file-based</h3>
-                        <div>
-                            <button class="btn btn-link btn-responsive"><i class="icon fas fa-undo-alt"></i><span>Undo</span></button>
-                           
-                          
+            <div class="stepper">
+                   <!--activate-->
+                   <div class="stepper-step">
+                    <div class="badge badge-icon"><i class="icon  far fa-circle"></i></div>
+                    <div class="panel">
+                        <div class="panel-header">
+                            <h3>SSL activation request
+                            </h3>
+
                         </div>
+                        <div class="panel-body">
+                       <p>To get your SSL issued and your site secured, you need to submit your website information to the certificate authority. Once the they validate your details, you’ll be able to download your SSL and install it on your server.
+
+                    </p>
+                       <div class="btn-container">
+                        <button class="btn btn-secondary">
+                            <i class="icon icon-smaller fas fa-play"></i>Activate</button>
+
+                    </div>
+
+                        </div>
+
+
+
+                    </div>
                 </div>
-                </div>
-            </div>
 
 
-            <!-- http: downalod  -->
-            <div class="stepper-step ">
-                <div class="badge badge-icon"><i class="icon  far fa-circle"></i></div>
+                  <!-- activation done -->
+                  <div class="stepper-step stepper-step-completed">
+                    <div class="badge badge-icon badge-success"><i class="fas fa-check"></i></div>
 
-                <div class="panel">
-                    <div class="panel-header">
-                        <h3>Domain validation: file-based <a class="link-decorated" href="#">Change</a></h3>
-                </div>
-                    <div class="panel-body">
+                    <div class="panel panel-success">
 
-                        <p>Upload <span class="txt-mono txt-highlighted">ys72aahnx028261oajq.txt</span> to the 
-                            <span class="txt-mono txt-highlighted">/.well-known/pki-validation/ </span> folder at your SSL domains:
-                        </p>
-                        <ul class="ul-unstyled content-scrolled">
-                            <li><span class="txt-mono">jacksparrow.com/.well-known/pki-validation/</span>
-                            </li>
-                            <li><span class="txt-mono">www.jacksparrow.com/.well-known/pki-validation/</span>
-                            </li>
-                            <li><span class="txt-mono">jacksparrow.io/.well-known/pki-validation/</span>
-                            </li>
-                            <li><span class="txt-mono">www.jacksparrow.io/.well-known/pki-validation/</span>
-                            </li>
-                        </ul>
-                        <p> If it’s your first time getting SSL through file-based validation, you should create
-                            <span class="txt-mono txt-highlighted">/.well-known/pki-validation/</span> on your server. Don’t rename
-                            the .txt file
-                            or change its content.</p>
+                        <div class="panel-header">
+                            <h3>Send activation request</h3>
 
-                        <div class="btn-container">
-                            <button class="btn btn-secondary"><i class="icon fas fa-arrow-down"></i>Download .txt</button>
-                            <button class="btn btn-flat"><i class="icon fas fa-video"></i>Video tutorial</button>
                         </div>
                     </div>
                 </div>
-            </div>
 
-        
-              <!-- http: confirm  -->
+                <!-- http: downalod done -->
+                <div class="stepper-step stepper-step-completed">
+                    <div class="badge badge-icon badge-success"><i class="fas fa-check"></i></div>
+                    <div class="panel panel-success">
+                        <div class="panel-header">
+                            <h3>Domain validation: file-based</h3>
+                            <div>
+                                <button class="btn btn-link btn-responsive"><i class="icon fas fa-undo-alt"></i><span>Undo</span></button>
+
+
+                            </div>
+                    </div>
+                    </div>
+                </div>
+
+
+                <!-- http: downalod  -->
+                <div class="stepper-step ">
+                    <div class="badge badge-icon"><i class="icon  far fa-circle"></i></div>
+
+                    <div class="panel">
+                        <div class="panel-header">
+                            <h3>Domain validation: file-based <a class="link-decorated" href="#">Change</a></h3>
+                    </div>
+                        <div class="panel-body">
+
+                            <p>Upload <span class="txt-mono txt-highlighted">ys72aahnx028261oajq.txt</span> to the
+                                <span class="txt-mono txt-highlighted">/.well-known/pki-validation/ </span> folder at your SSL domains:
+                            </p>
+                            <ul class="ul-unstyled content-scrolled">
+                                <li><span class="txt-mono">jacksparrow.com/.well-known/pki-validation/</span>
+                                </li>
+                                <li><span class="txt-mono">www.jacksparrow.com/.well-known/pki-validation/</span>
+                                </li>
+                                <li><span class="txt-mono">jacksparrow.io/.well-known/pki-validation/</span>
+                                </li>
+                                <li><span class="txt-mono">www.jacksparrow.io/.well-known/pki-validation/</span>
+                                </li>
+                            </ul>
+                            <p> If it’s your first time getting SSL through file-based validation, you should create
+                                <span class="txt-mono txt-highlighted">/.well-known/pki-validation/</span> on your server. Don’t rename
+                                the .txt file
+                                or change its content.</p>
+
+                            <div class="btn-container">
+                                <button class="btn btn-secondary"><i class="icon fas fa-arrow-down"></i>Download .txt</button>
+                                <button class="btn btn-flat"><i class="icon fas fa-video"></i>Video tutorial</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                  <!-- http: confirm  -->
+                  <div class="stepper-step">
+                    <div class="badge badge-icon"><i class="icon  far fa-circle"></i></div>
+
+                    <div class="panel">
+                        <div class="panel-header">
+                            <h3>Verify file upload</h3>
+                 </div>
+                        <div class="panel-body">
+
+                            <p>Check if you can see <span class="txt-mono txt-highlighted">6teyqtrtyq65123614qewrtqe.txt</span> in your
+                                browser visiting *all* of the following
+                                links:</p>
+                            <ul class="ul-unstyled content-scrolled">
+                                <li><a class="link-plain txt-mono" href="">http://jacksparrow.com/.well-known/pki-validation/6teyqtrtyq65123614qewrtqe.txt</a>
+                                </li>
+                                <li><a class="link-plain txt-mono" href="">http://www.jacksparrow.com/.well-known/pki-validation/6teyqtrtyq65123614qewrtqe.txt</a>
+                                </li>
+                                <li><a class="link-plain txt-mono" href="">http://jacksparrow.io/.well-known/pki-validation/6teyqtrtyq65123614qewrtqe.txt</a>
+                                </li>
+                                <li><a class="link-plain txt-mono visited" href="">http://www.jacksparrow.io/.well-known/pki-validation/6teyqtrtyq65123614qewrtqe.txt</a>
+                                </li>
+
+                            </ul>
+                            <div class="btn-container">
+                                <button class="btn btn-secondary"><i class="icon fas fa-arrow-up"></i>Confirm file
+                                    upload</button>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+              <!-- dns: confirm -->
               <div class="stepper-step">
                 <div class="badge badge-icon"><i class="icon  far fa-circle"></i></div>
-
                 <div class="panel">
                     <div class="panel-header">
-                        <h3>Verify file upload</h3>
-             </div>
+                        <h3>Domain validation: DNS-based</h3>
+
+                    </div>
                     <div class="panel-body">
 
-                        <p>Check if you can see <span class="txt-mono txt-highlighted">6teyqtrtyq65123614qewrtqe.txt</span> in your
-                            browser visiting *all* of the following
-                            links:</p>
-                        <ul class="ul-unstyled content-scrolled">
-                            <li><a class="link-plain txt-mono" href="">http://jacksparrow.com/.well-known/pki-validation/6teyqtrtyq65123614qewrtqe.txt</a>
-                            </li>
-                            <li><a class="link-plain txt-mono" href="">http://www.jacksparrow.com/.well-known/pki-validation/6teyqtrtyq65123614qewrtqe.txt</a>
-                            </li>
-                            <li><a class="link-plain txt-mono" href="">http://jacksparrow.io/.well-known/pki-validation/6teyqtrtyq65123614qewrtqe.txt</a>
-                            </li>
-                            <li><a class="link-plain txt-mono visited" href="">http://www.jacksparrow.io/.well-known/pki-validation/6teyqtrtyq65123614qewrtqe.txt</a>
-                            </li>
+                        <p>Create a CNAME record for jacksparrow.com and jacksparrow.io at your DNS provider:</p>
+                        <div class="mt mb content-scrolled">
 
-                        </ul>
-                        <div class="btn-container">
-                            <button class="btn btn-secondary"><i class="icon fas fa-arrow-up"></i>Confirm file
-                                upload</button>
-                      
-                        </div>
-                    </div>
+                            <table class="table-plain table-fixed lh-sm">
 
-                
-                </div>
-            </div>
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th class="cell-center">Type</th>
+                                        <th>Point to</th>
+                                        <th>TTL</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td data-title="Name"><span class="txt-mono">_1a96cf97e72fa19e66cc49c6e518c178</span></td>
+                                        <td data-title="Type" class="cell-center"><span class="txt-mono">CNAME</span></td>
+                                        <td data-title="Point to">
 
-          <!-- dns: confirm -->
-          <div class="stepper-step">
-            <div class="badge badge-icon"><i class="icon  far fa-circle"></i></div>
-            <div class="panel">
-                <div class="panel-header">
-                    <h3>Domain validation: DNS-based</h3>
-            
-                </div>
-                <div class="panel-body">
-
-                    <p>Create a CNAME record for jacksparrow.com and jacksparrow.io at your DNS provider:</p>
-                    <div class="mt mb content-scrolled">
-
-                        <table class="table-plain table-fixed lh-sm">
-
-                            <thead>
-                                <th>Name</th>
-                                <th class="cell-center">Type</th>
-                                <th>Point to</th>
-                                <th>TTL</th>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td data-title="Name"><span class="txt-mono">_1a96cf97e72fa19e66cc49c6e518c178</td>
-                                    <td data-title="Type" class="cell-center"><span class="txt-mono">CNAME</span></td>
-                                    <td data-title="Point to">
-                                       
-                                        <span
-                                            class="txt-mono">FB39026EEDA073E7725A8DEFA11EE952.55E9005351AC859CAF48A3DBC14E272D.60e862c0d9a09.comodoca.com</>
+                                            <span
+                                                class="txt-mono">FB39026EEDA073E7725A8DEFA11EE952.55E9005351AC859CAF48A3DBC14E272D.60e862c0d9a09.comodoca.com</span>
+                                        </td>
+                                        <td data-title="TTL"><span
+                                            class="txt-mono">60 or min possible value</span>
                                     </td>
-                                    <td data-title="TTL"><span
-                                        class="txt-mono">60 or min possible value</span>
-                                </td>
-                                </tr>
+                                    </tr>
 
 
-                            </tbody>
-                        </table>
-                    </div>
-
-                    <div class="btn-container">
-                    
-                        <button class="btn btn-secondary"><i class="icon fas fa-plus"></i>Confirm DNS added</button>
-                      <button class="btn btn-flat"><i class="icon fas fa-video"></i>Video tutorial</button>
-                    </div>
-                </div>
-
-              
-            </div>
-        </div>
-
-          <!-- email: confirm -->
-          <div class="stepper-step">
-            <div class="badge badge-icon"><i class="icon  far fa-circle"></i></div>
-            <div class="panel">
-                <div class="panel-header">
-                    <h3>Domain validation: Email-based <a class="link-decorated" href="#">Change</a></h3>
-            
-                </div>
-                <div class="panel-body">
-
-                    <p>Please check the email addresses below for an email with a validation code from @trust-provider.com. 
-                        <p class="content-scrolled">
-                            admin@jack.com, admin@jack.io, admin@jack.net, mail.admin@jack.com 
-                        </p>
-
-                        <p>  Open the link inside that email, and paste the validation code to the linked page to complete the validation process.</p>
-                   <p>If you don’t see the email in your inbox, please check your spam folder or resend the email.
-
-                </p>
-
-                    <div class="btn-container">
-                        <button class="btn btn-secondary btn-checked"><i class="loader"></i>Confirm code pasted</button>
-                        <button class="btn btn-flat"><i class="icon fas fa-paper-plane"></i>Resend email</button>
-                        <button class="btn btn-flat"><i class="icon fas fa-video"></i>Video tutorial</button>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-
-
-             <!--dv: get ssl - timer-->
-             <div class="stepper-step">
-                <div class="badge badge-icon"><i class="icon  far fa-circle"></i></div>
-                <div class="panel">
-                    <div class="panel-header">
-                        <h3>Get SSL</h3>
-                
-                    </div>
-                    <div class="panel-body">
-                   <p>We have successfully verified that your website meets our provider's requirements. Now the Certificate Authority needs to perform the final check before issuing the SSL. You will be able to download your SSL as soon as it's ready. Validation may take 2&ndash;20 minutes. </p>    
-    
-                     
-                    </div>
-    
-                   
-                <div class="panel-footer">
-                    Awaiting domain control validation: 120s..
-                </div>
-                </div>
-            </div>
-
-               <!--ov/ev: get ssl - timer-->
-               <div class="stepper-step">
-                <div class="badge badge-icon"><i class="icon  far fa-circle"></i></div>
-                <div class="panel">
-                    <div class="panel-header">
-                        <h3>Get SSL</h3>
-                
-                    </div>
-                    <div class="panel-body">
-                   <p>We have successfully verified that your website meets our provider's requirements. Now the Certificate Authority needs to perform the final check before issuing the SSL. You will be able to download your SSL as soon as it's ready. 
-                    <p>Business validation may take several days as it requires a great deal of manual verification.</p>
-                   <p>Shortly you will receive an email at <span class="txt-mono txt-highlighted"> ceo@jacksparrow.com</span> with a list of the required validation documents and an email to <a href="" class="link-decorated">schedule a call</a> for business phone number verification. Tips to <a href="" class="link-decorated">make it easier</a>.
-
-
-                   
-
-                   </p>
-   
-                       <div class="btn-container">
-                           <button class="btn btn-secondary"><i class="icon fas fa-arrow-down"></i>See progress</button>
-                           <button class="btn btn-flat"><i class="icon fas fa-video"></i>Video tutorial</button>
-                       </div>
-                     
-                    </div>
-    
-                   
-                <div class="panel-footer">
-                    Awaiting domain control and business validation.. 
-                </div>
-                </div>
-            </div>
-
-                 <!--get ssl - try again-->
-             <div class="stepper-step">
-                <div class="badge badge-icon"><i class="icon  far fa-circle"></i></div>
-                <div class="panel">
-                    <div class="panel-header">
-                        <h3>Get SSL</h3>
-                
-                    </div>
-                    <div class="panel-body">
-                   <p>We have successfully verified that your website meets our provider's requirements. Now the Certificate Authority needs to perform the final check before issuing the SSL. You will be able to download your SSL as soon as it's ready. Validation may take 2–20 minutes.</p>    
-                   <div class="btn-container">
-                    <button class="btn btn-secondary">
-                        <i class="icon fas fa-redo"></i>Try again in 3:43</button>
-                    
-                </div>
-                     
-                    </div>
-                  
-                   
-            
-                </div>
-            </div>
-
-                     <!--get ssl - download ssl-->
-                     <div class="stepper-step">
-                        <div class="badge badge-icon"><i class="icon  far fa-circle"></i></div>
-                        <div class="panel">
-                            <div class="panel-header">
-                                <h3>Get SSL</h3>
-                        
-                            </div>
-                            <div class="panel-body">
-                           <p>We have successfully verified that your website meets our provider's requirements. Now the Certificate Authority needs to perform the final check before issuing the SSL. You will be able to download your SSL as soon as it's ready. Validation may take 2–20 minutes.</p>    
-                           <div class="btn-container">
-                            <button class="btn btn-secondary">
-                                <i class="icon fas fa-arrow-down"></i>Download SSL</button>
-                            
+                                </tbody>
+                            </table>
                         </div>
-                             
-                            </div>
-                          
-                           
-                    
-                        </div>
-                    </div>
-        
-                    
 
-             <!--install ssl -->
-             <div class="stepper-step">
-                <div class="badge badge-icon"><i class="icon  far fa-circle"></i></div>
-                <div class="panel">
-                    <div class="panel-header">
-                        <h3>Install SSL</h3>
-                
-                    </div>
-                    <div class="panel-body">
-                        
-                        <div class="tab-container">
-                            <div class="tab-switch">
-                                <button class="tab  tab-active">
-                                    Install yourself
-                                </button>
-                                <button class="tab">
-                                   We install for you ($28.88/yr)
-                                </button>
-    
-                            </div>
-                            <div class="tab-content">
-                                <p>To secure your site, extract <span class="txt-mono txt-highlighted">jacksparrowcom_cert.zip</span>  and <span class="txt-mono txt-highlighted">jacksparrowcom_key.zip</span> on your computer and upload files from those zips to your server. <a href="" class="link-decorated">Here is a list </a> of the most common server types and how to install SSL on them.</p>
-                                <p>If you created a CSR and private key in-browser during SSL activation, you will find key.zip in your downloads  folder.</p>
-                                <p> For a CSR that was created directly on your hosting server, the private key is already on your server, so you only need to upload cert.zip</p>
-                        
-    
-                            </div>
-    
-                        </div>
-    
-
-
-    
                         <div class="btn-container">
-                            <button class="btn btn-secondary"><i class="icon fas fa-check"></i>Confirm installation</button>
+
+                            <button class="btn btn-secondary"><i class="icon fas fa-plus"></i>Confirm DNS added</button>
+                          <button class="btn btn-flat"><i class="icon fas fa-video"></i>Video tutorial</button>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+              <!-- email: confirm -->
+              <div class="stepper-step">
+                <div class="badge badge-icon"><i class="icon  far fa-circle"></i></div>
+                <div class="panel">
+                    <div class="panel-header">
+                        <h3>Domain validation: Email-based <a class="link-decorated" href="#">Change</a></h3>
+
+                    </div>
+                    <div class="panel-body">
+
+                        <p>Please check the email addresses below for an email with a validation code from @trust-provider.com.
+                            <p class="content-scrolled">
+                                admin@jack.com, admin@jack.io, admin@jack.net, mail.admin@jack.com
+                            </p>
+
+                            <p>  Open the link inside that email, and paste the validation code to the linked page to complete the validation process.</p>
+                       <p>If you don’t see the email in your inbox, please check your spam folder or resend the email.
+
+                    </p>
+
+                        <div class="btn-container">
+                            <button class="btn btn-secondary btn-checked"><i class="loader"></i>Confirm code pasted</button>
+                            <button class="btn btn-flat"><i class="icon fas fa-paper-plane"></i>Resend email</button>
                             <button class="btn btn-flat"><i class="icon fas fa-video"></i>Video tutorial</button>
                         </div>
                     </div>
-    
-                   
+
                 </div>
             </div>
 
 
-             <!--install ssl -->
-             <div class="stepper-step">
+
+                 <!--dv: get ssl - timer-->
+                 <div class="stepper-step">
+                    <div class="badge badge-icon"><i class="icon  far fa-circle"></i></div>
+                    <div class="panel">
+                        <div class="panel-header">
+                            <h3>Get SSL</h3>
+
+                        </div>
+                        <div class="panel-body">
+                       <p>We have successfully verified that your website meets our provider's requirements. Now the Certificate Authority needs to perform the final check before issuing the SSL. You will be able to download your SSL as soon as it's ready. Validation may take 2&ndash;20 minutes. </p>
+
+
+                        </div>
+
+
+                    <div class="panel-footer">
+                        Awaiting domain control validation: 120s..
+                    </div>
+                    </div>
+                </div>
+
+                   <!--ov/ev: get ssl - timer-->
+                   <div class="stepper-step">
+                    <div class="badge badge-icon"><i class="icon  far fa-circle"></i></div>
+                    <div class="panel">
+                        <div class="panel-header">
+                            <h3>Get SSL</h3>
+
+                        </div>
+                        <div class="panel-body">
+                       <p>We have successfully verified that your website meets our provider's requirements. Now the Certificate Authority needs to perform the final check before issuing the SSL. You will be able to download your SSL as soon as it's ready.
+                        <p>Business validation may take several days as it requires a great deal of manual verification.</p>
+                       <p>Shortly you will receive an email at <span class="txt-mono txt-highlighted"> ceo@jacksparrow.com</span> with a list of the required validation documents and an email to <a href="" class="link-decorated">schedule a call</a> for business phone number verification. Tips to <a href="" class="link-decorated">make it easier</a>.
+
+
+
+
+                       </p>
+
+                           <div class="btn-container">
+                               <button class="btn btn-secondary"><i class="icon fas fa-arrow-down"></i>See progress</button>
+                               <button class="btn btn-flat"><i class="icon fas fa-video"></i>Video tutorial</button>
+                           </div>
+
+                        </div>
+
+
+                    <div class="panel-footer">
+                        Awaiting domain control and business validation..
+                    </div>
+                    </div>
+                </div>
+
+                     <!--get ssl - try again-->
+                 <div class="stepper-step">
+                    <div class="badge badge-icon"><i class="icon  far fa-circle"></i></div>
+                    <div class="panel">
+                        <div class="panel-header">
+                            <h3>Get SSL</h3>
+
+                        </div>
+                        <div class="panel-body">
+                       <p>We have successfully verified that your website meets our provider's requirements. Now the Certificate Authority needs to perform the final check before issuing the SSL. You will be able to download your SSL as soon as it's ready. Validation may take 2–20 minutes.</p>
+                       <div class="btn-container">
+                        <button class="btn btn-secondary">
+                            <i class="icon fas fa-redo"></i>Try again in 3:43</button>
+
+                    </div>
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+                         <!--get ssl - download ssl-->
+                         <div class="stepper-step">
+                            <div class="badge badge-icon"><i class="icon  far fa-circle"></i></div>
+                            <div class="panel">
+                                <div class="panel-header">
+                                    <h3>Get SSL</h3>
+
+                                </div>
+                                <div class="panel-body">
+                               <p>We have successfully verified that your website meets our provider's requirements. Now the Certificate Authority needs to perform the final check before issuing the SSL. You will be able to download your SSL as soon as it's ready. Validation may take 2–20 minutes.</p>
+                               <div class="btn-container">
+                                <button class="btn btn-secondary">
+                                    <i class="icon fas fa-arrow-down"></i>Download SSL</button>
+
+                            </div>
+
+                                </div>
+
+
+
+                            </div>
+                        </div>
+
+
+
+                 <!--install ssl -->
+                 <div class="stepper-step">
+                    <div class="badge badge-icon"><i class="icon  far fa-circle"></i></div>
+                    <div class="panel">
+                        <div class="panel-header">
+                            <h3>Install SSL</h3>
+
+                        </div>
+                        <div class="panel-body">
+
+                            <div class="tab-container">
+                                <div class="tab-switch">
+                                    <button class="tab  tab-active">
+                                        Install yourself
+                                    </button>
+                                    <button class="tab">
+                                       We install for you ($28.88/yr)
+                                    </button>
+
+                                </div>
+                                <div class="tab-content">
+                                    <p>To secure your site, extract <span class="txt-mono txt-highlighted">jacksparrowcom_cert.zip</span>  and <span class="txt-mono txt-highlighted">jacksparrowcom_key.zip</span> on your computer and upload files from those zips to your server. <a href="" class="link-decorated">Here is a list </a> of the most common server types and how to install SSL on them.</p>
+                                    <p>If you created a CSR and private key in-browser during SSL activation, you will find key.zip in your downloads  folder.</p>
+                                    <p> For a CSR that was created directly on your hosting server, the private key is already on your server, so you only need to upload cert.zip</p>
+
+
+                                </div>
+
+                            </div>
+
+
+
+
+                            <div class="btn-container">
+                                <button class="btn btn-secondary"><i class="icon fas fa-check"></i>Confirm installation</button>
+                                <button class="btn btn-flat"><i class="icon fas fa-video"></i>Video tutorial</button>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+                 <!--install ssl -->
+                 <div class="stepper-step">
+                    <div class="badge badge-icon"><i class="icon  far fa-circle"></i></div>
+                    <div class="panel">
+                        <div class="panel-header">
+                            <h3>Pay for SSL</h3>
+
+                        </div>
+                        <div class="panel-body">
+
+
+                            <p>You have 28 trial days left. Pay before Jun 20, 2021 and keep using SSL. Pay after this date and you will need go through the whole process from scratch. </p>
+
+                            <div class="btn-container">
+                                <button class="btn btn-secondary"><i class="icon fas fa-shopping-bag"></i>Buy</button>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+            <!-- inactive step -->
+            <div class="stepper-step stepper-step-inactive">
                 <div class="badge badge-icon"><i class="icon  far fa-circle"></i></div>
                 <div class="panel">
+
                     <div class="panel-header">
-                        <h3>Pay for SSL</h3>
-                
-                    </div>
-                    <div class="panel-body">
-                        
+                        <h3>Get SSL</h3>
 
-                        <p>You have 28 trial days left. Pay before Jun 20, 2021 and keep using SSL. Pay after this date and you will need go through the whole process from scratch. </p>
-    
-                        <div class="btn-container">
-                            <button class="btn btn-secondary"><i class="icon fas fa-shopping-bag"></i>Buy</button>
-                       
-                        </div>
                     </div>
-    
-                   
                 </div>
             </div>
-    
-    
-        <!-- inactive step -->
-        <div class="stepper-step stepper-step-inactive">
-            <div class="badge badge-icon"><i class="icon  far fa-circle"></i></div>
-            <div class="panel">
 
-                <div class="panel-header">
-                    <h3>Get SSL</h3>
-                
-                </div>
-            </div>
         </div>
-
+        </section>
     </div>
-</div>
 
  
 
