@@ -3,7 +3,7 @@
 
 .stepper-step{
     position: relative;
-    flex-grow: 1;
+
 }
 
 .stepper-step-inactive{
