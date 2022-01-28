@@ -1,3 +1,4 @@
+/*imp placeholder*/
 .figure-sm{
     display: block;
     height: 10em;
@@ -8,4 +9,98 @@
 
 img {
     width: 100%;
+}
+
+/*browser figure to key instructions */
+.browser{
+    max-width: 30rem;
+    border-radius: var(--radius);
+    border: var(--border) solid var(--color-brand-darker);
+    overflow: hidden;
+}
+
+.browser-toolbar{
+    padding: var(--space-sm);
+    background: var(--color-brand);
+    border-bottom: 0.0625rem solid var(--color-brand-darker);
+}
+.browser-addressbar{
+    display: flex;
+    align-items: center;
+    padding: var(--space-xs) var(--space);
+    background: var(--color-brand);
+    border-bottom: 0.0625rem solid var(--color-brand-darker);
+}
+
+.browser-body{
+    display: flex;
+    padding: var(--space-sm);
+    align-items: end;
+    background: white;
+    height: 8rem;
+}
+.browser-body .icon{
+    color: var(--color-success-dark);
+}
+
+.browser .fa-arrow-circle-down{
+    color: var(--color-success-dark);
+}
+
+.browser-ff .browser-body,
+.browser-safari .browser-body{
+    align-items: start;
+    justify-content: flex-end;
+    padding-right: 2.5rem;
+}
+
+.browser-safari .browser-body{
+    padding-right: 2.9rem;
+}
+
+.browser-ff .browser-body .icon,
+.browser-safari .browser-body .icon{
+    transform: rotate(180deg);
+}
+
+.browser-footer{
+    padding: var(--space);
+    background: var(--color-brand-dark);
+    color: white;
+}
+
+.browser-controls,
+.browser-controls:before,
+.browser-controls:after{
+    position: relative;
+    display: block;
+    width: var(--space-sm);
+    min-width: var(--space-sm);
+    height: var(--space-sm);
+    background: var(--color-warning);
+    border-radius: 50%;
+}
+
+.browser-controls{
+    margin:0 var(--space);
+}
+
+.browser-controls:before,
+.browser-controls:after{
+    position: absolute;
+    content:"";
+}
+
+.browser-controls:before{
+    left: -1rem;
+    background: var(--color-alert);
+
+}
+.browser-controls:after{
+    left: 1rem;
+    background: var(--color-success);
+}
+
+.browser .input-s{
+    height: var(--space-md);
 }

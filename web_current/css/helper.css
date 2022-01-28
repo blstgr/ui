@@ -12,11 +12,18 @@
   margin-top: var(--spacex3)!important;
 }
 
+.ml{
+  margin-left: var(--space)!important;
+}
 
 .ml-xs{
   margin-left: var(--space-xs)!important;
-
 }
+
+.mr{
+  margin-right: var(--space)!important;
+}
+
 
 .mt-xs {
     margin-top: var(--space)!important;

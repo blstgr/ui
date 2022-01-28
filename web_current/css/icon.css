@@ -15,8 +15,12 @@ i{
 
 
 
-.icon-lg{
+.icon-l{
   font-size: 1.125rem;
+}
+
+.icon-xl{
+    font-size: var(--spacex3);
 }
 
 .icon-smaller{
