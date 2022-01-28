@@ -194,6 +194,10 @@
   width: auto;
 }
 
+.mw-auto {
+  max-width: none !important;
+}
+
 .w-100{
   width:100%;
 }

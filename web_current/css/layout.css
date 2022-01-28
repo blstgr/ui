@@ -55,7 +55,7 @@ section,
 
 
 
-/* default container for any type of cotent, defines spacing bewtween blocks*/
+/* default container for any type of content, defines spacing between blocks*/
 
 .content-spaced{
   margin-top: var(--spacex2);
@@ -71,10 +71,40 @@ section,
 }
 
 
-/* container for embeded tweets */
+/* container for embedded tweets */
 
 .twitter-tweet{
     margin: var(--space-sm)!important;
     width: auto!important;
     min-width: 22.5rem!important /*360*/;
+}
+
+.sticky-bottom-xs{
+    position: fixed;
+    background: white;
+    left: 0;
+    bottom: 0;
+    padding: var(--space-md) var(--space);
+    width: 100%;
+    border-top: 0.25rem solid var(--color-brand-dark);
+    z-index: 999999;
+}
+
+@media screen and (max-width: 26em) {
+    .sticky-bottom-xs .btn-container{
+         margin-top: 0;
+     }
+}
+
+@media screen and (min-width: 48em) {
+    .sticky-bottom-xs{
+        position: initial;
+        background: transparent;
+        padding: 0;
+        border-top: none;
+
+    }
+
+
+
 }
