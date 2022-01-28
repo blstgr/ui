@@ -59,10 +59,18 @@
     margin-top: var(--space)!important;
   }
 
+  .mt-md-md{
+    margin-top: var(--space-md)!important;
+  }
+
 }
 
 @media screen and (min-width: 75em) {
   .mt-md{
+    margin-top: 0!important;
+  }
+
+  .mt-md-md{
     margin-top: 0!important;
   }
 
