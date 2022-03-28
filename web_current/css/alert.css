@@ -110,4 +110,25 @@
   .alert-info a.visited{
     color: var(--color-info-lighter);
   }
-  
+
+
+  /*on page alert - highlights important info*/
+
+.nb{
+  display: flex;
+  justify-content: flex-start;
+  padding: var(--space-sm);
+  background: var(--color-warning-light);
+  border-radius: var(--radius);
+  line-height: var(--line-height);
+  margin: var(--space) 0  var(--space-sm) 0;
+}
+
+.nb .badge{
+  margin-right: var(--space-sm);
+}
+
+
+
+
+

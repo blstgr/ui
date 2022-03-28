@@ -1,11 +1,11 @@
 .input,
-.input-s{
+.input-s {
     display: block;
     width: 100%;
-    margin:0;
+    margin: 0;
     padding: var(--space);
     border-radius: var(--radius);
-    border: var(--border) solid  var(--color-brand-darker);
+    border: var(--border) solid var(--color-brand-darker);
     font-family: inherit;
     font-size: inherit;
     font-weight: inherit;
@@ -14,19 +14,20 @@
     line-height: var(--line-height-sm);
 }
 
-.input-s{
+.input-s {
     padding: var(--space-sm);
     border-radius: var(--radius-sm);
 
 }
 
-.input-inverted{
-background: var(--color-brand-dark);
-color: white;
+.input-inverted {
+    background: var(--color-brand-dark);
+    color: white;
 }
 
 .input:focus,
-.input-s:focus{
+.input-s:focus {
+    box-shadow: 0 0 4px var(--color-success-lighter);
     border-color: var(--color-success);
     outline: none;
 }
@@ -34,10 +35,10 @@ color: white;
 .input::placeholder,
 .input-s::placeholder {
     color: var(--color-brand-darker);
-  
-  }
 
-.form-group label{
+}
+
+.form-group label {
     line-height: var(--line-height);
     font-size: var(--font-size);
     font-weight: 700;
@@ -45,30 +46,25 @@ color: white;
 
 
 /*hidden input label*/
-.visually-hidden{
-    position: absolute!important;
-    width: 1px!important;
-    height: 1px!important;
-    padding: 0!important;
-    margin: -1px!important;
-    overflow: hidden!important;
-    clip: rect(0,0,0,0)!important;
-    white-space: nowrap!important;
-    border: 0!important;
+.visually-hidden {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
 }
 
 
-
-
-.form-group+.form-group{
+.form-group + .form-group {
     margin-top: var(--space);
 }
 
 
-
-
-
-p+.input-group{
+p + .input-group {
     margin-top: var(--space-md);
 }
 
@@ -79,7 +75,7 @@ p+.input-group{
 }
 
 .input-group .input:first-child {
-    border-radius: var(--radius) 0  0 var(--radius);
+    border-radius: var(--radius) 0 0 var(--radius);
 }
 
 
@@ -104,5 +100,5 @@ p+.input-group{
 .input-group .btn-flat {
     border-color: var(--color-brand-darker);
     background: white;
-    
+
 }

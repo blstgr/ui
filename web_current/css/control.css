@@ -59,6 +59,12 @@ p+.control-container{
     border: var(--border) solid var(--color-brand-dark);
   }
 
+
+.checkmark:focus,
+.radiomark:focus{
+    outline: var(--border) solid var(--color-success);
+}
+
   .radiomark{
     border-radius: var(--radius);
   }

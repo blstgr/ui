@@ -6,7 +6,7 @@
     border: var(--border) solid var(--color-brand-dark);
     width: 100%;  /*always 100% on small screens*/
     box-shadow: 4px 4px 0 var(--color-brand-dark);
-    overflow: hidden;
+
 }
 
 .panel+.panel {

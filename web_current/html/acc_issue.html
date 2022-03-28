@@ -46,7 +46,7 @@
             <div class="col-xs-12 col-sm-2">
                 <div class="stepper stepper-ghost">
                     <div class="stepper-step stepper-step-completed">
-                        <div class="badge badge-icon">
+                      <div class="badge badge-icon stepper-badge">
                             <i class="icon  far fa-circle"></i>
                         </div>
                         <div class="panel">
@@ -56,7 +56,7 @@
                         </div>
                     </div>
                     <div class="stepper-step stepper-step-completed stepper-step-inactive">
-                        <div class="badge badge-icon"><i class="icon  far fa-circle"></i></div>
+                      <div class="badge badge-icon stepper-badge"><i class="icon  far fa-circle"></i></div>
                         <div class="panel">
                             <div class="panel-body">
                                 <h3>Key</h3>
@@ -64,8 +64,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="stepper-step stepper-step-completed stepper-step-inactive">
-                        <div class="badge badge-icon"><i class="icon  far fa-circle"></i></div>
+                    <div class="hide stepper-step stepper-step-completed stepper-step-inactive">
+                      <div class="badge badge-icon stepper-badge"><i class="icon  far fa-circle"></i></div>
                         <div class="panel">
                             <div class="panel-body">
                                 <h3>Validation</h3>
@@ -74,7 +74,7 @@
                         </div>
                     </div>
                     <div class="stepper-step stepper-step-completed stepper-step-inactive">
-                        <div class="badge badge-icon"><i class="icon  far fa-circle"></i></div>
+                      <div class="badge badge-icon stepper-badge"><i class="icon  far fa-circle"></i></div>
                         <div class="panel">
                             <div class="panel-body">
                                 <h3>Submit</h3>
@@ -111,7 +111,7 @@
             <div class="col-xs-12 col-sm-2">
                 <div class="stepper stepper-ghost">
                     <div class="stepper-step stepper-step-completed">
-                        <div class="badge badge-success badge-icon">
+                        <div class="badge badge-success badge-icon stepper-badge">
                             <i class="fas fa-check"></i>
                         </div>
                         <div class="panel panel-success">
@@ -121,7 +121,7 @@
                         </div>
                     </div>
                     <div class="stepper-step stepper-step-completed">
-                        <div class="badge badge-icon"><i class="icon  far fa-circle"></i></div>
+                      <div class="badge badge-icon stepper-badge"><i class="icon  far fa-circle"></i></div>
                         <div class="panel">
                             <div class="panel-body">
                                 <h3>Key</h3>
@@ -129,8 +129,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="stepper-step stepper-step-completed stepper-step-inactive">
-                        <div class="badge badge-icon"><i class="icon  far fa-circle"></i></div>
+                    <div class="hide stepper-step stepper-step-completed stepper-step-inactive">
+                      <div class="badge badge-icon stepper-badge"><i class="icon  far fa-circle"></i></div>
                         <div class="panel">
                             <div class="panel-body">
                                <h3>Validation</h3>
@@ -139,7 +139,7 @@
                         </div>
                     </div>
                     <div class="stepper-step stepper-step-completed stepper-step-inactive">
-                        <div class="badge badge-icon"><i class="icon  far fa-circle"></i></div>
+                      <div class="badge badge-icon stepper-badge"><i class="icon  far fa-circle"></i></div>
                         <div class="panel">
                             <div class="panel-body">
                                 <h3>Submit</h3>
@@ -164,11 +164,18 @@
                     <div class="tab-content">
                         <p>You will need to upload <span
                                 class="txt-mono txt-highlighted">jacksparrow_com_key.zip</span> to your server to
-                            install PositiveSSL. Installing on a Windows server, <a href="" class="link-decorated">convert
-                                to pfx</a>.
-                        <p>We don’t store the key. If you loose it, you will need to <a href=""
-                                                                                        class="link-decorated">start
-                            from scratch</a>. </p>
+                            install PositiveSSL.</p>
+                        <p> Installing on a Windows server, <a href="" class="link-decorated">convert
+                            to pfx</a>.</p>
+
+                        <div class="nb">
+                            <div class="badge badge-icon ">
+                                <i class="fas fa-info"></i>
+                            </div>
+                            <span>We don’t store the key. If you loose it, you will need to start
+                                from scratch.</span>
+                        </div>
+
                         <div class="btn-container">
                             <button class="btn btn-secondary">
                                 <i class="icon fas fa-arrow-down"></i>
@@ -194,7 +201,7 @@
             <div class="col-xs-12 col-sm-2">
                 <div class="stepper stepper-ghost">
                     <div class="stepper-step stepper-step-completed">
-                        <div class="badge badge-success badge-icon">
+                        <div class="badge badge-success badge-icon stepper-badge">
                             <i class="fas fa-check"></i>
                         </div>
                         <div class="panel panel-success">
@@ -204,7 +211,7 @@
                         </div>
                     </div>
                     <div class="stepper-step stepper-step-completed">
-                        <div class="badge badge-icon"><i class="icon  far fa-circle"></i></div>
+                      <div class="badge badge-icon stepper-badge"><i class="icon  far fa-circle"></i></div>
                         <div class="panel">
                             <div class="panel-body">
                                 <h3>Key</h3>
@@ -212,8 +219,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="stepper-step stepper-step-completed stepper-step-inactive">
-                        <div class="badge badge-icon"><i class="icon  far fa-circle"></i></div>
+                    <div class="hide stepper-step stepper-step-completed stepper-step-inactive">
+                      <div class="badge badge-icon stepper-badge"><i class="icon  far fa-circle"></i></div>
                         <div class="panel">
                             <div class="panel-body">
                                 <h3>Validation</h3>
@@ -222,7 +229,7 @@
                         </div>
                     </div>
                     <div class="stepper-step stepper-step-completed stepper-step-inactive">
-                        <div class="badge badge-icon"><i class="icon  far fa-circle"></i></div>
+                      <div class="badge badge-icon stepper-badge"><i class="icon  far fa-circle"></i></div>
                         <div class="panel">
                             <div class="panel-body">
                                 <h3>Submit</h3>
@@ -248,11 +255,18 @@
                        <div class="tab-content">
                            <p>You will need to upload <span
                                    class="txt-mono txt-highlighted">jacksparrow_com_key.zip</span> to your server to
-                               install PositiveSSL. Installing on a Windows server, <a href="" class="link-decorated">convert
-                                   to pfx</a>.
-                           <p>We don’t store the key. If you loose it, you will need to <a href=""
-                                                                                           class="link-decorated">start
-                               from scratch</a>. </p>
+                               install PositiveSSL.
+                           </p>
+                           <p>Installing on a Windows server, <a href="" class="link-decorated">convert
+                               to pfx</a>.</p>
+
+                           <div class="nb">
+                             <div class="badge badge-icon ">
+                                   <i class="fas fa-info"></i>
+                               </div>
+                               <span>We don’t store the key. If you loose it, you will need to start
+                                from scratch.</span>
+                           </div>
 
                             <!--chrome/edge-->
                            <div class="browser browser-chrome content-spaced">
@@ -354,7 +368,6 @@
     </div>
 </div>
 
-
 <!--key on server browser-->
 <div class="page-container mh-90 flex-container middle-xs">
     <div class="section">
@@ -363,7 +376,7 @@
             <div class="col-xs-12 col-sm-2">
                 <div class="stepper stepper-ghost">
                     <div class="stepper-step stepper-step-completed">
-                        <div class="badge badge-success badge-icon">
+                        <div class="badge badge-success badge-icon stepper-badge">
                             <i class="fas fa-check"></i>
                         </div>
                         <div class="panel panel-success">
@@ -373,7 +386,7 @@
                         </div>
                     </div>
                     <div class="stepper-step stepper-step-completed">
-                        <div class="badge badge-icon"><i class="icon  far fa-circle"></i></div>
+                      <div class="badge badge-icon stepper-badge"><i class="icon  far fa-circle"></i></div>
                         <div class="panel">
                             <div class="panel-body">
                                 <h3>Key</h3>
@@ -381,8 +394,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="stepper-step stepper-step-completed stepper-step-inactive">
-                        <div class="badge badge-icon"><i class="icon  far fa-circle"></i></div>
+                    <div class="hide stepper-step stepper-step-completed stepper-step-inactive">
+                      <div class="badge badge-icon stepper-badge"><i class="icon  far fa-circle"></i></div>
                         <div class="panel">
                             <div class="panel-body">
                                <h3>Validation</h3>
@@ -391,7 +404,7 @@
                         </div>
                     </div>
                     <div class="stepper-step stepper-step-completed stepper-step-inactive">
-                        <div class="badge badge-icon"><i class="icon  far fa-circle"></i></div>
+                      <div class="badge badge-icon stepper-badge"><i class="icon  far fa-circle"></i></div>
                         <div class="panel">
                             <div class="panel-body">
                                 <h3>Submit</h3>
@@ -485,13 +498,13 @@
 </div>
 
 <!--dcv-->
-<div class="page-container mh-90 flex-container middle-xs">
+<div class="hide page-container mh-90 flex-container middle-xs">
     <div class="section">
         <div class="row">
             <div class="col-xs-12 col-sm-2">
                 <div class="stepper stepper-ghost">
                     <div class="stepper-step stepper-step-completed">
-                        <div class="badge badge-success badge-icon">
+                        <div class="badge badge-success badge-icon stepper-badge">
                             <i class="fas fa-check"></i>
                         </div>
                         <div class="panel panel-success">
@@ -501,7 +514,7 @@
                         </div>
                     </div>
                     <div class="stepper-step stepper-step-completed">
-                        <div class="badge badge-success badge-icon">
+                        <div class="badge badge-success badge-icon stepper-badge">
                             <i class="fas fa-check"></i>
                         </div>
                         <div class="panel panel-success">
@@ -510,8 +523,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="stepper-step stepper-step-completed">
-                        <div class="badge badge-icon"><i class="icon  far fa-circle"></i></div>
+                    <div class="hide stepper-step stepper-step-completed">
+                      <div class="badge badge-icon stepper-badge"><i class="icon  far fa-circle"></i></div>
                         <div class="panel">
                             <div class="panel-body">
                                 <h3>Validation</h3>
@@ -520,7 +533,7 @@
                         </div>
                     </div>
                     <div class="stepper-step stepper-step-completed stepper-step-inactive">
-                        <div class="badge badge-icon"><i class="icon  far fa-circle"></i></div>
+                      <div class="badge badge-icon stepper-badge"><i class="icon  far fa-circle"></i></div>
                         <div class="panel">
                             <div class="panel-body">
                                 <h3>Submit</h3>
@@ -594,7 +607,7 @@
             <div class="col-xs-12 col-sm-2">
                 <div class="stepper stepper-ghost">
                     <div class="stepper-step stepper-step-completed">
-                        <div class="badge badge-success badge-icon">
+                        <div class="badge badge-success badge-icon stepper-badge">
                             <i class="fas fa-check"></i>
                         </div>
                         <div class="panel panel-success">
@@ -604,7 +617,7 @@
                         </div>
                     </div>
                     <div class="stepper-step stepper-step-completed">
-                        <div class="badge badge-success badge-icon">
+                        <div class="badge badge-success badge-icon stepper-badge">
                             <i class="fas fa-check"></i>
                         </div>
                         <div class="panel panel-success">
@@ -613,8 +626,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="stepper-step stepper-step-completed">
-                        <div class="badge badge-success badge-icon">
+                    <div class="hide stepper-step stepper-step-completed">
+                        <div class="badge badge-success badge-icon stepper-badge">
                             <i class="fas fa-check"></i>
                         </div>
                         <div class="panel panel-success">
@@ -624,7 +637,7 @@
                         </div>
                     </div>
                     <div class="stepper-step stepper-step-completed">
-                        <div class="badge badge-icon"><i class="icon  far fa-circle"></i></div>
+                      <div class="badge badge-icon stepper-badge"><i class="icon  far fa-circle"></i></div>
                         <div class="panel">
                             <div class="panel-body">
                                 <h3>Submit</h3>

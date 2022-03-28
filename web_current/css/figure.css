@@ -13,7 +13,7 @@ img {
 
 /*browser figure to key instructions */
 .browser{
-    max-width: 30rem;
+    /*max-width: 30rem;*/
     border-radius: var(--radius);
     border: var(--border) solid var(--color-brand-darker);
     overflow: hidden;

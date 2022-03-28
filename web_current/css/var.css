@@ -7,25 +7,26 @@
     --color-alert-xdark: #760b01;
 
     --color-warning: #fac510;
-  
+    --color-warning-light: #fde595;
+
     --color-info-light: #f2f9ff;
     --color-info-lighter: #c4e2ff;
     --color-info: #6daeeb;
     --color-info-darker: #398dde;
     --color-info-dark: #0055a7;
     --color-info-xdark: #0e477e;
-    
+
     --color-success-light: #e8fff4;
     --color-success-lighter: #b8fbdb;
     --color-success: #11bf85;
     --color-success-darker: #2db185;
     --color-success-dark: #08815a;
-    
+
     --color-brand-dark: #3e3e38;
     --color-brand-darker: #c3beac;
     --color-brand: #eae7db;
     --color-brand-light: #f9f8f4;
-  
+
     --color-a-visited: #7354bb;
 
     --space-md: 1.25rem /*20*/;
@@ -37,27 +38,27 @@
     --spacex2: 2rem /*32*/;
     --spacex3: 3rem /*48*/;
     --spacex4: 4rem /*48*/;
-  
-  
+
+
     --radius: 1em /*16*/;
     --radius-sm: 0.75em /*12*/;
 
 
     --border: 0.125rem /*2*/;
-  
+
     --line-height: 1.8;
     --line-height-sm: 1.5;
     --line-height-font-lg: 1.2;
-  
+
     --font-size-sm: 0.75rem /*12*/;
     --font-size: 1rem;
     --font-size-md: 1.25rem /*20*/;
     --font-size-lg: 4.125rem /*66*/;
-  
-  
-    --shadow-raised: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.25);
-    --shadow: 4px 4px 0 var(--color-brand-dark);
-    --shadow-inset: inset 4px 4px 0 var(--color-brand-dark);
 
 
-  }
+    --shadow-raised: 0 1rem 0.625rem rgba(0, 0, 0, 0.25);
+    --shadow: 0.25rem 0.25rem 0 var(--color-brand-dark);
+    --shadow-inset: inset 0.25rem 0.25rem 0 var(--color-brand-dark);
+
+    --focus: var(--border) dashed var(--color-success);
+}

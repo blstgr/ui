@@ -1,7 +1,6 @@
 @import url(./var.css);
 
 
-
 h1,
 .h1 {
     margin-top: 0;
@@ -38,20 +37,20 @@ h3,
 /*price*/
 
 
-.price{
+.price {
     font-size: 1.5rem;
     line-height: var(--line-height-sm);
     font-family: 'Montserrat', 'Verdana', sans-serif;
     font-weight: 700;
 }
 
-.price-lg{
+.price-lg {
     font-size: 3rem /*52*/;
     line-height: var(--line-height-font-lg);
 }
 
 
-.price-old{
+.price-old {
     font-size: inherit;
     display: inline-block;
     line-height: normal;
@@ -62,38 +61,36 @@ h3,
     display: block;
     height: 0;
     margin-top: -0.7em /*8*/;
-    border-bottom: 0.125em solid  rgba(255, 87, 64, 0.9);
+    border-bottom: 0.125em solid rgba(255, 87, 64, 0.9);
     content: "";
     transform: rotate(15deg);
     z-index: 999;
 }
 
 
-
-
-.price-purchase{
+.price-purchase {
     font-size: 0.8em;
 }
+
 hr {
     display: none;
-    border:none;
-    border-bottom:2px dotted var(--color-brand-dark);
-    color:#fff;
-    background-color:#fff;
-    height:1px;
-    width:100%;
+    border: none;
+    border-bottom: 2px dotted var(--color-brand-dark);
+    color: #fff;
+    background-color: #fff;
+    height: 1px;
+    width: 100%;
 }
 
 
 /* for elements like "done", "complete", "trial" should not be affected by parent font size; eg. h2 label and p label -> label is of the same size visually */
 
-.label{
+.label {
     display: inline-flex;
     align-items: center;
     font-size: var(--font-size);
     font-weight: 700;
 }
-
 
 
 .label .icon {
@@ -105,22 +102,23 @@ hr {
 }
 
 
-.label-responsive .icon{
+.label-responsive .icon {
     margin-right: 0;
-  
+
 }
-.label-responsive span{
+
+.label-responsive span {
     display: none;
 }
 
 @media screen and (min-width: 64em) {
-    .label-responsive span{
+    .label-responsive span {
         display: initial;
     }
 
-    .label-responsive .icon{
+    .label-responsive .icon {
         margin-right: 0.375em /*6*/;
-    }      
+    }
 }
 
 
@@ -129,16 +127,17 @@ hr {
     max-height: 10rem /*160*/;
     padding-top: var(--space);
     padding-bottom: var(--space);
-    border-top: 0.0625rem /*1*/ solid var(--color-alert-dark);
-    border-bottom: 0.0625rem /*1*/ solid var(--color-alert-dark);
-    background: rgba(234,231,219,0.5) /*var(--color-brand), 50%*/;
+    border-top: 0.0625rem /*1*/ solid rgba(0, 0, 0, 0.45);
+    border-bottom: 0.0625rem /*1*/ solid rgba(0, 0, 0, 0.45);
+    background: rgba(234, 231, 219, 0.5) /*var(--color-brand), 50%*/;
     overflow-y: scroll;
 }
 
-p+.content-scrolled,
-.content-scrolled+p,
-.p+.content-scrolled,
-.content-scrolled+.p{
+
+p + .content-scrolled,
+.content-scrolled + p,
+.p + .content-scrolled,
+.content-scrolled + .p {
     margin-top: var(--space);
 }
 
@@ -146,7 +145,7 @@ p+.content-scrolled,
 /* custom scrollbar for webkit only */
 .content-scrolled::-webkit-scrollbar {
     width: var(--space-sm);
-    height:  var(--space-sm);
+    height: var(--space-sm);
 }
 
 .content-scrolled::-webkit-scrollbar-track {
@@ -167,15 +166,17 @@ p+.content-scrolled,
 
 
 .txt-highlighted {
+    padding: 0.25rem;
     background: var(--color-brand);
-    border-radius: var(--radius);
+    border-radius: 0.25rem;
+    border: 1px solid rgba(0, 0, 0, 0.45);
 }
 
-.txt-muted{
+.txt-muted {
     color: var(--color-brand-darker);
 }
 
-.txt-trancate{
+.txt-trancate {
     max-width: 6rem;
     white-space: nowrap;
     overflow: hidden;
@@ -186,28 +187,26 @@ p+.content-scrolled,
 
 
 @media screen and (min-width: 48em) {
-    .txt-trancate{
+    .txt-trancate {
         max-width: 12rem;
     }
 }
-    
+
 
 @media screen and (min-width: 75em) {
-    .txt-trancate{
+    .txt-trancate {
         max-width: 20rem;
     }
 }
 
-
 ul {
-    margin-top: var(--space-sm);
+
+    margin-top: var(--space);
+    margin-bottom: 0;
     padding-left: 0;
     line-height: var(--line-height);
 }
 
-ul:only-child{
-    margin:0;
-}
 
 /*for "technical lists" smaller linehight inside li, spaceing between li like between p https://www.screencast.com/t/QZPBItelycq*/
 .ul-unstyled {
@@ -224,29 +223,29 @@ ul:only-child{
 }
 
 p,
-.p{
+.p {
     margin-top: 0;
     line-height: var(--line-height);
     margin-bottom: 0;
 }
 
 
-p+p,
-.p+.p,
-p+.p,
-.p+p,
-ul+p,
-ul+.p,
-p+ul,
-.p+ul {
+p + p,
+.p + .p,
+p + .p,
+.p + p,
+ul + p,
+ul + .p,
+p + ul,
+.p + ul {
     margin-top: var(--space);
 }
 
-ul+h3,
-p+h3,
-.content-scrolled+h3,
-ul+h2,
-p+h2 {
+ul + h3,
+p + h3,
+.content-scrolled + h3,
+ul + h2,
+p + h2 {
     margin-top: var(--spacex2);
 }
 
@@ -257,6 +256,10 @@ a {
 
 a:hover {
     cursor: pointer;
+}
+
+a:focus {
+    outline: var(--focus);
 }
 
 .link-plain {
@@ -283,7 +286,7 @@ a:hover {
 }
 
 .link-decorated,
-.link-decorated-sm{
+.link-decorated-sm {
     display: inline-block;
     background-color: transparent;
     color: inherit;
@@ -296,7 +299,7 @@ a:hover {
     display: block;
     height: 0;
     margin-top: -0.5em /*8*/;
-    border-bottom: var(--space-sm) solid  rgba(250, 197, 16, 0.5); /*var(--color-warning)*/;
+    border-bottom: var(--space-sm) solid rgba(250, 197, 16, 0.5); /*var(--color-warning)*/;
     content: "";
 }
 

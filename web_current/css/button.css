@@ -18,25 +18,31 @@
 }
 
 
-.btn-s{
+.btn:focus,
+.btn-s:focus {
+    outline: var(--focus);
+}
+
+
+.btn-s {
     padding: var(--space-sm) var(--space);
 }
 
 
 .btn .icon,
-.btn img{
+.btn img {
     margin-right: var(--space-sm);
 }
 
 
-.btn-primary{
+.btn-primary {
     background: var(--color-warning);
     /*color: white;*/
     /*border-top: 0.0625rem!*1*! solid var(--color-alert-darker);*/
 
 }
 
-.btn-secondary{
+.btn-secondary {
     background: white;
     /*border-top: 0.0625rem!*1*! solid var(--color-brand);*/
 
@@ -64,57 +70,55 @@
 }
 
 
-
 /* label+btn example: done+undo */
-.btn-link+.label,
-.label+.btn-link,
-.btn-link+.btn-link{
+.btn-link + .label,
+.label + .btn-link,
+.btn-link + .btn-link {
     margin-left: var(--space);
 }
 
-.btn-link .icon{
+.btn-link .icon {
     margin-right: 0.375em /*6*/;
 }
 
-.btn-block{
-    width: 100%!important;
+.btn-block {
+    width: 100% !important;
 }
 
 /* *-responsive hides text and leaves only icon*/
 
 
-.btn-responsive span{
+.btn-responsive span {
     display: none;
 }
 
-.btn-responsive .icon{
+.btn-responsive .icon {
     margin-right: 0;
 }
 
 
-
 @media screen and (min-width: 64em) {
-    .btn-responsive span{
+    .btn-responsive span {
         display: initial;
     }
 
-    .btn-responsive .icon{
+    .btn-responsive .icon {
         margin-right: 0.375em /*6*/;
     }
 
-    .btn-responsive span{
+    .btn-responsive span {
         display: initial;
     }
 
-    .btn-responsive .icon{
+    .btn-responsive .icon {
         margin-right: var(--space-sm);
     }
-       
+
 }
 
 /*btn with icon only, no text*/
 
-.btn-icon{
+.btn-icon {
     width: 2.6875em /*43em*/;
     height: 2.6875em /*43em*/;
 }
@@ -126,21 +130,20 @@
 }
 
 
-
 /* default behavior: 2 btn in a row for larger screens, 2 btn in 1 col on screen xs*/
-.btn-container .btn:not(.btn-block){
+.btn-container .btn:not(.btn-block) {
     width: 100%;
 }
 
-.btn-container .btn+.btn{
+.btn-container .btn + .btn {
     margin-top: var(--space);
 }
 
 /* default btn container, defines spacing bewtween blocks*/
 
 .btn-container,
-.btn-container+.btn-container,
-.content-scrolled+.btn-container{
+.btn-container + .btn-container,
+.content-scrolled + .btn-container {
     margin-top: 1.75rem /*28*/;
     margin-bottom: var(--space-sm); /*to make bottom padding visually the same as top and right/left in elements like cards and panels*/
 }
@@ -148,59 +151,59 @@
 
 /* txt blocks add extra space with line height */
 
-p+.btn-container,
-.p+.btn-container,
-ul+.btn-container{
+p + .btn-container,
+.p + .btn-container,
+ul + .btn-container {
     margin-top: var(--space-md);
-   
+
 }
 
-  
-.btn .badge{  /* e.g. counter inside btn */
-    margin-left: var(--space); 
+
+.btn .badge { /* e.g. counter inside btn */
+    margin-left: var(--space);
     margin-top: 0;
     margin-bottom: 0;
 }
 
 
-
 @media screen and (min-width: 48em) {
-    .btn-container .btn:not(.btn-block){
+    .btn-container .btn:not(.btn-block) {
         width: auto;
     }
-    .btn-container .btn:not(.btn-block)+.btn:not(.btn-block){
-       margin-top: 0;
-       margin-left: var(--space);
+
+    .btn-container .btn:not(.btn-block) + .btn:not(.btn-block) {
+        margin-top: 0;
+        margin-left: var(--space);
     }
 }
 
 
 /* flex container with buttons, each button has margin, e.g. filters on home page */
 
-.grid-container .btn:not(.btn-block){
+.grid-container .btn:not(.btn-block) {
     margin: var(--space-sm);
     width: auto;
     flex-grow: 1;
 }
 
 @media screen and (min-width: 48em) {
-    .grid-container .btn:not(.btn-block){
+    .grid-container .btn:not(.btn-block) {
         flex-grow: 0;
     }
-    
+
 }
 
-.content-spaced.grid-container .btn:not(.btn-block)+.btn:not(.btn-block){
+.content-spaced.grid-container .btn:not(.btn-block) + .btn:not(.btn-block) {
     margin-left: var(--space-sm);
 }
 
-.btn-label-trancated{
-        max-width: 6.25rem /*100*/;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        display: inline-block;
-        vertical-align: bottom;
-   
+.btn-label-trancated {
+    max-width: 6.25rem /*100*/;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    vertical-align: bottom;
+
 }
 

@@ -1,14 +1,13 @@
 
-
-.tab-content{
+.tab-content {
     padding: var(--space) 0;
-    margin-top: var(--space-md); 
+    margin-top: var(--space-md);
     border-top: var(--border) solid var(--color-brand-dark);
     border-bottom: var(--border) solid var(--color-brand-dark);
 
 }
 
-.tab-switch{
+.tab-switch {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
@@ -17,7 +16,7 @@
 
 .tab {
     position: relative;
-    padding:  0.75rem var(--space-md) /*0.75=var(--space)-(lh-sm)*/;
+    padding: 0.75rem var(--space-md) /*0.75=var(--space)-(lh-sm)*/;
     margin: var(--space-sm);
     flex-grow: 1;
     border-radius: var(--radius);
@@ -31,20 +30,25 @@
     line-height: var(--line-height-sm);
 }
 
-.tab-active{
+.tab:focus {
+    outline: var(--focus);
+}
+
+.tab-active {
     background: var(--color-brand);
     box-shadow: var(--shadow-inset);
 }
 
 
 @media screen and (min-width: 48em) {
-    .tab{
+    .tab {
         flex-grow: 0;
     }
-    .tab-block{
+
+    .tab-block {
         flex-grow: 1;
     }
-    
+
 }
 
 
