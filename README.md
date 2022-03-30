@@ -7,16 +7,12 @@ Demo HTML
 * [CSS files](https://github.com/blstgr/ui/tree/master/web_current/css)
 
 ## Pages
-
-* [DCV](https://blstgr.github.io/ui/web_current/html/dcv.html)
-* [Details](https://blstgr.github.io/ui/web_current/html/acc_details.html)
+* [Details](https://blstgr.github.io/ui/web_current/html/acc_details_v2.html)
+* [DCV errors](https://blstgr.github.io/ui/web_current/html/acc_details_v2_errors.html)
 * [SSL list](https://blstgr.github.io/ui/web_current/html/acc_list.html)
 * [Home](https://blstgr.github.io/ui/web_current/html/home.html)
 * [Activation](https://blstgr.github.io/ui/web_current/html/acc_issue.html)
 * [Cart](https://blstgr.github.io/ui/web_current/html/cart.html)
-
-
-
 
 
 # Emails 
