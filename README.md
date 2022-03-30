@@ -9,9 +9,9 @@ Demo HTML
 ## Pages
 * [Details](https://blstgr.github.io/ui/web_current/html/acc_details_v2.html)
 * [DCV errors](https://blstgr.github.io/ui/web_current/html/acc_details_v2_errors.html)
-* [SSL list](https://blstgr.github.io/ui/web_current/html/acc_list.html)
-* [Home](https://blstgr.github.io/ui/web_current/html/home.html)
+* [List](https://blstgr.github.io/ui/web_current/html/acc_list.html)
 * [Activation](https://blstgr.github.io/ui/web_current/html/acc_issue.html)
+* [Home](https://blstgr.github.io/ui/web_current/html/home.html)
 * [Cart](https://blstgr.github.io/ui/web_current/html/cart.html)
 
 
