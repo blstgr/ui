@@ -1,9 +1,9 @@
-.badge{
+.badge {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    min-height:  1.5rem;
-    min-width:  1.5rem;
+    min-height: 1.5rem;
+    min-width: 1.5rem;
     margin: var(--space-xs);
     padding: 0.0625em var(--space-sm) /*1*/;
     background: var(--color-brand-dark);
@@ -16,84 +16,85 @@
     line-height: var(--line-height-sm);
 }
 
-.badge .icon,
-.badge img{
+.badge .icon {
     margin-right: var(--space-sm);
 }
 
-
-
-.badge-icon{
-    width:  1.5rem;
-    height:  1.5rem;
+.badge img {
+    width: 18px;
+    margin-right: var(--space-xs);
 }
 
-.badge-icon .icon{
-    margin-right:0;
- }
- 
+.badge-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+}
 
-.badge-inverted{
+.badge-icon .icon {
+    margin-right: 0;
+}
+
+
+.badge-inverted {
     background: white;
     color: var(--color-brand-dark);
 }
 
-.badge-success{
+.badge-success {
     background: var(--color-success-dark);
 }
 
-.badge-alert{
-    background: var(--color-alert-dark  );    
+.badge-alert {
+    background: var(--color-alert-dark);
 }
 
 .badge-closable {
-        position: relative;
-        padding-right: 1.75rem;
-    
+    position: relative;
+    padding-right: 1.75rem;
+
 }
 
 .badge-closable:before,
 .badge-closable:after {
-  position: absolute;
-  top: 0.0625rem /*1*/;
-  bottom: 0; 
-  right: 0.75rem;
-  margin: auto;
-  content: "";
-  display: block;
-  width: 0.125rem /*2*/; 
-  height: 0.75rem ;
-  background: white;
+    position: absolute;
+    top: 0.0625rem /*1*/;
+    bottom: 0;
+    right: 0.75rem;
+    margin: auto;
+    content: "";
+    display: block;
+    width: 0.125rem /*2*/;
+    height: 0.75rem;
+    background: white;
 
 }
 
 .badge-closable:before {
     transform: rotate(45deg);
 }
-   
+
 .badge-closable:after {
     transform: rotate(-45deg);
 }
- 
 
 
 .badge-responsive .icon, /* *-responsive hides text and leaves only icon */
-.badge-responsive img{
+.badge-responsive img {
     margin-right: 0;
 }
 
-.badge-responsive span{
+.badge-responsive span {
     display: none;
 }
 
 @media screen and (min-width: 64em) {
-    .badge-responsive span{
+    .badge-responsive span {
         display: initial;
     }
-   
+
     .badge-responsive img,
-    .badge-responsive .icon{
-        margin-right:var(--space-sm);
-    }  
-       
+    .badge-responsive .icon {
+        margin-right: var(--space-sm);
+    }
+
 }

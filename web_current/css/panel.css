@@ -4,31 +4,31 @@
     position: relative;
     border-radius: var(--radius);
     border: var(--border) solid var(--color-brand-dark);
-    width: 100%;  /*always 100% on small screens*/
+    width: 100%; /*always 100% on small screens*/
     box-shadow: 4px 4px 0 var(--color-brand-dark);
 
 }
 
-.panel+.panel {
+.panel + .panel {
     margin-top: var(--space);
 }
 
 
-p+.panel {
+p + .panel {
     margin-top: var(--space-md);
 }
 
 
 @media screen and (min-width: 48em) {
-    .panel{
+    .panel {
         width: auto;
     }
 
     /*may have fixed width e.g. products*/
     .panel-fixed-sm {
-            min-width: 21.5rem /*360*/;
-            width: auto;
-    }    
+        min-width: 21.5rem /*360*/;
+        width: auto;
+    }
 
     /*margin when more than 1 panel in a row in flex block*/
     .grid-container .panel {
@@ -36,7 +36,7 @@ p+.panel {
     }
 
 
-    .grid-container .panel+.panel{
+    .grid-container .panel + .panel {
         margin-top: var(--space-sm);
     }
 
@@ -51,9 +51,10 @@ p+.panel {
     font-weight: 600;
 }
 
-.panel-header:only-child{
+.panel-header:only-child {
     border-bottom: 0;
 }
+
 .panel-body {
     position: relative;
     padding: var(--space);
@@ -83,7 +84,7 @@ p+.panel {
 }
 
 .panel-alert .txt-highlighted {
-    background:  var(--color-alert-lighter);
+    background: var(--color-alert-lighter);
 }
 
 .panel-alert .content-scrolled {
@@ -93,25 +94,22 @@ p+.panel {
 .panel-alert .table-striped tbody tr:nth-child(odd) {
     background: var(--color-alert-light);
 }
-  
+
 .panel-alert .table-striped tbody tr:only-child {
     background: transparent;
-  }
+}
 
- 
 
 .panel-success {
     border-color: var(--color-success-dark);
-    color: var(--color-success-dark);
-    background: var(--color-success-light);
+    background: var(--color-success-lighter);
     box-shadow: 4px 4px 0 var(--color-success-dark);
 
 }
 
 .panel-info {
     border-color: var(--color-info-dark);
-    color: var(--color-info-dark);
-    background: var(--color-info-light);
+    background: var(--color-info-lighter);
     box-shadow: 4px 4px 0 var(--color-info-dark);
 
 }
