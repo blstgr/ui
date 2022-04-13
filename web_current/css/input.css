@@ -58,7 +58,7 @@
     border: 0 !important;
 }
 
-
+p + .form-group,
 .form-group + .form-group {
     margin-top: var(--space);
 }

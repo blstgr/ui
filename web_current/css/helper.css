@@ -29,9 +29,16 @@
     margin-top: var(--space) !important;
 }
 
+@media (max-width: 32em) {
+    .mt-screenxs-x2 {
+        margin-top: var(--spacex2) !important;
+    }
+}
 
-.mt-xs-x2 {
-    margin-top: var(--spacex2) !important;
+@media (max-width: 48em) {
+    .mt-screensm-x2 {
+        margin-top: var(--spacex2) !important;
+    }
 }
 
 

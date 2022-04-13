@@ -7,6 +7,10 @@
     background: var(--color-brand);
 }
 
+.img {
+    width: 100%;
+}
+
 
 /*browser figure to key instructions */
 .browser {
