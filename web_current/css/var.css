@@ -16,9 +16,9 @@
     --color-info-dark: #0055a7;
     --color-info-xdark: #0e477e;
 
-    --color-success-light: #e8fff4;
+    --color-success-light: #c5fce1;
     --color-success-lighter: #b8fbdb;
-    --color-success: #11bf85;
+    --color-success: #48e0ad /*#11bf85*/;
     --color-success-darker: #2db185;
     --color-success-dark: #08815a;
 
@@ -53,12 +53,18 @@
     --font-size-sm: 0.75rem /*12*/;
     --font-size: 1rem;
     --font-size-md: 1.25rem /*20*/;
-    --font-size-lg: 4.625rem /*74*/;
-
+    --font-size-lg: 3.625rem /*58*/;
 
     --shadow-raised: 0 1rem 0.625rem rgba(0, 0, 0, 0.25);
     --shadow: 0.25rem 0.25rem 0 var(--color-brand-dark);
     --shadow-inset: inset 0.25rem 0.25rem 0 var(--color-brand-dark);
 
     --focus: var(--border) dashed var(--color-success);
+}
+
+@media (min-width: 48em) {
+    :root {
+        --font-size-lg: 4.625rem /*74*/;
+
+    }
 }

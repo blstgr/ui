@@ -167,7 +167,7 @@ p + .content-scrolled,
 
 .txt-highlighted {
     padding: 0.25rem;
-    background: var(--color-brand);
+    background: var(--color-brand-light);
     border-radius: 0.25rem;
     border: 1px solid rgba(0, 0, 0, 0.45);
 }

@@ -58,6 +58,17 @@
 
 }
 
+.btn-checked {
+    background: var(--color-success);
+    box-shadow: var(--shadow-inset);
+
+}
+
+.btn-flat.btn-checked {
+    box-shadow: none;
+
+}
+
 /* no padding, same color as the rest of the text */
 /*lable example: "done" in stepper*/
 
@@ -121,12 +132,6 @@
 .btn-icon {
     width: 2.6875em /*43em*/;
     height: 2.6875em /*43em*/;
-}
-
-
-.btn-checked {
-    background: var(--color-success);
-    color: white;
 }
 
 

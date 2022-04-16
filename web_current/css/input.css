@@ -8,7 +8,7 @@
     border: var(--border) solid var(--color-brand-darker);
     font-family: inherit;
     font-size: inherit;
-    font-weight: inherit;
+    font-weight: normal;
     box-sizing: border-box;
     background-color: white;
     line-height: var(--line-height-sm);

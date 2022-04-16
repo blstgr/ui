@@ -1,70 +1,67 @@
 @import url(./var.css);
 
-*{
+* {
     box-sizing: border-box;
 }
 
-  body {
+body {
     padding: 0;
     margin: 0;
     background: var(--color-brand);
     font-size: var(--font-size);
-    color: var(--color-brand-dark); 
+    color: var(--color-brand-dark);
     font-family: 'Montserrat', 'Verdana', sans-serif;
-    font-weight: 500;  
-  }
+    font-weight: 500;
+}
 
 
-  /* 100% width container, defines overall padding  */
+/* 100% width container, defines overall padding  */
 
-  .page-container {
+.page-container {
     position: relative;
     background: var(--color-brand-light);
     padding: var(--spacex2) var(--space);
-   
-  }
 
- 
-  
-  @media screen and (min-width: 64em) {
+}
+
+
+@media screen and (min-width: 64em) {
 
     body {
         padding: var(--space-md);
-      }
-    
+    }
+
     .page-container {
         padding: var(--spacex3);
-      }
-  }
+    }
+}
 
-  .page-container + .page-container {
+.page-container + .page-container {
     margin-top: var(--space-sm);
-  }
+}
 
 
-  
 /* to limit content width for large screens. tag when we have H, class when we need same container but don't have h, eg. ssl list */
 
 section,
-.section{
-  max-width: 75rem /*1200*/;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+.section {
+    max-width: 75rem /*1200*/;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
-
 
 
 /* default container for any type of content, defines spacing between blocks*/
 
-.content-spaced{
-  margin-top: var(--spacex2);
+.content-spaced {
+    margin-top: var(--spacex2);
 }
 
 
 /* if we need same spacing between content but limit max width, eg. for form  */
 
-.content-spaced-fixed-md{
+.content-spaced-fixed-md {
     max-width: 30rem;
     margin-left: auto;
     margin-right: auto;
@@ -73,38 +70,38 @@ section,
 
 /* container for embedded tweets */
 
-.twitter-tweet{
-    margin: var(--space-sm)!important;
-    width: auto!important;
-    min-width: 22.5rem!important /*360*/;
+.twitter-tweet {
+    margin: var(--space-sm) !important;
+    width: auto !important;
+    min-width: 22.5rem !important /*360*/;
 }
 
-.sticky-bottom-xs{
+.sticky-bottom-xs {
     position: fixed;
-    background: white;
-    left: 0;
+    right: 0;
     bottom: 0;
     padding: var(--space-md) var(--space);
-    width: 100%;
-    border-top: 0.25rem solid var(--color-brand-dark);
     z-index: 999999;
 }
 
+.sticky-bottom-xs .btn-responsive {
+    height: 3.625rem;
+}
+
 @media screen and (max-width: 26em) {
-    .sticky-bottom-xs .btn-container{
-         margin-top: 0;
-     }
+    .sticky-bottom-xs .btn-container {
+        margin-top: 0;
+    }
 }
 
 @media screen and (min-width: 48em) {
-    .sticky-bottom-xs{
+    .sticky-bottom-xs {
         position: initial;
         background: transparent;
         padding: 0;
         border-top: none;
 
     }
-
 
 
 }

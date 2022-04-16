@@ -3,14 +3,38 @@
 .panel {
     position: relative;
     border-radius: var(--radius);
+    background: var(--color-brand);
     border: var(--border) solid var(--color-brand-dark);
     width: 100%; /*always 100% on small screens*/
-    box-shadow: 4px 4px 0 var(--color-brand-dark);
+    box-shadow: 8px 8px 0 var(--color-brand);
 
 }
 
+.panel-success {
+    border-color: var(--color-success-dark);
+    background: var(--color-success-lighter);
+    box-shadow: 8px 8px 0 var(--color-success-lighter);
+
+}
+
+.panel-info {
+    border-color: var(--color-info-dark);
+    background: var(--color-info-lighter);
+    box-shadow: 8px 8px 0 var(--color-info-lighter);
+
+}
+
+.panel-alert {
+    border-color: var(--color-alert-dark);
+    background: var(--color-alert-light);
+    color: var(--color-alert-dark);
+    box-shadow: 8px 8px 0 var(--color-alert-lighter);
+}
+
+
 .panel + .panel {
-    margin-top: var(--space);
+    margin-top: 1.75rem;
+
 }
 
 
@@ -32,12 +56,12 @@ p + .panel {
 
     /*margin when more than 1 panel in a row in flex block*/
     .grid-container .panel {
-        margin: var(--space-sm);
+        margin: 0.875rem;
     }
 
 
     .grid-container .panel + .panel {
-        margin-top: var(--space-sm);
+        margin-top: 0.875rem;
     }
 
 }
@@ -60,7 +84,6 @@ p + .panel {
     padding: var(--space);
 }
 
-
 .panel-footer {
     background: var(--color-brand-dark);
     padding: var(--space);
@@ -68,14 +91,6 @@ p + .panel {
     font-family: courier, monospace;
     color: white;
     line-height: var(--line-height);
-}
-
-.panel-alert {
-    border-color: var(--color-alert-dark);
-    background: var(--color-alert-light);
-    color: var(--color-alert-dark);
-    box-shadow: 4px 4px 0 var(--color-alert-dark);
-
 }
 
 .panel-alert .panel-header {
@@ -99,20 +114,6 @@ p + .panel {
     background: transparent;
 }
 
-
-.panel-success {
-    border-color: var(--color-success-dark);
-    background: var(--color-success-lighter);
-    box-shadow: 4px 4px 0 var(--color-success-dark);
-
-}
-
-.panel-info {
-    border-color: var(--color-info-dark);
-    background: var(--color-info-lighter);
-    box-shadow: 4px 4px 0 var(--color-info-dark);
-
-}
 
 .panel h2,
 .panel .h2,
