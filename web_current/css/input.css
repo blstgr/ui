@@ -2,6 +2,7 @@
 .input-s {
     display: block;
     width: 100%;
+    min-width: 3.75rem;
     margin: 0;
     padding: var(--space);
     border-radius: var(--radius);

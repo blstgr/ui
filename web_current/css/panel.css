@@ -6,21 +6,21 @@
     background: var(--color-brand);
     border: var(--border) solid var(--color-brand-dark);
     width: 100%; /*always 100% on small screens*/
-    box-shadow: 8px 8px 0 var(--color-brand);
+    box-shadow: 0.5rem 0.5rem 0 #d9d4bf;
 
 }
 
 .panel-success {
     border-color: var(--color-success-dark);
     background: var(--color-success-lighter);
-    box-shadow: 8px 8px 0 var(--color-success-lighter);
+    box-shadow: 0.5rem 0.5rem 0 #8decbe;
 
 }
 
 .panel-info {
     border-color: var(--color-info-dark);
     background: var(--color-info-lighter);
-    box-shadow: 8px 8px 0 var(--color-info-lighter);
+    box-shadow: 0.5rem 0.5rem 0 #99ceff;
 
 }
 
@@ -28,7 +28,7 @@
     border-color: var(--color-alert-dark);
     background: var(--color-alert-light);
     color: var(--color-alert-dark);
-    box-shadow: 8px 8px 0 var(--color-alert-lighter);
+    box-shadow: 0.5rem 0.5rem 0 #ffcccc;
 }
 
 

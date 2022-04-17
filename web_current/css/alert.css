@@ -122,14 +122,18 @@
     display: flex;
     justify-content: flex-start;
     padding: var(--space-sm);
-    background: var(--color-warning-light);
+    background: var(--color-warning);
     border-radius: var(--radius);
     line-height: var(--line-height);
-    margin: var(--space) 0 var(--space-sm) 0;
+    margin: var(--space) 0 var(--space-md) 0;
 }
 
 .nb .badge {
     margin-right: var(--space-sm);
+}
+
+.nb .link-decorated:after {
+    border-bottom-color: var(--color-brand);
 }
 
 
