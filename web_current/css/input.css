@@ -59,14 +59,15 @@
     border: 0 !important;
 }
 
-p + .form-group,
+
 .form-group + .form-group {
     margin-top: var(--space);
 }
 
 
-p + .input-group {
-    margin-top: var(--space-md);
+p + .input-group,
+p + .form-group {
+    margin-top: 1.75rem /*28*/;
 }
 
 

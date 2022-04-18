@@ -42,6 +42,9 @@ p + .panel {
     margin-top: var(--space-md);
 }
 
+.panel + table {
+    margin-top: var(--space-xs);
+}
 
 @media screen and (min-width: 48em) {
     .panel {

@@ -138,12 +138,9 @@ table .btn-responsive .icon {
 .table-spaced {
     border-collapse: separate;
     border-spacing: 0 var(--space);
-}
+    margin: -1rem 0;
 
-.panel + .table-spaced {
-    margin-top: var(--space-xs);
 }
-
 
 .table-spaced td,
 .table-spaced th {
@@ -300,9 +297,8 @@ table .btn-responsive .icon {
         padding-right: 0;
     }
 
-
-    .panel + .table-spaced {
-        margin-top: 1.25rem;
+    .table-spaced {
+        margin: auto;
     }
 
     .table-spaced td:first-child,
@@ -312,6 +308,7 @@ table .btn-responsive .icon {
         border-left-width: 0;
         border-radius: 0;
     }
+
 
     .table-spaced td,
     .table-spaced th {
