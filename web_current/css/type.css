@@ -124,7 +124,7 @@ hr {
 
 /* scrollable text - can be applied to p or list or div with table. can contatn copy action iside, user should be able to write in it*/
 .content-scrolled {
-    max-height: 10rem /*160*/;
+    max-height: 16rem /*256*/;
     padding-top: var(--space);
     padding-bottom: var(--space);
     border-top: 0.0625rem /*1*/ solid rgba(0, 0, 0, 0.45);
@@ -141,6 +141,9 @@ p + .content-scrolled,
     margin-top: var(--space);
 }
 
+.content-scrolled .row {
+    margin: 0;
+}
 
 /* custom scrollbar for webkit only */
 .content-scrolled::-webkit-scrollbar {
