@@ -1,21 +1,21 @@
 @import url(./var.css);
 
 
-.stepper-step{
+.stepper-step {
     position: relative;
 
 }
 
-.stepper-step-inactive{
+.stepper-step-inactive {
     opacity: 0.4;
 }
 
-.stepper+.stepper,
-.stepper-step+.stepper-step{
-    margin-top: var(--space);
+.stepper + .stepper,
+.stepper-step + .stepper-step {
+    margin-top: 1.75rem;
 }
 
-.stepper-badge{
+.stepper-badge {
     position: absolute;
     top: 3rem /*48*/;
     left: -0.9375rem /*-15*/;
@@ -23,36 +23,32 @@
 }
 
 .stepper-step-completed .badge,
-.stepper-step-inactive .badge{
+.stepper-step-inactive .badge {
     top: var(--space);
 }
 
 
-
-.panel+.stepper,
-.stepper+.panel{
- margin-top: var(--space);
+.panel + .stepper,
+.stepper + .panel {
+    margin-top: 1.75rem;
 
 }
 
-.stepper+table{
-    margin-top: var(--space);
+.stepper + table {
+    margin-top: 1.75rem;
 }
 
 /*stepper w/ 1 border*/
 
 
-
-.stepper-ghost .panel{
-   border-top-width:0;
-   border-right-width: 0;
-   border-bottom-width: 0;
-   border-radius: 0;
-   background: transparent;
-   box-shadow: none;
+.stepper-ghost .panel {
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
 }
-
-
 
 
 @media screen and  (max-width: 48em) {
@@ -61,16 +57,16 @@
         margin-top: var(--space-sm);
     }
 
-    .stepper-ghost .panel{
+    .stepper-ghost .panel {
         border-top-width: var(--border);
         border-left-width: 0;
     }
 
-    .stepper-ghost .stepper-step+.stepper-step {
+    .stepper-ghost .stepper-step + .stepper-step {
         margin-top: 0;
     }
 
-    .stepper-ghost h3{
+    .stepper-ghost h3 {
         display: none;
     }
 

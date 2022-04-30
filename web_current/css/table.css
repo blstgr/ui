@@ -12,7 +12,7 @@ table {
 
 
 table + table {
-    margin-top: var(--space);
+    margin-top: 1.75rem;
 }
 
 
@@ -137,7 +137,7 @@ table .btn-responsive .icon {
 
 .table-spaced {
     border-collapse: separate;
-    border-spacing: 0 var(--space);
+    border-spacing: 0 var(--space-md);
     margin: -1rem 0;
 
 }

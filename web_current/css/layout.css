@@ -14,6 +14,9 @@ body {
     font-weight: 500;
 }
 
+::selection {
+    background: var(--color-warning);
+}
 
 /* 100% width container, defines overall padding  */
 
@@ -32,12 +35,12 @@ body {
     }
 
     .page-container {
-        padding: var(--spacex3);
+        padding: var(--spacex4) var(--spacex3);
     }
 }
 
 .page-container + .page-container {
-    margin-top: var(--space-sm);
+    margin-top: var(--space-md);
 }
 
 

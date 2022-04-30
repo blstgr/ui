@@ -67,7 +67,7 @@
 
 p + .input-group,
 p + .form-group {
-    margin-top: 1.75rem /*28*/;
+    margin-top: 24px /*28*/;
 }
 
 

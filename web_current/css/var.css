@@ -16,7 +16,7 @@
     --color-info-dark: #0055a7;
     --color-info-xdark: #0e477e;
 
-    --color-success-light: #c5fce1;
+    --color-success-light: #ebfff5;
     --color-success-lighter: #b8fbdb;
     --color-success: #48e08f /*#11bf85*/;
     --color-success-darker: #2db185;
@@ -51,20 +51,25 @@
     --line-height-font-lg: 1.2;
 
     --font-size-sm: 0.75rem /*12*/;
-    --font-size: 1rem;
-    --font-size-md: 1.25rem /*20*/;
+    --font-size: 18px /*20*/;
+    --font-size-md: 32px /*20*/;
     --font-size-lg: 3.625rem /*58*/;
 
     --shadow-raised: 0 1rem 0.625rem rgba(0, 0, 0, 0.25);
-    --shadow: 0.25rem 0.25rem 0 var(--color-brand-dark);
-    --shadow-inset: inset 0.25rem 0.25rem 0 var(--color-brand-dark);
+    --shadow: 0.5rem 0.5rem 0 var(--color-brand-dark);
+    --shadow-inset: inset 0.5rem 0.5rem 0 var(--color-brand-dark);
+
+    --shadow-light: 1rem 1rem 0 var(--color-brand-darker);
+    --shadow-info: 1rem 1rem 0 var(--color-info);
+    --shadow-success: 1rem 1rem 0 var(--color-success);
+    --shadow-alert: 1rem 1rem 0 var(--color-alert);
 
     --focus: var(--border) dashed var(--color-success);
 }
 
 @media (min-width: 48em) {
     :root {
-        --font-size-lg: 4.625rem /*74*/;
+        --font-size-lg: 84px /*74*/;
 
     }
 }

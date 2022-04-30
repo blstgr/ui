@@ -3,38 +3,35 @@
 .panel {
     position: relative;
     border-radius: var(--radius);
-    background: var(--color-brand);
+    background: var(--color-brand-light);
     border: var(--border) solid var(--color-brand-dark);
     width: 100%; /*always 100% on small screens*/
-    box-shadow: 0.5rem 0.5rem 0 #d9d4bf;
-
+    box-shadow: var(--shadow-light);
 }
 
 .panel-success {
     border-color: var(--color-success-dark);
-    background: var(--color-success-lighter);
-    box-shadow: 0.5rem 0.5rem 0 #8decbe;
+    background: var(--color-success-light);
+    box-shadow: var(--shadow-success);
 
 }
 
 .panel-info {
     border-color: var(--color-info-dark);
-    background: var(--color-info-lighter);
-    box-shadow: 0.5rem 0.5rem 0 #99ceff;
-
+    background: var(--color-info-light);
+    box-shadow: var(--shadow-info);
 }
 
 .panel-alert {
     border-color: var(--color-alert-dark);
     background: var(--color-alert-light);
     color: var(--color-alert-dark);
-    box-shadow: 0.5rem 0.5rem 0 #ffcccc;
+    box-shadow: var(--shadow-alert);
 }
 
 
 .panel + .panel {
     margin-top: 1.75rem;
-
 }
 
 
@@ -84,7 +81,7 @@ p + .panel {
 
 .panel-body {
     position: relative;
-    padding: var(--space);
+    padding: var(--space-md) var(--space);
 }
 
 .panel-footer {

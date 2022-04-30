@@ -3,7 +3,7 @@
     display: block;
     height: 10em;
     width: 9em;
-    margin: 0 auto var(--spacex2);
+    margin: 24px auto;
     background: var(--color-brand);
 }
 
