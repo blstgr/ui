@@ -22,7 +22,9 @@ body {
 
 .page-container {
     position: relative;
-    background: var(--color-brand-light);
+    background-color: var(--color-brand-light);
+    background-image: url("../img/bg.png");
+    background-repeat: repeat;
     padding: var(--spacex2) var(--space);
 
 }
@@ -31,7 +33,7 @@ body {
 @media screen and (min-width: 64em) {
 
     body {
-        padding: var(--space-md);
+        /*padding: var(--space-md);*/
     }
 
     .page-container {
