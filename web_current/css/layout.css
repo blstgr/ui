@@ -107,4 +107,8 @@ section,
         padding: 0;
         border-top: none;
     }
+
+    .sticky-bottom-xs .btn-block {
+        width: 100% !important;
+    }
 }
