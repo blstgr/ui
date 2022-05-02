@@ -1,7 +1,7 @@
 
 .tab-content {
-    padding: var(--space) 0;
-    margin-top: var(--space-md);
+    padding: var(--space-md) 0;
+    margin-top: var(--spacex2);
     border-top: var(--border) solid var(--color-brand-dark);
     border-bottom: var(--border) solid var(--color-brand-dark);
     background: var(--color-brand-light);

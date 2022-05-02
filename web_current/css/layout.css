@@ -90,7 +90,8 @@ section,
 }
 
 .sticky-bottom-xs .btn-responsive {
-    height: 3.625rem;
+    height: 64px;
+    width: 64px !important;
 }
 
 @media screen and (max-width: 26em) {

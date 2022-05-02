@@ -120,7 +120,6 @@
 
 .bgcolor-brand-dark {
     background: var(--color-brand-dark) !important;
-    box-shadow: 1rem 1rem 0 #202019 !important;
     color: white;
 }
 
