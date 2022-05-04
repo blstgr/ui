@@ -1,5 +1,9 @@
 @import url(./var.css);
 
+.panel + .panel {
+    margin-top: var(--space-md);
+}
+
 .panel {
     position: relative;
     border-radius: var(--radius);
@@ -9,63 +13,26 @@
     box-shadow: var(--shadow-light);
 }
 
-.panel-success {
-    border-color: var(--color-success-dark);
-    background: var(--color-success-light);
-    color: var(--color-success-dark);
-    box-shadow: var(--shadow-success);
-
-}
-
-.panel-info {
-    border-color: var(--color-info-dark);
-    background: var(--color-info-light);
-    box-shadow: var(--shadow-info);
-}
-
-.panel-alert {
-    border-color: var(--color-alert-dark);
-    background: var(--color-alert-light);
-    color: var(--color-alert-dark);
-    box-shadow: var(--shadow-alert);
-}
-
-
-.panel + .panel {
-    margin-top: var(--space-md);
-}
-
-
-p + .panel {
-    margin-top: var(--space-md);
-}
-
-.panel + table {
-    margin-top: var(--space-md);
-}
-
 @media screen and (min-width: 48em) {
-    .panel {
-        width: auto;
-    }
-
-    /*may have fixed width e.g. products*/
-    .panel-fixed-sm {
-        min-width: 18vw /*360*/;
-        width: auto;
-    }
-
-    /*margin when more than 1 panel in a row in flex block*/
+    /*for grid of panels. eg: product cards*/
     .grid-container .panel {
-        margin: 0.875rem;
+        width: auto;
+        margin: var(--space);
+    }
+
+    .magic-grid .panel + .panel {
+        margin-top: 0;
     }
 
 
-    .grid-container .panel + .panel {
-        margin-top: 0.875rem;
+    /*fixed width panels, eg: product cards*/
+    .panel-fixed-sm {
+        min-width: 334px;
+        max-width: 334px;
+        width: auto;
     }
-
 }
+
 
 .panel-header {
     padding: var(--space);
@@ -94,22 +61,37 @@ p + .panel {
     line-height: var(--line-height);
 }
 
+
+.panel-success {
+    border-color: var(--color-success-dark);
+    background: var(--color-success-light);
+    color: var(--color-success-dark);
+    box-shadow: var(--shadow-success);
+
+}
+
+.panel-info {
+    border-color: var(--color-info-dark);
+    background: var(--color-info-light);
+    box-shadow: var(--shadow-info);
+}
+
+.panel-alert {
+    border-color: var(--color-alert-dark);
+    background: var(--color-alert-light);
+    color: var(--color-alert-dark);
+    box-shadow: var(--shadow-alert);
+}
+
 .panel-alert .panel-header {
     border-bottom-color: var(--color-alert-dark);
 
 }
 
-.panel-alert .txt-highlighted {
-    background: var(--color-alert-lighter);
-}
-
 .panel-alert .content-scrolled {
-    background: var(--color-alert-lighter);
+    background: transparent;
 }
 
-.panel-alert .table-striped tbody tr:nth-child(odd) {
-    background: var(--color-alert-light);
-}
 
 .panel-alert .table-striped tbody tr:only-child {
     background: transparent;
@@ -117,6 +99,10 @@ p + .panel {
 
 .panel-alert .tab-content {
     background: transparent;
+}
+
+p + .panel {
+    margin-top: var(--space-md);
 }
 
 .panel h2,

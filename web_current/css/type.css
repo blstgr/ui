@@ -129,7 +129,6 @@ hr {
 /* scrollable text - can be applied to p or list or div with table. can contain copy action inside, user should be able to write in it*/
 .content-scrolled {
     max-height: 16rem /*256*/;
-    margin-bottom: var(--space);
     padding-top: var(--space);
     padding-bottom: var(--space);
     border-top: 0.0625rem /*1*/ solid rgba(0, 0, 0, 0.45);

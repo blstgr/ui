@@ -133,11 +133,15 @@ table .btn-responsive .icon {
 }
 
 
+.panel + table {
+    margin-top: var(--space);
+}
+
 /* each tr is borderdered and sepated from the next */
 
 .table-spaced {
     border-collapse: separate;
-    border-spacing: 0 var(--space-md);
+    border-spacing: 0 1rem;
     margin: -1rem 0;
 
 }

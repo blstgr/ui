@@ -1,5 +1,6 @@
 .input,
-.input-s {
+.input-s,
+textarea {
     display: block;
     width: 100%;
     min-width: 3.75rem;
@@ -15,7 +16,8 @@
     line-height: var(--line-height-sm);
 }
 
-.input-s {
+.input-s,
+textarea {
     padding: var(--space-sm);
     border-radius: var(--radius-sm);
 
@@ -27,7 +29,8 @@
 }
 
 .input:focus,
-.input-s:focus {
+.input-s:focus,
+textarea:focus {
     box-shadow: 0 0 4px var(--color-success-lighter);
     border-color: var(--color-success);
     outline: none;
@@ -38,6 +41,28 @@
     color: var(--color-brand-darker);
 
 }
+
+
+/*custom scrollbar for webkit only*/
+
+textarea::-webkit-scrollbar {
+    width: var(--space-sm);
+    height: var(--space-sm);
+    border-radius: var(--radius);
+    padding: 10px;
+}
+
+textarea::-webkit-scrollbar-track {
+    box-shadow: none;
+
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.45);
+    border-radius: var(--radius);
+    outline: none;
+}
+
 
 .form-group label {
     line-height: var(--line-height);
@@ -80,11 +105,14 @@ p + .form-group {
     margin-top: var(--space-sm);
 }
 
-.input-group .input:first-child,
-.input-group .input-s:first-child {
+.input-group .input:first-child {
     border-radius: var(--radius) 0 0 var(--radius);
 }
 
+
+.input-group .input-s:first-child {
+    border-radius: var(--radius-sm) 0 0 var(--radius-sm);
+}
 
 .input-group .input,
 .input-group .input-s {
@@ -95,9 +123,9 @@ p + .form-group {
 }
 
 
-.input-group-post .btn {
+.input-group-post .btn-s {
     height: 100%;
-    border-radius: 0 var(--radius) var(--radius) 0;
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
     border: var(--border) solid transparent;
     padding-top: var(--space);
     padding-bottom: var(--space);
