@@ -5,7 +5,7 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 12px 18px;
+    padding: var(--padding);
     border: var(--border) solid var(--color-brand-dark);
     border-radius: 6.25rem;
     box-shadow: var(--shadow);
@@ -149,7 +149,7 @@
 .btn-container,
 .btn-container + .btn-container,
 .content-scrolled + .btn-container {
-    margin-top: 1.75rem /*28*/;
+    margin-top: var(--space-md) /*28*/;
     margin-bottom: var(--space-sm); /*to make bottom padding visually the same as top and right/left in elements like cards and panels*/
 }
 

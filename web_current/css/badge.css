@@ -50,7 +50,7 @@
 
 .badge-closable {
     position: relative;
-    padding-right: 1.75rem;
+    padding-right: var(--spacex2);
 
 }
 

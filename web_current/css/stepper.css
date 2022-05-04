@@ -6,13 +6,14 @@
 
 }
 
+
 .stepper-step-inactive {
     opacity: 0.4;
 }
 
 .stepper + .stepper,
 .stepper-step + .stepper-step {
-    margin-top: 1.75rem;
+    margin-top: var(--space-md);
 }
 
 .stepper-badge {
@@ -35,7 +36,7 @@
 }
 
 .stepper + table {
-    margin-top: 1.75rem;
+    margin-top: var(--space-md);
 }
 
 /*stepper w/ 1 border*/
@@ -50,6 +51,9 @@
     box-shadow: none;
 }
 
+.stepper-ghost .stepper-step + .stepper-step {
+    margin-top: 0;
+}
 
 @media screen and  (max-width: 48em) {
     .stepper-ghost {
@@ -62,9 +66,6 @@
         border-left-width: 0;
     }
 
-    .stepper-ghost .stepper-step + .stepper-step {
-        margin-top: 0;
-    }
 
     .stepper-ghost h3 {
         display: none;

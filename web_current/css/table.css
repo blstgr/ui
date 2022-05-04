@@ -12,7 +12,7 @@ table {
 
 
 table + table {
-    margin-top: 1.75rem;
+    margin-top: var(--space-md);
 }
 
 
@@ -146,9 +146,24 @@ table .btn-responsive .icon {
 .table-spaced th {
     padding: var(--space);
     border-width: var(--border) 0;
-    border-color: var(--color-brand-dark);
+    border-color: var(--color-brand-darker);
     border-style: solid;
     background: white;
+}
+
+.row-info td {
+    background: var(--color-info-light);
+    border-color: var(--color-info);
+}
+
+.row-success td {
+    color: var(--color-success-dark);
+    background: var(--color-success-light);
+    border-color: var(--color-success);
+}
+
+.row-success td button {
+    color: var(--color-success-dark);
 }
 
 

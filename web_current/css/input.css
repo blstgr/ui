@@ -76,12 +76,18 @@ p + .form-group {
     line-height: 1;
 }
 
-.input-group .input:first-child {
+.input-group + .input-group {
+    margin-top: var(--space-sm);
+}
+
+.input-group .input:first-child,
+.input-group .input-s:first-child {
     border-radius: var(--radius) 0 0 var(--radius);
 }
 
 
-.input-group .input {
+.input-group .input,
+.input-group .input-s {
     position: relative;
     border-radius: 0;
     z-index: 9999;

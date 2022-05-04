@@ -5,7 +5,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: var(--space);
+    padding: var(--space-md) var(--space);
     z-index: 999;
 }
 
@@ -18,8 +18,9 @@
 .alert {
     position: relative;
     display: flex;
+    flex-direction: column;
     align-items: flex-end;
-    padding: var(--space-md);
+    padding: var(--space);
     box-shadow: var(--shadow-raised);
     border-radius: var(--radius);
     background: var(--color-alert-dark);
@@ -53,11 +54,18 @@
 .alert-action {
     display: flex;
     margin-top: var(--space-md);
+    width: 100%;
     text-align: center;
 }
 
+.alert-action button {
+    flex-grow: 1;
+}
+
+
 @media screen and (min-width: 48em) {
     .alert-action {
+        width: auto;
         margin-top: 0;
         margin-left: var(--space-md);
     }
@@ -135,7 +143,6 @@
 .nb .link-decorated:after {
     border-bottom-color: var(--color-brand);
 }
-
 
 
 

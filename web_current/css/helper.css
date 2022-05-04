@@ -178,6 +178,10 @@
     width: 100%;
 }
 
+.mw-sm {
+    max-width: 160px;
+}
+
 .mh-90 {
     min-height: 90vh;
 }

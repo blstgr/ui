@@ -17,7 +17,7 @@
 
 .tab {
     position: relative;
-    padding: 12px 24px;
+    padding: var(--padding);
     margin: var(--space-sm);
     flex-grow: 1;
     border-radius: var(--radius);

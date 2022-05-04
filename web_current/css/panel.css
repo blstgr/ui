@@ -32,7 +32,7 @@
 
 
 .panel + .panel {
-    margin-top: 1.75rem;
+    margin-top: var(--space-md);
 }
 
 
@@ -82,7 +82,7 @@ p + .panel {
 
 .panel-body {
     position: relative;
-    padding: var(--space-md) var(--space);
+    padding: 1.25rem var(--space);
 }
 
 .panel-footer {
@@ -115,6 +115,9 @@ p + .panel {
     background: transparent;
 }
 
+.panel-alert .tab-content {
+    background: transparent;
+}
 
 .panel h2,
 .panel .h2,
