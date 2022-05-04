@@ -126,15 +126,24 @@ hr {
 }
 
 
-/* scrollable text - can be applied to p or list or div with table. can contatn copy action iside, user should be able to write in it*/
+/* scrollable text - can be applied to p or list or div with table. can contain copy action inside, user should be able to write in it*/
 .content-scrolled {
     max-height: 16rem /*256*/;
+    margin-bottom: var(--space);
     padding-top: var(--space);
     padding-bottom: var(--space);
     border-top: 0.0625rem /*1*/ solid rgba(0, 0, 0, 0.45);
     border-bottom: 0.0625rem /*1*/ solid rgba(0, 0, 0, 0.45);
     background: rgba(234, 231, 219, 0.5) /*var(--color-brand), 50%*/;
     overflow-y: scroll;
+}
+
+.content-scrolled + p,
+p + .content-scrolled,
+.content-scrolled + ul,
+ul + .content-scrolled,
+.content-scrolled + h3 {
+    margin-top: var(--space);
 }
 
 
@@ -176,7 +185,7 @@ hr {
     color: var(--color-brand-darker);
 }
 
-.txt-trancate {
+.txt-truncate {
     max-width: 6rem;
     white-space: nowrap;
     overflow: hidden;
@@ -187,14 +196,14 @@ hr {
 
 
 @media screen and (min-width: 48em) {
-    .txt-trancate {
+    .txt-truncate {
         max-width: 12rem;
     }
 }
 
 
 @media screen and (min-width: 75em) {
-    .txt-trancate {
+    .txt-truncate {
         max-width: 20rem;
     }
 }
@@ -208,7 +217,7 @@ ul {
 }
 
 
-/*for "technical lists" smaller linehight inside li, spaceing between li like between p https://www.screencast.com/t/QZPBItelycq*/
+/*for "technical lists" smaller line height inside li, spacing between li like between p https://www.screencast.com/t/QZPBItelycq*/
 .ul-unstyled {
     padding-left: 0;
 }
@@ -246,12 +255,11 @@ p + ul,
     margin-top: var(--space);
 }
 
+/*wtf*/
 ul + h3,
 p + h3,
-.content-scrolled + h3,
 ul + h2,
-p + h2,
-.content-scrolled + .content-scrolled {
+p + h2 {
     margin-top: var(--spacex2);
 }
 
