@@ -301,20 +301,21 @@ a:focus {
 .link-decorated,
 .link-decorated-sm {
     display: inline-block;
-    border-bottom: var(--border) solid currentColor;
+    /*text-decoration: underline;*/
+    /*border-bottom: var(--border) solid currentColor;*/
     color: inherit;
     line-height: normal;
     transition: background-color 0.25s ease-in-out;
 }
 
-/*.link-decorated:after,*/
-/*.link-decorated-sm:after {*/
-/*    display: block;*/
-/*    height: 0;*/
-/*    margin-top: -0.5em !*8*!;*/
-/*    border-bottom: var(--space-sm) solid var(--color-warning);*/
-/*    content: "";*/
-/*}*/
+.link-decorated:after,
+.link-decorated-sm:after {
+    display: block;
+    height: 0;
+    margin-top: -0.5em /*8*/;
+    border-bottom: var(--space-sm) solid var(--color-warning);
+    content: "";
+}
 
 .link-decorated:hover,
 .link-decorated-sm:hover {
