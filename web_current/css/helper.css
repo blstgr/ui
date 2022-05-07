@@ -187,7 +187,12 @@
     max-width: 180px;
 }
 
-.mh-90 {
+.mh-sm {
+    max-height: 100px;
+}
+
+
+.mh-90vh {
     min-height: 90vh;
 }
 
