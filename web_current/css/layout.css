@@ -10,14 +10,11 @@ body {
     background: var(--color-brand);
     font-size: var(--font-size);
     color: var(--color-brand-dark);
-    font-family: 'Montserrat', 'Verdana', sans-serif;
-    font-family: 'Maven Pro', sans-serif;
-    /*font-family: 'Nunito', sans-serif;*/
-    /*font-family: 'Poppins', sans-serif;*/
-    /*font-family: 'Raleway', sans-serif;*/
-    /*font-family: 'Titan One', cursive;*/
+    font-family: var(--font-family);
     font-weight: 500;
 }
+
+
 
 ::selection {
     background: var(--color-warning);

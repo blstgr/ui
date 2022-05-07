@@ -65,7 +65,10 @@
 
     --focus: var(--border) dashed var(--color-success);
 
-    --padding: 12px 20px
+    --padding: 12px 20px;
+
+    --font-family: 'Montserrat', 'Verdana', sans-serif;
+
 }
 
 @media (min-width: 23em) {
