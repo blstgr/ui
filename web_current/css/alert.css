@@ -140,10 +140,6 @@
     margin-right: var(--space-sm);
 }
 
-.nb .link-decorated:after {
-    border-bottom-color: var(--color-brand);
-}
-
 
 
 

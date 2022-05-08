@@ -265,11 +265,20 @@ a {
 }
 
 a:hover {
+    transform: scale(1.05);
     cursor: pointer;
+    transition: all .14s ease-out;
+
 }
+
+a:active{
+    transform: scale(1);
+}
+
 
 a:focus {
     outline: var(--focus);
+
 }
 
 .link-plain {
@@ -298,7 +307,10 @@ a:focus {
 .link-decorated,
 .link-decorated-sm {
     display: inline-block;
-    /*text-decoration: underline;*/
+    text-decoration: underline;
+    text-decoration-thickness: 0.25em;
+   text-decoration-color: var(--color-alert);
+
     /*border-bottom: var(--border) solid currentColor;*/
     color: inherit;
     line-height: normal;
@@ -307,11 +319,11 @@ a:focus {
 
 .link-decorated:after,
 .link-decorated-sm:after {
-    display: block;
-    height: 0;
-    margin-top: -0.5em /*8*/;
-    border-bottom: var(--space-sm) solid var(--color-warning);
-    content: "";
+    /*display: block;*/
+    /*height: 0;*/
+    /*margin-top: -0.5em !*8*!;*/
+    /*border-bottom: var(--space-sm) solid var(--color-warning);*/
+    /*content: "";*/
 }
 
 .link-decorated:hover,

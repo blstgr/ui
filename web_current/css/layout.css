@@ -92,9 +92,13 @@ section,
     z-index: 999999;
 }
 
-.sticky-bottom-xs .btn-responsive {
+.sticky-bottom-xs .btn {
     height: 64px;
     width: 64px !important;
+}
+
+.sticky-bottom-xs .btn+.btn{
+    margin-bottom: var(--space-sm);
 }
 
 @media screen and (max-width: 26em) {
