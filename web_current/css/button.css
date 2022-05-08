@@ -189,7 +189,7 @@ ul + .btn-container {
 
 @media screen and (min-width: 48em) {
     .btn-container{
-        display: inline-block;
+        display: block;
 
     }
     .btn-container .btn:not(.btn-block) {
