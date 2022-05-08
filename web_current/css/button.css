@@ -167,7 +167,7 @@
 }
 
 .btn-container .btn + .btn {
-    margin-top: var(--space);
+    margin-bottom: var(--space);
 }
 
 /* default btn container, defines spacing bewtween blocks*/
@@ -208,7 +208,7 @@ ul + .btn-container {
     }
 
     .btn-container .btn:not(.btn-block) + .btn:not(.btn-block) {
-        margin-top: 0;
+        margin-bottom: 0;
         margin-left: var(--space);
     }
 }
