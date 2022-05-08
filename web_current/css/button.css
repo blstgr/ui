@@ -14,13 +14,23 @@
     font-family: var(--font-family);
     font-weight: 900;
     line-height: var(--line-height-sm);
-
+    transition: all .14s ease-out;
 }
 
 
 .btn:focus,
 .btn-s:focus {
     outline: var(--focus);
+}
+
+.btn:hover,
+.btn-s:hover {
+    box-shadow: none;
+}
+
+.btn:active,
+.btn-s:active{
+    box-shadow: var(--shadow-inset);
 }
 
 
@@ -134,10 +144,16 @@
     height: 2.6875em /*43em*/;
 }
 
+.btn-container{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
 
 /* default behavior: 2 btn in a row for larger screens, 2 btn in 1 col on screen xs*/
 .btn-container .btn:not(.btn-block) {
     width: 100%;
+
 }
 
 .btn-container .btn + .btn {
@@ -172,8 +188,13 @@ ul + .btn-container {
 
 
 @media screen and (min-width: 48em) {
+    .btn-container{
+        display: inline-block;
+
+    }
     .btn-container .btn:not(.btn-block) {
         width: auto;
+
     }
 
     .btn-container .btn:not(.btn-block) + .btn:not(.btn-block) {
@@ -191,12 +212,14 @@ ul + .btn-container {
     flex-grow: 1;
 }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 74em) {
     .grid-container .btn:not(.btn-block) {
         flex-grow: 0;
     }
 
 }
+
+
 
 .content-spaced.grid-container .btn:not(.btn-block) + .btn:not(.btn-block) {
     margin-left: var(--space-sm);

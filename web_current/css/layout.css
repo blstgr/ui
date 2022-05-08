@@ -27,7 +27,7 @@ body {
     background-color: var(--color-brand-light);
     background-image: url("../img/bg.png");
     background-repeat: repeat;
-    padding: var(--spacex2) var(--space);
+    padding: var(--spacex4) var(--space);
 
 }
 
@@ -39,7 +39,8 @@ body {
     }
 
     .page-container {
-        padding: var(--spacex4) var(--spacex3);
+        padding-left: var(--spacex3);
+        padding-right: var(--spacex3);
     }
 }
 
@@ -112,5 +113,61 @@ section,
 
     .sticky-bottom-xs .btn-block {
         width: 100% !important;
+    }
+}
+
+
+/*home page*/
+
+@media screen and (min-width:64em) and (max-width:74em){
+    .product-filters{
+        max-width: 84%;
+        margin-left: auto!important;
+        margin-right: auto!important;
+    }
+}
+
+
+@media  screen and (min-width: 35em) {
+    .product-cards{
+        flex-wrap: wrap;
+        margin-left: calc(var(--space)*-1);
+        margin-right: calc(var(--space)*-1);
+
+    }
+}
+
+.magic-grid .panel+.panel {
+    margin-top:0;
+}
+
+
+@media  screen and (min-width: 42em) {
+    .magic-grid .panel {
+        max-width: 45.3vw;
+    }
+}
+
+@media  screen and (min-width: 64em) {
+    .magic-grid .panel {
+        max-width: 43vw;
+    }
+}
+
+@media  screen and (min-width: 78em) {
+    .magic-grid .panel {
+        max-width: 27vw;
+    }
+}
+
+@media  screen and (min-width: 90em) {
+    .magic-grid .panel {
+        max-width: 20vw;
+    }
+}
+
+@media  screen and (min-width: 135em) {
+    .magic-grid .panel {
+        max-width: 16vw;
     }
 }

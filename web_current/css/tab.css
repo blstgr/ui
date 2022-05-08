@@ -29,11 +29,22 @@
     font-family: var(--font-family);
     font-weight: 900;
     line-height: var(--line-height-sm);
+    transition: all .14s ease-out;
+
 }
 
 .tab:focus {
     outline: var(--focus);
 }
+
+.tab:hover {
+    box-shadow: none;
+}
+
+.tab:active{
+    box-shadow: var(--shadow-inset);
+}
+
 
 .tab-active {
     background: var(--color-brand);

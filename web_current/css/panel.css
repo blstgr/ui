@@ -13,26 +13,6 @@
     box-shadow: var(--shadow-light);
 }
 
-@media screen and (min-width: 48em) {
-    /*for grid of panels. eg: product cards*/
-    .grid-container .panel {
-        width: auto;
-        margin: var(--space);
-    }
-
-    .magic-grid .panel + .panel {
-        margin-top: 0;
-    }
-
-
-    /*fixed width panels, eg: product cards*/
-    .panel-fixed-sm {
-        min-width: 334px;
-        max-width: 334px;
-        width: auto;
-    }
-}
-
 
 .panel-header {
     padding: var(--space);
@@ -50,6 +30,7 @@
 .panel-body {
     position: relative;
     padding: 1.25rem var(--space);
+    width: 100%;
 }
 
 .panel-footer {
