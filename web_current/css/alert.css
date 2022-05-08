@@ -140,6 +140,11 @@
     margin-right: var(--space-sm);
 }
 
+.nb .link-decorated {
+    text-decoration-color: white;
+}
+
+
 
 
 

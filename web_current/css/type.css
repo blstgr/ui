@@ -271,7 +271,7 @@ a:hover {
 
 }
 
-a:active{
+a:active {
     transform: scale(1);
 }
 
@@ -309,7 +309,7 @@ a:focus {
     display: inline-block;
     text-decoration: underline;
     text-decoration-thickness: 0.25em;
-   text-decoration-color: var(--color-alert);
+    text-decoration-color: var(--color-warning-dark);
 
     /*border-bottom: var(--border) solid currentColor;*/
     color: inherit;
@@ -328,7 +328,7 @@ a:focus {
 
 .link-decorated:hover,
 .link-decorated-sm:hover {
-    background-color: var(--color-warning);
+    /*background-color: var(--color-warning);*/
 }
 
 

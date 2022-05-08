@@ -1,125 +1,19 @@
-h3. goal:
 
-1. user must confirm dcv before we place order. 
-cases when a user uploaded a file or added dns record but didn’t click “confirm” will result in forever in progress ssl, as sectigo will know nothing about this cert 
-we either should allow the same actions on the ssl list as we do on ssl details or not allow any dcv actions in “my ssl” for a user to go through a full flow on details page.
-
-2. it could be convenient for a user who has multiple ssl and does not need instructions to complete dcv from list instead of stepper
-
-3. giving real time feedback in UI may decrease amount of cs requests “where is my certificate”, we should do it whenever possible
-
-if we can’t release details and list for fast issuance at the same time or option 1 is too expensive, go for option 2
-h4. improvement:
-
-users who need to renew several ssl at a time complain that they can’t add to cart multiple ssl at a time. we used to have an "add to cart" animation, let’s return it. on "my ssl" page only for now
-h3. to do:
-
-1
- * enable dcv actions on ssl list (option 1)
- * remove dcv actions from the list (option 2)
- * update ssl list layout
- * whatever is selected by default will be assigned ssl after activation in details (active tab) and in list (dcv btn). system default is DNS
-
- 
-
-2
- * change add to cart behavior
- * break down reactivate and renew into 2 filters, remove “install”.
-
- 
-
-3
-
-timer - _{color:#4c9aff}anna is in progess{color}_ - add timer to all type of certs
- * timer has unlimited cycles 
- * N cycles mean how many times "try again" btn is displayed
- * timer cycle length should be configurable for each validation type
- * once we placed order, ssl may get to issued state regardless of timer
- * ssl status can be updated when timer over (we check in DB) or on page refresh
- * if ssl is still not issued on page refresh AND cycle length is not over, timer continues 
- * timer is triggered by btn click that moves user to step with timer
-
-* dv ssl must be issued close to instant. currently 50% of DNS validated ssl are issued within 1 min and 75% within 10
-
-
-* time to get business validation ssl issued
-
-!screenshot-1.png|thumbnail!
-!screenshot-3.png|thumbnail! 
-!screenshot-2.png|thumbnail!
-
- 
-
-
-4 
-sort expiring SSL SSLP-37135
-
- 
-
-5
-css:
- * update badge
- * add badge-sm (add to cart and domain counter in md ssl)
- * actions in "my ssl" - btn-s as is
- * cal - btn link
- * add input-s + input-group
- * update tooltip
-
-update icons:
- * times bold
- * pause
- * details
-
- 
-
-6
-create task to update header or update in scope of this task
-
-
-h3. dod:
-
-list
- * stepper and list must be in sync and show same things at any given time
-
- * "valid till" will be used instead of expires/pauses as a unified term.
-
- * suggest leaving “cal” btn when “valid till” date exists regardless of ssl is alive and this button makes sense or ssl is dead. if i missed expiration date “cal” btn may reinforce me to use this option next time and we won’t need to create extra logic.
-
- * user should be able to tell which dcv action in the list is done
-
- * user should be able to tell if dcv email is sent if they are sending it from the list - show confirmation notification on email send same as on details page
-
-* textarea for emails in dynamic list should use autosize.js, maxheight: 80px or. 2rows
-
-* all inputs and textarea for dcv values in dynamic list is read only
-
-
-add to cart in list
- * once buy btn is clicked it’s not possible to click it again, as it’s not possible to buy 2 renewals
-
-timer
-* user should be able to get ssl as fast as possible, timer should not make user wait longer than usual
-* we should be able to track the full funnel for ov/ev: dcv -> get ssl+timer -> issued even if user will not physically stay on the page and return in a few days/hours to download ssl 
-* we should know how many timer cycles were needed to issue all ssl types
-
-
-h3. artifacts:
-
-dynamic list [https://xd.adobe.com/view/3ea34aac-c5f9-4101-882c-303949aed81b-6bf0/]
-
-autosize.js for textarea https://www.jacklmoore.com/autosize/
-
-static list (option 2) [https://xd.adobe.com/view/6f71a02f-126b-4254-a51f-3f1438ce584b-3a22/]
-
-dynamic list: interactions, + search and empty state [https://xd.adobe.com/view/726f6dac-65da-441d-8922-a45e54721ba5-273c/]
-
-add to cart [https://xd.adobe.com/view/a78c0b90-d982-4fd2-9654-72f101fed115-f2df/]
-
- 
-
-lib
- * controls [https://xd.adobe.com/view/f48d9286-a3d2-4a0d-8ea4-80a1783c9bcf-a1de/]
-
- * table [https://xd.adobe.com/view/f48d9286-a3d2-4a0d-8ea4-80a1783c9bcf-a1de/screen/9c0871cb-1c2d-4a33-93e4-89904f2b167f/]
-
- * header [https://xd.adobe.com/view/f48d9286-a3d2-4a0d-8ea4-80a1783c9bcf-a1de/screen/fa5934ac-5c36-4984-ab0b-3b8ca862435b/]
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_243" data-name="Rectangle 243" width="16" height="16" transform="translate(677.724 472.025)" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <path id="Polygon_8" data-name="Polygon 8" d="M8.921,2.3a2,2,0,0,1,3.264,0l6.685,9.434a2,2,0,0,1-1.632,3.156H3.868a2,2,0,0,1-1.632-3.156Z" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="send" transform="translate(-677.724 -472.025)" clip-path="url(#clip-path)">
+    <g id="send-2" data-name="send" transform="translate(686.61 464.515) rotate(45)" clip-path="url(#clip-path-2)">
+      <g id="send-3" data-name="send" transform="translate(2.513 1.637)">
+        <path id="Path_31" data-name="Path 31" d="M0,11.914,8.043,0l8.039,11.914-8.039-1.3Z" fill="none" stroke="#243742" stroke-linecap="round" stroke-width="1.6"/>
+        <path id="Path_32" data-name="Path 32" d="M0,10.278V0" transform="translate(8.04 0.496)" fill="none" stroke="#243742" stroke-width="1.6"/>
+      </g>
+    </g>
+  </g>
+</svg>
