@@ -33,6 +33,8 @@
     margin-top: var(--space) !important;
 }
 
+
+
 @media (max-width: 32em) {
     .mt-screenxs {
         margin-top: var(--space) !important;
@@ -40,6 +42,10 @@
 
     .mt-screenxs-x2 {
         margin-top: var(--spacex2) !important;
+    }
+
+    .pt-screenxs {
+        padding-top: var(--space) !important;
     }
 }
 
@@ -50,6 +56,10 @@
 
     .mt-screensm-x2 {
         margin-top: var(--spacex2) !important;
+    }
+
+    .pt-screensm {
+        padding-top: var(--space) !important;
     }
 }
 
