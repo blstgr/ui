@@ -262,6 +262,8 @@ p + h2 {
 a {
     color: inherit;
     text-decoration: none;
+    transition: all .14s ease-out;
+
 }
 
 a:hover {
