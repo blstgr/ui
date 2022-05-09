@@ -133,8 +133,18 @@
     background: var(--color-warning);
     border-radius: var(--radius);
     line-height: var(--line-height);
-    margin: var(--space) 0 var(--space-md) 0;
 }
+
+.nb + .nb,
+.nb + p {
+    margin-top: var(--space);
+}
+
+.nb + p,
+.nb + ul {
+    margin-top: var(--space-md);
+}
+
 
 .nb .badge {
     margin-right: var(--space-sm);
