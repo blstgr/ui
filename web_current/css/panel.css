@@ -44,23 +44,23 @@
 
 
 .panel-success {
-    border-color: var(--color-success-dark);
+    /*border-color: var(--color-success-dark);*/
     background: var(--color-success-light);
-    color: var(--color-success-dark);
+    /*color: var(--color-success-dark);*/
     box-shadow: var(--shadow-success);
 
 }
 
 .panel-info {
-    border-color: var(--color-info-dark);
+    /*border-color: var(--color-info-dark);*/
     background: var(--color-info-light);
     box-shadow: var(--shadow-info);
 }
 
 .panel-alert {
-    border-color: var(--color-alert-dark);
+    /*border-color: var(--color-alert-dark);*/
     background: var(--color-alert-light);
-    color: var(--color-alert-dark);
+    /*color: var(--color-alert-dark);*/
     box-shadow: var(--shadow-alert);
 }
 

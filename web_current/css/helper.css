@@ -34,7 +34,6 @@
 }
 
 
-
 @media (max-width: 32em) {
     .mt-screenxs {
         margin-top: var(--space) !important;
@@ -104,6 +103,10 @@
     padding-left: 0 !important;
 }
 
+.pt-0 {
+    padding-top: 0 !important;
+}
+
 .pt {
     padding-top: var(--space) !important;
 }
@@ -120,6 +123,7 @@
 .hide {
     display: none;
 }
+
 
 .flex-container {
     display: flex;
@@ -207,4 +211,17 @@
 
 .hide {
     display: none;
+}
+
+@media (max-width: 62em) {
+    .hide-xs {
+        display: none;
+    }
+}
+
+
+@media (min-width: 63em) {
+    .hide-md {
+        display: none;
+    }
 }
