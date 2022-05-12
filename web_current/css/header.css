@@ -3,10 +3,6 @@ nav {
     justify-content: space-between;
     align-items: center;
     margin-bottom: var(--spacex3);
-    /*padding-left: var(--space);*/
-    /*padding-right: var(--space);*/
-    /*background-image: url("../img/bg.png");*/
-    /*background-color: var(--color-brand-light);*/
 }
 
 
