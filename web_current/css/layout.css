@@ -15,7 +15,6 @@ body {
 }
 
 
-
 ::selection {
     background: var(--color-warning);
 }
@@ -97,7 +96,7 @@ section,
     width: 64px !important;
 }
 
-.sticky-bottom-xs .btn+.btn{
+.sticky-bottom-xs .btn + .btn {
     margin-top: var(--space);
 }
 
@@ -123,54 +122,48 @@ section,
 
 /*home page*/
 
-@media screen and (min-width:45em) and (max-width:74em){
-    .product-filters{
+@media screen and (min-width: 45em) and (max-width: 74em) {
+    .product-filters {
         max-width: 80%;
-        margin-left: auto!important;
-        margin-right: auto!important;
+        margin-left: auto !important;
+        margin-right: auto !important;
     }
 }
 
 
-@media  screen and (min-width: 45em) {
-    .product-cards{
+@media screen and (min-width: 45em) {
+    .product-cards {
         flex-wrap: wrap;
-        margin-left: calc(var(--space)*-1);
-        margin-right: calc(var(--space)*-1);
+        margin-left: calc(var(--space) * -1);
+        margin-right: calc(var(--space) * -1);
 
     }
 }
 
-.magic-grid .panel+.panel {
-    margin-top:0;
+.magic-grid .panel + .panel {
+    margin-top: 0;
 }
 
 
-@media  screen and (min-width: 45em) {
+@media screen and (min-width: 45em) {
     .magic-grid .panel {
         max-width: 45.3vw;
     }
 }
 
-@media  screen and (min-width: 64em) {
+@media screen and (min-width: 64em) {
     .magic-grid .panel {
         max-width: 43vw;
     }
 }
 
-@media  screen and (min-width: 78em) {
+@media screen and (min-width: 78em) {
     .magic-grid .panel {
         max-width: 27vw;
     }
 }
 
-@media  screen and (min-width: 90em) {
-    .magic-grid .panel {
-        max-width: 20vw;
-    }
-}
-
-@media  screen and (min-width: 135em) {
+@media screen and (min-width: 90em) {
     .magic-grid .panel {
         max-width: 16vw;
     }
