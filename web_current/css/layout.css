@@ -163,7 +163,7 @@ section,
     }
 }
 
-@media screen and (min-width: 90em) {
+@media screen and (min-width: 120em) {
     .magic-grid .panel {
         max-width: 16vw;
     }

@@ -18,14 +18,23 @@ nav ul {
     justify-content: center;
     align-items: center;
     list-style: none;
-    padding: var(--padding);
-    min-height: 3.5rem;
-    min-width: 3.5rem;
+    padding: var(--space);
+    height: 3rem;
+    width: 3rem;
     border-radius: 6.25rem;
     font-size: var(--font-size-sm);
     font-weight: 900;
     cursor: pointer;
 
+}
+
+@media screen and (min-width: 23em) {
+    .nav-item {
+        padding: var(--padding);
+        width: auto;
+        min-width: 3.5rem;
+        min-height: 3.5rem;
+    }
 }
 
 .nav-item:active {
@@ -39,15 +48,34 @@ nav ul {
     margin-right: var(--space-sm);
 }
 
-
-.nav-user {
-    background: white;
-    text-align: center;
-    font-weight: 900;
-    margin-left: var(--space-sm);
-    margin-right: var(--space-sm);
-
+.nav-item-responsive span {
+    display: none;
 }
+
+.nav-item-responsive .icon,
+.nav-item-responsive .icon-l {
+    margin-right: 0;
+}
+
+@media screen and (min-width: 64em) {
+
+
+    .nav-item {
+        width: auto;
+        min-width: 3rem;
+    }
+
+
+    .nav-item-responsive span {
+        display: initial;
+    }
+
+    .nav-item-responsive .icon,
+    .nav-item-responsive .icon-l {
+        margin-right: var(--space-sm);
+    }
+}
+
 
 .nav-brand {
     display: inline-flex;

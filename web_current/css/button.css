@@ -123,7 +123,10 @@
     display: none;
 }
 
-.btn-responsive .icon {
+.btn-responsive .icon,
+.btn-responsive .icon,
+.btn-responsive .icon-l,
+.btn-responsive .icon-s {
     margin-right: 0;
 }
 
@@ -133,15 +136,13 @@
         display: initial;
     }
 
-    .btn-responsive .icon {
-        margin-right: 0.375em /*6*/;
-    }
-
     .btn-responsive span {
         display: initial;
     }
 
-    .btn-responsive .icon {
+    .btn-responsive .icon,
+    .btn-responsive .icon-l,
+    .btn-responsive .icon-s {
         margin-right: var(--space-sm);
     }
 
