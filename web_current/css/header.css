@@ -5,13 +5,11 @@ nav {
     margin-bottom: var(--spacex3);
 }
 
-
 nav ul {
     display: flex;
     align-items: center;
 
 }
-
 
 .nav-item {
     display: inline-flex;
@@ -25,6 +23,7 @@ nav ul {
     font-size: var(--font-size-sm);
     font-weight: 900;
     cursor: pointer;
+    transition: all .14s ease-out;
 
 }
 
@@ -47,6 +46,17 @@ nav ul {
 .nav-item img {
     margin-right: var(--space-sm);
 }
+.nav-item .badge{
+    margin:0;
+    height: 22px;
+    width: 22px;
+
+}
+
+.nav-item a{
+    line-height: normal;
+}
+
 
 .nav-item-responsive span {
     display: none;
@@ -75,7 +85,6 @@ nav ul {
         margin-right: var(--space-sm);
     }
 }
-
 
 .nav-brand {
     display: inline-flex;

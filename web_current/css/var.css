@@ -19,13 +19,12 @@
     --color-success-dark: #458776;
 
     --color-info-light: #f2fffc;
-    --color-info: #79C3D3;
+    --color-info: #4f91a0/*#79C3D3*/;
     --color-info-dark: #2F4858;
 
     --color-a-visited: #A389A1;
 
 
-    /*--color-alert-light: #fff6f6;*/ /*--color-alert-lighter: #ffe9e9;*/ /*--color-alert: #ff5740;*/ /*--color-alert-darker: #e3432d;*/ /*--color-alert-dark: #a50e00;*/ /*--color-alert-xdark: #760b01;*/ /*--color-warning: #fac510;*/ /*--color-warning-light: #fde595;*/ /*--color-info-light: #f2f9ff;*/ /*--color-info-lighter: #c4e2ff;*/ /*--color-info: #6daeeb;*/ /*--color-info-darker: #398dde;*/ /*--color-info-dark: #0055a7;*/ /*--color-info-xdark: #0e477e;*/ /*--color-success-light: #ebfff5;*/ /*--color-success-lighter: #b8fbdb;*/ /*--color-success: #48e08f !*#11bf85*!;*/ /*--color-success-darker: #2db185;*/ /*--color-success-dark: #08815a;*/ /*--color-brand-dark: #3e3e38;*/ /*--color-brand-darker: #c3beac;*/ /*--color-brand: #eae7db;*/ /*--color-brand-light: #f9f8f4;*/ /*--color-a-visited: #7354bb;*/
     --space-md: 1.75rem /*28*/;
 
 

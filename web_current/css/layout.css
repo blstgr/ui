@@ -52,11 +52,13 @@ body {
 
 section,
 .section {
-    max-width: 75rem /*1200*/;
     width: 100%;
+    max-width: 80rem /*1200*/;
     margin-left: auto;
     margin-right: auto;
 }
+
+
 
 
 /* default container for any type of content, defines spacing between blocks*/

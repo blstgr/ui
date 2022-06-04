@@ -28,7 +28,7 @@
             <div class="nav-left hide-md">
                 <ul>
                     <li class="nav-brand">
-                        <i class="fa-solid fa-shield-cat"></i>
+                        <a href="home.html"><i class="fa-solid fa-shield-cat"></i></a>
                     <li class="nav-item">
                         <i class="icon-l fa-solid fa-ellipsis-vertical mr-0"></i>
                     </li>
@@ -39,7 +39,8 @@
             <div class="nav-left hide-xs">
                 <ul>
                     <li class="nav-brand">
-                        <i class="fa-solid fa-shield-cat"></i>
+                        <a href="home.html"><i class="fa-solid fa-shield-cat"></i></a>
+                        </i>
                     <li class="nav-item">Help</li>
                     <li class="nav-item">Blog</li>
                     <li class="nav-item">Affiliate</li>
@@ -50,353 +51,390 @@
             <div class="nav-right">
                 <ul>
                     <li class="nav-item">
-                        <i class="icon icon-l fa-solid fa-moon m-0"></i>
+                        <i class="icon icon-l fa-solid fa-circle-half-stroke m-0"></i>
                     </li>
 
-                    <li class="nav-item"><span class="badge">J</span></li>
-
-                    <li class="nav-item"><i class="icon icon-l fas fa-shopping-bag m-0"></i></li>
-                    <li class="nav-item nav-item-responsive">
-                        <i class="icon fas fa-cube"></i><span>My SSL</span>
+                    <li class="nav-item">
+                        <a href="./cart.html">
+                            <i class="icon icon-l fas fa-shopping-bag m-0"></i>
+                        </a>
                     </li>
+
+                    <li class="nav-item"><i class="icon icon-l fa-solid fa-arrow-right-from-bracket m-0"></i></li>
+
+
+                    <li class="nav-item">
+                        <a href="./acc_list.html">
+                            <span class="badge">J</span>
+                        </a>
+                    </li>
+
+
                 </ul>
             </div>
         </nav>
     </header>
 
     <div class="section">
-        <div class="panel">
-            <div class="panel-body">
 
-                <div class="row middle-xs">
-                    <div class="col-xs-4 col-sm-2 col-md-2">
-                        <p class="h2">My SSL</p>
-                    </div>
-
-                    <div class="col-xs-8 end-xs col-sm-5 center-sm col-md ">
-                        <button class="btn btn-s btn-flat btn-responsive">
-                            <i class="icon fas fa-cube"></i><span>Unused</span></button>
-                        <button class="btn btn-s btn-flat btn-responsive">
-                            <i class="icon fas fa-clock"></i><span>To renew</span></button>
-                        <button class="btn btn-s btn-flat btn-responsive">
-                            <i class="icon fas fa-filter"></i><span>Status</span></button>
-                    </div>
-
-                    <div class="col-xs-12 end-xs col-sm-5 col-md-4 mt-screensm">
-                        <div class="form-group">
-                            <label for="Search" class="visually-hidden">Search</label>
-                            <input class="input-s" type="text" id="Search" placeholder="Search">
-                        </div>
-                    </div>
-
+        <div class="tabs tabs-secondary tabs-vertical">
+            <div class="tab-switch jc-space-between">
+               <div>
+                   <button class="tab-s tab-active">
+                       My SSL
+                   </button>
+                   <button class="tab-s">
+                       Orders
+                   </button>
+                   <button class="tab-s">
+                       Funds
+                   </button>
+                   <button class="tab-s">
+                       Profile
+                   </button>
+               </div>
+                <div>
+                    Support pin: 5243
+                    <button class="btn-s btn-secondary ml">  <i class="icon fas fa-sync"></i></button>
                 </div>
             </div>
-        </div>
+            <div class="tab-content">
+                <div class="panel">
+                    <div class="panel-body">
 
-        <table class="table-spaced">
-            <tbody>
-            <tr>
-                <td>
-                    <p><span class="label">ID:</span> qy17w</p>
-                </td>
+                        <div class="row middle-xs">
+                            <div class="col-xs-4 col-sm-2 col-md-2">
+                                <p class="h2">My SSL</p>
+                            </div>
 
-                <td>
-                    <p class="label">PositiveSSL Multi-domain Trial
-                        <br>
-                        3 SANs</p>
-                    <ul class="progress">
-                        <li class="px100"></li>
-                        <li class="px100"></li>
-                        <li class="px100"></li>
-                    </ul>
-                </td>
+                            <div class="col-xs-8 end-xs col-sm-5 center-sm col-md ">
+                                <button class="btn btn-s btn-flat btn-responsive">
+                                    <i class="icon fas fa-cube"></i><span>Unused</span></button>
+                                <button class="btn btn-s btn-flat btn-responsive">
+                                    <i class="icon fas fa-clock"></i><span>To renew</span></button>
+                                <button class="btn btn-s btn-flat btn-responsive">
+                                    <i class="icon fas fa-filter"></i><span>Status</span></button>
+                            </div>
 
-                <td>
+                            <div class="col-xs-12 end-xs col-sm-5 col-md-4 mt-screensm">
+                                <div class="form-group">
+                                    <label for="Search" class="visually-hidden">Search</label>
+                                    <input class="input-s" type="text" id="Search" placeholder="Search">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <table class="table-spaced">
+                    <tbody>
+                    <tr>
+                        <td>
+                            <p><span class="label">ID:</span> qy17w</p>
+                        </td>
+
+                        <td>
+                            <p class="label">PositiveSSL Multi-domain Trial
+                                <br>
+                                3 SANs</p>
+                            <ul class="progress">
+                                <li class="px100"></li>
+                                <li class="px100"></li>
+                                <li class="px100"></li>
+                            </ul>
+                        </td>
+
+                        <td>
                             <span class="badge">
                                 <i class="icon icon-smaller fas fa-cube"></i>Unused
                             </span>
-                </td>
+                        </td>
 
-                <td></td>
+                        <td></td>
 
-                <td>
-                    <a href="acc_issue.html" class="btn btn-responsive btn-s btn-flat ">
-                        <i class="icon icon-smaller fas fa-play"></i>
-                        <span>Activate</span>
-                    </a>
-                </td>
+                        <td>
+                            <a href="acc_issue.html" class="btn btn-responsive btn-s btn-flat ">
+                                <i class="icon icon-smaller fas fa-play"></i>
+                                <span>Activate</span>
+                            </a>
+                        </td>
 
 
-                <td>
-                    <a href="./acc_details_v2.html" class="btn btn-responsive btn-s btn-flat ">
-                        <i class="icon far fa-folder"></i>
-                        <span>Details</span>
-                    </a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p><span class="label">ID:</span> qy17w</p>
-                </td>
+                        <td>
+                            <a href="./acc_details_v2.html" class="btn btn-responsive btn-s btn-flat ">
+                                <i class="icon far fa-folder"></i>
+                                <span>Details</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span class="label">ID:</span> qy17w</p>
+                        </td>
 
-                <td>
-                    <p class="label">PositiveSSL</p>
-                    <ul class="progress">
-                        <li class="px100"></li>
-                        <li class="px100"></li>
-                        <li class="px100"></li>
-                    </ul>
-                </td>
+                        <td>
+                            <p class="label">PositiveSSL</p>
+                            <ul class="progress">
+                                <li class="px100"></li>
+                                <li class="px100"></li>
+                                <li class="px100"></li>
+                            </ul>
+                        </td>
 
-                <td>
+                        <td>
                             <span class="badge">
                                 <i class="icon icon-smaller fas fa-cube"></i>Unused
                             </span>
-                </td>
+                        </td>
 
-                <td></td>
+                        <td></td>
 
-                <td>
-                    <a href="acc_issue.html" class="btn btn-responsive btn-s btn-flat ">
-                        <i class="icon icon-smaller fas fa-play"></i>
-                        <span>Activate</span>
-                    </a>
-                </td>
+                        <td>
+                            <a href="acc_issue.html" class="btn btn-responsive btn-s btn-flat ">
+                                <i class="icon icon-smaller fas fa-play"></i>
+                                <span>Activate</span>
+                            </a>
+                        </td>
 
 
-                <td>
-                    <a href="./acc_details_v2.html" class="btn btn-responsive btn-s btn-flat ">
-                        <i class="icon far fa-folder"></i>
-                        <span>Details</span>
-                    </a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p><span class="label">ID:</span> qy17w</p>
-                </td>
+                        <td>
+                            <a href="./acc_details_v2.html" class="btn btn-responsive btn-s btn-flat ">
+                                <i class="icon far fa-folder"></i>
+                                <span>Details</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span class="label">ID:</span> qy17w</p>
+                        </td>
 
-                <td>
-                    <p class="label">PositiveSSL</p>
-                    <ul class="progress">
-                        <li class="px100"></li>
-                        <li class="px100"></li>
-                        <li class="px100"></li>
-                    </ul>
-                </td>
+                        <td>
+                            <p class="label">PositiveSSL</p>
+                            <ul class="progress">
+                                <li class="px100"></li>
+                                <li class="px100"></li>
+                                <li class="px100"></li>
+                            </ul>
+                        </td>
 
-                <td>
+                        <td>
                             <span class="badge">
                                 <i class="icon icon-smaller fas fa-cube"></i>Unused
                             </span>
-                </td>
+                        </td>
 
-                <td></td>
+                        <td></td>
 
-                <td>
-                    <a href="acc_issue.html" class="btn btn-responsive btn-s btn-flat ">
-                        <i class="icon icon-smaller fas fa-play"></i>
-                        <span>Activate</span>
-                    </a>
-                </td>
+                        <td>
+                            <a href="acc_issue.html" class="btn btn-responsive btn-s btn-flat ">
+                                <i class="icon icon-smaller fas fa-play"></i>
+                                <span>Activate</span>
+                            </a>
+                        </td>
 
 
-                <td>
-                    <a href="./acc_details_v2.html" class="btn btn-responsive btn-s btn-flat ">
-                        <i class="icon far fa-folder"></i>
-                        <span>Details</span>
-                    </a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p><span class="label">ID:</span> qy17w</p>
-                </td>
+                        <td>
+                            <a href="./acc_details_v2.html" class="btn btn-responsive btn-s btn-flat ">
+                                <i class="icon far fa-folder"></i>
+                                <span>Details</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span class="label">ID:</span> qy17w</p>
+                        </td>
 
-                <td>
-                    <p><span class="label">PositiveSSL</span><br>
-                        <span class="wb">@jacksparrow.com</span></p>
+                        <td>
+                            <p><span class="label">PositiveSSL</span><br>
+                                <span class="wb">@jacksparrow.com</span></p>
 
-                    <ul class="progress">
-                        <li class="px100"></li>
-                        <li class="px100"></li>
-                        <li class="px100"></li>
-                    </ul>
-                </td>
+                            <ul class="progress">
+                                <li class="px100"></li>
+                                <li class="px100"></li>
+                                <li class="px100"></li>
+                            </ul>
+                        </td>
 
-                <td>
+                        <td>
                             <span class="badge">
                                 <i class="icon icon-smaller fas fa-circle"></i>Validate
                             </span>
-                </td>
+                        </td>
 
-                <td>
+                        <td>
 
-                    <textarea readonly class="txt-mono mw-sm mh-sm" id="" rows="2">admin@jacksparrow.com, administrator@jack.io, administrator@jack.io, admin@jacksparrow.com</textarea>
-
-
-                </td>
-
-                <td>
-                    <a href="acc_issue.html" class="btn btn-responsive btn-s btn-flat ">
-                        <img class="icon" src="../img/send.svg" alt="Send">
-                        <span>Email</span>
-                    </a>
-                </td>
+                            <textarea readonly class="txt-mono mw-sm mh-sm" id="" rows="2">admin@jacksparrow.com, administrator@jack.io, administrator@jack.io, admin@jacksparrow.com</textarea>
 
 
-                <td>
-                    <a href="./acc_details_v2.html" class="btn btn-responsive btn-s btn-flat ">
-                        <i class="icon far fa-folder"></i>
-                        <span>Details</span>
-                    </a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p><span class="label">ID:</span> qy17w</p>
-                </td>
+                        </td>
 
-                <td>
-                    <p><span class="label">PositiveSSL</span><br>
-                        <span class="wb">@jacksparrow.com</span></p>
+                        <td>
+                            <a href="acc_issue.html" class="btn btn-responsive btn-s btn-flat ">
+                                <img class="icon" src="../img/send.svg" alt="Send">
+                                <span>Email</span>
+                            </a>
+                        </td>
 
-                    <ul class="progress">
-                        <li class="px100"></li>
-                        <li class="px100"></li>
-                        <li class="px100"></li>
-                    </ul>
-                </td>
 
-                <td>
+                        <td>
+                            <a href="./acc_details_v2.html" class="btn btn-responsive btn-s btn-flat ">
+                                <i class="icon far fa-folder"></i>
+                                <span>Details</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span class="label">ID:</span> qy17w</p>
+                        </td>
+
+                        <td>
+                            <p><span class="label">PositiveSSL</span><br>
+                                <span class="wb">@jacksparrow.com</span></p>
+
+                            <ul class="progress">
+                                <li class="px100"></li>
+                                <li class="px100"></li>
+                                <li class="px100"></li>
+                            </ul>
+                        </td>
+
+                        <td>
                             <span class="badge">
                                 <i class="icon icon-smaller fas fa-circle"></i>Validate
                             </span>
-                </td>
+                        </td>
 
-                <td>
-                    <div class="input-group input-group-post  mw-sm">
-                        <input class="input-s txt-mono" type="text" value="276gsfr27ts629iat62rdg27190s">
-                        <button class="btn-s btn-flat">
-                            <i class="icon icon-l far fa-copy m-0"></i>
-                        </button>
-                    </div>
-                    <div class="input-group input-group-post  mw-sm">
-                        <input class="input-s txt-mono" type="text" value="276gsfr27ts629iat62rdg27190s">
-                        <button class="btn-s btn-flat">
-                            <i class="icon icon-l far fa-copy m-0"></i>
-                        </button>
-                    </div>
-                </td>
+                        <td>
+                            <div class="input-group input-group-post  mw-sm">
+                                <input class="input-s txt-mono" type="text" value="276gsfr27ts629iat62rdg27190s">
+                                <button class="btn-s btn-flat">
+                                    <i class="icon icon-l far fa-copy m-0"></i>
+                                </button>
+                            </div>
+                            <div class="input-group input-group-post  mw-sm">
+                                <input class="input-s txt-mono" type="text" value="276gsfr27ts629iat62rdg27190s">
+                                <button class="btn-s btn-flat">
+                                    <i class="icon icon-l far fa-copy m-0"></i>
+                                </button>
+                            </div>
+                        </td>
 
-                <td>
-                    <a href="acc_issue.html" class="btn btn-responsive btn-s btn-flat ">
-                        <i class="icon icon-smaller fas fa-plus"></i>
-                        <span>Confirm</span>
-                    </a>
-                </td>
+                        <td>
+                            <a href="acc_issue.html" class="btn btn-responsive btn-s btn-flat ">
+                                <i class="icon icon-smaller fas fa-plus"></i>
+                                <span>Confirm</span>
+                            </a>
+                        </td>
 
 
-                <td>
-                    <a href="./acc_details_v2.html" class="btn btn-responsive btn-s btn-flat ">
-                        <i class="icon far fa-folder"></i>
-                        <span>Details</span>
-                    </a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p><span class="label">ID:</span> qy17w</p>
-                </td>
+                        <td>
+                            <a href="./acc_details_v2.html" class="btn btn-responsive btn-s btn-flat ">
+                                <i class="icon far fa-folder"></i>
+                                <span>Details</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span class="label">ID:</span> qy17w</p>
+                        </td>
 
-                <td>
-                    <p><span class="label">PositiveSSL Multi-domain
+                        <td>
+                            <p><span class="label">PositiveSSL Multi-domain
                      <br>3 SANs</span>
-                        <br><span class="wb">@jacksparrow.com</span> <span class="badge">+2</span></p>
+                                <br><span class="wb">@jacksparrow.com</span> <span class="badge">+2</span></p>
 
-                    <ul class="progress">
-                        <li class="px100"></li>
-                        <li class="px100"></li>
-                        <li class="px100"></li>
-                    </ul>
-                </td>
+                            <ul class="progress">
+                                <li class="px100"></li>
+                                <li class="px100"></li>
+                                <li class="px100"></li>
+                            </ul>
+                        </td>
 
-                <td>
+                        <td>
                             <span class="badge">
                                 <i class="icon icon-smaller fas fa-circle"></i>Validate
                             </span>
-                </td>
+                        </td>
 
-                <td>
-                    <div class="input-group input-group-post  mw-sm">
-                        <input class="input-s  txt-mono" type="text" value="/.well-known/pki-validation/">
-                        <button class="btn-s btn-flat">
-                            <i class="icon icon-l far fa-copy m-0"></i>
-                        </button>
-                    </div>
+                        <td>
+                            <div class="input-group input-group-post  mw-sm">
+                                <input class="input-s  txt-mono" type="text" value="/.well-known/pki-validation/">
+                                <button class="btn-s btn-flat">
+                                    <i class="icon icon-l far fa-copy m-0"></i>
+                                </button>
+                            </div>
 
-                </td>
+                        </td>
 
-                <td>
-                    <a href="acc_issue.html" class="btn btn-responsive btn-s btn-flat ">
-                        <i class="icon icon-smaller fas fa-arrow-up"></i>
-                        <span>Confirm</span>
-                    </a>
-                </td>
+                        <td>
+                            <a href="acc_issue.html" class="btn btn-responsive btn-s btn-flat ">
+                                <i class="icon icon-smaller fas fa-arrow-up"></i>
+                                <span>Confirm</span>
+                            </a>
+                        </td>
 
 
-                <td>
-                    <a href="./acc_details_v2.html" class="btn btn-responsive btn-s btn-flat ">
-                        <i class="icon far fa-folder"></i>
-                        <span>Details</span>
-                    </a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p><span class="label">ID:</span> qy17w</p>
-                </td>
+                        <td>
+                            <a href="./acc_details_v2.html" class="btn btn-responsive btn-s btn-flat ">
+                                <i class="icon far fa-folder"></i>
+                                <span>Details</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span class="label">ID:</span> qy17w</p>
+                        </td>
 
-                <td>
-                    <p><span class="label">PositiveSSL Multi-domain
+                        <td>
+                            <p><span class="label">PositiveSSL Multi-domain
                      <br>3 SANs</span>
-                        <br><span class="wb">@jacksparrow.com</span> <span class="badge">+2</span></p>
+                                <br><span class="wb">@jacksparrow.com</span> <span class="badge">+2</span></p>
 
-                    <ul class="progress">
-                        <li class="px100"></li>
-                        <li class="px100"></li>
-                        <li class="px100"></li>
-                    </ul>
-                </td>
+                            <ul class="progress">
+                                <li class="px100"></li>
+                                <li class="px100"></li>
+                                <li class="px100"></li>
+                            </ul>
+                        </td>
 
-                <td>
+                        <td>
                             <span class="badge">
                                 <i style="font-size: 8px; margin-right: 1px" class="icon-smaller fas fa-circle"></i>
                                 <i style="font-size: 6px; margin-right: 1px" class="icon-smaller fas fa-circle"></i>
                                  <i style="font-size: 4px;" class="icon icon-smaller fas fa-circle"></i>
                                 Pending
                             </span>
-                </td>
+                        </td>
 
-                <td>
-
-
-                </td>
-
-                <td>
-                    <span class="ml"> <i class="icon mr-s far fa-clock"></i>60s...</span>
-                </td>
+                        <td>
 
 
-                <td>
-                    <a href="./acc_details_v2.html" class="btn btn-responsive btn-s btn-flat ">
-                        <i class="icon far fa-folder"></i>
-                        <span>Details</span>
-                    </a>
-                </td>
-            </tr>
-            </tbody>
-        </table>
+                        </td>
+
+                        <td>
+                            <span class="ml"> <i class="icon mr-s far fa-clock"></i>60s...</span>
+                        </td>
+
+
+                        <td>
+                            <a href="./acc_details_v2.html" class="btn btn-responsive btn-s btn-flat ">
+                                <i class="icon far fa-folder"></i>
+                                <span>Details</span>
+                            </a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+
+
 
     </div>
 </div>

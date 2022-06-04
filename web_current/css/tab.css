@@ -1,4 +1,7 @@
 
+.tabs{
+  margin-top: -0.5rem;
+}
 .tab-content {
     padding: var(--space-md) 0;
     margin-top: var(--spacex2);
@@ -11,11 +14,13 @@
 .tab-switch {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     text-align: center;
     margin: -0.5rem;
 }
 
-.tab {
+.tab,
+.tab-s{
     position: relative;
     padding: var(--padding);
     margin: var(--space-sm);
@@ -33,18 +38,24 @@
 
 }
 
-.tab:focus {
+.tab-s{
+    padding: var(--space-sm) var(--space);
+}
+
+.tab:focus,
+.tab-s:focus{
     outline: var(--focus);
 }
 
-.tab:hover {
+.tab:hover,
+.tab-s:hover{
     box-shadow: none;
 }
 
-.tab:active{
+.tab:active,
+.tab-s:active{
     box-shadow: var(--shadow-inset);
 }
-
 
 .tab-active {
     background: var(--color-brand);
