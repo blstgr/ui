@@ -70,6 +70,11 @@
     margin-bottom: var(--space) !important;
 }
 
+.mb-spacex2{
+    margin-bottom: var(--spacex2) !important;
+}
+
+
 .p-0 {
     padding: 0 !important;
 }
