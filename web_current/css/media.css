@@ -13,6 +13,20 @@
     font-weight: 700;
 }
 
+.media-img span {
+    -webkit-text-stroke: var(--border) var(--color-brand-dark);
+    -webkit-text-fill-color: var(--color-warning);
+
+}
+
+.media:nth-child(odd) .media-img {
+    transform: rotate(-2deg);
+}
+
+.media:nth-child(even) .media-img {
+    transform: rotate(2deg);
+}
+
 .media-body {
     display: table-cell;
     vertical-align: middle;

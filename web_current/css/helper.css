@@ -66,11 +66,20 @@
     }
 }
 
+@media (max-width: 75em) {
+    .mt-screenmd {
+        margin-top: var(--space) !important;
+    }
+
+
+}
+
+
 .mb {
     margin-bottom: var(--space) !important;
 }
 
-.mb-spacex2{
+.mb-spacex2 {
     margin-bottom: var(--spacex2) !important;
 }
 
@@ -91,7 +100,7 @@
     align-items: center !important;
 }
 
-.jc-space-between{
+.jc-space-between {
     justify-content: space-between !important;
 }
 
@@ -156,6 +165,13 @@
     color: white;
 }
 
+.bgcolor-brand-dark.btn {
+    box-shadow: var(--shadow-dark);
+}
+
+.bgcolor-brand-dark.panel {
+    box-shadow: var(--shadow-lg-dark);
+}
 
 .bgcolor-brand-dark .btn,
 .bgcolor-brand-dark .btn-s {

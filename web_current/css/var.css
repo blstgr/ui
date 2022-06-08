@@ -19,7 +19,7 @@
     --color-success-dark: #458776;
 
     --color-info-light: #f4faf9;
-    --color-info: #A7D1E5/*#79C3D3*/;
+    --color-info: #A7D1E5 /*#79C3D3*/;
     --color-info-dark: #2F4858;
 
     --color-a-visited: #A389A1;
@@ -54,14 +54,19 @@
     --font-size-lg: 60px;
 
     --shadow-raised: 0 1rem 0.625rem rgba(0, 0, 0, 0.25);
+
     --shadow: 0.5rem 0.5rem 0 var(--color-brand-dark);
+    --shadow-dark: 0.5rem 0.5rem 0 #000;
+
     --shadow-lg: 1rem 1rem 0 var(--color-brand-dark);
     --shadow-inset: inset 0.5rem 0.5rem 0 var(--color-brand-dark);
 
-    --shadow-light: 1rem 1rem 0 var(--color-brand-darker);
-    --shadow-info: 1rem 1rem 0 var(--color-info);
-    --shadow-success: 1rem 1rem 0 var(--color-success);
-    --shadow-alert: 1rem 1rem 0 var(--color-alert);
+    --shadow-lg-light: 1rem 1rem 0 var(--color-brand-darker);
+    --shadow-lg-info: 1rem 1rem 0 var(--color-info);
+    --shadow-lg-success: 1rem 1rem 0 var(--color-success);
+    --shadow-lg-alert: 1rem 1rem 0 var(--color-alert);
+    --shadow-lg-dark: 1rem 1rem 0 #000;
+
 
     --focus: var(--border) dashed var(--color-success);
 

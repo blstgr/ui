@@ -2,7 +2,6 @@
 .figure-sm {
     display: block;
     height: 10em;
-    width: 9em;
     margin: 24px auto;
     background: var(--color-brand);
 }

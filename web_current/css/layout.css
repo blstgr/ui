@@ -59,8 +59,6 @@ section,
 }
 
 
-
-
 /* default container for any type of content, defines spacing between blocks*/
 
 .content-spaced {
@@ -132,7 +130,6 @@ section,
     }
 }
 
-
 @media screen and (min-width: 45em) {
     .product-cards {
         flex-wrap: wrap;
@@ -142,10 +139,15 @@ section,
     }
 }
 
+
+.product-filters .btn {
+    min-width: 240px;
+}
+
+
 .magic-grid .panel + .panel {
     margin-top: 0;
 }
-
 
 @media screen and (min-width: 45em) {
     .magic-grid .panel {
