@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>List</title>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css"
+          type="text/css">
+
+    <script defer="defer" src="https://use.fontawesome.com/releases/v6.1.0/js/all.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+
+    <script defer="defer" src="../js/select.js"></script>
+
+
+</head>
+
+<body>
+<header>
+    <nav>
+        <div class="nav-left hide-md">
+            <ul>
+                <li class="nav-item nav-item-square nav-brand">
+                    <a href="home.html"><i class="fa-solid fa-shield-cat"></i></a>
+                </li>
+                <li class="nav-item nav-item-square">
+                    <i class="icon-l mr-0 fa-solid fa-bullseye"></i>
+
+                </li>
+
+
+            </ul>
+        </div>
+        <div class="nav-left hide-xs">
+            <ul>
+                <li class="nav-item nav-item-square nav-brand">
+                    <a href="home.html"><i class="fa-solid fa-shield-cat"></i></a>
+                </li>
+                <li class="nav-item"><a href="">Blog</a></li>
+                <li class="nav-item"><a href="">Affiliate</a></li>
+                <li class="nav-item"><a href="">SSL types</a></li>
+
+            </ul>
+        </div>
+        <div class="nav-right">
+            <ul>
+                <li class="nav-item nav-item-square">
+                    <i class="icon fa-solid fa-circle-half-stroke m-0"></i>
+                </li>
+
+                <li class="nav-item nav-item-square">
+                    <a href="./cart.html">
+                        <i class="icon fas fa-shopping-bag m-0"></i>
+                    </a>
+                </li>
+
+                <li class="nav-item nav-item-square">
+                    <i class="icon fa-solid fa-arrow-right-from-bracket m-0"></i>
+                </li>
+
+                <li class="nav-item nav-item-square">
+                    <a href="./acc_list.html">
+                        <span class="badge">J</span>
+                    </a>
+                </li>
+
+
+            </ul>
+        </div>
+    </nav>
+</header>
+<div class="hide alert-holder fixed-bottom animate-animated animate__bounceInDown">
+    <!-- too long -->
+    <div class="alert alert-info">
+        <div class="alert-body">
+            <span class="badge badge-icon badge-inverted"><i class="fas fa-info"></i></span>
+
+            <div class="alert-content">
+                <p>Our provider needs more time, come back in 15m.</p>
+            </div>
+        </div>
+
+        <div class="alert-action">
+
+            <button class="btn btn-s btn-secondary">Okay</button>
+        </div>
+    </div>
+</div>
+
+<!-- Email -->
+<div class="page-container">
+    <section>
+        <div class="panel">
+            <div class="panel-body">
+                <div class="row middle-xs">
+
+                    <div class="col-xs-12 center-xs col-sm-8 col-md-offset-1 col-md-6">
+                        <p class="h2">PositiveSSL <span class="txt-truncate">@jasksparrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrow.com</span>
+                            <span class="label label-responsive">Trial</span></p>
+                    </div>
+                    <div class="col-xs start-xs first-sm  pl-0">
+                        <button class="btn btn-flat btn-responsive"><i class="icon fas fa-arrow-left"></i>
+                            <span>My SSL</span></button>
+                    </div>
+                    <div class="col-xs col-sm-2 end-xs col-md-3 pr-0">
+                        <button class="btn btn-flat btn-responsive"><i
+                                class="icon fas fa-arrow-down"></i><span>Download</span></button>
+                        <button class="btn btn-flat btn-responsive">
+                            <i class="icon fas fa-shopping-bag"></i><span>Buy</span></button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="stepper">
+
+            <!-- step1 done -->
+            <div class="stepper-step stepper-step-completed">
+                <div class="badge badge-icon badge-success stepper-badge"><i class="fas fa-check"></i></div>
+                <div class="panel panel-success">
+
+                    <div class="panel-header">
+                        <h3>Enter domain</h3>
+                        <button class="btn btn-link btn-responsive"><i
+                                class="icon fas fa-undo-alt"></i><span>Undo</span></button>
+                    </div>
+                </div>
+            </div>
+
+            <!--step key - browser-->
+            <div class="stepper-step">
+                <div class="badge badge-icon stepper-badge"><i class="icon  far fa-circle"></i></div>
+                <div class="panel">
+                    <div class="panel-header">
+                        <h3>Create private key
+                        </h3>
+                    </div>
+
+                    <div class="panel-body">
+                        <div class="tab-container">
+                            <div class="tab-switch">
+                                <button class="tab tab-active">
+                                    In browser
+                                </button>
+                                <button class="tab ">
+                                    On server
+                                </button>
+
+                            </div>
+                            <div class="tab-content">
+                                <div class="nb">
+                                    <div class="badge badge-icon ">
+                                        <i class="fas fa-info"></i>
+                                    </div>
+                                    <span>We don’t store the key. If you loose it, you will need to start
+                                from scratch.</span>
+                                </div>
+                                <div class="nb">
+                                    <div class="badge badge-icon ">
+                                        <i class="fas fa-info"></i>
+                                    </div>
+                                    <span>Installing on a Windows server, use your CSR or  <a
+                                            href="" class="link-decorated">convert files
+                            to pfx</a>.</span>
+                                </div>
+
+                                <p>Save <span
+                                        class="txt-mono txt-highlighted">jacksparrow_com_key.zip</span>, you will need
+                                    it later
+                                    to
+                                    install PositiveSSL.</p>
+
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="btn-container">
+                            <button class="btn btn-secondary">
+                                <i class="icon fas fa-check"></i>
+                                Confirm key saved
+                            </button>
+                            <button class="btn btn-flat">
+                                <i class="icon fas fa-arrow-down"></i>
+                                Download key.zip
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+            <!-- install inactive-->
+            <div class="stepper-step stepper-step-inactive">
+                <div class="badge badge-icon stepper-badge"><i class="icon  far fa-circle"></i></div>
+                <div class="panel">
+
+                    <div class="panel-header">
+                        <h3>Domain control validation</h3>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- install inactive-->
+            <div class="stepper-step stepper-step-inactive">
+                <div class="badge badge-icon stepper-badge"><i class="icon  far fa-circle"></i></div>
+                <div class="panel">
+
+                    <div class="panel-header">
+                        <h3>Install SSL</h3>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- buy ssl -->
+            <div class="stepper-step">
+                <div class="badge badge-icon stepper-badge"><i class="icon  far fa-circle"></i></div>
+
+                <div class="panel">
+                    <div class="panel-header">
+                        <h3>Pay for SSL</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="tab-container">
+                            <p>You have 28 trial days left. Pay before Jun 20, 2021 to keep using the SSL. Pay after
+                                this date and you will need to go
+                                through the whole SSL issuance process again and will need to reinstall your SSL
+                                certificate.</p>
+
+                            <div class="btn-container">
+                                <button class="btn btn-secondary">
+                                    <i class="icon fas fa-shopping-bag"></i>Buy
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- cert -->
+        <table class="table-fixed table-bordered table-striped">
+            <thead>
+            <tr>
+                <th>Product ID</th>
+                <th>Status</th>
+                <th>Valid till</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td data-title="Product ID"><span class="label fw-500">ID:</span> qwe12</td>
+                <td data-title="Status"> <span class="badge">
+                                    <img src="../img/alive.svg" alt=""><span>Pending</span>
+                                </span>
+                </td>
+                <td data-title="Expies">
+                    <p>Awaits issuance..</p>
+
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+        <!-- billing -->
+        <table class="table-fixed table-bordered table-striped">
+            <thead>
+            <tr>
+                <th>Prepaid</th>
+                <th>Used</th>
+                <th>Issued for</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td data-title="Prepaid">2 years</td>
+
+                <td data-title="Used"> 1 of 2 years due to <a href="" class="link-decorated">lifetime
+                    limit</a></td>
+
+                <td data-title="Issued for">
+                    <ul class="ul-unstyled content-scrolled">
+                        <li class="wb">
+                            jacksparrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrow.com
+
+                        </li>
+                        <li class="wb">
+                            www.jacksparrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrow.com
+
+                        </li>
+                        <li class="wb">
+                            jacksparrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrow.com
+
+                        </li>
+                        <li class="wb">
+                            www.jacksparrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrow.com
+
+                        </li>
+                    </ul>
+                    <div class="btn-container">
+                        <button class="btn btn-s btn-secondary ">
+                            <i class="icon icon-smaller fas fa-play"></i>
+                            Reissue
+                        </button>
+                    </div>
+                </td>
+            </tr>
+
+            </tbody>
+        </table>
+
+        <!-- order -->
+        <table class="table-fixed table-bordered table-striped">
+            <thead>
+            <tr>
+                <th>CA order ID</th>
+                <th>Order ID</th>
+                <th>Email to get .cert file</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td data-title="CA order ID"><p>Awaiting ID..</p>
+                    <div class="btn-container">
+                        <a href="./acc_details.html" class="btn btn-s btn-secondary ">
+                            <i class="icon fas fa-sync"></i>
+                            Refresh
+                        </a>
+                    </div>
+                </td>
+                <td data-title="Order ID">
+                    <p>76155</p>
+                    <div class="btn-container">
+                        <a href="./acc_details.html" class="btn btn-s btn-secondary ">
+                            <i class="icon far fa-folder"></i>
+                            Details
+                        </a>
+                    </div>
+                </td>
+                <td data-title="Email to get .cert file">
+                    admin@jack.com
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+
+    </section>
+
+</div>
+
+<!--File-->
+<div class="page-container ">
+
+    <section>
+        <div class="stepper">
+            <!-- step1 done -->
+            <div class="stepper-step stepper-step-completed">
+                <div class="badge badge-icon badge-success stepper-badge"><i class="fas fa-check"></i></div>
+                <div class="panel panel-success">
+
+                    <div class="panel-header">
+                        <h3>Enter domain</h3>
+                        <button class="btn btn-link btn-responsive"><i
+                                class="icon fas fa-undo-alt"></i><span>Undo</span></button>
+                    </div>
+                </div>
+            </div>
+
+            <!--step activate-->
+            <div class="stepper-step">
+                <div class="badge badge-icon stepper-badge"><i class="icon  far fa-circle"></i></div>
+                <div class="panel">
+                    <div class="panel-header">
+                        <h3>Enter domain
+                        </h3>
+                    </div>
+
+                    <div class="panel-body">
+                        <p>To get your SSL issued and your site secured, you need to submit your website information
+                            to
+                            the Certificate Authority. Once the they validate your details, you’ll be able to
+                            download
+                            your SSL and install it on your server.
+
+                        </p>
+                        <div class="form-group">
+
+                            <div class="input">
+                                <div class="badge badge-closable">jacksparrow.com</div>
+                                <div class="badge badge-closable">www.jacksparrow.com</div>
+                            </div>
+                        </div>
+
+
+                        <div class="btn-container">
+                            <button class="btn btn-secondary">
+                                <i class="icon icon-smaller fas fa-play"></i>Activate
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+            <!--step key - browser-->
+            <div class="stepper-step">
+                <div class="badge badge-icon stepper-badge"><i class="icon  far fa-circle"></i></div>
+                <div class="panel">
+                    <div class="panel-header">
+                        <h3>Create private key
+                        </h3>
+                    </div>
+
+                    <div class="panel-body">
+                        <div class="tab-container">
+                            <div class="tab-switch">
+                                <button class="tab tab-active">
+                                    In browser
+                                </button>
+                                <button class="tab ">
+                                    On server
+                                </button>
+
+                            </div>
+                            <div class="tab-content">
+                                <div class="nb mt-0">
+                                    <div class="badge badge-icon ">
+                                        <i class="fas fa-info"></i>
+                                    </div>
+                                    <span>We don’t store the key. If you loose it, you will need to start
+                                from scratch.</span>
+                                </div>
+                                <div class="nb">
+                                    <div class="badge badge-icon ">
+                                        <i class="fas fa-info"></i>
+                                    </div>
+                                    <span>Installing on a Windows server, use your CSR or  <a
+                                            href="" class="link-decorated">convert files
+                            to pfx</a>.</span>
+                                </div>
+
+                                <p>Save <span
+                                        class="txt-mono txt-highlighted">jacksparrow_com_key.zip</span>, you will need
+                                    it later
+                                    to
+                                    install PositiveSSL.</p>
+
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="btn-container">
+                            <button class="btn btn-secondary">
+                                <i class="icon fas fa-check"></i>
+                                Confirm key saved
+                            </button>
+                            <button class="btn btn-flat">
+                                <i class="icon fas fa-arrow-down"></i>
+                                Download key.zip
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+            <!--step key - server -->
+            <div class="stepper-step">
+                <div class="badge badge-icon stepper-badge"><i class="icon  far fa-circle"></i></div>
+                <div class="panel">
+                    <div class="panel-header">
+                        <h3>Create private key
+                        </h3>
+                    </div>
+
+                    <div class="panel-body">
+                        <div class="tab-container">
+                            <div class="tab-switch">
+                                <button class="tab">
+                                    In browser
+                                </button>
+                                <button class="tab tab-active">
+                                    On server
+                                </button>
+
+                            </div>
+                            <div class="tab-content">
+
+                                <div class="row between-xs mb">
+                                    <div class="col-xs">
+                                        <label class="control-container control-container-vertical">
+                                    <span class="input-label-left">
+                                     RSA
+                                    </span>
+                                            <input type="radio" checked="checked" name="radio1">
+                                            <span class="radiomark"></span>
+                                        </label>
+                                        <label class="control-container control-container-vertical">
+                                    <span class="input-label-left">
+                                     ECC
+                                    </span>
+                                            <input type="radio" name="radio1">
+                                            <span class="radiomark"></span>
+                                        </label>
+                                    </div>
+
+                                    <div class="col-xs end-xs">
+                                        <label class="control-container control-container-vertical">
+                                    <span class="input-label-left">
+                                     OpenSSL
+                                    </span>
+                                            <input type="radio" checked="checked" name="radio2">
+                                            <span class="radiomark"></span>
+                                        </label>
+                                        <label class="control-container control-container-vertical">
+                                    <span class="input-label-left">
+                                     Windows
+                                    </span>
+                                            <input type="radio" name="radio2">
+                                            <span class="radiomark"></span>
+                                        </label>
+
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group">
+                                    <div class="input txt-mono">
+                                        openssl req -new -newkey rsa:2048 -nodes -keyout aaaa_com.pem -out aaaa_com.csr
+                                        -subj /CN=aaaa.com; cat aaaa_com.csr
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group">
+                                    <input class="input txt-mono" placeholder="Enter CSR">
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="btn-container">
+                            <button class="btn btn-secondary">
+                                <i class="icon fas fa-check"></i>
+                                Confirm CSR
+                            </button>
+
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+            <!-- step DCV email-->
+            <div class="stepper-step">
+                <div class="badge badge-icon stepper-badge"><i class="icon  far fa-circle"></i></div>
+                <div class="panel">
+                    <div class="panel-header">
+                        <h3>Complete domain validation</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="tab-container">
+                            <div class="tab-switch">
+                                <button class="tab">
+                                    DNS
+                                </button>
+                                <button class="tab">
+                                    File
+                                </button>
+                                <button class="tab tab-active">
+                                    Email
+                                </button>
+                            </div>
+                            <div class="tab-content">
+
+                                <p>You will receive an email from <span
+                                        class="txt-highlighted">@trust-provider.com</span> to a predefined
+                                    domain-related
+                                    email address. Open the link inside that email,
+                                    and paste the validation code to the linked page to complete the validation process.
+                                    If you don’t know how to access the predefined domain-related email,
+                                    most probably it does not exist and you should create it. </p>
+                                <div class="content-scrolled">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-md-6 mt-xs">
+                                            <div class="select">
+                                                <select name="select">
+                                                    <option value="" selected disabled hidden>admin@jacksparrow.com
+                                                    </option>
+                                                    <option value="1">admin@jacksparrow.com</option>
+                                                    <option value="2">whois email at jacksparrow.com</option>
+                                                    <option value="3">administrator@jacksparrow.com</option>
+                                                    <option value="4">postmaster@jacksparrow.com</option>
+                                                    <option value="4">hostmaster@jacksparrow.com</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-md-6 mt-xs ">
+                                            <div class="select">
+                                                <select name="select">
+                                                    <option value="" selected disabled hidden>admin@jacksparrow.io
+                                                    </option>
+                                                    <option value="1">admin@jacksparrow.io</option>
+                                                    <option value="2">whois email at jacksparrow.io</option>
+                                                    <option value="3">administrator@jacksparrow.io</option>
+                                                    <option value="4">postmaster@jacksparrow.io</option>
+                                                    <option value="4">hostmaster@jacksparrow.io</option>
+                                                </select>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-12 col-md-6 mt-xs ">
+                                            <div class="select">
+
+                                                <select name="select">
+                                                    <option value="" selected disabled hidden>admin@jacksparrow.com
+                                                    </option>
+                                                    <option value="1">admin@jacksparrow.com</option>
+                                                    <option value="2">whois for jacksparrow.com</option>
+                                                    <option value="3">administrator@jacksparrow.com</option>
+                                                    <option value="4">postmaster@jacksparrow.com</option>
+                                                    <option value="4">hostmaster@jacksparrow.com</option>
+                                                </select>
+
+                                            </div>
+
+                                        </div>
+                                        <div class="col-xs-12 col-md-6 mt-xs ">
+                                            <div class="select">
+                                                <select name="select">
+                                                    <option value="" selected disabled hidden>admin@jsp.com</option>
+                                                    <option value="1">admin@jsp.com</option>
+                                                    <option value="2">whois email at jsp.com</option>
+                                                    <option value="3">administrator@jsp.com</option>
+                                                    <option value="4">postmaster@jsp.com</option>
+                                                    <option value="4">hostmaster@jsp.com</option>
+                                                </select>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <label class="control-container mt">
+                                        <span class="input-label-left">
+                                         Use same inbox for all domains
+                                        </span>
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="control-container mt">
+                                        <span class="input-label-left">
+                                        Set as default method
+                                        </span>
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+
+
+                                <div class="btn-container">
+                                    <button class="btn btn-secondary"><i class="icon fas fa-clone"></i>Confirm code
+                                        pasted
+                                    </button>
+                                    <button class="hide btn btn-secondary btn-checked"><i class="loader"></i>Confirm
+                                        code pasted
+                                    </button>
+                                    <button class="btn btn-flat"><img class="icon" src="../img/send.svg"
+                                                                      alt="Send email">Send
+                                        email
+                                    </button>
+                                    <button class="btn btn-flat"><i class="icon fas fa-video"></i>Video tutorial
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- http-->
+            <div class="stepper-step">
+                <div class="badge badge-icon stepper-badge"><i class="icon  far fa-circle"></i></div>
+
+                <div class="panel">
+                    <div class="panel-header">
+                        <h3>Complete domain validation</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="tab-container">
+                            <div class="tab-switch">
+                                <button class="tab">
+                                    DNS
+                                </button>
+                                <button class="tab  tab-active">
+                                    File
+                                </button>
+                                <button class="tab">
+                                    Email
+                                </button>
+
+
+                            </div>
+                            <div class="tab-content">
+                                <div class="nb mt-0">
+                                    <div class="badge badge-icon ">
+                                        <i class="fas fa-info"></i>
+                                    </div>
+                                    <span>Don’t rename
+                                    the .txt file
+                                    or change its content.</span>
+                                </div>
+                                <p>Upload <span class="txt-mono txt-highlighted">ys72aahnx028261oajq.txt</span> to the
+                                    <span class="txt-mono txt-highlighted">/.well-known/pki-validation/</span> folder at
+                                    your SSL domains:
+                                </p>
+                                <ul class="ul-unstyled content-scrolled">
+                                    <li><a class="link-plain txt-mono" href="">http://jacksparrow.com/.well-known/pki-validation/6teyqtrtyq65123614qewrtqe.txt</a>
+                                    </li>
+                                    <li><a class="link-plain txt-mono" href="">http://www.jacksparrow.com/.well-known/pki-validation/6teyqtrtyq65123614qewrtqe.txt</a>
+                                    </li>
+                                    <li><a class="link-plain txt-mono" href="">http://jacksparrow.io/.well-known/pki-validation/6teyqtrtyq65123614qewrtqe.txt</a>
+                                    </li>
+                                    <li><a class="link-plain txt-mono visited" href="">http://www.jacksparrow.io/.well-known/pki-validation/6teyqtrtyq65123614qewrtqe.txt</a>
+                                    </li>
+
+                                </ul>
+                                <p> If it’s your first time getting SSL through file-based validation, you should create
+                                    <span class="txt-mono txt-highlighted">/.well-known/pki-validation/</span> on your
+                                    server.</p>
+                                <label class="control-container mt">
+                                        <span class="input-label-left">
+                                        Set as default method
+                                        </span>
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <div class="btn-container">
+                                    <button class="btn btn-secondary"><i class="icon fas fa-arrow-up"></i>Confirm file
+                                        upload
+                                    </button>
+                                    <button class="btn btn-flat"><i class="icon fas fa-arrow-down"></i>Download .txt
+                                    </button>
+                                    <button class="btn btn-flat"><i class="icon fas fa-video"></i>Video tutorial
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- dns -->
+            <div class="stepper-step">
+                <div class="badge badge-icon stepper-badge"><i class="icon  far fa-circle"></i></div>
+
+                <div class="panel">
+                    <div class="panel-header">
+                        <h3>Complete domain validation</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="tab-container">
+                            <div class="tab-switch">
+                                <button class="tab tab-active">
+                                    DNS
+                                </button>
+                                <button class="tab">
+                                    File
+                                </button>
+                                <button class="tab">
+                                    Email
+                                </button>
+
+
+                            </div>
+                            <div class="tab-content">
+
+                                <p>Create a CNAME record for jacksparrow.com and jacksparrow.io at your DNS
+                                    provider:</p>
+                                <div class="mt mb content-scrolled">
+
+                                    <table class="table-plain table-fixed lh-sm">
+
+                                        <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th class="cell-center">Type</th>
+                                            <th>Point to</th>
+                                            <th>TTL</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td data-title="Name"><span class="txt-mono">_1a96cf97e72fa19e66cc49c6e518c178</span>
+                                            </td>
+                                            <td data-title="Type" class="cell-center"><span
+                                                    class="txt-mono">CNAME</span></td>
+                                            <td data-title="Point to">
+
+                                            <span
+                                                    class="txt-mono">FB39026EEDA073E7725A8DEFA11EE952.55E9005351AC859CAF48A3DBC14E272D.60e862c0d9a09.comodoca.com</span>
+                                            </td>
+                                            <td data-title="TTL"><span
+                                                    class="txt-mono">60 or min possible value</span>
+                                            </td>
+                                        </tr>
+
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <label class="control-container mt">
+                                        <span class="input-label-left">
+                                        Set as default method
+                                        </span>
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <div class="btn-container">
+
+                                    <button class="btn btn-secondary"><i class="icon fas fa-plus"></i>Confirm DNS added
+                                    </button>
+                                    <button class="btn btn-flat"><i class="icon fas fa-video"></i>Video tutorial
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!--company -->
+            <div class="stepper-step">
+                <div class="badge badge-icon stepper-badge"><i class="icon  far fa-circle"></i></div>
+                <div class="panel">
+                    <div class="panel-header">
+                        <h3>Company details
+                        </h3>
+                    </div>
+
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-xs-12  mt-screensm">
+                                <input class="input" placeholder="Registered company name">
+                            </div>
+                        </div>
+                        <div class="row mt">
+                            <div class="col-xs-8 col-sm-10">
+                                <input class="input" placeholder="Country of registratin">
+                            </div>
+                            <div class="col-xs-4 col-sm-2">
+                                <input class="input" placeholder="Zip">
+                            </div>
+                        </div>
+                        <div class="row mt">
+                            <div class="col-xs-4 col-sm-2">
+                                <input class="input" placeholder="State">
+                            </div>
+                            <div class="col-xs-8 col-sm-4">
+                                <input class="input" placeholder="City of registratin">
+                            </div>
+                            <div class="col-xs-12 col-sm-6 mt-screensm">
+                                <input class="input" placeholder="Legal address">
+                            </div>
+                        </div>
+
+                        <div class="btn-container">
+                            <button class="btn btn-secondary">
+                                <i class="icon fas fa-check"></i>
+                                Confirm legal registration
+                            </button>
+
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+            <!--dv: get ssl - timer-->
+            <div class="stepper-step">
+                <div class="badge badge-icon stepper-badge"><i class="icon  far fa-circle"></i></div>
+                <div class="panel">
+                    <div class="panel-header">
+                        <h3>Get SSL</h3>
+                    </div>
+                    <div class="panel-body">
+                        <p>We have successfully verified that your website meets our provider's requirements. Now
+                            the
+                            Certificate Authority needs to perform the final check before issuing the SSL.
+                            Validation
+                            may take 2&ndash;20 minutes.
+                        </p>
+
+                    </div>
+
+
+                    <div class="panel-footer">
+                        Awaiting domain control validation: 120s..
+                    </div>
+                </div>
+            </div>
+
+            <!-- install inactive-->
+            <div class="stepper-step stepper-step-inactive">
+                <div class="badge badge-icon stepper-badge"><i class="icon  far fa-circle"></i></div>
+                <div class="panel">
+
+                    <div class="panel-header">
+                        <h3>Install SSL</h3>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- install-->
+            <div class="stepper-step">
+                <div class="badge badge-icon stepper-badge"><i class="icon  far fa-circle"></i></div>
+                <div class="panel">
+                    <div class="panel-header">
+                        <h3>Install SSL</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="tab-container">
+                            <div class="tab-switch">
+                                <button class="tab tab-active">
+                                    Yourself
+                                </button>
+                                <button class="tab">
+                                    We do it ($28.88/yr)
+                                </button>
+
+                            </div>
+                            <div class="tab-content">
+
+                                <p>Extract the files from <span
+                                        class="txt-highlighted">jacksparrow_com_key.zip</span> and <span
+                                        class="txt-highlighted">jacksparrow_com_cert.zip</span> on your computer and
+                                    upload them to your server. <a href="" class="link-decorated">Here is a list</a>
+                                    of
+                                    the most common server types
+                                    and how to install SSL on them.</p>
+                                <p>If you created private key in-browser, you will find
+                                    <span
+                                            class="txt-highlighted">jacksparrow_com_key.zip</span> in your downloads
+                                    folder. For private key created directly on your
+                                    hosting server, upload extracted files from <span
+                                            class="txt-highlighted">jacksparrow_com_cert.zip</span> only.
+                                </p>
+
+                                <div class="btn-container">
+                                    <button class="btn btn-secondary"><i class="icon fas fa-check"></i>Confirm
+                                        installation
+                                    </button>
+                                    <button class="btn btn-flat">
+                                        <i class="icon fas fa-arrow-down"></i>
+                                        Download cert.zip
+                                    </button>
+                                    <button class="btn btn-flat"><i class="icon fas fa-video"></i>Video tutorial
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- buy ssl -->
+            <div class="stepper-step">
+                <div class="badge badge-icon stepper-badge"><i class="icon  far fa-circle"></i></div>
+
+                <div class="panel">
+                    <div class="panel-header">
+                        <h3>Pay for SSL</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="tab-container">
+                            <p>You have 28 trial days left. Pay before Jun 20, 2021 to keep using the SSL. Pay after
+                                this date and you will need to go
+                                through the whole SSL issuance process again and will need to reinstall your SSL
+                                certificate.</p>
+
+                            <div class="btn-container">
+                                <button class="btn btn-secondary">
+                                    <i class="icon fas fa-shopping-bag"></i>Buy
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </section>
+
+</div>
+
+
+</body>
+
+</html>

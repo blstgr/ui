@@ -1,0 +1,48 @@
+.loader {
+    position: relative;
+    width: var(--space-md);
+    height: var(--space-md);
+
+}
+
+.loader:after,
+.loader:before {
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin: auto;
+    width: var(--space-md);
+    height: var(--space-md);
+    border-radius: 50%;
+    border: 0.25rem solid white;
+    content: "";
+    animation: sk-bounce 1.6s infinite ease-in-out;
+}
+
+.loader::after{
+  left: 0.375rem/*6*/;
+    width: var(--space);
+    height: var(--space);
+    animation-delay: -.5s;
+    border: none;
+    background: white;
+}
+
+.btn .loader{
+    margin-right: 0.75rem/*12*/;
+}
+
+@keyframes sk-bounce {
+
+    0%,
+    100%,
+    80% {
+        transform: scale(0.4);
+    }
+
+    40% {
+        transform: scale(.7);
+    }
+}

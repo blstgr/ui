@@ -1,0 +1,98 @@
+:root {
+
+    --color-brand-light: #f9f8f4;
+    --color-brand: #EAE7DB;
+    --color-brand-darker: #D2CBAB;
+    --color-brand-dark: #243742;
+
+
+    --color-warning-light: #FAF1CB;
+    --color-warning: #FFCC91;
+    --color-warning-dark: #FFB79A;
+
+    --color-alert-light: #fff5f0;
+    --color-alert: #FA8E73;
+    --color-alert-dark: #BD5942;
+
+    --color-success-light: #eefff7;
+    --color-success: #8fd6b7;
+    --color-success-dark: #458776;
+
+    --color-info-light: #f4faf9;
+    --color-info: #A7D1E5;
+    --color-info-dark: #2F4858;
+
+    --color-a-visited: #A389A1;
+
+
+    --space-md: 1.5rem /*28*/;
+    --space: 1rem /*16*/;
+    --space-sm: 0.5rem /*8*/;
+    --space-xs: 0.25rem /*4*/;
+    --space-xxs: 0.125rem /*2*/;
+
+    --spacex2: 2rem /*32*/;
+    --spacex3: 3rem /*48*/;
+    --spacex4: 4rem /*48*/;
+
+
+    --radius: 1em /*16*/;
+    --radius-sm: 0.75em /*12*/;
+
+
+    --border: 0.125rem /*2*/;
+
+    --line-height: 1.8;
+    --line-height-sm: 1.5;
+    --line-height-font-lg: 1.2;
+
+    --font-size-sm: 14px;
+    --font-size: 18px;
+    --font-size-md: 32px;
+    --font-size-lg: 60px;
+
+    --shadow-raised: 0 1rem 0.625rem rgba(0, 0, 0, 0.25);
+
+    --shadow: 0.5rem 0.5rem 0 var(--color-brand-dark);
+    --shadow-dark: 0.5rem 0.5rem 0 #000;
+
+    --shadow-lg: 1rem 1rem 0 var(--color-brand-dark);
+    --shadow-inset: inset 0.5rem 0.5rem 0 var(--color-brand-dark);
+
+    --shadow-lg-light: 1rem 1rem 0 var(--color-brand);
+    --shadow-lg-info: 1rem 1rem 0 var(--color-info);
+    --shadow-lg-success: 1rem 1rem 0 var(--color-success);
+    --shadow-lg-alert: 1rem 1rem 0 var(--color-alert);
+    --shadow-lg-dark: 1rem 1rem 0 #000;
+
+
+    --focus: var(--border) dashed var(--color-success);
+
+    --padding: 0.75rem 1.25rem;
+
+    --font-family: 'Montserrat', 'Verdana', sans-serif;
+
+}
+
+@media (min-width: 23em) {
+    :root {
+        --font-size-lg: 72px /*iphone 8*/;
+    }
+}
+
+
+@media (min-width: 25.875em) /*iphone max*/ {
+    :root {
+        --font-size-lg: 76px;
+
+    }
+}
+
+@media (min-width: 64em) {
+    :root {
+        --font-size-lg: 84px;
+    }
+}
+
+
+

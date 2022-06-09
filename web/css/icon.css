@@ -1,0 +1,59 @@
+@import url(./var.css);
+
+i{
+  font-style: normal;
+}
+
+/* .icon - general class - icon or icon+txt combination inside btns or labes*/
+.icon {
+    position: relative;
+    display: inline-flex;
+    font-size: var(--font-size);
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+
+.icon-l{
+  font-size: 1.25rem;
+}
+
+.icon-xl{
+    font-size: var(--spacex3);
+}
+
+.icon-smaller{
+  font-size: 0.875rem;
+}
+
+/* x for close btn*/
+.close {
+    position: relative;
+    height: var(--space);
+    width: var(--space);
+  }
+  
+  .close:before,
+  .close:after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    content: "";
+    display: block;
+    width: 0.125rem /*2*/; /*em breaks the icon*/
+    height:  1rem /*16*/;
+    background: white;
+  }
+  
+  .close:before {
+    transform: rotate(45deg);
+  }
+  .close:after {
+    transform: rotate(-45deg);
+  }
+  
+  
