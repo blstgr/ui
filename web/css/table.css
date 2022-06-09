@@ -1,96 +1,528 @@
 table {
-  width: 100%;
-  /* margin: 0 auto var(--space-sm); */
-  border-collapse: collapse;
-  /* border-bottom: 2px solid var(--color-brand-light) */
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    color: inherit;
+    line-height: var(--line-height);
 }
 
-table:last-child,
-table:only-child {
-  margin-bottom: 0;
+.table-fixed {
+    table-layout: fixed;
+}
+
+
+table + table {
+    margin-top: var(--space-md);
+}
+
+
+td,
+th {
+    vertical-align: top;
+    padding: var(--space-sm);
 }
 
 td,
 th {
-  padding: var(--space-xs) var(--space-sm);
-  border: 0;
-  font-weight: normal;
-  vertical-align: top
+    vertical-align: top;
+    padding: var(--space-md);
 }
 
 th {
-  font-family: 'Roboto Mono', monospace;
-  border-bottom: 2px solid var(--color-brand-dark);
+    font-weight: 700;
 }
 
-tr {
-  background-color: var(--color-brand);
+
+table .btn-responsive span {
+    display: initial;
 }
 
-tr:nth-child(even) {
-  background-color: white;
+table .btn-responsive .icon {
+    margin-right: var(--space-sm);
 }
 
-th {
-  background-color: white;
+@media screen and (min-width: 48em) {
+    table .btn-responsive span {
+        display: none;
+    }
+
+    table .btn-responsive .icon {
+        margin-right: 0;
+    }
+
 }
 
-.cell-focus {
-  border-right: 2px solid var(--color-accent-dark);
+
+@media screen and (min-width: 64em) {
+    table .btn-responsive span {
+        display: initial;
+    }
+
+    table .btn-responsive .icon {
+        margin-right: var(--space-sm);
+    }
+
 }
 
-.cell-fixed {
-  width: var(--width-sm);
+
+/* normal table, odd row has a different color   */
+
+.table-striped tbody tr:nth-child(odd) {
+    background: var(--color-brand);
 }
 
-.cell-fixed-col-4 {
-  width: 33.3%;
+/* normal table with rounded corners and a border */
+
+.table-bordered {
+    border-style: hidden; /* hide standard table (collapsed) border */
+    box-shadow: 0 0 0 var(--border) var(--color-brand-dark); /* table border  */
+    border-radius: var(--radius);
+    background: white;
 }
 
-@media (max-width: 47em) {
-  table {
-    width: 100%;
-    table-layout: fixed;
-    text-align: left;
-    margin-bottom: 0;
-  }
+.table-bordered th {
+    background: white;
 
-  caption {
-    display: block;
-  }
+}
 
-  thead {
-    display: none;
-    visibility: hidden;
-  }
+.table-bordered tr:nth-child(even) {
+    background: var(--color-brand-light);
 
-  td {
+}
+
+
+/*.table-bordered th {*/
+/*    background: white;*/
+/*}*/
+
+.table-bordered th:first-child {
+    border-radius: var(--radius) 0 0 0;
+}
+
+.table-bordered th:last-child {
+    border-radius: 0 var(--radius) 0 0;
+}
+
+.table-bordered tr:first-child td:first-child {
+    border-radius: var(--radius) 0 0 0;
+}
+
+.table-bordered tr:first-child td:last-child {
+    border-radius: 0 var(--radius) 0 0;
+}
+
+.table-bordered tr:last-child td:first-child {
+    border-radius: 0 0 0 var(--radius);
+}
+
+.table-bordered tr:last-child td:last-child {
+    border-radius: 0 0 var(--radius) 0;
+}
+
+.table-bordered tr:first-child td:only-child {
+    border-radius: var(--radius) var(--radius) 0 0;
+}
+
+.table-bordered tr:last-child td:only-child {
+    border-radius: 0 0 var(--radius) var(--radius);
+}
+
+.table-bordered thead + tbody tr:first-child td:first-child {
+    border-radius: 0;
+}
+
+.table-bordered thead + tbody tr:first-child td:last-child {
+    border-radius: 0;
+}
+
+.table-bordered thead + tbody tr:only-child td:first-child {
+    border-radius: 0 0 0 var(--radius);
+}
+
+.table-bordered thead + tbody tr:only-child td:last-child {
+    border-radius: 0 0 var(--radius) 0;
+}
+
+
+.panel + table {
+    margin-top: var(--space);
+}
+
+/* each tr is borderdered and sepated from the next */
+
+.table-spaced {
+    border-collapse: separate;
+    border-spacing: 0 1rem;
+    margin: -1rem 0;
+
+}
+
+.table-spaced td,
+.table-spaced th {
+    border-width: var(--border) 0;
+    border-color: var(--color-brand-dark);
+    border-style: solid;
+    background: white;
+}
+
+.row-info td {
+    background: var(--color-info-light);
+    border-color: var(--color-info);
+}
+
+.row-success td {
+    color: var(--color-success-dark);
+    background: var(--color-success-light);
+    border-color: var(--color-success);
+}
+
+.row-success td button {
+    color: var(--color-success-dark);
+}
+
+
+.table-spaced td:first-child,
+.table-spaced th:first-child {
+    border-left-width: var(--border);
+    border-radius: var(--radius) 0 0 var(--radius);
+}
+
+.table-spaced td:last-child,
+.table-spaced th:last-child {
+    border-right-width: var(--border);
+    border-radius: 0 var(--radius) var(--radius) 0;
+}
+
+.table-spaced td:only-child {
+    border-right-width: var(--border);
+    border-radius: var(--radius);
+}
+
+
+/*reset cell width related classes - small screen td width is always 100%*/
+@media screen and (min-width: 64em) {
+    .cell-fixed-xs {
+        width: 5rem /*80*/;
+    }
+
+    .cell-fixed-md {
+        width: 10rem /*160*/;
+    }
+
+    .cell-fixed-lg {
+        width: 16.25rem /*260*/;
+    }
+
+    .cell-center {
+        text-align: center;
+    }
+
+    .cell-right {
+        text-align: right;
+    }
+
+    .table-centered {
+        text-align: center;
+    }
+
+    .table-centered td {
+        vertical-align: middle;
+    }
+}
+
+
+/* undo tables for small screens */
+@media screen and (max-width: 64em) {
+    table {
+        border: 0;
+        padding-bottom: 0;
+        display: block;
+        width: 100%;
+    }
+
+    /* make sure captions are displayed */
+    caption {
+        display: block;
+    }
+
+    /* wipe the thead from the face of the earth, modern screen readers will expose the generated content */
+    thead {
+        display: none;
+        visibility: hidden;
+    }
+
+    /*
+     * make everything display block so it
+     * aligns vertically
+   */
+    tbody,
+    tr,
+    th,
+    td {
+        border: 0;
+        display: block;
+        padding: 0;
+        text-align: left;
+        white-space: normal;
+    }
+
+
+    /* give each row a little space */
+    td {
+        padding: var(--space);
+    }
+
+    td:empty {
+        display: none;
+    }
+
+    tr + tr {
+        margin-top: var(--space);
+    }
+
+    tr {
+        border: var(--border) solid var(--color-brand-dark);
+        border-radius: var(--radius);
+        padding: var(--space-xs);
+    }
+
+    .table-plain tr {
+        border: 0;
+    }
+
+    .table-plain tr + tr {
+        margin-top: 0;
+    }
+
+
+    /*reset *-responsive elements in tables on small screen - both icon and text is visible*/
+    table .badge-responsive span,
+    table .label-responsive span {
+        display: initial;
+    }
+
+    table .badge .icon,
+    table .badge img,
+    table .label-responsive .icon {
+        margin-right: var(--space-sm);
+    }
+
+    /* labels for cells when th is hidden*/
+    th[data-title]:before,
+    td[data-title]:before {
+        content: attr(data-title) ":\00A0";
+        font-weight: 800;
+    }
+
+    th:not([data-title]) {
+        font-weight: 800;
+    }
+
+    table .btn-flat {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .table-spaced {
+        margin: auto;
+    }
+
+    .table-spaced td:first-child,
+    .table-spaced th:first-child,
+    .table-spaced td:last-child,
+    .table-spaced th:last-child {
+        border-left-width: 0;
+        border-radius: 0;
+    }
+
+
+    .table-spaced td,
+    .table-spaced th {
+        border: none;
+    }
+
+    .table-bordered {
+        box-shadow: none;
+    }
+
+    /* text is always alignt left or center in the whole table, no need to align center for specific cells */
+    .cell-center {
+        text-align: left;
+    }
+
+    .cell-right {
+        text-align: left;
+    }
+}
+
+
+/* same table as on screen sm but on all screens*/
+
+.table-labeled th[data-title]:before,
+.table-labeled td[data-title]:before {
+    content: attr(data-title) ":\00A0";
+    font-weight: 800;
+
+
+}
+
+.table-labled th:not([data-title]) {
+    font-weight: 800;
+}
+
+
+/*div table*/
+
+.divtable-scrollable {
     display: flex;
-    text-align: left;
-    flex-direction: row;
-    align-items: flex-start;
-    background-color: var(--color-brand-light);
-  }
+    overflow: hidden;
+    border-radius: 1rem;
+}
 
-  td:nth-child(even) {
+.tscroll-track {
+    display: flex;
+    overflow: scroll;
+    width: 100%;
+}
+
+.tscroll-track::-webkit-scrollbar {
+    display: none;
+}
+
+
+.tcol {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    width: 25%;
+    min-width: 11rem;
+}
+
+.tcol-sticky {
+    display: flex;
+    position: sticky;
+    left: 0;
+    width: 50%;
+    z-index: 1;
+}
+
+.tcol-brand {
+    flex: 1;
+}
+
+.tcol-brand .tcell {
+    background: var(--color-brand);
+}
+
+.tcol-heading-screensm {
+    display: none;
+}
+
+
+.tcell {
+    display: flex;
+    min-height: 7rem;
+    padding: var(--space-md);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 auto;
+    border-bottom: var(--border) solid var(--color-brand-dark);
     background-color: white;
-  }
+    text-align: center;
+}
 
-  tr {
-    display: block;
-    margin-bottom: var(--space-md);
-  }
+@media screen and (min-width: 90em) {
+    .tcell {
+        min-height: auto;
+    }
+}
 
-  table th[data-title]:before,
-  table td[data-title]:before {
-    content: attr(data-title);
-    display: inline-block;
-    padding: var(--space-minx2) var(--space-xs);
-    min-width: var(--width-xs);
-    max-width: var(--width-xs);
-  }
+.tcell:first-child {
+    border-top: var(--border) solid var(--color-brand-dark);
+}
 
-  .cell-fixed {
-    width: auto;
-  }
+.tcell:last-child {
+    border-bottom: var(--border) solid var(--color-brand-dark);
+}
+
+.tcol-heading-screensm .tcell,
+.tcol-heading-screenmd .tcell {
+    border-left: var(--border) solid var(--color-brand-dark);
+}
+
+.tcol:last-child .tcell {
+    border-right: var(--border) solid var(--color-brand-dark);
+}
+
+.tcol:first-child .tcell:first-child {
+    border-top-left-radius: var(--radius);
+}
+
+.tcol:first-child .tcell:last-child {
+    border-bottom-left-radius: var(--radius);
+}
+
+.tcol:last-child .tcell:first-child {
+    border-top-right-radius: var(--radius);
+}
+
+.tcol-sticky .tcol:last-child .tcell:first-child {
+    border-top-right-radius: 0;
+}
+
+.tcol:last-child .tcell:last-child {
+    border-bottom-right-radius: var(--radius);
+}
+
+
+.tcol-sticky .tcol:last-child .tcell {
+    border-right: 0;
+}
+
+.tcell-heading {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+}
+
+
+.tcell-cta-screenmd {
+    border-bottom-right-radius: var(--radius);
+    border-bottom-left-radius: var(--radius);
+}
+
+.tcell:last-child.tcell-cta-screenmd {
+    border-bottom: 0;
+}
+
+.tcell-cta-screensm {
+    display: none;
+}
+
+
+@media screen and (max-width: 27em) {
+    .tcol-heading-screenmd {
+        display: none;
+    }
+
+    .tcol-heading-screensm {
+        display: block;
+        position: sticky;
+        left: 0;
+        background-color: transparent;
+        z-index: 2;
+    }
+
+    .tcol-sticky {
+        position: static;
+        left: auto;
+    }
+
+    .tcell-cta-screenmd {
+        display: none;
+    }
+
+
 }

@@ -1,6 +1,6 @@
 // certs page
 let cardMagicGridH = new MagicGrid({
-    container: '.m-grid-h',
+    container: '.magic-grid',
     animate: false,
     gutter: 32,
     static: true,
@@ -9,22 +9,4 @@ let cardMagicGridH = new MagicGrid({
 });
 cardMagicGridH.listen();
 
-let faqMagicGridH = new MagicGrid({
-    container: '.m-grid-faq-h',
-    animate: false,
-    gutter: 32,
-    static: true,
-    center: true
 
-});
-faqMagicGridH.listen();
-
-let revMagicGridH = new MagicGrid({
-    container: '.m-grid-rev-h',
-    animate: false,
-    gutter: 32,
-    static: true,
-    center: true
-
-});
-revMagicGridH.listen();

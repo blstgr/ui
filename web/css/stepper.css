@@ -1,55 +1,78 @@
-.stepper {
-    display: flex;
+@import url(./var.css);
+
+
+.stepper-step {
+    position: relative;
+
 }
 
-.progress {
-    width: var(--space-lg);
-    background-color: white;
-    border: 0;
-    overflow: hidden
+.stepper-step-inactive {
+    opacity: 0.4;
 }
 
-
-
-.progress:first-child {
-    border-top-left-radius: var(--radius);
-    border-bottom-left-radius: var(--radius);
+.stepper + .stepper,
+.stepper-step + .stepper-step {
+    margin-top: var(--space-md);
 }
 
-.progress:last-child {
-    border-top-right-radius: var(--radius);
-    border-bottom-right-radius: var(--radius);
+.stepper-badge {
+    position: absolute;
+    top: var(--spacex4);
+    left: -0.9375rem /*-15*/;
+    z-index: 999;
 }
 
-.progress+.progress {
-    margin-left: 2px;
-}
-
-.progress::before {
-    display: block;
-    content: "";
-    height: var(--space-minx2);
-    background-color: var(--color-success);
-}
-
-.p90.progress::before {
-    width: 90%;
-}
-
-.p75.progress::before {
-    width: 75%;
-}
-
-.p0.progress::before {
-    width: 0;
+.stepper-step-completed .badge,
+.stepper-step-inactive .badge {
+    top: var(--space-md);
 }
 
 
+.panel + .stepper,
+.stepper + .panel {
+    margin-top: var(--space-md);
 
-/* .step {
-    display: inline-block;
 }
 
-.step+.step {
-    margin-left: var(--space-minx2);
-} */
+.stepper + table {
+    margin-top: var(--space-md);
+}
+
+/*stepper w/ 1 border*/
+
+
+.stepper-ghost .panel {
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+}
+
+.stepper-ghost .stepper-step + .stepper-step {
+    margin-top: 0;
+}
+
+@media screen and  (max-width: 48em) {
+    .stepper-ghost {
+        display: flex;
+        margin-top: var(--space-sm);
+    }
+
+    .stepper-ghost .panel {
+        border-top-width: var(--border);
+        border-left-width: 0;
+    }
+
+
+    .stepper-ghost h3 {
+        display: none;
+    }
+
+    .stepper-ghost .stepper-step-completed .badge,
+    .stepper-ghost .stepper-step-inactive .badge {
+        top: -1rem;
+        left: var(--space-sm);
+    }
+}

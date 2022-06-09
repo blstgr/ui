@@ -1,7 +1,0 @@
-.hellobar{
-    padding: var(--space);
-    background-color: var(--color-info-dark);
-    color: white;
-    line-height: var(--line-height);
-    margin-bottom: var(--space-sm);
-}

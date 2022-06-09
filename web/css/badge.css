@@ -1,37 +1,100 @@
-.badge,
-.badge-square,
-.badge-success,
-.badge-alert,
-.badge-info {
-  display: inline-block;
-  line-height: 1;
-  min-width: var(--height-xs);
-  padding: 7px var(--space-minx2);
-  /* margin: var(--space-min); */
-  background-color: var(--color-brand-dark);
-  color: white;
-  border-radius: var(--height-xs);
-  font-size: var(--font-size-xs);
-  text-align: center;
-  font-style: normal;
-  font-family: 'Roboto Mono', monospace;
+.badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 1.5rem;
+    min-width: 1.5rem;
+    margin: var(--space-xs);
+    padding: 0.0625em var(--space-sm) /*1*/;
+    background: var(--color-brand-dark);
+    border-radius: var(--radius);
+    font-weight: 600;
+    text-align: center;
+    color: white;
+    font-family: courier, monospace;
+    font-size: 0.875rem; /*14*/
+    line-height: var(--line-height-sm);
 }
 
-.badge-square {
-  height: var(--height-xs);
-  line-height: var(--height-xs);
-  width: var(--height-xs);
-  padding: 0;
+.badge .icon {
+    margin-right: var(--space-sm);
+}
+
+.badge img {
+    width: 18px;
+    margin-right: var(--space-xs);
+}
+
+.badge-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.badge-icon .icon {
+    margin-right: 0;
+}
+
+
+.badge-inverted {
+    background: white;
+    color: var(--color-brand-dark);
 }
 
 .badge-success {
-  background-color: var(--color-success);
+    background: var(--color-success-dark);
 }
 
 .badge-alert {
-  background-color: var(--color-accent);
+    background: var(--color-alert-dark);
 }
 
-.badge-info {
-  background-color: var(--color-info);
+.badge-closable {
+    position: relative;
+    padding-right: var(--spacex2);
+
+}
+
+.badge-closable:before,
+.badge-closable:after {
+    position: absolute;
+    top: 0.0625rem /*1*/;
+    bottom: 0;
+    right: 0.75rem;
+    margin: auto;
+    content: "";
+    display: block;
+    width: 0.125rem /*2*/;
+    height: 0.75rem;
+    background: white;
+
+}
+
+.badge-closable:before {
+    transform: rotate(45deg);
+}
+
+.badge-closable:after {
+    transform: rotate(-45deg);
+}
+
+
+.badge-responsive .icon, /* *-responsive hides text and leaves only icon */
+.badge-responsive img {
+    margin-right: 0;
+}
+
+.badge-responsive span {
+    display: none;
+}
+
+@media screen and (min-width: 64em) {
+    .badge-responsive span {
+        display: initial;
+    }
+
+    .badge-responsive img,
+    .badge-responsive .icon {
+        margin-right: var(--space-sm);
+    }
+
 }

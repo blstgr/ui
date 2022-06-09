@@ -1,17 +1,7 @@
-.hellobar,
-.hellobar-info {
-  margin-top: var(--space-minx2);
-  padding: var(--space-minx3) var(--space-sm);
-  background-color: var(--color-brand-dark);
-  font-size: var(--font-size-sm);
-  color: white;
-  font-family: 'Roboto Mono', monospace;
-}
-
-.hellobar-info {
-  background-color: var(--color-info);
-  color: white;
-  text-align: center;
-  letter-spacing: 0.018em;
-  font-family: 'Lato', sans-serif;
+.hellobar{
+    padding: var(--space);
+    background-color: var(--color-info-dark);
+    color: white;
+    line-height: var(--line-height);
+    margin-bottom: var(--space-sm);
 }
