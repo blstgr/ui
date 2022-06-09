@@ -85,9 +85,6 @@
     color: inherit;
 }
 
-.alert a.visited {
-    color: var(--color-alert-lighter);
-}
 
 .alert .badge {
     margin-right: var(--space);
@@ -96,14 +93,10 @@
 }
 
 .alert .content-scrolled {
-    background: var(--color-alert-xdark);
     padding: var(--space-sm);
     margin-top: var(--space-sm);
 }
 
-.alert .txt-highlighted {
-    background: var(--color-alert-xdark);
-}
 
 /* blue */
 
@@ -116,11 +109,6 @@
 .alert-info .badge {
     margin-right: var(--space);
     color: var(--color-info-dark);
-}
-
-
-.alert-info a.visited {
-    color: var(--color-info-lighter);
 }
 
 
