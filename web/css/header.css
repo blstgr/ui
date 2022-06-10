@@ -92,9 +92,17 @@ nav ul {
     }
 }
 
-.nav-brand {
+.nav-icon {
     display: inline-flex;
     justify-content: center;
     align-items: center;
+}
+
+.nav-icon-brand {
     font-size: 2rem;
+}
+
+
+.nav-icon-menu img {
+    margin: 0;
 }
