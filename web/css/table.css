@@ -524,5 +524,10 @@ table .btn-responsive .icon {
         display: none;
     }
 
+    .tcell-cta-screensm {
+        display: block;
+        
+    }
+
 
 }

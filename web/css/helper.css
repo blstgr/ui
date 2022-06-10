@@ -173,28 +173,10 @@
 
 
 .bgcolor-brand-dark {
-    background: var(--color-brand-dark) !important;
+    background: var(--color-brand-dark);
     color: white;
 }
 
-.bgcolor-brand-dark.btn {
-    box-shadow: var(--shadow-dark);
-}
-
-.bgcolor-brand-dark.panel {
-    box-shadow: var(--shadow-lg-dark);
-}
-
-.bgcolor-brand-dark .btn,
-.bgcolor-brand-dark .btn-s {
-    color: white;
-}
-
-
-.bgcolor-brand {
-    background: var(--color-brand) !important;
-    border-color: var(--color-brand-darker) !important;
-}
 
 .txt-warning {
     color: var(--color-warning);

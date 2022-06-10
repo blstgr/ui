@@ -10,7 +10,7 @@
     background: var(--color-brand);
     border: var(--border) solid var(--color-brand-dark);
     width: 100%; /*always 100% on small screens*/
-    box-shadow: var(--shadow-lg-light);
+    box-shadow: var(--shadow-lg-brand);
 }
 
 
@@ -42,6 +42,11 @@
     line-height: var(--line-height);
 }
 
+
+.panel-warning {
+    background: var(--color-warning-light);
+    box-shadow: var(--shadow-lg-light);
+}
 
 .panel-success {
     /*border-color: var(--color-success-dark);*/
