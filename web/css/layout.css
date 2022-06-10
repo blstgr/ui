@@ -82,11 +82,6 @@ section,
 
 /* container for embedded tweets */
 
-.twitter-tweet {
-    margin: var(--space-sm) !important;
-    width: auto !important;
-    min-width: 22.5rem !important /*360*/;
-}
 
 .sticky-bottom-xs {
     position: fixed;
@@ -189,3 +184,29 @@ section,
     }
 }
 
+
+.twitter-tweet {
+    margin: var(--space-sm) !important;
+}
+
+.review-block {
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (min-width: 64em) {
+    .twitter-tweet {
+        margin: var(--space-sm) !important;
+        width: 100% !important;
+        min-width: 20vw !important;
+
+    }
+}
+
+@media screen and (min-width: 75em) {
+    .twitter-tweet {
+        max-width: 24vw !important;
+
+    }
+}
