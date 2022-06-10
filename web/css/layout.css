@@ -36,14 +36,15 @@ body {
 
 .page-container {
     position: relative;
-    padding: var(--spacex2) var(--space);
+    padding: var(--spacex4) var(--space);
 
 }
 
 @media screen and (min-width: 64em) {
 
     .page-container {
-        padding: var(--spacex4) var(--spacex3);
+        padding-left: var(--spacex3);
+        padding-right: var(--spacex3);
     }
 }
 
