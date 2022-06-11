@@ -44,8 +44,8 @@
 
 
 .panel-warning {
-    background: var(--color-warning-light);
-    box-shadow: var(--shadow-lg-light);
+    background: var(--color-brand-darker);
+    box-shadow: var(--shadow-lg-brand-darker);
 }
 
 .panel-success {

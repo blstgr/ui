@@ -251,7 +251,11 @@ p + .p,
 ul + p,
 ul + .p,
 p + ul,
-.p + ul {
+.p + ul,
+.p + a,
+p + a,
+a + p,
+a + .p {
     margin-top: var(--space);
 }
 
@@ -264,6 +268,7 @@ p + h2 {
 }
 
 a {
+    display: inline-block;
     color: inherit;
     text-decoration: none;
     transition: all .14s ease-out;
@@ -287,10 +292,16 @@ a:focus {
 
 }
 
-.link-plain {
-    display: inline-block;
+.link-plain,
+.link-ghost {
     text-decoration: none;
     color: inherit;
+}
+
+.link-ghost:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 0.25rem;
+    text-decoration-color: currentColor;
 }
 
 .link-plain:after {
@@ -317,7 +328,6 @@ a:focus {
     text-decoration-color: var(--color-alert);
     color: inherit;
     line-height: normal;
-    transition: background-color 0.25s ease-in-out;
 }
 
 
@@ -325,3 +335,5 @@ a:focus {
 .link-decorated.visited {
     color: var(--color-a-visited);
 }
+
+

@@ -61,11 +61,12 @@
     --shadow-inset: inset 0.5rem 0.5rem 0 var(--color-brand-dark);
 
     --shadow-lg-brand: 1rem 1rem 0 var(--color-brand);
-    --shadow-lg-light: 1rem 1rem 0 var(--color-warning-light);
+    --shadow-lg-light: 1rem 1rem 0 var(--color-warning);
     --shadow-lg-info: 1rem 1rem 0 var(--color-info);
     --shadow-lg-success: 1rem 1rem 0 var(--color-success);
     --shadow-lg-alert: 1rem 1rem 0 var(--color-alert);
-    --shadow-lg-dark: 1rem 1rem 0 #000;
+    --shadow-lg-brand-darker: 1rem 1rem 0 var(--color-brand-darker);
+    --shadow-lg-warning: 1rem 1rem 0 var(--color-warning);
 
 
     --focus: var(--border) dashed var(--color-success);

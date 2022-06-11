@@ -138,12 +138,6 @@
     margin-right: var(--space-sm);
 }
 
-.nb .link-decorated {
-    text-decoration-thickness: 0.125em;
-    text-decoration-color: currentColor;
-}
-
-
 
 
 
