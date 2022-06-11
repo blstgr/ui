@@ -8,7 +8,12 @@
     margin-top: var(--spacex2);
     border-top: var(--border) solid var(--color-brand-dark);
     border-bottom: var(--border) solid var(--color-brand-dark);
+    background: var(--color-brand-light);
 
+}
+
+.panel .tab-content {
+    background: transparent;
 }
 
 .tab-switch {

@@ -40,13 +40,22 @@ body {
 
 }
 
+.page-container-compact {
+    padding: var(--space);
+}
+
 @media screen and (min-width: 64em) {
 
     .page-container {
         padding-left: var(--spacex3);
         padding-right: var(--spacex3);
     }
+
+    .page-container-compact {
+        padding: var(--spacex3);
+    }
 }
+
 
 .page-container + .page-container {
     border-top: var(--border) solid var(--color-brand-dark);
@@ -186,27 +195,34 @@ section,
 
 
 .twitter-tweet {
-    margin: var(--space-sm) !important;
+    /*margin: var(--space-sm) !important;*/
 }
 
 .review-block {
-    max-width: 550px;
+    /*max-width: 550px;*/
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+}
+
+.twitter-tweet {
+    width: 20rem !important;
     margin-left: auto;
     margin-right: auto;
+
+    margin-bottom: var(--space-md) !important;
 }
 
-@media screen and (min-width: 64em) {
-    .twitter-tweet {
-        margin: var(--space-sm) !important;
-        width: 100% !important;
-        min-width: 20vw !important;
-
-    }
+.tpilot,
+.videotut {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 278px;
+    margin-bottom: var(--space-md);
 }
 
-@media screen and (min-width: 75em) {
-    .twitter-tweet {
-        max-width: 24vw !important;
-
-    }
+.videotut {
+    margin-left: auto;
+    margin-right: auto;
 }
