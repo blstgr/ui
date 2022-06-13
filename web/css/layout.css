@@ -195,20 +195,9 @@ section,
 
 
 .twitter-tweet {
-    /*margin: var(--space-sm) !important;*/
-}
-
-.review-block {
-    /*max-width: 550px;*/
-    /*margin-left: auto;*/
-    /*margin-right: auto;*/
-}
-
-.twitter-tweet {
     width: 20rem !important;
     margin-left: auto;
     margin-right: auto;
-
     margin-bottom: var(--space-md) !important;
 }
 
@@ -218,11 +207,25 @@ section,
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 278px;
     margin-bottom: var(--space-md);
+}
+
+.tpilot img {
+    width: 100%;
 }
 
 .videotut {
     margin-left: auto;
     margin-right: auto;
+}
+
+@media screen and (min-width: 48em) {
+    .tpilot,
+    .videotut {
+        height: 278px;
+    }
+
+    .tpilot img {
+        width: 24rem;
+    }
 }

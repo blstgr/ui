@@ -176,7 +176,7 @@ ul + .content-scrolled,
 
 .txt-highlighted {
     padding: 0.125rem 0.25rem;
-    background: rgba(210, 203, 171, 0.5);
+    background: rgba(210, 203, 171, 0.4);
     border-radius: 0.25rem;
     border: 1px solid rgba(0, 0, 0, 0.45);
 }

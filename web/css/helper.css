@@ -75,9 +75,11 @@
         margin-top: var(--space) !important;
     }
 
+    .mt-screenmd-x3 {
+        margin-top: var(--spacex3) !important;
+    }
 
 }
-
 
 .mb {
     margin-bottom: var(--space) !important;

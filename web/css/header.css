@@ -2,8 +2,8 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: var(--space);
-    padding-right: var(--space);
+    padding-left: var(--space-sm);
+    padding-right: var(--space-sm);
 }
 
 @media screen and (min-width: 64em) {
