@@ -167,6 +167,10 @@
     width: 100%;
 }
 
+.flex-one {
+    display: flex;
+    flex: 1;
+}
 
 .grid-container {
     display: flex;
