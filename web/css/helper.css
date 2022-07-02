@@ -75,6 +75,11 @@
         margin-top: var(--space) !important;
     }
 
+    .mt-screenmd-x2 {
+        margin-top: var(--spacex2) !important;
+    }
+
+
     .mt-screenmd-x3 {
         margin-top: var(--spacex3) !important;
     }
@@ -83,6 +88,10 @@
 
 .mb {
     margin-bottom: var(--space) !important;
+}
+
+.mb-md {
+    margin-bottom: var(--space-md) !important;
 }
 
 .mb-spacex2 {
@@ -152,6 +161,9 @@
     font-weight: 500 !important;
 }
 
+.fg-1 {
+    flex-grow: 1 !important;
+}
 
 .fg-4 {
     flex-grow: 3 !important;
@@ -216,7 +228,7 @@
 }
 
 .w-auto {
-    width: auto;
+    width: auto !important;
 }
 
 .mw-auto {

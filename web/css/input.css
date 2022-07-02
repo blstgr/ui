@@ -29,16 +29,14 @@ textarea {
     color: white;
 }
 
-.input:focus,
-.input-s:focus,
+input:focus,
 textarea:focus {
     box-shadow: 0 0 4px var(--color-success);
     border-color: var(--color-success-dark);
     outline: none;
 }
 
-.input::placeholder,
-.input-s::placeholder {
+input::placeholder {
     color: var(--color-brand-darker);
 
 }
@@ -124,12 +122,17 @@ p + .form-group {
 }
 
 
+.input-group-post .btn,
 .input-group-post .btn-s {
     height: 100%;
     border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
     border: var(--border) solid transparent;
     padding: var(--space);
     margin-left: -0.125rem;
+}
+
+.input-group-post .btn {
+    min-height: 4rem;
 }
 
 

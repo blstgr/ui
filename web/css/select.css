@@ -7,7 +7,7 @@
 
 .select:focus .select__selected {
     box-shadow: 0 0 4px var(--color-success-lighter);
-    border-color: var(--color-success);
+    border-color: var(--color-success-dark);
 }
 
 .select--active .select__selected:after {
@@ -22,7 +22,7 @@
 
 .select__selected {
     position: relative;
-    height: 3.75rem;
+    min-height: 4rem;
     line-height: 3.75rem;
     padding: 0 var(--spacex3) 0 var(--space);
     border-radius: var(--radius);

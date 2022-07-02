@@ -53,13 +53,20 @@
     background: var(--color-success);
     /*color: var(--color-success-dark);*/
     box-shadow: var(--shadow-lg-success);
+}
 
+.panel-success .input {
+    border-color: rgb(69 135 118 / 70%);
 }
 
 .panel-info {
     /*border-color: var(--color-info-dark);*/
     background: var(--color-info);
     box-shadow: var(--shadow-lg-info);
+}
+
+.panel-info .input {
+    border-color: rgb(47 72 88 / 50%);
 }
 
 .panel-alert {

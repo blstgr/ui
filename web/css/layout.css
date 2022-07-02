@@ -195,7 +195,9 @@ section,
 
 
 .twitter-tweet {
+    align-items: center;
     width: 20rem !important;
+    height: 16.875rem !important;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: var(--space-md) !important;
@@ -222,7 +224,8 @@ section,
 @media screen and (min-width: 48em) {
     .tpilot,
     .videotut {
-        height: 278px;
+        height: 17.375rem;
+        width: 90%;
     }
 
     .tpilot img {

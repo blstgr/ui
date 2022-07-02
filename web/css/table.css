@@ -4,6 +4,7 @@ table {
     text-align: left;
     color: inherit;
     line-height: var(--line-height);
+    overflow: hidden;
 }
 
 .table-fixed {

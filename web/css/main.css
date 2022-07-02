@@ -22,8 +22,6 @@
 
 @import url("icon.css");
 
-@import url("input.css");
-
 @import url("layout.css");
 
 @import url("loader.css");
@@ -31,6 +29,8 @@
 @import url("media.css");
 
 @import url("panel.css");
+
+@import url("input.css");
 
 @import url("progress.css");
 

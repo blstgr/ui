@@ -48,6 +48,12 @@
     background: var(--color-alert-dark);
 }
 
+.badge-ghost {
+    background: transparent;
+    color: var(--color-brand-dark);
+}
+
+
 .badge-closable {
     position: relative;
     padding-right: var(--spacex2);

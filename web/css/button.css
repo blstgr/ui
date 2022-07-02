@@ -57,15 +57,10 @@
 
 .btn-primary {
     background: var(--color-warning-dark);
-    /*color: white;*/
-    /*border-top: 0.0625rem!*1*! solid var(--color-alert-darker);*/
-
 }
 
 .btn-secondary {
     background: var(--color-brand-light);
-    /*border-top: 0.0625rem!*1*! solid var(--color-brand);*/
-
 }
 
 /* transparent bg, has padding */
@@ -90,7 +85,7 @@
 }
 
 /* no padding, same color as the rest of the text */
-/*lable example: "done" in stepper*/
+/*label example: "done" in stepper*/
 
 .btn-link {
     padding: 0;
@@ -191,7 +186,7 @@
 }
 
 .btn-container .btn-flat {
-    background: var(--color-brand-light);
+    background: rgba(210, 203, 171, 0.3);
 }
 
 .btn-container .btn + .btn {
