@@ -21,7 +21,7 @@
 [renewal](https://blstgr.github.io/ui/tdtr/renewal.html)
 [reset pwd](https://blstgr.github.io/ui/tdtr/reset-pwd.html)
 
-### vertions
+### versions
 
 [bfcm '20](https://blstgr.github.io/ui/tdtr/v/BFCM20.html)
 [bfcm '21](https://blstgr.github.io/ui/tdtr/v/BFCM21.html)
