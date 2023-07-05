@@ -22,7 +22,7 @@
     --color-info: #A7D1E5;
     --color-info-dark: #2F4858;
 
-    --color-a-visited: #A389A1;
+    --color-a-visited: #2050ff;
 
 
     --space-md: 1.5rem /*28*/;
@@ -34,6 +34,7 @@
     --spacex2: 2rem /*32*/;
     --spacex3: 3rem /*48*/;
     --spacex4: 4rem /*48*/;
+    --spacex5: 5rem /*48*/;
 
 
     --radius: 1em /*16*/;
@@ -74,6 +75,7 @@
     --padding: 0.75rem 1.25rem;
 
     --font-family: 'Montserrat', 'Verdana', sans-serif;
+
 
 }
 

@@ -23,6 +23,11 @@
     font-weight: 600;
 }
 
+/*if panel header content needs to be 1 col*/
+.panel div {
+    width: 100%;
+}
+
 .panel-header:only-child {
     border-bottom: 0;
 }
@@ -44,8 +49,8 @@
 
 
 .panel-warning {
-    background: var(--color-brand);
-    box-shadow: var(--shadow-lg-brand);
+    background: var(--color-warning);
+    box-shadow: var(--shadow-lg-warning);
 }
 
 .panel-success {

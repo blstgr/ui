@@ -176,9 +176,8 @@ ul + .content-scrolled,
 
 .txt-highlighted {
     padding: 0.125rem 0.25rem;
-    background: rgba(210, 203, 171, 0.3);
+    background: var(--color-brand-darker);
     border-radius: 0.25rem;
-    border: 1px solid rgba(0, 0, 0, 0.3);
     font-family: 'Roboto Mono', monospace;
 }
 
@@ -236,6 +235,22 @@ ul {
 .ul-unstyled li:last-child {
     margin-bottom: 0;
 }
+
+.ul-arrowed {
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style-type: none;
+
+}
+
+.ul-arrowed li {
+    background-image: url(../img/arrow.svg);
+    background-position: 0 60%;
+    background-repeat: no-repeat;
+    background-size: 1.25rem;
+    padding-left: 2.25rem;
+}
+
 
 p,
 .p {
@@ -305,6 +320,14 @@ a:focus {
     text-decoration-color: currentColor;
 }
 
+/*.link-plain {*/
+/*    background-image: url(../img/arrow.svg);*/
+/*    background-position: 95% 60%;*/
+/*    background-repeat: no-repeat;*/
+/*    background-size: 1.25rem;*/
+/*    padding-right: 2.25rem;*/
+/*}*/
+
 .link-plain:after {
     display: inline-block;
     height: auto;
@@ -312,7 +335,7 @@ a:focus {
     background-color: transparent;
     font-weight: 400;
     white-space: nowrap;
-    content: "→";
+    content: url(../img/arrow.svg);
     margin: 0;
     transition: all 0.5s cubic-bezier(0.2, 1, 0.3, 1) 0s;
 
@@ -336,5 +359,11 @@ a:focus {
 .link-decorated.visited {
     color: var(--color-a-visited);
 }
+
+.link-decorated.visited {
+    text-decoration-color: var(--color-a-visited);
+    text-decoration-style: dotted;
+}
+
 
 

@@ -14,8 +14,6 @@
 
 @import url("figure.css");
 
-@import url("header.css");
-
 @import url("hellobar.css");
 
 @import url("helper.css");
@@ -48,4 +46,7 @@
 
 @import url("var.css");
 
+@import url("footer.css");
+
+@import url("header.css");
 /*upd*/

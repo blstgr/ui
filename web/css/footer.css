@@ -1,0 +1,22 @@
+
+footer {
+    padding-top: var(--spacex3);
+    padding-bottom: var(--spacex3);
+    border-top: var(--border) solid var(--color-brand-dark);
+}
+
+footer a,
+footer p {
+    padding: var(--space);
+    height: 3rem;
+    border-radius: 6.25rem;
+    font-size: var(--font-size-sm);
+    font-weight: 900;
+    cursor: pointer;
+    transition: all .14s ease-out;
+}
+
+footer a:active {
+    background: var(--color-brand);
+    box-shadow: var(--shadow-inset);
+}
