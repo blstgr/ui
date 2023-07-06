@@ -69,6 +69,18 @@ textarea::-webkit-scrollbar-thumb {
     font-weight: 700;
 }
 
+.form +.form{
+    margin-top: var(--spacex2);
+}
+
+.form-inline{
+    display: flex;
+}
+
+.form-inline .form-group+.form-group{
+    margin-top: 0;
+    margin-left: var(--space);
+}
 
 /*hidden input label*/
 .visually-hidden {

@@ -362,8 +362,12 @@ a:focus {
 
 .link-decorated.visited {
     text-decoration-color: var(--color-a-visited);
-    text-decoration-style: dotted;
 }
+.link-plain.visited:after{
+    content: url(../img/arrow-visited.svg);
+}
+
+
 
 
 

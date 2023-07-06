@@ -715,7 +715,7 @@
         <h3>control</h3>
         <label class="control-container">
         <span class="input-label-left">
-          Select the first option
+          Checkbox 1
         </span>
             <input type="checkbox" checked="checked">
             <span class="checkmark"></span>
@@ -723,7 +723,7 @@
 
         <label class="control-container">
         <span class="input-label-left">
-          And the second
+          Checkbox 2
         </span>
             <input type="checkbox">
             <span class="checkmark"></span>
@@ -731,7 +731,7 @@
 
         <label class="control-container">
         <span class="input-label-left">
-          Choose this one
+        Radio 1
         </span>
             <input type="radio" checked="checked" name="radio">
             <span class="radiomark"></span>
@@ -739,75 +739,75 @@
 
         <label class="control-container">
         <span class="input-label-left">
-          Or this option, can’t do both
+         Radio 2
         </span>
             <input type="radio" checked="checked" name="radio">
             <span class="radiomark"></span>
         </label>
 
 
-        <div class="content-spaced">
-            <label class="control-container">
+<!--        <div class="content-spaced">-->
+<!--            <label class="control-container">-->
 
-                <label class="switch">
-                    <input type="checkbox" checked>
-                    <span class="slider slider-secondary"></span>
-                </label>
+<!--                <label class="switch">-->
+<!--                    <input type="checkbox" checked>-->
+<!--                    <span class="slider slider-secondary"></span>-->
+<!--                </label>-->
 
-                <label class="switch">
-                    <input type="checkbox" checked>
-                    <span class="slider"></span>
-                </label>
-
-
-                <label class="switch">
-                    <input type="checkbox">
-                    <span class="slider"></span>
-                </label>
+<!--                <label class="switch">-->
+<!--                    <input type="checkbox" checked>-->
+<!--                    <span class="slider"></span>-->
+<!--                </label>-->
 
 
-                <label class="switch">
-                    <input type="checkbox">
-                    <span class="slider slider-secondary">
-                          <i class="fas fa-sun"></i>
-                    </span>
-                </label>
+<!--                <label class="switch">-->
+<!--                    <input type="checkbox">-->
+<!--                    <span class="slider"></span>-->
+<!--                </label>-->
 
 
-            </label>
+<!--                <label class="switch">-->
+<!--                    <input type="checkbox">-->
+<!--                    <span class="slider slider-secondary">-->
+<!--                          <i class="fas fa-sun"></i>-->
+<!--                    </span>-->
+<!--                </label>-->
 
 
-        </div>
+<!--            </label>-->
 
 
-        <div class="content-spaced">
-            <label class="control-container">
-      <span class="input-label-left">
-        Option 1
-      </span>
+<!--        </div>-->
 
-                <label class="switch">
-                    <input type="checkbox" checked>
-                    <span class="slider"></span>
-                </label>
 
-            </label>
+<!--        <div class="content-spaced">-->
+<!--            <label class="control-container">-->
+<!--      <span class="input-label-left">-->
+<!--        Option 1-->
+<!--      </span>-->
 
-            <label class="control-container">
-      <span class="input-label-left">
-        Option 1
-      </span>
+<!--                <label class="switch">-->
+<!--                    <input type="checkbox" checked>-->
+<!--                    <span class="slider"></span>-->
+<!--                </label>-->
 
-                <label class="switch">
-                    <input type="checkbox" checked>
-                    <span class="slider"></span>
-                </label>
-                <span class="input-label-right">
-        Option 2
-      </span>
-            </label>
+<!--            </label>-->
 
-        </div>
+<!--            <label class="control-container">-->
+<!--      <span class="input-label-left">-->
+<!--        Option 1-->
+<!--      </span>-->
+
+<!--                <label class="switch">-->
+<!--                    <input type="checkbox" checked>-->
+<!--                    <span class="slider"></span>-->
+<!--                </label>-->
+<!--                <span class="input-label-right">-->
+<!--        Option 2-->
+<!--      </span>-->
+<!--            </label>-->
+
+<!--        </div>-->
     </section>
 </div>
 
@@ -815,26 +815,40 @@
 <div class="page-container">
     <section>
         <h3>form</h3>
-        <div class="row center-xs">
+        <div class="row">
             <div class="col-xs-12 col-md-5">
-                <div class="form-group">
-                    <label for="Email" class="visually-hidden">Email</label>
-                    <input class="input" type="text" id="Email" value="email@example.com">
-                </div>
-                <div class="form-group">
-                    <label for="Username" class="visually-hidden">Email</label>
-                    <input class="input" type="text" id="Username" placeholder="Username">
+             <div class="form">
+                 <div class="form-group">
+                     <label for="input1" class="visually-hidden">Input1</label>
+                     <input class="input" type="text" id="input1" value="" placeholder="Input">
+                 </div>
+                 <div class="form-group">
+                     <label for="input2" class="visually-hidden">Input2</label>
+                     <input class="input" type="text" id="input2" value="" placeholder="Input">
+                 </div>
+             </div>
+                <div class="form form-inline mtx2">
+                    <div class="form-group">
+                        <label for="qty" class="visually-hidden">Qty</label>
+                        <input class="input-s" type="number" id="qty" value="" placeholder="Qty">
+                    </div>
+                    <div class="form-group">
+                        <label for="yr" class="visually-hidden">Yrs</label>
+                        <input class="input-s" type="number" id="yr" value=""  placeholder="Yrs">
+                    </div>
                 </div>
 
+
+
             </div>
-            <div class="col-xs-12 col-md-offset-2 col-md-5 mt-xs">
+            <div class="col-xs-12 col-md-5 col-md-offset-2 ">
                 <div class="form-group">
-                    <label for="Search1" class="visually-hidden">Search</label>
-                    <input class="input-s" type="text" id="Search1" placeholder="Search">
+                    <label for="email" >Email</label>
+                    <input id="email" class="input" type="text" placeholder="">
                 </div>
                 <div class="form-group">
-                    <label for="Search2" class="visually-hidden">Search</label>
-                    <input class="input-s" type="text" id="Search2" placeholder="Search">
+                    <label for="password" >Password</label>
+                    <input id="password" class="input" type="password" placeholder="">
                 </div>
 
             </div>
@@ -979,7 +993,8 @@
     <section>
         <h3>Select</h3>
         <div class="select">
-            <select name="select">
+            <label for="select1" class="visually-hidden">Select</label>
+            <select id="select1" name="select">
                 <option value="" selected disabled hidden>Option 1</option>
                 <option value="3">Option 2</option>
                 <option value="4">Option 3</option>
@@ -988,11 +1003,13 @@
         <div class="content-spaced flex-container">
 
             <div class="form-group mr">
-                <input class="input" type="text" value="2">
+                <label for="input3" class="visually-hidden">input </label>
+                <input id="input3" class="input" type="text" value="2">
             </div>
 
             <div class="select">
-                <select name="select">
+                <label for="select3" class="visually-hidden">Select</label>
+                <select id="select3" name="select">
                     <option value="" selected disabled hidden>1</option>
                     <option value="1">1</option>
                     <option value="3">2</option>

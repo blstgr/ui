@@ -8,7 +8,8 @@
 
     --color-warning-light: #FAF1CB;
     --color-warning: #FFCC91;
-    --color-warning-dark: #FFB79A;
+    --color-warning-dark:#ad6f56; /*#FFB79A*/
+
 
     --color-alert-light: #fff5f0;
     --color-alert: #FA8E73;
@@ -75,7 +76,7 @@
     --padding: 0.75rem 1.25rem;
 
     --font-family: 'Montserrat', 'Verdana', sans-serif;
-
+    --font-color: var(--color-brand-dark);
 
 }
 

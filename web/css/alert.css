@@ -112,6 +112,17 @@
 }
 
 
+
+.alert .link-plain.visited,
+.alert .link-decorated.visited {
+    color: var(--color-info-light);
+}
+
+.alert .link-decorated.visited {
+    text-decoration-color: var(--color-info-light);
+}
+
+
 /*on page alert - highlights important info*/
 
 .nb {
