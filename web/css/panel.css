@@ -24,9 +24,9 @@
 }
 
 /*if panel header content needs to be 1 col*/
-.panel div {
-    width: 100%;
-}
+/*.panel div {*/
+/*    width: 100%;*/
+/*}*/
 
 .panel-header:only-child {
     border-bottom: 0;
@@ -53,15 +53,17 @@
     box-shadow: var(--shadow-lg-warning);
 }
 
+.panel-warning .input {
+    border-color: var(--color-warning-dark);
+}
+
 .panel-success {
-    /*border-color: var(--color-success-dark);*/
     background: var(--color-success);
-    /*color: var(--color-success-dark);*/
     box-shadow: var(--shadow-lg-success);
 }
 
 .panel-success .input {
-    border-color: rgb(69 135 118 / 70%);
+    border-color: var(--color-success-dark);
 }
 
 .panel-info {
@@ -71,7 +73,7 @@
 }
 
 .panel-info .input {
-    border-color: rgb(47 72 88 / 50%);
+    border-color: var(--color-info-dark);
 }
 
 .panel-alert {
