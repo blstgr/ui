@@ -252,8 +252,9 @@
     width: 100%;
 }
 
-.mw-sm {
-    max-width: 200px;
+
+.mw-xs {
+    max-width: 6rem;
 }
 
 .mh-sm {
@@ -261,6 +262,8 @@
 }
 
 .mh-90vh {
+    display: flex;
+    align-items: center;
     min-height: 90vh;
 }
 

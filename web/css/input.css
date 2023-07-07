@@ -1,5 +1,6 @@
 .input,
 .input-s,
+.input-lg,
 textarea {
     display: block;
     width: 100%;
@@ -22,7 +23,11 @@ textarea {
     border-radius: var(--radius-sm);
 
 }
-
+.input-lg{
+    padding-top: var(--space-sm);
+    padding-bottom: var(--space-sm);
+    font-size: var(--font-size-md);
+}
 
 .input-inverted {
     background: var(--color-brand-dark);
@@ -64,6 +69,8 @@ textarea::-webkit-scrollbar-thumb {
 
 
 .form-group label {
+    display: block;
+    margin-bottom: var(--space-xs);
     line-height: var(--line-height);
     font-size: var(--font-size);
     font-weight: 700;
