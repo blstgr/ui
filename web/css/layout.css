@@ -99,19 +99,15 @@ section,
 }
 
 .sticky-bottom-xs .btn {
+    margin-top: var(--space);
     height: 64px;
     width: 64px !important;
 }
 
-.sticky-bottom-xs .btn + .btn {
-    margin-top: var(--space);
+.sticky-bottom-xs .btn-container {
+    margin: 0;
 }
 
-@media screen and (max-width: 26em) {
-    .sticky-bottom-xs .btn-container {
-        margin-top: 0;
-    }
-}
 
 @media screen and (min-width: 48em) {
     .sticky-bottom-xs {

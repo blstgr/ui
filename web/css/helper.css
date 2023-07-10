@@ -107,7 +107,6 @@
 }
 
 
-
 .p-0 {
     padding: 0 !important;
 }
@@ -366,6 +365,17 @@
     background: var(--color-info-dark);
     color: white;
 }
+
+.bg-pp {
+    background-color: #2c559f;
+    color: white;
+}
+
+.bg-applepay {
+    background-color: #424242;
+    color: white;
+}
+
 
 /*lib color*/
 

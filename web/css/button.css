@@ -190,8 +190,11 @@
     background: rgba(210, 203, 171, 0.3);
 }
 
-.btn-container .btn + .btn {
-    margin-bottom: var(--space);
+.btn-container .btn + .btn,
+.btn-container a + .a,
+.btn-container a + .btn,
+.btn-container .btn + a {
+    margin-top: var(--space);
 }
 
 /* default btn container, defines spacing bewtween blocks*/
