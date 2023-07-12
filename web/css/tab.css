@@ -4,7 +4,7 @@
 }
 
 .tab-content {
-    padding: var(--space-md) 0;
+    padding: var(--space-md);
     margin-top: var(--spacex2);
     border-top: var(--border) solid var(--color-brand-dark);
     border-bottom: var(--border) solid var(--color-brand-dark);

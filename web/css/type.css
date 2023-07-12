@@ -8,6 +8,7 @@ h1,
     line-height: var(--line-height-font-lg);
     font-size: var(--font-size-lg);
     font-weight: 800;
+    hyphens: auto;
 
 }
 
@@ -363,7 +364,8 @@ a:focus {
 .link-decorated.visited {
     text-decoration-color: var(--color-a-visited);
 }
-.link-plain.visited:after{
+
+.link-plain.visited:after {
     content: url(../img/arrow-visited.svg);
 }
 

@@ -123,7 +123,7 @@
 .btn-responsive .icon,
 .btn-responsive .icon-l,
 .btn-responsive .icon-s {
-    margin-right: 0;
+    margin-right: 0 !important;
 }
 
 .btn-responsive.btn {
@@ -194,7 +194,7 @@
 .btn-container a + .a,
 .btn-container a + .btn,
 .btn-container .btn + a {
-    margin-top: var(--space);
+    margin-bottom: var(--space);
 }
 
 /* default btn container, defines spacing bewtween blocks*/
