@@ -112,14 +112,13 @@
 }
 
 
-
 .alert .link-plain.visited,
 .alert .link-decorated.visited {
-    color: var(--color-info-light);
+    color: inherit;
 }
 
 .alert .link-decorated.visited {
-    text-decoration-color: var(--color-info-light);
+    text-decoration-color: inherit;
 }
 
 

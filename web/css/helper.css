@@ -1,5 +1,9 @@
 @import url(./var.css);
 
+.m-s {
+    margin: var(--space-sm) !important;
+}
+
 .mt {
     margin-top: var(--space) !important;
 }

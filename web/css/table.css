@@ -521,6 +521,16 @@ table .btn-responsive .icon {
         display: block;
 
     }
+}
 
+/*.row-warning td {*/
+/*    background-color: var(--color-warning);*/
+/*}*/
 
+.row-success td {
+    background-color: var(--color-success);
+}
+
+.row-info td {
+    background-color: var(--color-info);
 }

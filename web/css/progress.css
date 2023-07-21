@@ -11,7 +11,7 @@
     width: var(--spacex2);
     background: var(--color-brand);
     overflow: hidden;
-    
+
 }
 
 .progress li:after{

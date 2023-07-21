@@ -51,6 +51,7 @@
 .badge-ghost {
     background: transparent;
     color: var(--color-brand-dark);
+    padding: 0;
 }
 
 

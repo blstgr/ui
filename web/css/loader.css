@@ -8,30 +8,30 @@
 .loader:after,
 .loader:before {
     position: absolute;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     margin: auto;
     width: var(--space-md);
     height: var(--space-md);
     border-radius: 50%;
-    border: 0.25rem solid white;
+    border: 0.25rem solid var(--color-brand-dark);
     content: "";
     animation: sk-bounce 1.6s infinite ease-in-out;
 }
 
-.loader::after{
-  left: 0.375rem/*6*/;
+.loader::after {
+    left: 0.5rem /*8*/;
     width: var(--space);
     height: var(--space);
     animation-delay: -.5s;
     border: none;
-    background: white;
+    background: var(--color-brand-dark);
 }
 
-.btn .loader{
-    margin-right: 0.75rem/*12*/;
+.btn .loader {
+    margin-right: 0.75rem /*12*/;
 }
 
 @keyframes sk-bounce {

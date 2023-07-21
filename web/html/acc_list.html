@@ -89,7 +89,7 @@
                                     <i class="icon fa-solid fa-newspaper"></i><span>Invoices</span>
                                 </a>
                                 <button class="tab-s btn-responsive">
-                                    <i class="icon fa-solid fa-wallet"></i><span>$00.00</span>
+                                    <i class="icon fa-solid fa-wallet mr-s"></i><span>$00.00</span>
                                 </button>
                                 <a href="acc_profile.html" class="tab-s btn-responsive">
                                     <i class="icon fa-solid fa-user"></i><span>Profile</span>
@@ -123,7 +123,7 @@
                                     <button class="btn btn-s btn-flat btn-responsive fg-1">
                                         <i class="icon fa-solid fa-eye-slash"></i><span>Hide</span></button>
                                     <button class="btn btn-s btn-flat btn-responsive fg-1">
-                                        <i class="icon fas fa-arrow-down"></i><span>.csv</span></button>
+                                        <img src="../img/arrow-down.svg" alt=""><span>.csv</span></button>
                                 </div>
                             </div>
                             <div class="col-xs-12 end-sm col-sm col-md-4 mt-screensm">
@@ -276,16 +276,17 @@
                         </td>
 
                         <td>
-
-                            <textarea readonly class="txt-mono mw-sm mh-sm" id="" rows="2">admin@jacksparrow.com, administrator@jack.io, administrator@jack.io, admin@jacksparrow.com</textarea>
-
+                            <div class="form-group">
+                                <label for="emails">Admin email</label>
+                                <textarea readonly class="txt-mono mw-sm mh-sm" id="emails" rows="2">admin@jacksparrow.com, administrator@jack.io, administrator@jack.io, admin@jacksparrow.com</textarea>
+                            </div>
 
                         </td>
 
                         <td>
                             <a href="" class="btn btn-s btn-flat ">
                                 <img class="icon" src="../img/send.svg" alt="Send">
-                                <span>Email</span>
+                                <span>Send</span>
                             </a>
                         </td>
 
@@ -320,23 +321,30 @@
                         </td>
 
                         <td>
-                            <div class="input-group input-group-post  mw-sm">
-                                <input class="input-s txt-mono" type="text" value="276gsfr27ts629iat62rdg27190s">
-                                <button class="btn-s btn-flat">
-                                    <i class="icon icon-l far fa-copy m-0"></i>
-                                </button>
+                            <div class="form-group">
+                                <label for="emails">Name</label>
+                                <div class="input-group input-group-post  mw-sm">
+                                    <input class="input-s txt-mono" type="text" value="276gsfr27ts629iat62rdg27190s">
+                                    <button class="btn-s btn-flat">
+                                        <i class="icon icon-l far fa-copy m-0"></i>
+                                    </button>
+                                </div>
                             </div>
-                            <div class="input-group input-group-post  mw-sm">
-                                <input class="input-s txt-mono" type="text" value="276gsfr27ts629iat62rdg27190s">
-                                <button class="btn-s btn-flat">
-                                    <i class="icon icon-l far fa-copy m-0"></i>
-                                </button>
+                            <div class="form-group">
+                                <label for="emails">Point to</label>
+                                <div class="input-group input-group-post  mw-sm">
+
+                                    <input class="input-s txt-mono" type="text" value="276gsfr27ts629iat62rdg27190s">
+                                    <button class="btn-s btn-flat">
+                                        <i class="icon icon-l far fa-copy m-0"></i>
+                                    </button>
+                                </div>
                             </div>
                         </td>
 
                         <td>
                             <a href="" class="btn btn-s btn-flat ">
-                                <i class="icon icon-smaller fas fa-plus"></i>
+                                <i class="icon icon-smaller fas fa-check"></i>
                                 <span>Confirm</span>
                             </a>
                         </td>
@@ -357,7 +365,7 @@
                         <td>
                             <p><span class="label">PositiveSSL Multi-domain
                      <br>3 SANs</span>
-                                <br><span class="wb">@jacksparrow.com</span> <span class="badge">+2</span></p>
+                                <br><span class="wb">@jacksparrow.com</span> <span class="badge">+6</span></p>
 
                             <ul class="progress">
                                 <li class="px100"></li>
@@ -373,18 +381,36 @@
                         </td>
 
                         <td>
-                            <div class="input-group input-group-post  mw-sm">
-                                <input class="input-s  txt-mono" type="text" value="/.well-known/pki-validation/">
-                                <button class="btn-s btn-flat">
-                                    <i class="icon icon-l far fa-copy m-0"></i>
-                                </button>
+                            <div class="form-group">
+                                <label for="emails">Validation links</label>
+                                <div class="input-group input-group-post  mw-sm">
+                                    <input class="input-s  txt-mono" type="text"
+                                           value="jacksparrow.com/.well-known/pki-validation/hsdgfdfskasd.txt">
+                                    <button class="btn-s btn-flat">
+                                        <i class="icon icon-l far fa-copy m-0"></i>
+                                    </button>
+                                </div>
+                                <div class="input-group input-group-post  mw-sm">
+                                    <input class="input-s  txt-mono" type="text"
+                                           value="www.jacksparrow.com/.well-known/pki-validation/hsdgfdfskasd.txt">
+                                    <button class="btn-s btn-flat">
+                                        <i class="icon icon-l far fa-copy m-0"></i>
+                                    </button>
+                                </div>
+                                <div class="input-group input-group-post  mw-sm">
+                                    <input class="input-s  txt-mono" type="text"
+                                           value="jacksparrow.io/.well-known/pki-validation/hsdgfdfskasd.txt">
+                                    <button class="btn-s btn-flat">
+                                        <i class="icon icon-l far fa-copy m-0"></i>
+                                    </button>
+                                </div>
+                                <a href="" class="link link-decorated mt-s">+3 more</a>
                             </div>
-
                         </td>
 
                         <td>
                             <a href="" class="btn btn-s btn-flat ">
-                                <i class="icon icon-smaller fas fa-arrow-up"></i>
+                                <i class="icon icon-smaller fas fa-check"></i>
                                 <span>Confirm</span>
                             </a>
                         </td>

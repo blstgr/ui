@@ -130,12 +130,11 @@ hr {
 
 /* scrollable text - can be applied to p or list or div with table. can contain copy action inside, user should be able to write in it*/
 .content-scrolled {
-    max-height: 16rem /*256*/;
-    padding-top: var(--space);
-    padding-bottom: var(--space);
+    max-height: 25rem;
+    padding: var(--space);
     border-top: 0.0625rem /*1*/ solid rgba(0, 0, 0, 0.45);
     border-bottom: 0.0625rem /*1*/ solid rgba(0, 0, 0, 0.45);
-    background: rgba(234, 231, 219, 0.5) /*var(--color-brand), 50%*/;
+    background: var(--color-brand-light);
     overflow-y: scroll;
 }
 
@@ -210,10 +209,8 @@ ul + .content-scrolled,
 }
 
 ul {
-
-    margin-top: var(--space);
-    margin-bottom: 0;
-    padding-left: 0;
+    margin: 0;
+    padding: 0;
     line-height: var(--line-height);
 }
 
@@ -349,8 +346,8 @@ a:focus {
 .link-decorated {
     display: inline-block;
     text-decoration: underline;
-    text-decoration-thickness: 0.25em;
-    text-decoration-color: var(--color-alert);
+    text-decoration-thickness: 0.2rem;
+    text-decoration-color: currentColor;
     color: inherit;
     line-height: normal;
 }
@@ -359,10 +356,6 @@ a:focus {
 .link-plain.visited,
 .link-decorated.visited {
     color: var(--color-a-visited);
-}
-
-.link-decorated.visited {
-    text-decoration-color: var(--color-a-visited);
 }
 
 .link-plain.visited:after {
