@@ -176,9 +176,10 @@ ul + .content-scrolled,
 
 .txt-highlighted {
     padding: 0.125rem 0.25rem;
-    background: var(--color-brand-darker);
+    background: var(--color-warning-light);
     border-radius: 0.25rem;
     font-family: 'Roboto Mono', monospace;
+
 }
 
 .txt-muted {
@@ -314,7 +315,7 @@ a:focus {
 
 .link-ghost:hover {
     text-decoration: underline;
-    text-decoration-thickness: 0.25rem;
+    text-decoration-thickness: 0.2rem;
     text-decoration-color: currentColor;
 }
 

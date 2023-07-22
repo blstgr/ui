@@ -62,7 +62,7 @@
                 </li>
 
                 <li class="nav-item nav-item-square">
-                    <a href="./acc_list.html">
+                    <a href="list.html">
                         <span class="badge">J</span>
                     </a>
                 </li>
@@ -103,7 +103,7 @@
                             <span class="badge badge-ghost">Trial</span></p>
                     </div>
                     <div class="col-xs start-xs first-sm  pl-0">
-                        <a href="acc_list.html" class="btn btn-flat btn-responsive"><i
+                        <a href="list.html" class="btn btn-flat btn-responsive"><i
                                 class="icon fas fa-arrow-left"></i>
                             <span>My SSL</span></a>
                     </div>
@@ -295,7 +295,8 @@
                     limit</a></td>
 
                 <td data-title="Issued for">
-                    <ul class="ul-unstyled content-scrolled">
+                    <div class="content-scrolled">
+                    <ul class="ul-unstyled">
                         <li class="wb">
                             jacksparrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrow.com
 
@@ -313,6 +314,7 @@
 
                         </li>
                     </ul>
+                    </div>
                     <div class="btn-container">
                         <button class="btn btn-s btn-secondary ">
                             <i class="icon icon-smaller fas fa-play"></i>
@@ -331,14 +333,14 @@
             <tr>
                 <th>CA order ID</th>
                 <th>Order ID</th>
-                <th>Email to get .cert file</th>
+                <th>.cert file sent to</th>
             </tr>
             </thead>
             <tbody>
             <tr>
                 <td data-title="CA order ID"><p>Awaiting ID..</p>
                     <div class="btn-container">
-                        <a href="./acc_list_details.html" class="btn btn-s btn-secondary ">
+                        <a href="./details-ssl.html" class="btn btn-s btn-secondary ">
                             <i class="icon fas fa-sync"></i>
                             Refresh
                         </a>
@@ -347,7 +349,7 @@
                 <td data-title="Order ID">
                     <p>76155</p>
                     <div class="btn-container">
-                        <a href="./acc_list_details.html" class="btn btn-s btn-secondary ">
+                        <a href="./details-ssl.html" class="btn btn-s btn-secondary ">
                             <i class="icon far fa-folder"></i>
                             Details
                         </a>
@@ -784,7 +786,8 @@
                                     <span class="txt-mono txt-highlighted">/.well-known/pki-validation/</span> folder at
                                     your SSL domains:
                                 </p>
-                                <ul class="ul-unstyled content-scrolled">
+                                <div class="content-scrolled">
+                                <ul class="ul-unstyled">
                                     <li><a class="link-plain txt-mono" href="">http://jacksparrow.com/.well-known/pki-validation/6teyqtrtyq65123614qewrtqe.txt</a>
                                     </li>
                                     <li><a class="link-plain txt-mono" href="">http://www.jacksparrow.com/.well-known/pki-validation/6teyqtrtyq65123614qewrtqe.txt</a>
@@ -795,6 +798,7 @@
                                     </li>
 
                                 </ul>
+                                </div>
                                 <p> If it’s your first time getting SSL through file-based validation, you should create
                                     <span class="txt-mono txt-highlighted">/.well-known/pki-validation/</span> on your
                                     server.</p>
@@ -913,34 +917,72 @@
 
                     <div class="panel-body">
                         <div class="row">
-                            <div class="col-xs-12  mt-screensm">
-                                <input class="input" placeholder="Registered company name">
+
+                            <div class="col-xs">
+                                <div class="form-group">
+                                    <label for="company">Legal company name</label>
+                                    <label>
+                                        <input id="company" type="text" class="input" placeholder="Legal company name" value="">
+                                    </label>
+
+                                </div>
+                            </div>
+                            <div class="col-xs">
+                                <div class="form-group">
+                                    <label for="company">Country of registration</label>
+                                    <label>
+                                        <input id="company" type="text" class="input" placeholder="Country of registration" value="">
+                                    </label>
+
+                                </div>
+                            </div>
+                            <div class="col-xs-2">
+                                <div class="form-group">
+                                    <label for="company">Zip</label>
+                                    <label>
+                                        <input id="company" type="text" class="input" placeholder="Zip" value="">
+                                    </label>
+
+                                </div>
+                            </div>
+                            <div class="col-xs-2">
+                                <div class="form-group">
+                                    <label for="company">State</label>
+                                    <label>
+                                        <input id="company" type="text" class="input" placeholder="State" value="">
+                                    </label>
+
+                                </div>
                             </div>
                         </div>
                         <div class="row mt">
-                            <div class="col-xs-8 col-sm-10">
-                                <input class="input" placeholder="Country of registratin">
+
+                            <div class="col-xs-4">
+                                <div class="form-group">
+                                    <label for="company">City</label>
+                                    <label>
+                                        <input id="company" type="text" class="input" placeholder="City" value="">
+                                    </label>
+
+                                </div>
                             </div>
-                            <div class="col-xs-4 col-sm-2">
-                                <input class="input" placeholder="Zip">
+                            <div class="col-xs">
+                                <div class="form-group">
+                                    <label for="company">Legal address</label>
+                                    <label>
+                                        <input id="company" type="text" class="input" placeholder="Legal address" value="">
+                                    </label>
+
+                                </div>
                             </div>
-                        </div>
-                        <div class="row mt">
-                            <div class="col-xs-4 col-sm-2">
-                                <input class="input" placeholder="State">
-                            </div>
-                            <div class="col-xs-8 col-sm-4">
-                                <input class="input" placeholder="City of registratin">
-                            </div>
-                            <div class="col-xs-12 col-sm-6 mt-screensm">
-                                <input class="input" placeholder="Legal address">
-                            </div>
+
+
                         </div>
 
                         <div class="btn-container">
                             <button class="btn btn-secondary">
                                 <i class="icon fas fa-check"></i>
-                                Confirm legal registration
+                                Confirm legal info
                             </button>
 
 
@@ -1002,7 +1044,7 @@
                                     Yourself
                                 </button>
                                 <button class="tab">
-                                    We do it ($28.88/yr)
+                                    We do it
                                 </button>
 
                             </div>
