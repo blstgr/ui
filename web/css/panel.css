@@ -102,6 +102,10 @@
     box-shadow: var(--shadow-lg-alert);
 }
 
+.panel-alert .panel-header {
+    border-bottom-color: var(--color-alert-dark);
+}
+
 .panel-alert .content-scrolled {
     background: var(--color-alert-light);
 }
