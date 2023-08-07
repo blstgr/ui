@@ -116,6 +116,7 @@ p + .form-group {
 
 .input-group {
     display: flex;
+    align-items: center;
     line-height: 1;
 }
 
@@ -140,23 +141,44 @@ p + .form-group {
 
 }
 
-
-.input-group-post .btn,
-.input-group-post .btn-s {
-    height: 100%;
+.input-group-post .btn:last-child,
+.input-group-post .btn-s:last-child {
+    /*height: 100%;*/
     border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
-    border: var(--border) solid transparent;
+    border-width: var(--border);
+    border-style: solid;
     padding: var(--space);
     margin-left: -0.125rem;
 }
 
-.input-group-post .btn {
-    min-height: 4rem;
+.input-group-pre .btn:first-child,
+.input-group-pre .btn-s:first-child {
+    /*height: 100%;*/
+    border-radius: var(--radius-sm)  0 0  var(--radius-sm) ;
+    border-width: var(--border);
+    border-style: solid;
+    padding: var(--space);
+    margin-right: -0.125rem;
+
 }
 
+.input-group .btn,
+.input-group .input{
+    min-height: 4rem;
+    /*height: 100%;*/
+}
+
+
+.input-group-btn .input,
+.input-group-btn .btn {
+    min-height: auto;
+}
+
+.input-group-btn .input{
+    padding: 0.72rem;
+}
 
 .input-group .btn-flat {
     border-color: var(--color-brand-darker);
     background: white;
-
 }

@@ -102,6 +102,10 @@
     margin-bottom: var(--space) !important;
 }
 
+.mb-s {
+    margin-bottom: var(--space-sm) !important;
+}
+
 .mbx2 {
     margin-top: var(--spacex2) !important;
 }
@@ -192,6 +196,7 @@
 
 .flex-container {
     display: flex;
+    align-items: center;
     width: 100%;
 }
 

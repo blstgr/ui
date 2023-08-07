@@ -17,6 +17,13 @@
     line-height: var(--line-height-sm);
 }
 
+
+.badge-sticky{
+    position: absolute;
+    right: var(--space-md);
+    z-index: 99999;
+}
+
 .badge .icon {
     margin-right: var(--space-sm);
 }

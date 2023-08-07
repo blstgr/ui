@@ -78,6 +78,11 @@
     border-color: var(--color-warning-dark);
 }
 
+.panel-warning .input-group .btn-flat {
+    border-color: var(--color-warning-dark);
+}
+
+
 .panel-success {
     background: var(--color-success);
     box-shadow: var(--shadow-lg-success);
@@ -96,6 +101,8 @@
 .panel-info .input {
     border-color: var(--color-info-dark);
 }
+
+
 
 .panel-alert {
     background: var(--color-alert);
