@@ -20,7 +20,8 @@
 
 .badge-sticky{
     position: absolute;
-    right: var(--space-md);
+    top: 1.8rem;
+    left: -2rem;
     z-index: 99999;
 }
 

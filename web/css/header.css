@@ -109,6 +109,7 @@ nav ul {
 }
 
 .nav-item .badge-sticky{
-    right:-0.25rem;
     top: 0.25rem;
+    right:-0.25rem;
+    left: auto;
 }
