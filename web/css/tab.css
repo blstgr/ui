@@ -4,12 +4,19 @@
 }
 
 .tab-content {
-    padding: var(--space-md);
+    padding-top: var(--space-md);
+    padding-bottom: var(--space-md);
     margin-top: var(--spacex2);
     border-top: var(--border) solid var(--color-brand-dark);
     border-bottom: var(--border) solid var(--color-brand-dark);
     background: var(--color-brand-light);
+}
 
+@media screen and (min-width: 48em) {
+  .tab-content{
+      padding-left: var(--space-md);
+      padding-right: var(--space-md);
+  }
 }
 
 .panel .tab-content {
