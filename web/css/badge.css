@@ -1,5 +1,5 @@
 .badge,
-.badge-l{
+.badge-l {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -18,10 +18,10 @@
 }
 
 
-.badge-sticky{
+.badge-sticky {
     position: absolute;
-    top: 4.1rem;
-    left: -2.3rem;
+    top: 1.65rem;
+    right: -2rem;
     z-index: 99999;
 }
 

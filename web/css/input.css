@@ -161,6 +161,13 @@ p + .form-group {
     margin-right: -0.125rem;
 
 }
+.input-group-post .btn-s:last-child,
+.input-group-pre .btn-s:first-child {
+    padding: 0.72rem;
+}
+
+
+
 
 .input-group .btn,
 .input-group .input{
