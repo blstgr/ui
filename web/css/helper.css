@@ -260,6 +260,9 @@
     width: 100%;
 }
 
+.w-xs {
+    width: 10rem;
+}
 
 .mw-xs {
     max-width: 6rem;
